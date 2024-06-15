@@ -771,7 +771,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		[46032] = "SiderealEssence:15",
 		[45933] = "SiderealEssence:15",
 		[45869] = "SiderealEssence:15",
-		[45869] = "SiderealEssence:15",
 		[46096] = "SiderealEssence:15",
 		[45297] = "SiderealEssence:15",
 		[45888] = "SiderealEssence:15",
