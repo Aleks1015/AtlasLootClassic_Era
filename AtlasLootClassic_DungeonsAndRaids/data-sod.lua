@@ -2120,6 +2120,7 @@ data["BlackrockDepths"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({42, 52, 60},{40, 48, 56}),
+	ContentPhase = 3,
 	items = {
 		{ -- BRDLordRoccor
 			name = AL["Lord Roccor"],
@@ -3180,6 +3181,7 @@ data["DireMaulEast"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 55, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- DMEPusillin
 			name = AL["Pusillin"],
@@ -3467,6 +3469,7 @@ data["DireMaulNorth"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 58, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- DMNGuardMoldar
 			name = AL["Guard Mol'dar"],
@@ -3673,6 +3676,7 @@ data["Scholomance"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {45, 58, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- SCHOLOBlood
 			name = AL["Blood Steward of Kirtonos"],
@@ -4142,6 +4146,7 @@ data["Stratholme"] = {
 	AtlasMapFile_AL = "Stratholme",
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
+	ContentPhase = 4,
 	LevelRange = GetForVersion({37, 58, 60}, {45, 58, 60}),
 	items = {
 		{ -- STRATSkull
@@ -4592,14 +4597,14 @@ data["WorldBosses"] = {
 	AtlasMapFile = "Azuregos",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
+	ContentPhase = 4,
 	items = {
 		{ -- AAzuregos
 			name = AL["Azuregos"],
 			AtlasMapFile = "Azuregos",
 			npcID = 6109,
 			Level = 999,
-			ContentPhase = 2,
+			ContentPhase = 4,
 			DisplayIDs = {{11460}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -4628,7 +4633,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "LordKazzak",
 			npcID = 12397,
 			Level = 999,
-			ContentPhase = 2,
+			ContentPhase = 4,
 			DisplayIDs = {{12449}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -4657,7 +4662,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14888,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 7,
 			DisplayIDs = {{15365}},
 			[NORMAL_DIFF] = {
 				{ 1,  20628 }, -- Deviate Growth Cap
@@ -4692,7 +4697,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14889,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 7,
 			DisplayIDs = {{15366}},
 			[NORMAL_DIFF] = {
 				{ 1,  20623 }, -- Circlet of Restless Dreams
@@ -4725,7 +4730,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14890,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 7,
 			DisplayIDs = {{15363}, {15367}},
 			[NORMAL_DIFF] = {
 				{ 1,  20633 }, -- Unnatural Leather Spaulders
@@ -4758,7 +4763,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14887,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 7,
 			DisplayIDs = {{15364}},
 			[NORMAL_DIFF] = {
 				{ 1,  20637 }, -- Acid Inscribed Pauldrons
@@ -4799,6 +4804,7 @@ data["MoltenCore"] = {
 	AtlasMapFile_AL = "MoltenCore",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
+	ContentPhase = 4,
 	items = {
 		{	--MCLucifron
 			name = AL["Lucifron"],
@@ -5140,6 +5146,7 @@ data["Onyxia"] = {
 	AtlasMapFile_AL = "OnyxiasLair",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
+	ContentPhase = 4,
 	items = {
 		{ -- Onyxia
 			name = AL["Onyxia"],

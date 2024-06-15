@@ -11,14 +11,27 @@ local ACTIVE_PASE_LIST = {
     [AtlasLoot.BC_VERSION_NUM]      = 6, -- bc
     [AtlasLoot.WRATH_VERSION_NUM]   = 4, -- wrath
 }
+
+if AtlasLoot.IS_SOD then
+    --Season of Discovery phase
+    ACTIVE_PASE_LIST[AtlasLoot.CLASSIC_VERSION_NUM] = 3
+end
 local ACTIVE_PHASE = ACTIVE_PASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PASE_LIST[1]
 
 --##START-DATA##
 local PHASE_ITEMS = {}
 if AtlasLoot:GameVersion_EQ(AtlasLoot.CLASSIC_VERSION_NUM) then
+    if AtlasLoot.IS_SOD then
+    --Season of Discovery phased items
+    PHASE_ITEMS = {
+        [16800]=4,[16805]=4,
+    }
+    else
+    --Classic Era/Hardcore phased items
     PHASE_ITEMS = {
 
     }
+    end
 end
 
 if AtlasLoot:GameVersion_EQ(AtlasLoot.BC_VERSION_NUM) then
