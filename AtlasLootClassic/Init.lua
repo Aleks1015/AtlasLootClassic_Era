@@ -75,6 +75,19 @@ AtlasLoot.IS_BC = false
 AtlasLoot.IS_WRATH = false
 AtlasLoot.IS_RETAIL = false
 
+AtlasLoot.IS_SEASONAL = false
+AtlasLoot.IS_SEASONAL = C_Seasons.HasActiveSeason()
+AtlasLoot.IS_SOD = false
+AtlasLoot.SEASON = 0
+
+if AtlasLoot.IS_SEASONAL then 
+	AtlasLoot.SEASON = C_Seasons.GetActiveSeason()
+	--3 - Hardcore
+	--2 - Season of Discovery
+	--1 - Season of Mastery (old)
+	if AtlasLoot.SEASON == 2 then AtlasLoot.IS_SOD = true end
+end
+
 local CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 	CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM

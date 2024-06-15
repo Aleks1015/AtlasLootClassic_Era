@@ -1,4 +1,4 @@
-if AtlasLoot.IS_SOD then return end
+if AtlasLoot.IS_SOD == false then return end
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------

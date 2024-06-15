@@ -75,9 +75,17 @@ end
 
 -- updated with script
 local VENDOR_PRICES, VENDOR_PRICES_RAW = AtlasLoot:GetGameVersionDataTable()
-VENDOR_PRICES_RAW.CLASSIC = {
+if AtlasLoot.IS_SOD == false then 
+    --Classic Era / Hardcore
+    VENDOR_PRICES_RAW.CLASSIC = {
 
 }
+else
+    --Season of Discovery
+    VENDOR_PRICES_RAW.CLASSIC = {
+
+    }
+end
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
     VENDOR_PRICES_RAW.BCC = {
