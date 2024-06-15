@@ -14,6 +14,15 @@ local ACTIVE_PASE_LIST = {
 
 if AtlasLoot.IS_SOD then
     --Season of Discovery phase
+    --1 - Level 25 Cap / BFD
+    --2 - Level 40 Cap / Gnomeregan
+    --3 - Level 50 Cap / Sunken Temple
+    --4 - MC/Ony?
+    --5 - DM/World Bosses?
+    --6 - BWL
+    --7 - ZG / Green Dragons
+    --8 - AQ / Tier 0.5 / Improved dungeon gear (likely in phase 4)
+    --9 - Naxxramas
     ACTIVE_PASE_LIST[AtlasLoot.CLASSIC_VERSION_NUM] = 3
 end
 local ACTIVE_PHASE = ACTIVE_PASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PASE_LIST[1]

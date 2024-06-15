@@ -105,6 +105,7 @@ local T1_SET = {
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
 	IgnoreAsSource = true,
+	ContentPhase = 4,
 	[ALLIANCE_DIFF] = {
 		{ 1, 203 }, -- Warlock
 		{ 3, 202 }, -- Priest
@@ -128,7 +129,7 @@ local T2_SET = {
 	ExtraList = true,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
-	ContentPhase = 3,
+	ContentPhase = 6,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
 		{ 1, 212 }, -- Warlock
@@ -153,7 +154,7 @@ local T3_SET = {
 	ExtraList = true,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
-	ContentPhase = 6,
+	ContentPhase = 9,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
 		{ 1, 529 }, -- Warlock
@@ -176,6 +177,7 @@ local T3_SET = {
 local AQ_SCARABS = { -- AQ40Trash2
 	name = AL["Ahn'Qiraj scarabs"],
 	ExtraList = true,
+	ContentPhase = 8,
 	[NORMAL_DIFF] = {
 		{ 1,  20876 }, -- Idol of Death
 		{ 2,  20879 }, -- Idol of Life
@@ -205,6 +207,7 @@ local AQ_SCARABS = { -- AQ40Trash2
 local AQ_ENCHANTS = { -- AQEnchants
 	name = AL["Ahn'Qiraj enchants"],
 	ExtraList = true,
+	ContentPhase = 8,
 	[NORMAL_DIFF] = {
 		{ 1,  20728 }, -- Formula: Enchant Gloves - Frost Power
 		{ 2,  20731 }, -- Formula: Enchant Gloves - Superior Agility
@@ -220,7 +223,7 @@ local AQ_OPENING = {	-- Keys
 	name = AL["AQ opening"],
 	TableType = NORMAL_ITTYPE,
 	ExtraList = true,
-	ContentPhase = 5,
+	ContentPhase = 8,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,  21138 }, -- Red Scepter Shard
@@ -247,6 +250,7 @@ local DM_BOOKS = { -- DMBooks
 	name = AL["Books"],
 	ExtraList = true,
 	IgnoreAsSource = true,
+	ContentPhase = 5,
 	[NORMAL_DIFF] = {
 		{ 1,  18401 }, -- Foror's Compendium of Dragon Slaying
 		{ 3,  18362 }, -- Holy Bologna: What the Light Won't Tell You
@@ -279,6 +283,7 @@ data["Ragefire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 13, 18}, {8, 13, 16}),
+	ContentPhase = 1,
 	items = {
 		{ -- RFCTaragaman
 			name = AL["Taragaman the Hungerer"],
@@ -318,6 +323,7 @@ data["WailingCaverns"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 17, 24}, {10, 17, 21}),
+	ContentPhase = 1,
 	items = {
 		{ -- WCLordCobrahn
 			name = AL["Lord Cobrahn"],
@@ -450,6 +456,7 @@ data["TheDeadmines"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 17, 26}, {10, 18, 22}),
+	ContentPhase = 1,
 	items = {
 		{	--DMRhahkZor
 			name = AL["Rhahk'Zor"],
@@ -590,6 +597,7 @@ data["ShadowfangKeep"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({11, 22, 30}, {14, 18, 21}),
+	ContentPhase = 1,
 	items = {
 		{ -- SFKRethilgore
 			name = AL["Rethilgore"],
@@ -793,6 +801,7 @@ data["TheStockade"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({15, 24, 32}, {15, 23, 29}),
+	ContentPhase = 1,
 	items = {
 		{ -- SWStKamDeepfury
 			name = AL["Kam Deepfury"],
@@ -837,6 +846,7 @@ data["RazorfenKraul"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({25, 29, 38},{17, 24, 27}),
+	ContentPhase = 1,
 	items = {
 		{ -- RFKAggem
 			name = AL["Aggem Thorncurse"],
@@ -961,6 +971,7 @@ data["ScarletMonasteryGraveyard"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 26, 36},{20, 30, 32}),
+	ContentPhase = 2,
 	items = {
 		-- Graveyard
 		{ -- SMVishas
@@ -1106,6 +1117,7 @@ data["ScarletMonasteryLibrary"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
+	ContentPhase = 2,
 	items = {
 		-- Library
 		{ -- SMHoundmasterLoksey
@@ -1193,6 +1205,7 @@ data["ScarletMonasteryArmory"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 32, 42},{20, 35, 37}),
+	ContentPhase = 2,
 	items = {
 		-- Armory
 		{ -- SMHerod
@@ -1255,6 +1268,7 @@ data["ScarletMonasteryCathedral"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 35, 45},{20, 36, 40}),
+	ContentPhase = 2,
 	items = {
 		-- Cathedral
 		{ -- SMFairbanks
@@ -1346,6 +1360,7 @@ data["RazorfenDowns"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({35, 37, 46},{25, 34, 37}),
+	ContentPhase = 2,
 	items = {
 		{ -- RFDTutenkash
 			name = AL["Tuten'kash"],
@@ -1485,6 +1500,7 @@ data["Uldaman"] = {
 	AtlasMapFile = {"CL_Uldaman", "CL_UldamanEnt"},
 	AtlasMapFile_AL = {"Uldaman", "UldamanEnt"},
 	LevelRange = GetForVersion({30, 41, 51},{30, 36, 40}),
+	ContentPhase = 2,
 	items = {
 		{ -- UldEric
 			name = AL["Eric \"The Swift\""],
@@ -1695,6 +1711,7 @@ data["Zul'Farrak"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({39, 44, 54},{35, 42, 46}),
+	ContentPhase = 3,
 	items = {
 		{ -- ZFAntusul
 			name = AL["Antu'sul"],
@@ -1897,6 +1914,7 @@ data["Maraudon"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({25, 46, 55},{30, 43, 48}),
+	ContentPhase = 3,
 	items = {
 		{ -- MaraKhanVeng
 			name = AL["Veng"],
@@ -2671,6 +2689,7 @@ data["LowerBlackrockSpire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({48, 55, 60}, {45, 54, 60}),
+	ContentPhase = 4,
 	items = {
 		{ -- LBRSFelguard
 			name = AL["Burning Felguard"],
@@ -2963,6 +2982,7 @@ data["UpperBlackrockSpire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({48, 55, 60}, {45, 58, 60}),
+	ContentPhase = 4,
 	items = {
 		{ -- UBRSEmberseer
 			name = AL["Pyroguard Emberseer"],
@@ -3181,7 +3201,7 @@ data["DireMaulEast"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 55, 60},
-	ContentPhase = 4,
+	ContentPhase = 5,
 	items = {
 		{ -- DMEPusillin
 			name = AL["Pusillin"],
@@ -3303,6 +3323,7 @@ data["DireMaulWest"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 58, 60},
+	ContentPhase = 5,
 	items = {
 		{ -- DMWTendrisWarpwood
 			name = AL["Tendris Warpwood"],
@@ -3469,7 +3490,7 @@ data["DireMaulNorth"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 58, 60},
-	ContentPhase = 4,
+	ContentPhase = 5,
 	items = {
 		{ -- DMNGuardMoldar
 			name = AL["Guard Mol'dar"],
@@ -4597,14 +4618,14 @@ data["WorldBosses"] = {
 	AtlasMapFile = "Azuregos",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 5,
 	items = {
 		{ -- AAzuregos
 			name = AL["Azuregos"],
 			AtlasMapFile = "Azuregos",
 			npcID = 6109,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 5,
 			DisplayIDs = {{11460}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -4633,7 +4654,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "LordKazzak",
 			npcID = 12397,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 5,
 			DisplayIDs = {{12449}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -5196,7 +5217,7 @@ data["Zul'Gurub"] = {
 	AtlasMapFile_AL = "ZulGurub",
 	ContentType = RAID20_CONTENT,
 	LoadDifficulty = RAID20_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 7,
 	items = {
 		{ -- ZGJeklik
 			name = AL["High Priestess Jeklik"],
@@ -5577,7 +5598,7 @@ data["BlackwingLair"] = {
 	AtlasMapFile_AL = "BlackwingLair",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 3,
+	ContentPhase = 6,
 	items = {
 		{ -- BWLRazorgore
 			name = AL["Razorgore the Untamed"],
@@ -5843,7 +5864,7 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 	AtlasMapFile_AL = "TheRuinsofAhnQiraj",
 	ContentType = RAID20_CONTENT,
 	LoadDifficulty = RAID20_DIFF,
-	ContentPhase = 5,
+	ContentPhase = 8,
 	items = {
 		{ -- AQ20Kurinnaxx
 			name = AL["Kurinnaxx"],
@@ -6067,7 +6088,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 	AtlasMapFile_AL = "TheTempleofAhnQiraj",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 5,
+	ContentPhase = 8,
 	items = {
 		{ -- AQ40Skeram
 			name = AL["The Prophet Skeram"],
@@ -6322,7 +6343,7 @@ data["Naxxramas"] = {
 	AtlasMapFile_AL = "Naxxramas",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 6,
+	ContentPhase = 9,
 	items = {
 		-- The Arachnid Quarter
 		{ -- NAXAnubRekhan
@@ -6691,6 +6712,7 @@ data["BlackfathomDeeps2"] = {
 	AtlasMapFile_AL = {"BlackfathomDeeps", "BlackfathomDeepsEnt"},
 	ContentType = RAID_CONTENT,
 	LevelRange = {25, 25, 39},
+	ContentPhase = 1,
 	items = {
 		{ -- BFDBaronAquanis
 			name = AL["Baron Aquanis"],
@@ -6917,6 +6939,7 @@ data["Gnomeregan2"] = {
 	ContentType = RAID_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {40, 40, 49},
+	ContentPhase = 2,
 	items = {
 		{ -- Grubbis
 			name = AL["Grubbis"],
@@ -7111,6 +7134,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 	ContentType = RAID_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({50, 50, 59},{50, 50, 59}),
+	ContentPhase = 3,
 	items = {
 		{ -- STAtalalarion
 			name = AL["Atal'alarion"],
