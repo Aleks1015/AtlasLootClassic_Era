@@ -2957,7 +2957,7 @@ data["LowerBlackrockSpire"] = {
 			npcID = 16080,
 			DisplayIDs = {{15997}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 8,
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
 				{ 1,  22306 }, -- Ironweave Belt
@@ -3174,7 +3174,7 @@ data["UpperBlackrockSpire"] = {
 			npcID = 16042,
 			DisplayIDs = {{14308}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 8,
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  22302 }, -- Ironweave Cowl
