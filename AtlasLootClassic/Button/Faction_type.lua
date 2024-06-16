@@ -153,7 +153,14 @@ end
 -- TODO: Create faction data module?
 function AtlasLoot:Faction_GetFactionName(factionID)
 	local name = GetFactionInfoByID(factionID)
-	return name or FACTION_KEY[factionID] or FACTION.." "..factionID
+	--return name or FACTION_KEY[factionID] or FACTION.." "..factionID  ##PRE-FIX##
+	--temp fix for bug re name Durotar Supply and Logistics faction 2587  ##BEGIN##
+	if factionID == 2587 then
+		return "Durotar Supply and Logistics"
+	else
+		return name or FACTION_KEY[factionID] or FACTION.." "..factionID
+	end
+	--temp fix ##END##
 end
 
 function Faction.OnSet(button, second)

@@ -541,7 +541,7 @@ data["AzerothCommerceAuthority"] = {
 	},
 }
 
-data["DurotarSupplyAndLogistics"] = {
+	data["DurotarSupplyAndLogistics"] = {
 	FactionID = 2587,
 	ContentType = FACTIONS3_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
@@ -549,7 +549,8 @@ data["DurotarSupplyAndLogistics"] = {
 		{ -- Exalted
 			name = ALIL["Exalted"],
 			[HORDE_DIFF] = {
-				{ 1, "f2587rep8" },
+				--{ 1, "f2587rep8" },
+				{ 1, "INV_Bijou_Silver", nil, AL["Durotar Supply and Logistics"], nil },
 				{ 2, 223164 }, -- Curiosity Cowl
 				{ 3, 223169 }, -- Tenacity Cap
 				{ 4, 223172 }, -- Tenacity Chain
@@ -562,7 +563,8 @@ data["DurotarSupplyAndLogistics"] = {
 		{ -- Revered
 			name = ALIL["Revered"],
 			[HORDE_DIFF] = {
-				{ 1, "f2587rep7" },
+				--{ 1, "f2587rep7" },
+				{ 1, "INV_Bijou_Silver", nil, AL["Durotar Supply and Logistics"], nil },
 				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
 				{ 3, 219021 }, -- Hefty Courier Pack
 				{ 5, 223161 }, -- Empty Supply Crate
@@ -574,7 +576,8 @@ data["DurotarSupplyAndLogistics"] = {
 		{ -- Honored
 			name = ALIL["Honored"],
 			[HORDE_DIFF] = {
-				{ 1, "f2587rep6" },
+				--{ 1, "f2587rep6" },
+				{ 1, "INV_Bijou_Silver", nil, AL["Durotar Supply and Logistics"], nil },
 				{ 2, 211384 }, -- Sturdy Courier Bag
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
@@ -588,7 +591,8 @@ data["DurotarSupplyAndLogistics"] = {
 		{ -- Friendly
 			name = ALIL["Friendly"],
 			[HORDE_DIFF] = {
-				{ 1, "f2587rep5" },
+				--{ 1, "f2587rep5" },
+				{ 1, "INV_Bijou_Silver", nil, AL["Durotar Supply and Logistics"], nil },
 				{ 2, 211382 }, -- Small Courier Satchel
 				{ 3, 212588 }, -- Provisioner's Gloves
 				{ 4, 212589 }, -- Courier Treads
