@@ -1,6 +1,6 @@
 ﻿## Interface: 11502
 ## Author: Lag
-## Version: @project-version@
+## Version: 3.4.0-beta
 ## SavedVariables: AtlasLootClassicDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDBIcon-1.0, LibDataBroker-1.1
 ## DefaultState: Enabled
