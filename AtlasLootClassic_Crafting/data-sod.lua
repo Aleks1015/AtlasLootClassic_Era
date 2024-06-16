@@ -48,18 +48,19 @@ data["Alchemy"] = {
 	CorrespondingFields = private.ALCHEMY_LINK,
 	items = {
 		{
-			name = AL["SoD Exclusives"],
+			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
-				{ 2, 426607 }, --Elixir of Coalesced Regret
-				{ 4, "INV_Box_01", nil, AL["Phase 2"], nil },
-				{ 5, 435969 }, --Insulating Gniodine
-				{ 6, 435971 }, --Mildly Irradiated Rejuvenation Potion
-				{ 7, 439960 }, --Recipe: Lesser Arcane Elixir
-				{ 9, "INV_Box_01", nil, AL["Phase 3"], nil },
-				{ 10, 448085 }, --Flask of Restless Dreams
-				{ 11, 446226 }, --Flask of Everlasting Nightmares
-				{ 12, 446851 }, --Flask of Nightmarish Mojo
+				{ 1, "INV_Potion_10", nil, AL["Potions"], nil },
+				{ 2, 435971 }, --Mildly Irradiated Rejuvenation Potion (Phase 2)
+				{ 4, "INV_Potion_31", nil, AL["Elixirs"], nil },
+				{ 5, 426607 }, --Elixir of Coalesced Regret (Phase 1)
+				{ 6, 439960 }, --Recipe: Lesser Arcane Elixir (Phase 2)
+				{ 8, "INV_Potion_21", nil, AL["Flasks"], nil },
+				{ 9, 448085 }, --Flask of Restless Dreams (Phase 3)
+				{ 10, 446226 }, --Flask of Everlasting Nightmares (Phase 3)
+				{ 11, 446851 }, --Flask of Nightmarish Mojo (Phase 3)
+				{ 16, "INV_Box_01", nil, AL["Materials"], nil },
+				{ 17, 435969 }, --Insulating Gniodine (Phase 2)
 			},
 		},
 		{
@@ -231,28 +232,28 @@ data["Blacksmithing"] = {
 	CorrespondingFields = private.BLACKSMITHING_LINK,
 	items = {
 			{
-			name = AL["SoD Exclusives"],
+			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
-				{ 2, 429348 }, --Shifting Silver Breastplate
-				{ 3, 430397 }, --Blackfathom Sharpening Stone
-				{ 4, 427063 }, --Mantle of the Second War
+				{ 2, 429348 }, --Shifting Silver Breastplate (Phase 1)
+				{ 3, 430397 }, --Blackfathom Sharpening Stone (Phase 1)
+				{ 4, 427063 }, --Mantle of the Second War (Phase 1)
 				{ 6, "INV_Box_01", nil, AL["Phase 2"], nil },
-				{ 7, 435910 }, --Low-Background Truesilver Plates
-				{ 8, 435906 }, --Reflective Truesilver Braincage
-				{ 9, 435908 }, --Tempered Interference-Negating Helmet
+				{ 7, 435910 }, --Low-Background Truesilver Plates (Phase 2)
+				{ 8, 435906 }, --Reflective Truesilver Braincage (Phase 2)
+				{ 9, 435908 }, --Tempered Interference-Negating Helmet (Phase 2)
 				{ 11, "INV_Box_01", nil, AL["Phase 3"], nil },
-				{ 12, 446179 }, --Shoulderplates of Dread
-				{ 13, 446188 }, --Fearmonger's Shoulderguards
-				{ 14, 446191 }, --Baleful Pauldrons
+				{ 12, 446179 }, --Shoulderplates of Dread (Phase 3)
+				{ 13, 446188 }, --Fearmonger's Shoulderguards (Phase 3)
+				{ 14, 446191 }, --Baleful Pauldrons (Phase 3)
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 439122 }, --Golden Scale Boots
-				{ 18, 439126 }, --Golden Scale Coif
-				{ 19, 439124 }, --Golden Scale Cuirass
-				{ 20, 439120 }, --Golden Scale Gauntlets
-				{ 21, 439132 }, --Golden Scale Leggings
-				{ 22, 439130 }, --Golden Scale Shoulders
-				{ 23, 439128 }, --Moonsteel Broadsword
+				{ 17, 439122 }, --Golden Scale Boots (Phase 2)
+				{ 18, 439126 }, --Golden Scale Coif (Phase 2)
+				{ 19, 439124 }, --Golden Scale Cuirass (Phase 2)
+				{ 20, 439120 }, --Golden Scale Gauntlets (Phase 2)
+				{ 21, 439132 }, --Golden Scale Leggings (Phase 2)
+				{ 22, 439130 }, --Golden Scale Shoulders (Phase 2)
+				{ 23, 439128 }, --Moonsteel Broadsword (Phase 2)
 
 			},
 		},
@@ -613,19 +614,19 @@ data["Enchanting"] = {
 	CorrespondingFields = private.ENCHANTING_LINK,
 	items = {
 		{
-			name = AL["SoD Exclusives"],
+			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
-				{ 2, 430409 }, --Brilliant Mana Oil / 310
+				{ 2, 430409 }, --Brilliant Mana Oil / 310 (Phase 1)
 				{ 4, "INV_Box_01", nil, AL["Phase 2"], nil },
-				{ 5, 435903 }, --Enchant Chest - Retricutioner
-				{ 6, 435481 }, -- Enchant Weapon - Dismantle
-				{ 7, 439156 }, -- Sigil of Innovation
+				{ 5, 435903 }, --Enchant Chest - Retricutioner (Phase 2)
+				{ 6, 435481 }, -- Enchant Weapon - Dismantle (Phase 2)
+				{ 7, 439156 }, -- Sigil of Innovation (Phase 2)
 				{ 9, "INV_Box_01", nil, AL["Phase 3"], nil },
-				{ 10, 446243 }, -- Sigil of Living Dreams
-				{ 11, 448624 }, -- Scroll of Spatial Mending
+				{ 10, 446243 }, -- Sigil of Living Dreams (Phase 3)
+				{ 11, 448624 }, -- Scroll of Spatial Mending (Phase 3)
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 439134 }, -- Greater Mystic Wand
+				{ 17, 439134 }, -- Greater Mystic Wand (Phase 2)
 			}
 		},
 		{
