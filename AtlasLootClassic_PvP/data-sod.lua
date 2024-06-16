@@ -140,7 +140,7 @@ data["AlteracValley"] = {
 	AtlasMapID = "AlteracValley",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
+	ContentPhase = 4,
 	items = {
 		{ -- AVRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -263,7 +263,7 @@ data["WarsongGulch"] = {
 	AtlasMapID = "WarsongGulch",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
+	ContentPhase = 1,
 	items = {
 		{ -- WSGRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -492,7 +492,7 @@ data["ArathiBasin"] = {
 	AtlasMapID = "ArathiBasin",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 2,
 	items = {
 		{ -- ABRepRevered
 			name = _G["FACTION_STANDING_LABEL8"],
