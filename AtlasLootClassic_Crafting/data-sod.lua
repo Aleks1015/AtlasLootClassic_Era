@@ -50,16 +50,16 @@ data["Alchemy"] = {
 		{
 			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Potion_10", nil, AL["Potions"], nil },
+				{ 1, "INV_Box_02", nil, AL["Potions"], nil },
 				{ 2, 435971 }, --Mildly Irradiated Rejuvenation Potion (Phase 2)
-				{ 4, "INV_Potion_31", nil, AL["Elixirs"], nil },
+				{ 4, "INV_Box_02", nil, AL["Elixirs"], nil },
 				{ 5, 426607 }, --Elixir of Coalesced Regret (Phase 1)
 				{ 6, 439960 }, --Recipe: Lesser Arcane Elixir (Phase 2)
-				{ 8, "INV_Potion_21", nil, AL["Flasks"], nil },
+				{ 8, "INV_Box_02", nil, AL["Flasks"], nil },
 				{ 9, 448085 }, --Flask of Restless Dreams (Phase 3)
 				{ 10, 446226 }, --Flask of Everlasting Nightmares (Phase 3)
 				{ 11, 446851 }, --Flask of Nightmarish Mojo (Phase 3)
-				{ 16, "INV_Box_01", nil, AL["Materials"], nil },
+				{ 16, "INV_Box_02", nil, AL["Materials"], nil },
 				{ 17, 435969 }, --Insulating Gniodine (Phase 2)
 			},
 		},
@@ -203,7 +203,6 @@ data["Alchemy"] = {
 				{ 2, 12609 }, --Catseye Elixir
 				{ 4, 22808 }, --Elixir of Greater Water Breathing
 				{ 6, 11468 }, --Elixir of Dream Vision
-
 				{ 16, 11460 }, --Elixir of Detect Undead
 				{ 17, 3453 }, --Elixir of Detect Lesser Invisibility
 				{ 19, 7179 }, --Elixir of Water Breathing
@@ -240,7 +239,7 @@ data["Blacksmithing"] = {
 			{
 			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Mail Armor"], nil },
+				{ 1, "INV_Box_02", nil, AL["Mail Armor"], nil },
 				{ 2, 429348 }, --Shifting Silver Breastplate (Phase 1)
 				{ 3, 427063 }, --Mantle of the Second War (Phase 1)
 				{ 4, 439122 }, --Golden Scale Boots (Phase 2)
@@ -249,15 +248,15 @@ data["Blacksmithing"] = {
 				{ 7, 439120 }, --Golden Scale Gauntlets (Phase 2)
 				{ 8, 439132 }, --Golden Scale Leggings (Phase 2)
 				{ 9, 439130 }, --Golden Scale Shoulders (Phase 2)
-				{ 11, "INV_Box_01", nil, AL["Weapons"], nil },
+				{ 11, "INV_sword_04", nil, AL["Weapons"], nil },
 				{ 12, 439128 }, --Moonsteel Broadsword (Phase 2)
-				{ 16, "INV_Box_01", nil, AL["Plate Armor"], nil },
+				{ 16, "INV_Box_02", nil, AL["Plate Armor"], nil },
 				{ 17, 435906 }, --Reflective Truesilver Braincage (Phase 2)
 				{ 18, 435908 }, --Tempered Interference-Negating Helmet (Phase 2)
 				{ 19, 446179 }, --Shoulderplates of Dread (Phase 3)
 				{ 20, 446188 }, --Fearmonger's Shoulderguards (Phase 3)
 				{ 21, 446191 }, --Baleful Pauldrons (Phase 3)
-				{ 23, "INV_Box_01", nil, AL["Enhancements/Misc"], nil },
+				{ 23, "INV_Box_02", nil, AL["Enhancements/Misc"], nil },
 				{ 24, 430397 }, --Blackfathom Sharpening Stone (Phase 1)
 				{ 25, 435910 }, --Low-Background Truesilver Plates (Phase 2)
 			},
