@@ -3500,10 +3500,9 @@ data["DireMaulWest"] = {
 			npcID = 14690,
 			DisplayIDs = {{14695}},
 			AtlasMapBossID = 2,
-			ContentPhase = 9,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
-			ContentPhase = 4,
+			ContentPhase = 8,
 			[NORMAL_DIFF] = {
 				{ 1, 23127 }, -- Cloak of Revanchion
 				{ 2, 23129 }, -- Bracers of Mending
