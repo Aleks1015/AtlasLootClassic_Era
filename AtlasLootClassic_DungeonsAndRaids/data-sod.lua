@@ -5197,7 +5197,7 @@ data["MoltenCore"] = {
 		},
 		{ -- MCRagnaros
 			name = AL["Ragnaros"],
-			npcID = 11502,
+			npcID = 11503,
 			Level = 999,
 			DisplayIDs = {{11121}},
 			AtlasMapBossID = 10,
