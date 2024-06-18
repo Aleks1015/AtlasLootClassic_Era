@@ -107,20 +107,33 @@ local T1_SET = {
 	IgnoreAsSource = true,
 	ContentPhase = 4,
 	[ALLIANCE_DIFF] = {
-		{ 1, 203 }, -- Warlock
-		{ 3, 202 }, -- Priest
-		{ 16, 201 }, -- Mage
-		{ 5, 204 }, -- Rogue
-		{ 20, 205 }, -- Druid
-		{ 7, 206 }, -- Hunter
-		{ 9, 209 }, -- Warrior
-		{ 24, 208 }, -- Paladin
+		{ 1, 203  }, -- Warlock
+		{ 2, 1717 }, -- Warlock
+		{ 4, 1704 }, -- Mage
+		{ 5, 1705 }, -- Mage
+		{ 7, 1698 }, -- Druid 
+		{ 8, 1699 }, -- Druid 
+		{ 9, 1700 }, -- Druid 
+		{ 10, 1701 }, -- Druid 
+		{ 12, 1709}, -- Priest
+		{ 13, 1710}, -- Priest
+		{ 16, 1719}, -- Warrior
+		{ 17, 1720}, -- Warrior
+		{ 19, 1711}, -- Rogue
+		{ 20, 1712}, -- Rogue
+		{ 22, 1702}, -- Hunter
+		{ 23, 1703}, -- Hunter
+		{ 25, 1706}, -- Paladin
+		{ 26, 1707}, -- Paladin
+		{ 27, 1708}, -- Paladin
 	},
 
 	[HORDE_DIFF] = {
 		GetItemsFromDiff = ALLIANCE_DIFF,
-		{ 22, 207 }, -- Shaman
-		{ 24 }, -- Paladin
+		{ 25, 1713}, -- Shaman
+		{ 26, 1714}, -- Shaman
+		{ 27, 1715}, -- Shaman
+		{ 28, 1716}, -- Shaman
 	},
 }
 
@@ -3349,7 +3362,6 @@ data["DireMaulEast"] = {
 			npcID = 16097,
 			DisplayIDs = {{16000}},
 			ExtraList = true,
-			ContentPhase = 8,
 			AtlasMapBossID = 5,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {

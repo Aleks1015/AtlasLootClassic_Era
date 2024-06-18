@@ -78,21 +78,37 @@ data["TierSets"] = {
 		{ -- T1
 			name = format(AL["Tier %s Sets"], "1"),
 			CoinTexture = "CLASSIC",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 203 }, -- Warlock
-				{ 3, 202 }, -- Priest
-				{ 16, 201 }, -- Mage
-				{ 5, 204 }, -- Rogue
-				{ 20, 205 }, -- Druid
-				{ 7, 206 }, -- Hunter
-				{ 9, 209 }, -- Warrior
-				{ 22, 207 }, -- Shaman
-				{ 24, 208 }, -- Paladin
+				{ 1, 203  }, -- Warlock
+				{ 2, 1717 }, -- Warlock
+				{ 4, 1704 }, -- Mage
+				{ 5, 1705 }, -- Mage
+				{ 7, 1698 }, -- Druid 
+				{ 8, 1699 }, -- Druid 
+				{ 9, 1700 }, -- Druid 
+				{ 10, 1701 }, -- Druid 
+				{ 12, 1709}, -- Priest
+				{ 13, 1710}, -- Priest
+				{ 16, 1719}, -- Warrior
+				{ 17, 1720}, -- Warrior
+				{ 19, 1711}, -- Rogue
+				{ 20, 1712}, -- Rogue
+				{ 22, 1702}, -- Hunter
+				{ 23, 1703}, -- Hunter
+				{ 25, 1706}, -- Paladin
+				{ 26, 1707}, -- Paladin
+				{ 27, 1708}, -- Paladin
+				{ 101, 1713}, -- Shaman
+				{ 102, 1714}, -- Shaman
+				{ 103, 1715}, -- Shaman
+				{ 104, 1716}, -- Shaman
 			},
 		},
 		{ -- T2
 			name = format(AL["Tier %s Sets"], "2"),
 			CoinTexture = "CLASSIC",
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1, 212 }, -- Warlock
 				{ 3, 211 }, -- Priest
@@ -108,6 +124,7 @@ data["TierSets"] = {
 		{ -- T2.5
 			name = format(AL["Tier %s Sets"], "2.5"),
 			CoinTexture = "CLASSIC",
+			ContentPhase = 7,
 			[NORMAL_DIFF] = {
 				{ 1, 499 }, -- Warlock
 				{ 3, 507 }, -- Priest
@@ -123,6 +140,7 @@ data["TierSets"] = {
 		{ -- T3
 			name = format(AL["Tier %s Sets"], "3"),
 			CoinTexture = "CLASSIC",
+			ContentPhase = 8,
 			[NORMAL_DIFF] = {
 				{ 1, 529 }, -- Warlock
 				{ 3, 525 }, -- Priest
@@ -510,29 +528,29 @@ data["DungeonSets"] = {
 		{ -- T0 / D1
 			name = format(AL["Dungeon Set %s"], "1"),
 			[NORMAL_DIFF] = {
-				{ 1, 183 }, -- Warlock
-				{ 3, 182 }, -- Priest
-				{ 16, 181 }, -- Mage
-				{ 5, 184 }, -- Rogue
-				{ 20, 185 }, -- Druid
-				{ 7, 186 }, -- Hunter
-				{ 9, 189 }, -- Warrior
-				{ 22, 187 }, -- Shaman
-				{ 24, 188 }, -- Paladin
+				{ 1, 1680 }, -- Warlock
+				{ 3, 1674 }, -- Priest
+				{ 16, 1670 }, -- Mage
+				{ 5, 1677 }, -- Rogue
+				{ 18, 1666 }, -- Druid
+				{ 7, 1668 }, -- Hunter
+				{ 9, 1682 }, -- Warrior
+				{ 20, 1678 }, -- Shaman
+				{ 22, 1672 }, -- Paladin
 			},
 		},
 		{ -- T0.5 / D2
 			name = format(AL["Dungeon Set %s"], "2"),
 			[NORMAL_DIFF] = {
-				{ 1, 518 }, -- Warlock
-				{ 3, 514 }, -- Priest
-				{ 16, 517 }, -- Mage
-				{ 5, 512 }, -- Rogue
-				{ 20, 513 }, -- Druid
-				{ 7, 515 }, -- Hunter
-				{ 9, 511 }, -- Warrior
-				{ 22, 519 }, -- Shaman
-				{ 24, 516 }, -- Paladin
+				{ 1, 1681 }, -- Warlock
+				{ 3, 1675 }, -- Priest
+				{ 16, 1671 }, -- Mage
+				{ 5, 1676 }, -- Rogue
+				{ 18, 1667 }, -- Druid
+				{ 7, 1669 }, -- Hunter
+				{ 9, 1778 }, -- Warrior
+				{ 20, 1679 }, -- Shaman
+				{ 22, 1673 }, -- Paladin
 			},
 		},
 		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { -- T0.5 / D2
