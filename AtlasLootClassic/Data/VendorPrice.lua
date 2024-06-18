@@ -59,6 +59,13 @@ local PRICE_INFO_LIST = {
 	["cpvpWintergrasp"] = { currencyID = 126 }, -- Wintergrasp Mark of Honor
 	["cpvpIsle"] = { currencyID = 321 }, -- Isle of Conquest Mark of Honor
 	["cpvpStrand"] = { currencyID = 124 }, -- Strand of the Ancients Mark of Honor
+
+    --- Season of Discovery
+    ["wildoffering"] 	= { itemID = 221262 }, -- Wild Offering
+	["silvermassacre"] 	= { itemID = 221365 }, -- Silver Massacre Coin
+	["silverblood"] 	= { itemID = 213169 }, -- Silver Blood Coin
+	["goldblood"] 	= { itemID = 213170 }, -- Gold Blood Coin
+	["emeraldchip"] 	= { itemID = 219927 }, -- Emerald Chip
 }
 
 local VENDOR_PRICE_FORMAT = {}
@@ -75,9 +82,92 @@ end
 
 -- updated with script
 local VENDOR_PRICES, VENDOR_PRICES_RAW = AtlasLoot:GetGameVersionDataTable()
-VENDOR_PRICES_RAW.CLASSIC = {
+if AtlasLoot.IS_SOD == false then 
+    --Classic Era / Hardcore
+    VENDOR_PRICES_RAW.CLASSIC = {
 
 }
+else
+    --Season of Discovery
+    VENDOR_PRICES_RAW.CLASSIC = {
+        [223194] = "wildoffering:12",
+	 [223195] = "wildoffering:12",
+	 [223197] = "wildoffering:12",
+	 [223192] = "wildoffering:15",
+	 [223193] = "wildoffering:15",
+	 [223196] = "wildoffering:15",
+	 [221491] = "wildoffering:10",
+	 --Blood Moon 50
+	 [220173] = "silvermassacre:25",
+	 [221446] = "silvermassacre:25",
+	 [221450] = "silvermassacre:25",
+	 [221451] = "silvermassacre:25",
+	 [221456] = "silvermassacre:25",
+	 [221460] = "silvermassacre:25",
+	 [221462] = "silvermassacre:25",
+	 [221465] = "silvermassacre:25",
+	 [221469] = "silvermassacre:25",
+	 --15cost
+	 [221447] = "silvermassacre:15",
+	 [221448] = "silvermassacre:15",
+	 [221452] = "silvermassacre:15",
+	 [221453] = "silvermassacre:15",
+	 [221454] = "silvermassacre:15",
+	 [221455] = "silvermassacre:15",
+	 [221457] = "silvermassacre:15",
+	 [221458] = "silvermassacre:15",
+	 [221459] = "silvermassacre:15",
+	 [221463] = "silvermassacre:15",
+	 [221464] = "silvermassacre:15",
+	 [221466] = "silvermassacre:15",
+	 [221467] = "silvermassacre:15",
+	 [221468] = "silvermassacre:15",
+	 --lvl 40 blood moon
+	 [216497] = "silverblood:15",
+	 [216499] = "silverblood:15",
+	 [216502] = "silverblood:15",
+	 [216504] = "silverblood:15",
+	 [216506] = "silverblood:15",
+	 [216495] = "silverblood:15",
+	 [216496] = "silverblood:10",
+	 [216520] = "silverblood:10",
+	 [216516] = "silverblood:5",
+	 [216501] = "silverblood:5",
+	 [216517] = "silverblood:5",
+	 [216503] = "silverblood:5",
+	 [216518] = "silverblood:5",
+	 [216505] = "silverblood:5",
+	 [216519] = "silverblood:5",
+	 [216507] = "silverblood:5",
+	 [216521] = "silverblood:5",
+	 [216508] = "silverblood:5",
+	 [216522] = "silverblood:5",
+	 [216509] = "silverblood:5",
+	 [216607] = "silverblood:5",
+	 [216510] = "silverblood:5",
+	 [216615] = "silverblood:5",
+	 [216511] = "silverblood:5",
+	 [216512] = "silverblood:5",
+	 [216498] = "silverblood:5",
+	 [216513] = "silverblood:5",
+	 [216500] = "silverblood:5",
+	 [216514] = "silverblood:3",
+	 [216515] = "silverblood:3",
+	 [216620] = "silverblood:2",
+	 [216621] = "silverblood:2",
+	 [216622] = "silverblood:2",
+	 [216623] = "silverblood:2",
+	 [216492] = "goldblood:1",
+	 [216570] = "goldblood:1",
+	 --Emerald chips
+	 [220621] = "emeraldchip:75",
+	 [221440] = "emeraldchip:75",
+	 [221442] = "emeraldchip:75",
+	 [221443] = "emeraldchip:75",
+	 [220649] = "emeraldchip:50",
+	 [221439] = "emeraldchip:50",
+    }
+end
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
     VENDOR_PRICES_RAW.BCC = {
@@ -680,7 +770,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		[45294] = "SiderealEssence:15",
 		[46032] = "SiderealEssence:15",
 		[45933] = "SiderealEssence:15",
-		[45869] = "SiderealEssence:15",
 		[45869] = "SiderealEssence:15",
 		[46096] = "SiderealEssence:15",
 		[45297] = "SiderealEssence:15",

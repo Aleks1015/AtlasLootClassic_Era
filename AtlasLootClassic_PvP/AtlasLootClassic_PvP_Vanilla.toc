@@ -1,4 +1,4 @@
-﻿## Interface: 11404
+﻿## Interface: 11502
 ## Author: Lag
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
@@ -42,3 +42,4 @@ Locales\Locales.xml
 
 private.lua
 data.lua
+data-sod.lua

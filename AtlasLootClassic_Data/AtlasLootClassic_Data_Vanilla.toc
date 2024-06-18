@@ -1,4 +1,4 @@
-﻿## Interface: 11404
+﻿## Interface: 11502
 ## Author: Lag
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
@@ -41,3 +41,4 @@ core.lua
 locales.lua
 items.lua
 source.lua
+source-sod.lua

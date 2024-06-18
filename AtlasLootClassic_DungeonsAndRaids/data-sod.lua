@@ -1,4 +1,4 @@
-if AtlasLoot.IS_SOD then return end
+if AtlasLoot.IS_SOD == false then return end
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
@@ -22,6 +22,7 @@ local ALIL = AtlasLoot.IngameLocales
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
+local RAID10_DIFF = data:AddDifficulty("10RAID")
 local RAID20_DIFF = data:AddDifficulty("20RAID")
 local RAID40_DIFF = data:AddDifficulty("40RAID")
 
@@ -43,6 +44,8 @@ local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 
 local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_COLOR)
+local RAID_CONTENT = data:AddContentType(AL["Leveling Raids"], ATLASLOOT_RAID20_COLOR)
+local RAID10_CONTENT = data:AddContentType(AL["10 Raids"], ATLASLOOT_RAID20_COLOR)
 local RAID20_CONTENT = data:AddContentType(AL["20 Raids"], ATLASLOOT_RAID20_COLOR)
 local RAID40_CONTENT = data:AddContentType(AL["40 Raids"], ATLASLOOT_RAID40_COLOR)
 
@@ -102,6 +105,7 @@ local T1_SET = {
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
 	IgnoreAsSource = true,
+	ContentPhase = 4,
 	[ALLIANCE_DIFF] = {
 		{ 1, 203 }, -- Warlock
 		{ 3, 202 }, -- Priest
@@ -125,7 +129,7 @@ local T2_SET = {
 	ExtraList = true,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
-	ContentPhase = 3,
+	ContentPhase = 5,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
 		{ 1, 212 }, -- Warlock
@@ -150,7 +154,7 @@ local T3_SET = {
 	ExtraList = true,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
-	ContentPhase = 6,
+	ContentPhase = 8,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
 		{ 1, 529 }, -- Warlock
@@ -173,6 +177,7 @@ local T3_SET = {
 local AQ_SCARABS = { -- AQ40Trash2
 	name = AL["Ahn'Qiraj scarabs"],
 	ExtraList = true,
+	ContentPhase = 7,
 	[NORMAL_DIFF] = {
 		{ 1,  20876 }, -- Idol of Death
 		{ 2,  20879 }, -- Idol of Life
@@ -202,6 +207,7 @@ local AQ_SCARABS = { -- AQ40Trash2
 local AQ_ENCHANTS = { -- AQEnchants
 	name = AL["Ahn'Qiraj enchants"],
 	ExtraList = true,
+	ContentPhase = 7,
 	[NORMAL_DIFF] = {
 		{ 1,  20728 }, -- Formula: Enchant Gloves - Frost Power
 		{ 2,  20731 }, -- Formula: Enchant Gloves - Superior Agility
@@ -217,7 +223,7 @@ local AQ_OPENING = {	-- Keys
 	name = AL["AQ opening"],
 	TableType = NORMAL_ITTYPE,
 	ExtraList = true,
-	ContentPhase = 5,
+	ContentPhase = 7,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,  21138 }, -- Red Scepter Shard
@@ -244,6 +250,7 @@ local DM_BOOKS = { -- DMBooks
 	name = AL["Books"],
 	ExtraList = true,
 	IgnoreAsSource = true,
+	ContentPhase = 4,
 	[NORMAL_DIFF] = {
 		{ 1,  18401 }, -- Foror's Compendium of Dragon Slaying
 		{ 3,  18362 }, -- Holy Bologna: What the Light Won't Tell You
@@ -276,6 +283,7 @@ data["Ragefire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 13, 18}, {8, 13, 16}),
+	ContentPhase = 1,
 	items = {
 		{ -- RFCTaragaman
 			name = AL["Taragaman the Hungerer"],
@@ -315,6 +323,7 @@ data["WailingCaverns"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 17, 24}, {10, 17, 21}),
+	ContentPhase = 1,
 	items = {
 		{ -- WCLordCobrahn
 			name = AL["Lord Cobrahn"],
@@ -447,6 +456,7 @@ data["TheDeadmines"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({10, 17, 26}, {10, 18, 22}),
+	ContentPhase = 1,
 	items = {
 		{	--DMRhahkZor
 			name = AL["Rhahk'Zor"],
@@ -587,6 +597,7 @@ data["ShadowfangKeep"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({11, 22, 30}, {14, 18, 21}),
+	ContentPhase = 1,
 	items = {
 		{ -- SFKRethilgore
 			name = AL["Rethilgore"],
@@ -780,121 +791,6 @@ data["ShadowfangKeep"] = {
 	},
 }
 
-data["BlackfathomDeeps"] = {
-	MapID = 719,
-	InstanceID = 48,
-	AtlasModule = ATLAS_MODULE_NAME,
-	AtlasMapID = "BlackfathomDeeps",
-	AtlasMapFile = {"CL_BlackfathomDeepsA", "CL_BlackfathomDeepsEnt"},
-	AtlasMapFile_AL = {"BlackfathomDeeps", "BlackfathomDeepsEnt"},
-	ContentType = DUNGEON_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	LevelRange = GetForVersion({15, 24, 32}, {19, 22, 24}),
-	items = {
-		{ -- BFDGhamoora
-			name = AL["Ghamoo-ra"],
-			npcID = 4887,
-			Level = GetForVersion(25,23),
-			DisplayIDs = {{5027}},
-			AtlasMapBossID = 1,
-			[NORMAL_DIFF] = {
-				{ 1,  6907 }, -- Tortoise Armor
-				{ 3,  6908 }, -- Ghamoo-ra's Bind
-			},
-		},
-		{ -- BFDLadySarevess
-			name = AL["Lady Sarevess"],
-			npcID = 4831,
-			Level = GetForVersion(25,23),
-			DisplayIDs = {{4979}},
-			AtlasMapBossID = 3,
-			[NORMAL_DIFF] = {
-				{ 1,  888 }, -- Naga Battle Gloves
-				{ 3,  3078 }, -- Naga Heartpiercer
-				{ 4,  11121 }, -- Darkwater Talwar
-			},
-		},
-		{ -- BFDGelihast
-			name = AL["Gelihast"],
-			npcID = 6243,
-			Level = GetForVersion(26,24),
-			DisplayIDs = {{1773}},
-			AtlasMapBossID = 5,
-			[NORMAL_DIFF] = {
-				{ 1,  6906 }, -- Algae Fists
-				{ 3,  6905 }, -- Reef Axe
-				{ 5,  1470 }, -- Murloc Skin Bag
-			},
-		},
-		{ -- BFDBaronAquanis
-			name = AL["Baron Aquanis"],
-			npcID = 12876,
-			Level = GetForVersion(28,24),
-			DisplayIDs = {{110}},
-			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 7,
-			[NORMAL_DIFF] = {
-				{ 1,  16782 }, -- Strange Water Globe
-			},
-		},
-		{ -- BFDTwilightLordKelris
-			name = AL["Twilight Lord Kelris"],
-			npcID = 4832,
-			Level = GetForVersion(27,24),
-			DisplayIDs = {{4939}},
-			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 8,
-			[NORMAL_DIFF] = {
-				{ 1,  1155 }, -- Rod of the Sleepwalker
-				{ 3,  6903 }, -- Gaze Dreamer Pants
-			},
-		},
-		{ -- BFDOldSerrakis
-			name = AL["Old Serra'kis"],
-			npcID = 4830,
-			Level = GetForVersion(26,24),
-			DisplayIDs = {{1816}},
-			AtlasMapFile = {"CL_BlackfathomDeepsC", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 9,
-			[NORMAL_DIFF] = {
-				{ 1,  6901 }, -- Glowing Thresher Cape
-				{ 2,  6904 }, -- Bite of Serra'kis
-				{ 4,  6902 }, -- Bands of Serra'kis
-			},
-		},
-		{ -- BFDAkumai
-			name = AL["Aku'mai"],
-			npcID = 4829,
-			Level = GetForVersion(28,24),
-			DisplayIDs = {{2837}},
-			AtlasMapBossID = 10,
-			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-			[NORMAL_DIFF] = {
-				{ 1,  6911 }, -- Moss Cinch
-				{ 2,  6910 }, -- Leech Pants
-				{ 3,  6909 }, -- Strike of the Hydra
-			},
-		},
-		{ -- BFDTrash
-			name = AL["Trash"],
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  1486 }, -- Tree Bark Jacket
-				{ 2,  3416 }, -- Martyr's Chain
-				{ 3,  1491 }, -- Ring of Precision
-				{ 4,  3414 }, -- Crested Scepter
-				{ 5,  1454 }, -- Axe of the Enforcer
-				{ 6,  1481 }, -- Grimclaw
-				{ 7,  2567 }, -- Evocator's Blade
-				{ 8,  3413 }, -- Doomspike
-				{ 9,  3417 }, -- Onyx Claymore
-				{ 10, 3415 }, -- Staff of the Friar
-				{ 11, 2271 }, -- Staff of the Blessed Seer
-			},
-		},
-	},
-}
-
 data["TheStockade"] = {
 	MapID = 717,
 	InstanceID = 34,
@@ -905,6 +801,7 @@ data["TheStockade"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({15, 24, 32}, {15, 23, 29}),
+	ContentPhase = 1,
 	items = {
 		{ -- SWStKamDeepfury
 			name = AL["Kam Deepfury"],
@@ -939,139 +836,6 @@ data["TheStockade"] = {
 	},
 }
 
-data["Gnomeregan"] = {
-	MapID = 721,
-	InstanceID = 90,
-	AtlasModule = ATLAS_MODULE_NAME,
-	AtlasMapID = "Gnomeregan",
-	AtlasMapFile = {"CL_Gnomeregan", "CL_GnomereganEnt"},
-	AtlasMapFile_AL = {"Gnomeregan", "GnomereganEnt"},
-	ContentType = DUNGEON_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	LevelRange = GetForVersion({19, 29, 38},{15, 25, 28}),
-	items = {
-		{ -- GnTechbot
-			name = AL["Techbot"],
-			npcID = 6231,
-			Level = 26,
-			DisplayIDs = {{7288}},
-			[NORMAL_DIFF] = {
-				{ 1,  9444 }, -- Techbot CPU Shell
-			},
-		},
-		{ -- GnGrubbis
-			name = AL["Grubbis"],
-			npcID = 7361,
-			Level = GetForVersion(32,28),
-			DisplayIDs = {{6533}},
-			AtlasMapBossID = 1,
-			[NORMAL_DIFF] = {
-				{ 1,  9445 }, -- Grubbis Paws
-			},
-		},
-		{ -- GnViscousFallout
-			name = AL["Viscous Fallout"],
-			npcID = 7079,
-			Level = GetForVersion(30,28),
-			DisplayIDs = {{5497}},
-			AtlasMapBossID = 4,
-			[NORMAL_DIFF] = {
-				{ 1,  9454 }, -- Acidic Walkers
-				{ 2,  9453 }, -- Toxic Revenger
-				{ 3,  9452 }, -- Hydrocane
-			},
-		},
-		{ -- GnElectrocutioner6000
-			name = AL["Electrocutioner 6000"],
-			npcID = 6235,
-			Level = GetForVersion(32,28),
-			DisplayIDs = {{6915}},
-			AtlasMapBossID = 5,
-			[NORMAL_DIFF] = {
-				{ 1,  9447 }, -- Electrocutioner Lagnut
-				{ 2,  9446 }, -- Electrocutioner Leg
-				{ 4,  9448 }, -- Spidertank Oilrag
-				{ 6,  6893 }, -- Workshop Key
-			},
-		},
-		{ -- GnCrowdPummeler960
-			name = AL["Crowd Pummeler 9-60"],
-			npcID = 6229,
-			Level = GetForVersion(32,28),
-			DisplayIDs = {{6774}},
-			AtlasMapBossID = 6,
-			[NORMAL_DIFF] = {
-				{ 1,  9449 }, -- Manual Crowd Pummeler
-				{ 3,  9450 }, -- Gnomebot Operating Boots
-			},
-		},
-		{ -- GnDIAmbassador
-			name = AL["Dark Iron Ambassador"],
-			npcID = 6228,
-			Level = GetForVersion(33,28),
-			DisplayIDs = {{6669}},
-			AtlasMapBossID = 7,
-			specialType = "rare",
-			[NORMAL_DIFF] = {
-				{ 1,  9455 }, -- Emissary Cuffs
-				{ 2,  9456 }, -- Glass Shooter
-				{ 3,  9457 }, -- Royal Diplomatic Scepter
-			},
-		},
-		{ -- GnMekgineerThermaplugg
-			name = AL["Mekgineer Thermaplugg"],
-			npcID = 7800,
-			Level = GetForVersion(34,28),
-			DisplayIDs = {{6980}},
-			AtlasMapBossID = 8,
-			[NORMAL_DIFF] = {
-				{ 1,  9492 }, -- Electromagnetic Gigaflux Reactivator
-				{ 2,  9461 }, -- Charged Gear
-				{ 3,  9458 }, -- Thermaplugg's Central Core
-				{ 4,  9459 }, -- Thermaplugg's Left Arm
-				{ 16, 4415 }, -- Schematic: Craftsman's Monocle
-				--{ 17, 4393 }, -- Craftsman's Monocle
-				{ 17, 4413 }, -- Schematic: Discombobulator Ray
-				--{ 20, 4388 }, -- Discombobulator Ray
-				{ 18, 4411 }, -- Schematic: Flame Deflector
-				--{ 23, 4376 }, -- Flame Deflector
-				{ 19, 7742 }, -- Schematic: Gnomish Cloaking Device
-				--{ 26, 4397 }, -- Gnomish Cloaking Device
-				{ 20, 11828 }, -- Schematic: Pet Bombling
-				--{ 29, 11825 }, -- Pet Bombling
-			},
-		},
-		{ -- GnTrash
-			name = AL["Trash"],
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  9508 }, -- Mechbuilder's Overalls
-				{ 2,  9491 }, -- Hotshot Pilot's Gloves
-				{ 3,  9509 }, -- Petrolspill Leggings
-				{ 4,  9510 }, -- Caverndeep Trudgers
-				{ 5,  9487 }, -- Hi-tech Supergun
-				{ 6,  9485 }, -- Vibroblade
-				{ 7,  9488 }, -- Oscillating Power Hammer
-				{ 8,  9486 }, -- Supercharger Battle Axe
-				{ 9,  9490 }, -- Gizmotron Megachopper
-				{ 11, 9489 }, -- Gyromatic Icemaker
-				{ 12, 11827 }, -- Schematic: Lil' Smoky
-				--{ 15, 11826 }, -- Lil' Smoky
-				{ 16, 9327 }, -- Security DELTA Data Access Card
-				{ 18, 7191 }, -- Fused Wiring
-				{ 19, 9308 }, -- Grime-Encrusted Object
-				{ 20, 9326 }, -- Grime-Encrusted Ring
-				{ 22, 9279 }, -- White Punch Card
-				{ 23, 9280 }, -- Yellow Punch Card
-				{ 24, 9282 }, -- Blue Punch Card
-				{ 25, 9281 }, -- Red Punch Card
-				{ 26, 9316 }, -- Prismatic Punch Card
-			},
-		},
-
-	},
-}
-
 data["RazorfenKraul"] = {
 	MapID = 491,
 	InstanceID = 47,
@@ -1082,6 +846,7 @@ data["RazorfenKraul"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({25, 29, 38},{17, 24, 27}),
+	ContentPhase = 1,
 	items = {
 		{ -- RFKAggem
 			name = AL["Aggem Thorncurse"],
@@ -1206,6 +971,7 @@ data["ScarletMonasteryGraveyard"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 26, 36},{20, 30, 32}),
+	ContentPhase = 2,
 	items = {
 		-- Graveyard
 		{ -- SMVishas
@@ -1232,6 +998,9 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 1,  7709 }, -- Blighted Leggings
 				{ 2,  7708 }, -- Necrotic Wand
 				{ 3,  7731 }, -- Ghostshard Talisman
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217295 }, -- Necrotic Wand
+				{ 18, 217296 }, -- Ghostshard Talisman			
 			},
 		},
 		{ -- SMFallenChampion
@@ -1245,6 +1014,8 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 1,  7691 }, -- Embalmed Shroud
 				{ 2,  7690 }, -- Ebon Vise
 				{ 3,  7689 }, -- Morbid Dawn
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217294 }, -- Embalmed Shroud
 			},
 		},
 		{ -- SMIronspine
@@ -1346,6 +1117,7 @@ data["ScarletMonasteryLibrary"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
+	ContentPhase = 2,
 	items = {
 		-- Library
 		{ -- SMHoundmasterLoksey
@@ -1373,7 +1145,11 @@ data["ScarletMonasteryLibrary"] = {
 				{ 2,  7713 }, -- Illusionary Rod
 				{ 4,  7712 }, -- Mantle of Doan
 				{ 5,  7711 }, -- Robe of Doan
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 16,  34227 }), -- Deadman's Hand
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217299 }, -- Illusionary Rod
+				{ 19, 217298 }, -- Mantle of Doan
+				{ 20, 217297 }, -- Robe of Doan
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 22,  34227 }), -- Deadman's Hand
 			},
 		},
 		{ -- SMLTrash
@@ -1429,6 +1205,7 @@ data["ScarletMonasteryArmory"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 32, 42},{20, 35, 37}),
+	ContentPhase = 2,
 	items = {
 		-- Armory
 		{ -- SMHerod
@@ -1491,6 +1268,7 @@ data["ScarletMonasteryCathedral"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({20, 35, 45},{20, 36, 40}),
+	ContentPhase = 2,
 	items = {
 		-- Cathedral
 		{ -- SMFairbanks
@@ -1516,6 +1294,8 @@ data["ScarletMonasteryCathedral"] = {
 				{ 2,  10330 }, -- Scarlet Leggings
 				{ 3,  7726 }, -- Aegis of the Scarlet Commander
 				{ 4,  7723 }, -- Mograine's Might
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217302 }, -- Mograine's Might
 			},
 		},
 		{ -- SMWhitemane
@@ -1528,6 +1308,10 @@ data["ScarletMonasteryCathedral"] = {
 				{ 1,  7720 }, -- Whitemane's Chapeau
 				{ 2,  7722 }, -- Triune Amulet
 				{ 3,  7721 }, -- Hand of Righteousness
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217300 }, -- Whitemane's Chapeau
+				{ 18, 217301 }, -- Triune Amulet
+
 			},
 		},
 		{ -- SMCTrash
@@ -1576,6 +1360,7 @@ data["RazorfenDowns"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({35, 37, 46},{25, 34, 37}),
+	ContentPhase = 2,
 	items = {
 		{ -- RFDTutenkash
 			name = AL["Tuten'kash"],
@@ -1587,6 +1372,8 @@ data["RazorfenDowns"] = {
 				{ 1,  10776 }, -- Silky Spider Cape
 				{ 2,  10775 }, -- Carapace of Tuten'kash
 				{ 3,  10777 }, -- Arachnid Gloves
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217293 }, -- Silky Spider Cape
 			},
 		},
 		{ -- RFDMordreshFireEye
@@ -1599,6 +1386,11 @@ data["RazorfenDowns"] = {
 				{ 1,  10769 }, -- Glowing Eye of Mordresh
 				{ 2,  10771 }, -- Deathmage Sash
 				{ 3,  10770 }, -- Mordresh's Lifeless Skull
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217290 }, -- Glowing Eye of Mordresh
+				{ 18, 217292 }, -- Deathmage Sash
+				{ 19, 217291 }, -- Mordresh's Lifeless Skull
+
 			},
 		},
 		{ -- RFDGlutton
@@ -1637,6 +1429,9 @@ data["RazorfenDowns"] = {
 				{ 3,  10764 }, -- Deathchill Armor
 				{ 4,  10761 }, -- Coldrage Dagger
 				{ 6,  10765 }, -- Bonefingers
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217288 }, -- Robes of the Lich
+				{ 18, 217289 }, -- Deathchill Armor
 			},
 		},
 		{ -- RFDPlaguemaw
@@ -1705,6 +1500,7 @@ data["Uldaman"] = {
 	AtlasMapFile = {"CL_Uldaman", "CL_UldamanEnt"},
 	AtlasMapFile_AL = {"Uldaman", "UldamanEnt"},
 	LevelRange = GetForVersion({30, 41, 51},{30, 36, 40}),
+	ContentPhase = 2,
 	items = {
 		{ -- UldEric
 			name = AL["Eric \"The Swift\""],
@@ -1754,6 +1550,11 @@ data["Uldaman"] = {
 				{ 3,  9390 }, -- Revelosh's Gloves
 				{ 4,  9387 }, -- Revelosh's Boots
 				{ 6,  7741 }, -- The Shaft of Tsol
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217304 }, -- Revelosh's Gloves
+				{ 18, 217307 }, -- Revelosh's Spaulders
+				{ 19, 217305 }, -- Revelosh's Armguards
+				{ 20, 217306 }, -- Revelosh's Boots
 			},
 		},
 		{ -- UldIronaya
@@ -1766,6 +1567,8 @@ data["Uldaman"] = {
 				{ 1,  9409 }, -- Ironaya's Bracers
 				{ 2,  9407 }, -- Stoneweaver Leggings
 				{ 3,  9408 }, -- Ironshod Bludgeon
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 217303 }, -- Whitemane's Chapeau
 			},
 		},
 		{ -- UldObsidianSentinel
@@ -1811,8 +1614,11 @@ data["Uldaman"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  9415 }, -- Grimlok's Tribal Vestments
 				{ 2,  9416 }, -- Grimlok's Charge
-				{ 4,  9414 }, -- Oilskin Leggings
-				{ 16, 7670 }, -- Shattered Necklace Sapphire
+				{ 3,  9414 }, -- Oilskin Leggings
+				{ 5, 7670 }, -- Shattered Necklace Sapphire
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223536 }, -- Grimlok's Charge
+				{ 18, 223535 }, -- Grimlok's Tribal Vestments
 			},
 		},
 		{ -- UldArchaedas
@@ -1842,6 +1648,8 @@ data["Uldaman"] = {
 				{ 9,  9396 }, -- Legguards of the Vault
 				{ 10, 9393 }, -- Beacon of Hope
 				{ 12, 7666 }, -- Shattered Necklace
+				{ 14, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 15, 223537 }, -- Skullplate Bracers
 				--{ 13, 7673 }, -- Talvash's Enhancing Necklace
 				{ 16, 9381 }, -- Earthen Rod
 				{ 17, 9426 }, -- Monolithic Bow
@@ -1903,6 +1711,7 @@ data["Zul'Farrak"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({39, 44, 54},{35, 42, 46}),
+	ContentPhase = 3,
 	items = {
 		{ -- ZFAntusul
 			name = AL["Antu'sul"],
@@ -1915,6 +1724,11 @@ data["Zul'Farrak"] = {
 				{ 2,  9641 }, -- Lifeblood Amulet
 				{ 3,  9639 }, -- The Hand of Antu'sul
 				{ 5,  9379 }, -- Sang'thraze the Deflector
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17,  223526 }, -- Sul'thraze the Lasher
+				{ 18,  223532 }, -- Lifeblood Amulet
+
+
 			},
 		},
 		{ -- ZFThekatheMartyr
@@ -1949,6 +1763,8 @@ data["Zul'Farrak"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  18083 }, -- Jumanza Grips
 				{ 2,  18082 }, -- Zum'rah's Vexing Cane
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17,  223534 }, -- Jumanza Grips
 			},
 		},
 		{ -- ZFNekrumGutchewer
@@ -1973,6 +1789,9 @@ data["Zul'Farrak"] = {
 				{ 2,  9473 }, -- Jinxed Hoodoo Skin
 				{ 3,  9474 }, -- Jinxed Hoodoo Kilt
 				{ 4,  9475 }, -- Diabolic Skiver
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17,  223529 }, -- Jinxed Hoodoo Skin
+				{ 18,  223530 }, -- Jinxed Hoodoo Kilt
 			},
 		},
 		{ -- ZFDustwraith
@@ -1984,6 +1803,8 @@ data["Zul'Farrak"] = {
 			specialType = "rare",
 			[NORMAL_DIFF] = {
 				{ 1,  12471 }, -- Desertwalker Cane
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223533 }, -- Desertwalker Cane
 			},
 		},
 		{ -- ZFSandfury
@@ -2028,6 +1849,9 @@ data["Zul'Farrak"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  9469 }, -- Gahz'rilla Scale Armor
 				{ 3,  9467 }, -- Gahz'rilla Fang
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223528 }, -- Gahz'rilla Scale Armor
+				{ 18, 223527 }, -- Gahz'rilla Fang
 			},
 		},
 		{ -- ZFChiefUkorzSandscalp
@@ -2042,6 +1866,10 @@ data["Zul'Farrak"] = {
 				{ 3,  9478 }, -- Ripsaw
 				{ 4,  9477 }, -- The Chief's Enforcer
 				{ 6,  11086 }, -- Jang'thraze the Protector
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223531 }, -- Big Bad Pauldrons
+				{ 18, 223526 }, -- Sul'thraze the Lasher
+				{ 19, 223963 }, -- Embrace of the Lycan
 			},
 		},
 		{ -- ZFZerillis
@@ -2086,6 +1914,7 @@ data["Maraudon"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({25, 46, 55},{30, 43, 48}),
+	ContentPhase = 3,
 	items = {
 		{ -- MaraKhanVeng
 			name = AL["Veng"],
@@ -2120,6 +1949,8 @@ data["Maraudon"] = {
 				{ 2,  17748 }, -- Vinerot Sandals
 				{ 4,  17750 }, -- Chloromesh Girdle
 				{ 5,  17751 }, -- Brusslehide Leggings
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223543 }, -- Vinerot Sandals
 			},
 		},
 		{ -- MaraKhanMaraudos
@@ -2167,6 +1998,8 @@ data["Maraudon"] = {
 				{ 1,  17740 }, -- Soothsayer's Headdress
 				{ 2,  17739 }, -- Grovekeeper's Drape
 				{ 3,  17738 }, -- Claw of Celebras
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223525 }, -- Soothsayer's Headdress
 			},
 		},
 		{ -- MaraLandslide
@@ -2180,6 +2013,10 @@ data["Maraudon"] = {
 				{ 2,  17736 }, -- Rockgrip Gauntlets
 				{ 3,  17737 }, -- Cloud Stone
 				{ 4,  17943 }, -- Fist of Stone
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223522 }, -- Helm of the Mountain
+				{ 18, 223523 }, -- Cloud Stone
+				{ 19, 223524 }, -- Fist of Stone
 			},
 		},
 		{ -- MaraTinkererGizlock
@@ -2192,6 +2029,10 @@ data["Maraudon"] = {
 				{ 1,  17718 }, -- Gizlock's Hypertech Buckler
 				{ 2,  17717 }, -- Megashot Rifle
 				{ 3,  17719 }, -- Inventor's Focal Sword
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223545 }, -- Gizlock's Hypertech Buckler
+				{ 18, 223542 }, -- Megashot Rifle
+				{ 19, 223520 }, -- Inventor's Focal Sword
 			},
 		},
 		{ -- MaraRotgrip
@@ -2204,6 +2045,8 @@ data["Maraudon"] = {
 				{ 1,  17732 }, -- Rotgrip Mantle
 				{ 2,  17728 }, -- Albino Crocscale Boots
 				{ 3,  17730 }, -- Gatorbite Axe
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223521 }, -- Rotgrip Mantle
 			},
 		},
 		{ -- MaraPrincessTheradras
@@ -2221,6 +2064,12 @@ data["Maraudon"] = {
 				{ 7,  17713 }, -- Blackstone Ring
 				{ 8,  17710 }, -- Charstone Dirk
 				{ 9,  17766 }, -- Princess Theradras' Scepter
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223519 }, -- Eye of Theradras
+				{ 18, 223541 }, -- Gemshard Heart
+				{ 19, 223518 }, -- Charstone Dirk
+				{ 20, 221780 }, -- Princess Theradras' Scepter
+				{ 21, 223964 }, -- Blade of Eternal Darkness
 			},
 		},
 		{ -- MaraNamelesProphet
@@ -2278,209 +2127,6 @@ data["Maraudon"] = {
 	},
 }
 
-data["TheTempleOfAtal'Hakkar"] = {
-	MapID = 1477,
-	InstanceID = 109,
-	AtlasModule = ATLAS_MODULE_NAME,
-	AtlasMapID = "TheTempleOfAtal'Hakkar",
-	AtlasMapFile = { "CL_TheSunkenTemple", "CL_TheSunkenTempleEnt" },
-	AtlasMapFile_AL = { "TheSunkenTemple", "TheSunkenTempleEnt" },
-	ContentType = DUNGEON_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	LevelRange = GetForVersion({45, 50, 60},{35, 47, 50}),
-	items = {
-		{ -- STBalconyMinibosses
-			name = AL["Balcony Minibosses"],
-			npcID = {5716, 5712, 5717, 5714, 5715, 5713},
-			Level = GetForVersion({51, 52}, {459,50}),
-			DisplayIDs = {{6701},{6699},{6707},{6700},{6702},{6698}},
-			AtlasMapBossID = "C",
-			[NORMAL_DIFF] = {
-				{ 1,  10783 }, -- Atal'ai Spaulders
-				{ 2,  10784 }, -- Atal'ai Breastplate
-				{ 3,  10787 }, -- Atal'ai Gloves
-				{ 5,  10788 }, -- Atal'ai Girdle
-				{ 6,  10785 }, -- Atal'ai Leggings
-				{ 7,  10786 }, -- Atal'ai Boots
-				{ 9,  20606 }, -- Amber Voodoo Feather
-				{ 10, 20607 }, -- Blue Voodoo Feather
-				{ 11, 20608 }, -- Green Voodoo Feather
-			},
-		},
-		{ -- STAtalalarion
-			name = AL["Atal'alarion"],
-			npcID = 8580,
-			Level = GetForVersion(50,49),
-			DisplayIDs = {{7873}},
-			AtlasMapBossID = 1,
-			[NORMAL_DIFF] = {
-				{ 1,  10800 }, -- Darkwater Bracers
-				{ 2,  10798 }, -- Atal'alarion's Tusk Ring
-				{ 3,  10799 }, -- Headspike
-			},
-		},
-		{ -- STSpawnOfHakkar
-			name = AL["Spawn of Hakkar"],
-			npcID = 5708,
-			Level = GetForVersion(51,49),
-			DisplayIDs = {{4065}},
-			AtlasMapBossID = 2,
-			[NORMAL_DIFF] = {
-				{ 1,  10801 }, -- Slitherscale Boots
-				{ 3,  10802 }, -- Wingveil Cloak
-			},
-		},
-		{ -- STAvatarofHakkar
-			name = AL["Avatar of Hakkar"],
-			npcID = 8443,
-			DisplayIDs = {{8053}},
-			AtlasMapBossID = 3,
-			Level = 48,
-			[NORMAL_DIFF] = {
-				{ 1,  12462 }, -- Embrace of the Wind Serpent
-				{ 3,  10843 }, -- Featherskin Cape
-				{ 4,  10845 }, -- Warrior's Embrace
-				{ 5,  10842 }, -- Windscale Sarong
-				{ 6,  10846 }, -- Bloodshot Greaves
-				{ 7,  10838 }, -- Might of Hakkar
-				{ 8,  10844 }, -- Spire of Hakkar
-			},
-		},
-		{ -- STJammalan
-			name = AL["Jammal'an the Prophet"],
-			npcID = 5710,
-			Level = GetForVersion(54,50),
-			DisplayIDs = {{6708}},
-			AtlasMapBossID = 4,
-			[NORMAL_DIFF] = {
-				{ 1,  10806 }, -- Vestments of the Atal'ai Prophet
-				{ 2,  10808 }, -- Gloves of the Atal'ai Prophet
-				{ 3,  10807 }, -- Kilt of the Atal'ai Prophet
-			},
-		},
-		{ -- STOgom
-			name = AL["Ogom the Wretched"],
-			npcID = 5711,
-			Level = GetForVersion(53,49),
-			DisplayIDs = {{6709}},
-			AtlasMapBossID = 4,
-			[NORMAL_DIFF] = {
-				{ 1,  10805 }, -- Eater of the Dead
-				{ 2,  10803 }, -- Blade of the Wretched
-				{ 3,  10804 }, -- Fist of the Damned
-			},
-		},
-		{ -- STDreamscythe
-			name = AL["Dreamscythe"],
-			npcID = 5721,
-			Level = GetForVersion(53,50),
-			DisplayIDs = {{7553}},
-			AtlasMapBossID = 6,
-			[NORMAL_DIFF] = {
-				{ 1,  12465 }, -- Nightfall Drape
-				{ 2,  12466 }, -- Dawnspire Cord
-				{ 3,  12464 }, -- Bloodfire Talons
-				{ 4,  10797 }, -- Firebreather
-				{ 5,  12463 }, -- Drakefang Butcher
-				{ 6,  12243 }, -- Smoldering Claw
-				{ 7,  10795 }, -- Drakeclaw Band
-				{ 8,  10796 }, -- Drakestone
-			},
-		},
-		{ -- STWeaver
-			name = AL["Weaver"],
-			npcID = 5720,
-			Level = GetForVersion(51,50),
-			DisplayIDs = {{6375}},
-			AtlasMapBossID = 6,
-			[NORMAL_DIFF] = {
-				{ 1,  12465 }, -- Nightfall Drape
-				{ 2,  12466 }, -- Dawnspire Cord
-				{ 3,  12464 }, -- Bloodfire Talons
-				{ 4,  10797 }, -- Firebreather
-				{ 5,  12463 }, -- Drakefang Butcher
-				{ 6,  12243 }, -- Smoldering Claw
-				{ 7,  10795 }, -- Drakeclaw Band
-				{ 8,  10796 }, -- Drakestone
-			},
-		},
-		{ -- STHazzas
-			name = AL["Hazzas"],
-			npcID = 5722,
-			Level = GetForVersion(53,50),
-			DisplayIDs = {{9584}},
-			AtlasMapBossID = 7,
-			[NORMAL_DIFF] = {
-				{ 1,  12465 }, -- Nightfall Drape
-				{ 2,  12466 }, -- Dawnspire Cord
-				{ 3,  12464 }, -- Bloodfire Talons
-				{ 4,  10797 }, -- Firebreather
-				{ 5,  12463 }, -- Drakefang Butcher
-				{ 6,  12243 }, -- Smoldering Claw
-				{ 7,  10795 }, -- Drakeclaw Band
-				{ 8,  10796 }, -- Drakestone
-			},
-		},
-		{ -- STMorphaz
-			name = AL["Morphaz"],
-			npcID = 5719,
-			Level = GetForVersion(52,50),
-			DisplayIDs = {{7975}},
-			AtlasMapBossID = 7,
-			[NORMAL_DIFF] = {
-				{ 1,  12465 }, -- Nightfall Drape
-				{ 2,  12466 }, -- Dawnspire Cord
-				{ 3,  12464 }, -- Bloodfire Talons
-				{ 4,  10797 }, -- Firebreather
-				{ 5,  12463 }, -- Drakefang Butcher
-				{ 6,  12243 }, -- Smoldering Claw
-				{ 7,  10795 }, -- Drakeclaw Band
-				{ 8,  10796 }, -- Drakestone
-			},
-		},
-		{ -- STEranikus
-			name = AL["Shade of Eranikus"],
-			npcID = 5709,
-			Level = GetForVersion(55,50),
-			DisplayIDs = {{7806}},
-			AtlasMapBossID = 8,
-			[NORMAL_DIFF] = {
-				{ 1,  10847 }, -- Dragon's Call
-				{ 3,  10833 }, -- Horns of Eranikus
-				{ 4,  10829 }, -- Dragon's Eye
-				{ 5,  10836 }, -- Rod of Corrosion
-				{ 6,  10835 }, -- Crest of Supremacy
-				{ 7,  10837 }, -- Tooth of Eranikus
-				{ 8,  10828 }, -- Dire Nail
-				{ 10, 10454 }, -- Essence of Eranikus
-			},
-		},
-		{ -- STTrash
-			name = AL["Trash"],
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  10630 }, -- Soulcatcher Halo
-				{ 2,  10632 }, -- Slimescale Bracers
-				{ 3,  10631 }, -- Murkwater Gauntlets
-				{ 4,  10633 }, -- Silvershell Leggings
-				{ 5,  10629 }, -- Mistwalker Boots
-				{ 6,  10634 }, -- Mindseye Circle
-				{ 7,  10624 }, -- Stinging Bow
-				{ 8,  10623 }, -- Winter's Bite
-				{ 9,  10625 }, -- Stealthblade
-				{ 10, 10626 }, -- Ragehammer
-				{ 11, 10628 }, -- Deathblow
-				{ 12, 10627 }, -- Bludgeon of the Grinning Dog
-				{ 16, 10782 }, -- Hakkari Shroud
-				{ 17, 10781 }, -- Hakkari Breastplate
-				{ 18, 10780 }, -- Mark of Hakkar
-				{ 20, 16216 }, -- Formula: Enchant Cloak - Greater Resistance
-				{ 21, 15733 }, -- Pattern: Green Dragonscale Leggings
-			},
-		},
-	},
-}
-
 data["BlackrockDepths"] = {
 	MapID = 1584,
 	InstanceID = 230,
@@ -2492,6 +2138,7 @@ data["BlackrockDepths"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({42, 52, 60},{40, 48, 56}),
+	ContentPhase = 3,
 	items = {
 		{ -- BRDLordRoccor
 			name = AL["Lord Roccor"],
@@ -2522,7 +2169,10 @@ data["BlackrockDepths"] = {
 				{ 2,  11624 }, -- Kentic Amice
 				{ 3,  22240 }, -- Greaves of Withering Despair
 				{ 4,  11625 }, -- Enthralled Sphere
-				{ 16,  11140 }, -- Prison Cell Key
+				{ 5,  11623 }, -- Spritecaster Cape
+				{ 7,  11140 }, -- Prison Cell Key
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223539 }, -- Enthralled Sphere
 			},
 		},
 		{ -- BRDHoundmaster
@@ -2537,6 +2187,10 @@ data["BlackrockDepths"] = {
 				{ 2,  11627 }, -- Fleetfoot Greaves
 				{ 3,  11628 }, -- Houndmaster's Bow
 				{ 4,  11629 }, -- Houndmaster's Rifle
+				{ 5,  11626 }, -- Blackveil Cape
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223540 }, -- Houndmaster's Bow
+				{ 18, 223982 }, -- Houndmaster's Rifle
 			},
 		},
 		-- ## RING START
@@ -2569,6 +2223,8 @@ data["BlackrockDepths"] = {
 				{ 4,  11702 }, -- Grizzle's Skinner
 				{ 6,  11610 }, -- Plans: Dark Iron Pulverizer
 				--{ 2,  11608 }, -- Dark Iron Pulverizer
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223544 }, -- Dregmetal Spaulders
 			},
 		},
 		{ -- BRDEviscerator
@@ -2583,6 +2239,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11679 }, -- Rubicund Armguards
 				{ 4,  11686 }, -- Girdle of Beastial Fury
 				{ 5,  11730 }, -- Savage Gladiator Grips
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223987 }, -- Splinthide Shoulders
 			},
 		},
 		{ -- BRDOkthor
@@ -2597,6 +2255,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
 				{ 4,  11824 }, -- Cyclopean Band
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223985 }, -- Cyclopean Band
 			},
 		},
 		{ -- BRDAnubshiah
@@ -2611,6 +2271,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11677 }, -- Graverot Cape
 				{ 3,  11675 }, -- Shadefiend Boots
 				{ 4,  11731 }, -- Savage Gladiator Greaves
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223986 }, -- Graverot Cape
 			},
 		},
 		{ -- BRDHedrum
@@ -2625,6 +2287,9 @@ data["BlackrockDepths"] = {
 				{ 2,  11634 }, -- Silkweb Gloves
 				{ 3,  11635 }, -- Hookfang Shanker
 				{ 4,  11729 }, -- Savage Gladiator Helm
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223984 }, -- Silkweb Gloves
+
 			},
 		},
 		-- ## RING END
@@ -2642,6 +2307,10 @@ data["BlackrockDepths"] = {
 				{ 3,  11748 }, -- Pyric Caduceus
 				{ 4,  11750 }, -- Kindling Stave
 				{ 6,  11207 }, -- Formula: Enchant Weapon - Fiery Weapon
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223981 }, -- Flamestrider Robes
+				{ 18, 223538 }, -- Kindling Stave
+				{ 19, 223980 }, -- Searingscale Leggings
 			},
 		},
 		{ -- BRDTheVault
@@ -2680,6 +2349,9 @@ data["BlackrockDepths"] = {
 				{ 2,  22241 }, -- Dark Warder's Pauldrons
 				{ 3,  11783 }, -- Chillsteel Girdle
 				{ 4,  11784 }, -- Arbiter's Blade
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223983 }, -- Arbiter's Blade
+				
 			},
 		},
 		{ -- BRDVerek
@@ -2730,6 +2402,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26750,
 			DisplayIDs = {{1204}},
 			AtlasMapBossID = 10,
+			ContentPhase = 3,
 			[NORMAL_DIFF] = {
 				{ 1,  11766 }, -- Flameweave Cuffs
 				{ 2,  11764 }, -- Cinderhide Armsplints
@@ -2739,6 +2412,39 @@ data["BlackrockDepths"] = {
 				{ 8,  11768 }, -- Incendic Bracers
 			},
 		},
+		{ -- BRDGuzzler_Ribbly Screwspigot
+		name = AL["Ribbly Screwspigot"],
+		SubAreaID = 26751,
+		npcID = {9543},
+		Level = 55,
+		DisplayIDs = {{8667}},
+		AtlasMapBossID = 15,
+		ContentPhase = 3,
+		[NORMAL_DIFF] = {
+				{ 1, 2662 }, -- Ribbly's Quiver
+				{ 2, 2663 }, -- Ribbly's Bandolier
+				{ 3, 11612 }, -- Plans: Dark Iron Plate
+				{ 4, 11742 }, -- Wayfarer's Knapsack
+			},
+		},
+		{ -- BRDGuzzler_Plugger Spazzring
+		name = AL["Plugger Spazzring"],
+		SubAreaID = 26751,
+		npcID = {9499},
+		Level = 55,
+		DisplayIDs = {{8652}},
+		AtlasMapBossID = 15,
+		ContentPhase = 3,
+		[NORMAL_DIFF] = {
+			{ 1, 12793 }, -- Mixologist's Tunic
+			{ 2, 12791 }, -- Barman Shanker
+			{ 3, 11325 }, -- Dark Iron Ale Mug
+			{ 4, 18653 }, -- Schematic: Goblin Jumper Cables XL
+			{ 5, 13483 }, -- Recipe: Transmute Fire to Earth
+			{ 6, 15759 }, -- Pattern: Black Dragonsale Breastplate
+			{ 7, 11602 }, -- Grim Guzzler Key
+			},
+		},
 		{ -- BRDBaelGar
 			name = AL["Bael'Gar"],
 			npcID = 9016,
@@ -2746,6 +2452,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26747,
 			DisplayIDs = {{12162}},
 			AtlasMapBossID = 11,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11807 }, -- Sash of the Burning Heart
 				{ 2,  11802 }, -- Lavacrest Leggings
@@ -2760,6 +2467,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26749,
 			DisplayIDs = {{8756}},
 			AtlasMapBossID = 13,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11820 }, -- Royal Decorated Armor
 				{ 2,  11821 }, -- Warstrife Leggings
@@ -2776,6 +2484,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26781,
 			DisplayIDs = {{8759}},
 			AtlasMapBossID = 14,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11823 }, -- Luminary Kilt
 				{ 2,  11822 }, -- Omnicast Boots
@@ -2783,34 +2492,31 @@ data["BlackrockDepths"] = {
 				{ 4,  11819 }, -- Second Wind
 			},
 		},
-		{ -- BRDGuzzler
-			name = AL["Guzzler"],
-			SubAreaID = 26751,
-			npcID = {9537, 12944, 9543, 9499},
-			Level = 55,
-			DisplayIDs = {{8658},{14666},{8667},{8652}},
-			AtlasMapBossID = 15,
-			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Hurley Blackbreath"], nil },
-				{ 2,  11735 }, -- Ragefury Eyepatch
-				{ 3,  18043 }, -- Coal Miner Boots
-				{ 4,  22275 }, -- Firemoss Boots
-				{ 5,  18044 }, -- Hurley's Tankard
-				{ 7, "INV_Box_01", nil, AL["Lokhtos Darkbargainer"], nil },
-				{ 8, 18592 }, -- Plans: Sulfuron Hammer
-				{ 16, "INV_Box_01", nil, AL["Ribbly Screwspigot"], nil },
-				{ 17, 11612 }, -- Plans: Dark Iron Plate
-				{ 18, 2662 }, -- Ribbly's Quiver
-				{ 19, 2663 }, -- Ribbly's Bandolier
-				{ 20, 11742 }, -- Wayfarer's Knapsack
-				{ 22, "INV_Box_01", nil, AL["Plugger Spazzring"], nil },
-				{ 23, 12793 }, -- Mixologist's Tunic
-				{ 24, 12791 }, -- Barman Shanker
-				{ 25, 18653 }, -- Schematic: Goblin Jumper Cables XL
-				{ 26, 13483 }, -- Recipe: Transmute Fire to Earth
-				{ 27, 15759 }, -- Pattern: Black Dragonscale Breastplate
-				{ 28, 11325 }, -- Dark Iron Ale Mug
-				{ 29, 11602 }, -- Grim Guzzler Key
+		{ -- BRDGuzzler_
+		name = AL["Hurley Blackbreath"],
+		SubAreaID = 26751,
+		npcID = {9537},
+		Level = 55,	
+		DisplayIDs = {{8658}},
+		AtlasMapBossID = 15,
+		ContentPhase = 4,
+		[NORMAL_DIFF] = {
+			{ 1,  11735 }, -- Ragefury Eyepatch
+			{ 2,  18043 }, -- Coal Miner Boots
+			{ 3,  22275 }, -- Firemoss Boots
+			{ 4,  18044 }, -- Hurley's Tankard
+			},
+		},
+		{ -- BRDGuzzler_
+		name = AL["Lokhtos Darkbargainer"],
+		SubAreaID = 26751,
+		npcID = {12944},
+		Level = 55,	
+		DisplayIDs = {{14666}},
+		AtlasMapBossID = 15,
+		ContentPhase = 4,
+		[NORMAL_DIFF] = {
+			{ 1, 18592 }, -- Plans: Sulfuron Hammer
 			},
 		},
 		{ -- Phalanx
@@ -2820,6 +2526,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26751,
 			DisplayIDs = {{8177}},
 			AtlasMapBossID = 15,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  22212 }, -- Golem Fitted Pauldrons
 				{ 2,  11745 }, -- Fists of Phalanx
@@ -2834,6 +2541,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26761,
 			DisplayIDs = {{8329}},
 			AtlasMapBossID = 16,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11808 }, -- Circle of Flame
 				{ 3,  11812 }, -- Cape of the Fire Salamander
@@ -2851,6 +2559,7 @@ data["BlackrockDepths"] = {
 			DisplayIDs = {{8270}},
 			AtlasMapBossID = 17,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  22245 }, -- Soot Encrusted Footwear
 				{ 2,  11787 }, -- Shalehusk Boots
@@ -2866,6 +2575,7 @@ data["BlackrockDepths"] = {
 			Level = GetForVersion({55, 57},{55, 56}),
 			DisplayIDs = {{8690},{8686},{8692},{8689},{8691},{8687},{8688}},
 			AtlasMapBossID = 18,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11925 }, -- Ghostshroud
 				{ 2,  11926 }, -- Deathdealer Breastplate
@@ -2884,6 +2594,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26768,
 			DisplayIDs = {{12162}},
 			AtlasMapBossID = 20,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11746 }, -- Golem Skull Helm
 				{ 2,  11935 }, -- Magmus Stone
@@ -2899,6 +2610,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26769,
 			DisplayIDs = {{8705}},
 			AtlasMapBossID = 21,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12557 }, -- Ebonsteel Spaulders
 				{ 2,  12554 }, -- Hands of the Exalted Herald
@@ -2913,6 +2625,7 @@ data["BlackrockDepths"] = {
 			SubAreaID = 26769,
 			DisplayIDs = {{8807}},
 			AtlasMapBossID = 21,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  11684 }, -- Ironfoe
 				{ 3,  11933 }, -- Imperial Jewel
@@ -2973,6 +2686,7 @@ data["BlackrockDepths"] = {
 			AtlasMapBossID = 6,
 			Level = 60,
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  22305 }, -- Ironweave Mantle
 				{ 2,  22330 }, -- Shroud of Arcane Mastery
@@ -2980,28 +2694,6 @@ data["BlackrockDepths"] = {
 				{ 4,  22317 }, -- Lefty's Brass Knuckle
 			},
 		},
-		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { -- BRRDCorenDirebrew
-			name = AL["Coren Direbrew"],
-			npcID = 23872,
-			DisplayIDs = {{21824}},
-			AtlasMapBossID = 15,
-			Level = 82,
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  49116 }, -- Bitter Balebrew Charm
-				{ 2,  49118 }, -- Bubbling Brightbrew Charm
-				{ 3,  49074 }, -- Coren's Chromium Coaster
-				{ 4,  49076 }, -- Mithril Pocketwatch
-				{ 5,  49078 }, -- Ancient Pickled Egg
-				{ 6,  49080 }, -- Brawler's Souvenir
-				{ 8,  49120 }, -- Direbrew's Bloody Shanker
-				{ 9,  48663 }, -- Tankard O' Terror
-				{ 16,  33977 }, -- Swift Brewfest Ram
-				{ 17,  37828 }, -- Great Brewfest Kodo
-				{ 19,  37863 }, -- Direbrew's Remote
-				{ 21,  38280 }, -- Direbrew's Dire Brew
-			},
-        }),
 	},
 }
 
@@ -3017,6 +2709,7 @@ data["LowerBlackrockSpire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({48, 55, 60}, {45, 54, 60}),
+	ContentPhase = 4,
 	items = {
 		{ -- LBRSFelguard
 			name = AL["Burning Felguard"],
@@ -3025,6 +2718,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{5047}},
 			AtlasMapBossID = 1,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13181 }, -- Demonskin Gloves
 				{ 2,  13182 }, -- Phase Blade
@@ -3037,6 +2731,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{11574}},
 			AtlasMapBossID = 4,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12608 }, -- Butcher's Apron
 				{ 2,  13286 }, -- Rivenspike
@@ -3049,6 +2744,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26713,
 			DisplayIDs = {{11565}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16670 }, -- Boots of Elements
 				{ 3,  13166 }, -- Slamshot Shoulders
@@ -3067,6 +2763,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{11576}},
 			AtlasMapBossID = 6,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13284 }, -- Swiftdart Battleboots
 				{ 2,  13285 }, -- The Nicker
@@ -3079,6 +2776,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{11578}},
 			AtlasMapBossID = 6,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13282 }, -- Ogreseer Tower Boots
 				{ 2,  13283 }, -- Magus Ring
@@ -3092,6 +2790,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26688,
 			DisplayIDs = {{9732}},
 			AtlasMapBossID = 7,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16712 }, -- Shadowcraft Gloves
 				{ 3,  13257 }, -- Demonic Runed Spaulders
@@ -3109,6 +2808,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26688,
 			DisplayIDs = {{9733}},
 			AtlasMapBossID = 9,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16676 }, -- Beaststalker's Gloves
 				{ 3,  13177 }, -- Talisman of Evasion
@@ -3126,6 +2826,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{9668}},
 			AtlasMapBossID = 12,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12637 }, -- Backusarian Gauntlets
 				{ 2,  12634 }, -- Chiselbrand Girdle
@@ -3141,6 +2842,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26686,
 			DisplayIDs = {{9929}},
 			AtlasMapBossID = 13,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16715 }, -- Wildheart Boots
 				{ 3,  13244 }, -- Gilded Gauntlets
@@ -3156,6 +2858,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{9755}},
 			AtlasMapBossID = 14,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13185 }, -- Sunderseer Mantle
 				{ 2,  13184 }, -- Fallbrush Handgrips
@@ -3168,6 +2871,7 @@ data["LowerBlackrockSpire"] = {
 			Level = 60,
 			DisplayIDs = {{11583}},
 			AtlasMapBossID = 15,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13258 }, -- Slaghide Gauntlets
 				{ 2,  22232 }, -- Marksman's Girdle
@@ -3183,6 +2887,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 32528,
 			DisplayIDs = {{9738}},
 			AtlasMapBossID = 16,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13247 }, -- Quartermaster Zigris' Footlocker
 				{ 3,  13253 }, -- Hands of Power
@@ -3198,6 +2903,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26711,
 			DisplayIDs = {{9567}},
 			AtlasMapBossID = 17,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13212 }, -- Halycon's Spiked Collar
 				{ 2,  22313 }, -- Ironweave Bracers
@@ -3212,6 +2918,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26711,
 			DisplayIDs = {{9564}},
 			AtlasMapBossID = 17,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16718 }, -- Wildheart Spaulders
 				{ 3,  13208 }, -- Bleak Howler Armguards
@@ -3226,6 +2933,7 @@ data["LowerBlackrockSpire"] = {
 			DisplayIDs = {{11809}},
 			AtlasMapBossID = 18,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13203 }, -- Armswake Cloak
 				{ 2,  13198 }, -- Hurd Smasher
@@ -3239,6 +2947,7 @@ data["LowerBlackrockSpire"] = {
 			SubAreaID = 26718,
 			DisplayIDs = {{8711}},
 			AtlasMapBossID = 19,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13143 }, -- Mark of the Dragon Lord
 				{ 3,  16679 }, -- Beaststalker's Mantle
@@ -3256,6 +2965,7 @@ data["LowerBlackrockSpire"] = {
 		{ -- LBRSTrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  14513 }, -- Pattern: Robe of the Archmage
 				--{ 2,  14152 }, -- Robe of the Archmage
@@ -3284,7 +2994,7 @@ data["LowerBlackrockSpire"] = {
 			npcID = 16080,
 			DisplayIDs = {{15997}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 4,
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
 				{ 1,  22306 }, -- Ironweave Belt
@@ -3309,6 +3019,7 @@ data["UpperBlackrockSpire"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({48, 55, 60}, {45, 58, 60}),
+	ContentPhase = 4,
 	items = {
 		{ -- UBRSEmberseer
 			name = AL["Pyroguard Emberseer"],
@@ -3317,6 +3028,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26662,
 			DisplayIDs = {{2172}},
 			AtlasMapBossID = 1,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16672 }, -- Gauntlets of Elements
 				{ 3,  12929 }, -- Emberfury Talisman
@@ -3333,6 +3045,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26666,
 			DisplayIDs = {{9581}},
 			AtlasMapBossID = 2,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16695 }, -- Devout Mantle
 				{ 3,  12609 }, -- Polychromatic Visionwrap
@@ -3349,6 +3062,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26642,
 			DisplayIDs = {{9686}},
 			AtlasMapBossID = 4,
+			ContentPhase = 4,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
 				{ 1,  12604 }, -- Starfire Tiara
@@ -3363,6 +3077,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26642,
 			DisplayIDs = {{10222}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13502 }, -- Handcrafted Mastersmith Girdle
 				{ 2,  13498 }, -- Handcrafted Mastersmith Leggings
@@ -3383,6 +3098,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26670,
 			DisplayIDs = {{9806}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12871 }, -- Chromatic Carapace
 				{ 3,  16669 }, -- Pauldrons of Elements
@@ -3400,6 +3116,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26670,
 			DisplayIDs = {{9778}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12590 }, -- Felstriker
 				{ 3,  16733 }, -- Spaulders of Valor
@@ -3423,6 +3140,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26684,
 			DisplayIDs = {{10193}},
 			AtlasMapBossID = 8,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12731 }, -- Pristine Hide of the Beast
 				{ 3,  16729 }, -- Lightforge Spaulders
@@ -3446,6 +3164,7 @@ data["UpperBlackrockSpire"] = {
 			SubAreaID = 26715,
 			DisplayIDs = {{10115}},
 			AtlasMapBossID = 9,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12592 }, -- Blackblade of Shahram
 				{ 3,  22267 }, -- Spellweaver's Turban
@@ -3472,6 +3191,7 @@ data["UpperBlackrockSpire"] = {
 		{ -- UBRSTrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  24102 }, -- Manual of Eviscerate IX
 				{ 2,  13260 }, -- Wind Dancer Boots
@@ -3491,6 +3211,7 @@ data["UpperBlackrockSpire"] = {
 			ExtraList = true,
 			AtlasMapBossID = 3,
 			specialType = "quest",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  12358 }, -- Darkstone Tablet
 			},
@@ -3500,7 +3221,7 @@ data["UpperBlackrockSpire"] = {
 			npcID = 16042,
 			DisplayIDs = {{14308}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 4,
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  22302 }, -- Ironweave Cowl
@@ -3527,6 +3248,7 @@ data["DireMaulEast"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 55, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- DMEPusillin
 			name = AL["Pusillin"],
@@ -3534,6 +3256,7 @@ data["DireMaulEast"] = {
 			Level = 57,
 			DisplayIDs = {{7552}},
 			AtlasMapBossID = "1-2",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18267 }, -- Recipe: Runn Tum Tuber Surprise
 				{ 3,  18249 }, -- Crescent Key
@@ -3545,6 +3268,7 @@ data["DireMaulEast"] = {
 			Level = 57,
 			DisplayIDs = {{11335}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18319 }, -- Fervent Helm
 				{ 2,  18313 }, -- Helm of Awareness
@@ -3559,6 +3283,7 @@ data["DireMaulEast"] = {
 			Level = 57,
 			DisplayIDs = {{5489}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18317 }, -- Tempest Talisman
 				{ 2,  18322 }, -- Waterspout Boots
@@ -3574,6 +3299,7 @@ data["DireMaulEast"] = {
 			Level = 57,
 			DisplayIDs = {{14378}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18325 }, -- Felhide Cap
 				{ 2,  18311 }, -- Quel'dorai Channeling Rod
@@ -3588,6 +3314,7 @@ data["DireMaulEast"] = {
 			DisplayIDs = {{14416}},
 			AtlasMapBossID = 5,
 			SubAreaID = 33730,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18328 }, -- Shadewood Cloak
 				{ 2,  18312 }, -- Energized Chestplate
@@ -3604,6 +3331,7 @@ data["DireMaulEast"] = {
 		{ -- DMETrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18289 }, -- Barbed Thorn Necklace
 				{ 2,  18296 }, -- Marksman Bands
@@ -3621,8 +3349,9 @@ data["DireMaulEast"] = {
 			npcID = 16097,
 			DisplayIDs = {{16000}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 8,
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  22304 }, -- Ironweave Gloves
 				{ 2,  22472 }, -- Boots of Ferocity
@@ -3648,6 +3377,7 @@ data["DireMaulWest"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 58, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- DMWTendrisWarpwood
 			name = AL["Tendris Warpwood"],
@@ -3656,6 +3386,7 @@ data["DireMaulWest"] = {
 			DisplayIDs = {{14383}},
 			AtlasMapBossID = 2,
 			SubAreaID = 33748,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18393 }, -- Warpwood Binding
 				{ 2,  18390 }, -- Tanglemoss Leggings
@@ -3670,6 +3401,7 @@ data["DireMaulWest"] = {
 			DisplayIDs = {{11270}},
 			SubAreaID = 33749,
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18383 }, -- Force Imbued Gauntlets
 				{ 2,  18386 }, -- Padre's Trousers
@@ -3684,6 +3416,7 @@ data["DireMaulWest"] = {
 			DisplayIDs = {{14384}},
 			AtlasMapBossID = 4,
 			SubAreaID = 33749,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18374 }, -- Flamescarred Shoulders
 				{ 2,  18397 }, -- Elder Magus Pendant
@@ -3702,6 +3435,7 @@ data["DireMaulWest"] = {
 			specialType = "rare",
 			AtlasMapBossID = 5,
 			SubAreaID = 33749,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18387 }, -- Brightspark Gloves
 				{ 3,  18346 }, -- Threadbare Trousers
@@ -3715,6 +3449,7 @@ data["DireMaulWest"] = {
 			DisplayIDs = {{14173}},
 			AtlasMapBossID = 6,
 			SubAreaID = 33750,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18381 }, -- Evil Eye Pendant
 				{ 2,  18384 }, -- Bile-etched Spaulders
@@ -3734,6 +3469,7 @@ data["DireMaulWest"] = {
 			Level = 61,
 			DisplayIDs = {{11256}},
 			AtlasMapBossID = 7,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18382 }, -- Fluctuating Cloak
 				{ 2,  18373 }, -- Chestplate of Tranquility
@@ -3764,9 +3500,9 @@ data["DireMaulWest"] = {
 			npcID = 14690,
 			DisplayIDs = {{14695}},
 			AtlasMapBossID = 2,
-			ContentPhase = 6,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
+			ContentPhase = 8,
 			[NORMAL_DIFF] = {
 				{ 1, 23127 }, -- Cloak of Revanchion
 				{ 2, 23129 }, -- Bracers of Mending
@@ -3780,6 +3516,7 @@ data["DireMaulWest"] = {
 			ExtraList = true,
 			AtlasMapBossID = "1'",
 			IgnoreAsSource = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18487, [PRICE_EXTRA_ITTYPE] = "money:40000" }, -- Pattern: Mooncloth Robe
 				--{ 2,  18486 }, -- Mooncloth Robe
@@ -3791,6 +3528,7 @@ data["DireMaulWest"] = {
 			DisplayIDs = {{14556}},
 			ExtraList = true,
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18757 }, -- Diabolic Mantle
 				{ 2,  18754 }, -- Fel Hardened Bracers
@@ -3814,6 +3552,7 @@ data["DireMaulNorth"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {31, 58, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- DMNGuardMoldar
 			name = AL["Guard Mol'dar"],
@@ -3821,6 +3560,7 @@ data["DireMaulNorth"] = {
 			Level = 59,
 			DisplayIDs = {{11561}},
 			AtlasMapBossID = 1,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18494 }, -- Denwatcher's Shoulders
 				{ 2,  18493 }, -- Bulky Iron Spaulders
@@ -3845,6 +3585,7 @@ data["DireMaulNorth"] = {
 			Level = 59,
 			DisplayIDs = {{11545}},
 			AtlasMapBossID = 2,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18425 }, -- Kreeg's Mug
 				{ 16, "INV_Box_01", nil, AL["Sells:"], nil },
@@ -3861,6 +3602,7 @@ data["DireMaulNorth"] = {
 			Level = 59,
 			DisplayIDs = {{11561}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18450 }, -- Robe of Combustion
 				{ 2,  18458 }, -- Modest Armguards
@@ -3881,6 +3623,7 @@ data["DireMaulNorth"] = {
 			Level = 59,
 			DisplayIDs = {{11561}},
 			AtlasMapBossID = 4,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18494 }, -- Denwatcher's Shoulders
 				{ 2,  18493 }, -- Bulky Iron Spaulders
@@ -3903,6 +3646,7 @@ data["DireMaulNorth"] = {
 			AtlasMapBossID = 4,
 			npcID = 14338,
 			ObjectID = 179501,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18414 }, -- Pattern: Belt of the Archmage
 				{ 16,  18517 }, -- Pattern: Chromatic Cloak
@@ -3925,6 +3669,7 @@ data["DireMaulNorth"] = {
 			Level = 61,
 			DisplayIDs = {{11564}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18503 }, -- Kromcrush's Chestplate
 				{ 2,  18505 }, -- Mugger's Belt
@@ -3938,6 +3683,7 @@ data["DireMaulNorth"] = {
 			Level = 60,
 			DisplayIDs = {{11537}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18490 }, -- Insightful Hood
 				{ 2,  18483 }, -- Mana Channeling Wand
@@ -3951,6 +3697,7 @@ data["DireMaulNorth"] = {
 			Level = 62,
 			DisplayIDs = {{11583}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18526 }, -- Crown of the Ogre King
 				{ 2,  18525 }, -- Bracers of Prosperity
@@ -3969,6 +3716,7 @@ data["DireMaulNorth"] = {
 			ExtraList = true,
 			npcID = 14324,
 			ObjectID = 179564,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18538 }, -- Treant's Bane
 				{ 3,  18528 }, -- Cyclone Spaulders
@@ -3996,6 +3744,7 @@ data["DireMaulNorth"] = {
 		{ -- DMNTrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18250 }, -- Gordok Shackle Key
 				{ 3,  18333 }, -- Libram of Focus
@@ -4020,6 +3769,7 @@ data["Scholomance"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {45, 58, 60},
+	ContentPhase = 4,
 	items = {
 		{ -- SCHOLOBlood
 			name = AL["Blood Steward of Kirtonos"],
@@ -4028,6 +3778,7 @@ data["Scholomance"] = {
 			SubAreaID = 32573,
 			DisplayIDs = {{10925}},
 			AtlasMapBossID = 1,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13523 }, -- Blood of Innocents
 			},
@@ -4039,6 +3790,7 @@ data["Scholomance"] = {
 			SubAreaID = 32574,
 			DisplayIDs = {{7534}},
 			AtlasMapBossID = 2,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16734 }, -- Boots of Valor
 				{ 3,  13960 }, -- Heart of the Fiend
@@ -4057,6 +3809,7 @@ data["Scholomance"] = {
 			Level = 61,
 			DisplayIDs = {{11073}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16701 }, -- Dreadmist Mantle
 				{ 3,  14548 }, -- Royal Cap Spaulders
@@ -4076,6 +3829,7 @@ data["Scholomance"] = {
 			SubAreaID = 32577,
 			DisplayIDs = {{12073}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16711 }, -- Shadowcraft Boots
 				{ 3,  14539 }, -- Bone Ring Helm
@@ -4095,6 +3849,7 @@ data["Scholomance"] = {
 			SubAreaID = 32577,
 			DisplayIDs = {{14591}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18760 }, -- Necromantic Band
 				{ 2,  18761 }, -- Oblivion's Touch
@@ -4109,6 +3864,7 @@ data["Scholomance"] = {
 			SubAreaID = 32576,
 			DisplayIDs = {{10248}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18692 }, -- Death Knight Sabatons
 				{ 2,  14576 }, -- Ebon Hilt of Marduk
@@ -4121,6 +3877,7 @@ data["Scholomance"] = {
 			SubAreaID = 32576,
 			DisplayIDs = {{2606}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18691 }, -- Dark Advisor's Pendant
 				{ 2,  14577 }, -- Skullsmoke Pants
@@ -4133,6 +3890,7 @@ data["Scholomance"] = {
 			SubAreaID = 32579,
 			DisplayIDs = {{7919}},
 			AtlasMapBossID = 7,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13314 }, -- Alanna's Embrace
 				{ 3,  16689 }, -- Magister's Mantle
@@ -4157,6 +3915,7 @@ data["Scholomance"] = {
 			SubAreaID = 32567,
 			DisplayIDs = {{11069}},
 			AtlasMapBossID = 8,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16710 }, -- Shadowcraft Bracers
 				{ 4,  18681 }, -- Burial Shawl
@@ -4195,6 +3954,7 @@ data["Scholomance"] = {
 			SubAreaID = 32565,
 			DisplayIDs = {{10901}},
 			AtlasMapBossID = 9,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16684 }, -- Magister's Gloves
 				{ 2,  14617 }, -- Sawbones Shirt
@@ -4234,6 +3994,7 @@ data["Scholomance"] = {
 			SubAreaID = 32566,
 			DisplayIDs = {{11492}},
 			AtlasMapBossID = 10,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16705 }, -- Dreadmist Wraps
 				{ 4,  18681 }, -- Burial Shawl
@@ -4272,6 +4033,7 @@ data["Scholomance"] = {
 			SubAreaID = 32569,
 			DisplayIDs = {{10433}},
 			AtlasMapBossID = 11,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16716 }, -- Wildheart Belt
 				{ 4,  18681 }, -- Burial Shawl
@@ -4310,6 +4072,7 @@ data["Scholomance"] = {
 			SubAreaID = 32549,
 			DisplayIDs = {{11072}},
 			AtlasMapBossID = 12,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16722 }, -- Lightforge Bracers
 				{ 4,  18681 }, -- Burial Shawl
@@ -4348,6 +4111,7 @@ data["Scholomance"] = {
 			SubAreaID = 32568,
 			DisplayIDs = {{11835}},
 			AtlasMapBossID = 13,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 4,  18681 }, -- Burial Shawl
 				{ 5,  14633 }, -- Necropile Mantle
@@ -4385,6 +4149,7 @@ data["Scholomance"] = {
 			SubAreaID = 32581,
 			DisplayIDs = {{11070}},
 			AtlasMapBossID = 14,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13937 }, -- Headmaster's Charge
 				{ 2,  14514 }, -- Pattern: Robe of the Void
@@ -4412,6 +4177,7 @@ data["Scholomance"] = {
 		{ -- SCHOLOTrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16685 }, -- Magister's Belt
 				{ 2,  16702 }, -- Dreadmist Belt
@@ -4444,7 +4210,7 @@ data["Scholomance"] = {
 			npcID = 14695,
 			DisplayIDs = {{14699}},
 			AtlasMapBossID = 2,
-			ContentPhase = 6,
+			ContentPhase = 8,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
 			[NORMAL_DIFF] = {
@@ -4458,7 +4224,7 @@ data["Scholomance"] = {
 			npcID = 16118,
 			DisplayIDs = {{16020}},
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 4,
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
 				{ 1,  22303 }, -- Ironweave Pants
@@ -4489,6 +4255,7 @@ data["Stratholme"] = {
 	AtlasMapFile_AL = "Stratholme",
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
+	ContentPhase = 4,
 	LevelRange = GetForVersion({37, 58, 60}, {45, 58, 60}),
 	items = {
 		{ -- STRATSkull
@@ -4499,6 +4266,7 @@ data["Stratholme"] = {
 			DisplayIDs = {{2606}},
 			AtlasMapBossID = 1,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13395 }, -- Skul's Fingerbone Claws
 				{ 2,  13394 }, -- Skul's Cold Embrace
@@ -4512,6 +4280,7 @@ data["Stratholme"] = {
 			Level = 57,
 			DisplayIDs = {{10547}},
 			AtlasMapBossID = 1,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13303 }, -- Crusaders' Square Postbox Key
 				{ 2,  13305 }, -- Elders' Square Postbox Key
@@ -4530,6 +4299,7 @@ data["Stratholme"] = {
 			DisplayIDs = {{10482}},
 			AtlasMapBossID = 3,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16682 }, -- Magister's Boots
 				{ 3,  13378 }, -- Songbird Blouse
@@ -4546,6 +4316,7 @@ data["Stratholme"] = {
 			SubAreaID = 32281,
 			DisplayIDs = {{10771}},
 			AtlasMapBossID = 4,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16717 }, -- Wildheart Gloves
 				{ 3,  13404 }, -- Mask of the Unforgiven
@@ -4561,6 +4332,7 @@ data["Stratholme"] = {
 			Level = 60,
 			DisplayIDs = {{10669}},
 			AtlasMapBossID = "6'",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13390 }, -- The Postmaster's Band
 				{ 2,  13388 }, -- The Postmaster's Tunic
@@ -4578,6 +4350,7 @@ data["Stratholme"] = {
 			SubAreaID = 32319,
 			DisplayIDs = {{571}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16724 }, -- Lightforge Gauntlets
 				{ 3,  13400 }, -- Vambraces of the Sadist
@@ -4595,6 +4368,7 @@ data["Stratholme"] = {
 			SubAreaID = 32319,
 			DisplayIDs = {{10458}},
 			AtlasMapBossID = 7,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Malors Strongbox"], nil },
 				{ 2,  12845 }, -- Medallion of Faith
@@ -4608,6 +4382,7 @@ data["Stratholme"] = {
 			SubAreaID = 32357,
 			DisplayIDs = {{10637}},
 			AtlasMapBossID = 8,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18781 }, -- Bottom Half of Advanced Armorsmithing: Volume II
 				--{ 3,  12824 }, -- Plans: Enchanted Battlehammer
@@ -4621,6 +4396,7 @@ data["Stratholme"] = {
 			SubAreaID = 32357,
 			DisplayIDs = {{10674}},
 			AtlasMapBossID = 9,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16708 }, -- Shadowcraft Spaulders
 				{ 3,  22407 }, -- Helm of the New Moon
@@ -4644,6 +4420,7 @@ data["Stratholme"] = {
 			SubAreaID = 32331,
 			DisplayIDs = {{10544}},
 			AtlasMapBossID = 10,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16692 }, -- Devout Gloves
 				{ 3,  13386 }, -- Archivist Cape
@@ -4662,6 +4439,7 @@ data["Stratholme"] = {
 			SubAreaID = 32367,
 			DisplayIDs = {{10545}, {10691}},
 			AtlasMapBossID = 11,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13353 }, -- Book of the Dead
 				{ 2,  14512 }, -- Pattern: Truefaith Vestments
@@ -4688,6 +4466,7 @@ data["Stratholme"] = {
 			SubAreaID = 32342,
 			DisplayIDs = {{10433}},
 			AtlasMapBossID = 12,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18727 }, -- Crimson Felt Hat
 				{ 2,  13376 }, -- Royal Tribunal Cloak
@@ -4707,6 +4486,7 @@ data["Stratholme"] = {
 			DisplayIDs = {{7856}},
 			AtlasMapBossID = 14,
 			specialType = "rare",
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13397 }, -- Stoneskin Gargoyle Cape
 				{ 2,  13954 }, -- Verdant Footpads
@@ -4721,6 +4501,7 @@ data["Stratholme"] = {
 			SubAreaID = 32344,
 			DisplayIDs = {{10698}},
 			AtlasMapBossID = 15,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16704 }, -- Dreadmist Sandals
 				{ 3,  18728 }, -- Anastari Heirloom
@@ -4742,6 +4523,7 @@ data["Stratholme"] = {
 			SubAreaID = 32345,
 			DisplayIDs = {{775}},
 			AtlasMapBossID = 15,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18783 }, -- Bottom Half of Advanced Armorsmithing: Volume III
 				--{ 2,  12725 }, -- Plans: Enchanted Thorium Helm
@@ -4758,6 +4540,7 @@ data["Stratholme"] = {
 			SubAreaID = 32345,
 			DisplayIDs = {{9793}},
 			AtlasMapBossID = 16,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16675 }, -- Beaststalker's Boots
 				{ 3,  18740 }, -- Thuzadin Sash
@@ -4779,6 +4562,7 @@ data["Stratholme"] = {
 			SubAreaID = 32349,
 			DisplayIDs = {{10546}},
 			AtlasMapBossID = 17,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16691 }, -- Devout Sandals
 				{ 3,  18734 }, -- Pale Moon Cloak
@@ -4801,6 +4585,7 @@ data["Stratholme"] = {
 			SubAreaID = 32301,
 			DisplayIDs = {{12818}},
 			AtlasMapBossID = 18,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16737 }, -- Gauntlets of Valor
 				{ 3,  18723 }, -- Animated Chain Necklace
@@ -4819,6 +4604,7 @@ data["Stratholme"] = {
 			SubAreaID = 32352,
 			DisplayIDs = {{10729}},
 			AtlasMapBossID = 19,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  13335 }, -- Deathcharger's Reins
 				{ 2,  13505 }, -- Runeblade of Baron Rivendare
@@ -4848,6 +4634,7 @@ data["Stratholme"] = {
 		{ -- STRATTrash
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16697 }, -- Devout Bracers
 				{ 2,  16685 }, -- Magister's Belt
@@ -4881,6 +4668,7 @@ data["Stratholme"] = {
 		},
 		{ -- STRATBSPlansSerenity / STRATBSPlansCorruption
 			name = AL["Plans"],
+			ContentPhase = 4,
 			ExtraList = true,
 			IgnoreAsSource = true,
 			[NORMAL_DIFF] = {
@@ -4893,7 +4681,7 @@ data["Stratholme"] = {
 			NameColor = GREEN,
 			ExtraList = true,
 			AtlasMapBossID = 2,
-			ContentPhase = 6,
+			ContentPhase = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  22736 }, -- Andonisus, Reaper of Souls
 			},
@@ -4906,7 +4694,7 @@ data["Stratholme"] = {
 			npcID = 14684,
 			DisplayIDs = {{7919}},
 			AtlasMapBossID = 2,
-			ContentPhase = 6,
+			ContentPhase = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  23126 }, -- Waistband of Balzaphon
 				{ 2,  23125 }, -- Chains of the Lich
@@ -4917,7 +4705,7 @@ data["Stratholme"] = {
 			name = AL["Sothos and Jarien's Heirlooms"].." - "..format(AL["Tier %s Sets"], "0.5"),
 			NameColor = GREEN,
 			ExtraList = true,
-			ContentPhase = 5,
+			ContentPhase = 4,
 			AtlasMapBossID = 11,
 			[NORMAL_DIFF] = {
 				{ 1,  22327 }, -- Amulet of the Redeemed
@@ -4939,14 +4727,14 @@ data["WorldBosses"] = {
 	AtlasMapFile = "Azuregos",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
+	ContentPhase = 4,
 	items = {
 		{ -- AAzuregos
 			name = AL["Azuregos"],
 			AtlasMapFile = "Azuregos",
 			npcID = 6109,
 			Level = 999,
-			ContentPhase = 2,
+			ContentPhase = 4,
 			DisplayIDs = {{11460}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -4975,7 +4763,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "LordKazzak",
 			npcID = 12397,
 			Level = 999,
-			ContentPhase = 2,
+			ContentPhase = 4,
 			DisplayIDs = {{12449}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
@@ -5004,7 +4792,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14888,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 6,
 			DisplayIDs = {{15365}},
 			[NORMAL_DIFF] = {
 				{ 1,  20628 }, -- Deviate Growth Cap
@@ -5039,7 +4827,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14889,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 6,
 			DisplayIDs = {{15366}},
 			[NORMAL_DIFF] = {
 				{ 1,  20623 }, -- Circlet of Restless Dreams
@@ -5072,7 +4860,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14890,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 6,
 			DisplayIDs = {{15363}, {15367}},
 			[NORMAL_DIFF] = {
 				{ 1,  20633 }, -- Unnatural Leather Spaulders
@@ -5105,7 +4893,7 @@ data["WorldBosses"] = {
 			AtlasMapFile = "FourDragons",
 			npcID = 14887,
 			Level = 999,
-			ContentPhase = 4,
+			ContentPhase = 6,
 			DisplayIDs = {{15364}},
 			[NORMAL_DIFF] = {
 				{ 1,  20637 }, -- Acid Inscribed Pauldrons
@@ -5146,6 +4934,7 @@ data["MoltenCore"] = {
 	AtlasMapFile_AL = "MoltenCore",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
+	ContentPhase = 4,
 	items = {
 		{	--MCLucifron
 			name = AL["Lucifron"],
@@ -5153,6 +4942,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{13031},{12030}},
 			AtlasMapBossID = 1,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 16800 },	-- Arcanist Boots
 				{ 2, 16805 },	-- Felheart Gloves
@@ -5180,6 +4970,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{10193}},
 			AtlasMapBossID = 2,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16814 },	-- Pants of Prophecy
 				{ 2,  16796 },	-- Arcanist Leggings
@@ -5213,6 +5004,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{13030},{12002}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16812 },	-- Gloves of Prophecy
 				{ 2,  16826 },	-- Nightslayer Gloves
@@ -5238,6 +5030,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{12110}, {5781}},
 			AtlasMapBossID = 4,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 18564 },	-- Bindings of the Windseeker
 				{ 3,  16813 },	-- Circlet of Prophecy
@@ -5272,6 +5065,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{13032}},
 			AtlasMapBossID = 5,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16811 },	-- Boots of Prophecy
 				{ 2,  16801 },	-- Arcanist Gloves
@@ -5297,6 +5091,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{12129}},
 			AtlasMapBossID = 6,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18563 },	-- Bindings of the Windseeker
 				{ 3,  16797 },	-- Arcanist Mantle
@@ -5324,6 +5119,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{11986}},
 			AtlasMapBossID = 7,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16815 },	-- Robes of Prophecy
 				{ 2,  16798 },	-- Arcanist Robes
@@ -5357,6 +5153,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{13030},{12030}},
 			AtlasMapBossID = 8,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16816 }, -- Mantle of Prophecy
 				{ 2,  16823 }, -- Nightslayer Shoulder Pads
@@ -5382,6 +5179,7 @@ data["MoltenCore"] = {
 			ObjectID = 179703,
 			DisplayIDs = {{12029},{13029},{12002}},
 			AtlasMapBossID = 9,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  19139 }, -- Fireguard Shoulders
 				{ 2,  18810 }, -- Wild Growth Spaulders
@@ -5403,6 +5201,7 @@ data["MoltenCore"] = {
 			Level = 999,
 			DisplayIDs = {{11121}},
 			AtlasMapBossID = 10,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 17204 }, -- Eye of Sulfuras
 				{ 2, 19017 }, -- Essence of the Firelord
@@ -5433,6 +5232,7 @@ data["MoltenCore"] = {
 		{ -- MCRANDOMBOSSDROPS
 			name = AL["All bosses"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18264 }, -- Plans: Elemental Sharpening Stone
 				{ 3,  18292 }, -- Schematic: Core Marksman Rifle
@@ -5449,6 +5249,7 @@ data["MoltenCore"] = {
 		{ -- MCTrashMobs
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16817 }, -- Girdle of Prophecy
 				{ 2,  16802 }, -- Arcanist Belt
@@ -5487,6 +5288,7 @@ data["Onyxia"] = {
 	AtlasMapFile_AL = "OnyxiasLair",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
+	ContentPhase = 4,
 	items = {
 		{ -- Onyxia
 			name = AL["Onyxia"],
@@ -5494,6 +5296,7 @@ data["Onyxia"] = {
 			Level = 999,
 			DisplayIDs = {{8570}},
 			AtlasMapBossID = 3,
+			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  16921 }, -- Halo of Transcendence
 				{ 2,  16914 }, -- Netherwind Crown
@@ -5536,7 +5339,7 @@ data["Zul'Gurub"] = {
 	AtlasMapFile_AL = "ZulGurub",
 	ContentType = RAID20_CONTENT,
 	LoadDifficulty = RAID20_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 6,
 	items = {
 		{ -- ZGJeklik
 			name = AL["High Priestess Jeklik"],
@@ -5544,6 +5347,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15219}},
 			AtlasMapBossID = 1,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5569,6 +5373,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15217}},
 			AtlasMapBossID = 2,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5593,6 +5398,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15220}},
 			AtlasMapBossID = 4,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5617,6 +5423,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{11288}},
 			AtlasMapBossID = 5,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5649,6 +5456,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{8390}},
 			AtlasMapBossID = 6,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19961 }, -- Gri'lek's Grinder
 				{ 2,  19962 }, -- Gri'lek's Carver
@@ -5661,6 +5469,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15267}},
 			AtlasMapBossID = 6,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19967 }, -- Thoughtblighter
 				{ 2,  19968 }, -- Fiery Retributer
@@ -5673,6 +5482,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15268}},
 			AtlasMapBossID = 6,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19964 }, -- Renataki's Soul Conduit
 				{ 2,  19963 }, -- Pitchfork of Madness
@@ -5685,6 +5495,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15269}},
 			AtlasMapBossID = 6,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19993 }, -- Hoodoo Hunting Bow
 				{ 2,  19965 }, -- Wushoolay's Poker
@@ -5697,6 +5508,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15288}},
 			AtlasMapBossID = 7,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19945 }, -- Foror's Eyepatch
 				{ 2,  19944 }, -- Nat Pagle's Fish Terminator
@@ -5711,6 +5523,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15216}},
 			AtlasMapBossID = 8,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5737,6 +5550,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15218}},
 			AtlasMapBossID = 9,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5761,6 +5575,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{11311}},
 			AtlasMapBossID = 10,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19721 }, -- Primal Hakkari Shawl
 				{ 2,  19724 }, -- Primal Hakkari Aegis
@@ -5792,6 +5607,7 @@ data["Zul'Gurub"] = {
 			Level = 999,
 			DisplayIDs = {{15295}},
 			AtlasMapBossID = 11,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19857 }, -- Cloak of Consumption
 				{ 2,  20257, [ATLASLOOT_IT_ALLIANCE] = 20264 }, -- Seafury Gauntlets
@@ -5814,6 +5630,7 @@ data["Zul'Gurub"] = {
 		{ -- ZGShared
 			name = AL["High Priest Shared loot"],
 			ExtraList = true,
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  22721 }, -- Band of Servitude
 				{ 2,  22722 }, -- Seal of the Gurubashi Berserker
@@ -5829,6 +5646,7 @@ data["Zul'Gurub"] = {
 		},
 		{ -- ZGTrash1
 			name = AL["Trash"],
+			ContentPhase = 6,
 			ExtraList = true,
 			[NORMAL_DIFF] = {
 				{ 1,  20263 }, -- Gurubashi Helm
@@ -5863,6 +5681,7 @@ data["Zul'Gurub"] = {
 		},
 		{ -- ZGEnchants
 			name = AL["Enchants"],
+			ContentPhase = 6,
 			ExtraList = true,
 			[NORMAL_DIFF] = {
 				{ 1,  19789 }, -- Prophetic Aura
@@ -5884,6 +5703,7 @@ data["Zul'Gurub"] = {
 			name = AL["Muddy Churning Waters"],
 			ExtraList = true,
 			AtlasMapBossID = "1'",
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19975 }, -- Zulian Mudskunk
 			},
@@ -5892,6 +5712,7 @@ data["Zul'Gurub"] = {
 			name = AL["Jinxed Hoodoo Pile"],
 			ExtraList = true,
 			AtlasMapBossID = "2'",
+			ContentPhase = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  19727 }, -- Blood Scythe
 				{ 3,  19820 }, -- Punctured Voodoo Doll
@@ -5917,7 +5738,7 @@ data["BlackwingLair"] = {
 	AtlasMapFile_AL = "BlackwingLair",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 3,
+	ContentPhase = 5,
 	items = {
 		{ -- BWLRazorgore
 			name = AL["Razorgore the Untamed"],
@@ -5925,6 +5746,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{10115}},
 			AtlasMapBossID = 1,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16926 }, -- Bindings of Transcendence
 				{ 2,  16918 }, -- Netherwind Bindings
@@ -5949,6 +5771,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{13992}},
 			AtlasMapBossID = 2,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16925 }, -- Belt of Transcendence
 				{ 2,  16818 }, -- Netherwind Belt
@@ -5973,6 +5796,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{14308}},
 			AtlasMapBossID = 3,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16919 }, -- Boots of Transcendence
 				{ 2,  16912 }, -- Netherwind Boots
@@ -5998,6 +5822,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{6377}},
 			AtlasMapBossID = 4,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16920 }, -- Handguards of Transcendence
 				{ 2,  16913 }, -- Netherwind Gloves
@@ -6030,6 +5855,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{6377}},
 			AtlasMapBossID = 5,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16920 }, -- Handguards of Transcendence
 				{ 2,  16913 }, -- Netherwind Gloves
@@ -6061,6 +5887,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{6377}},
 			AtlasMapBossID = 6,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16920 }, -- Handguards of Transcendence
 				{ 2,  16913 }, -- Netherwind Gloves
@@ -6091,6 +5918,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{14367}},
 			AtlasMapBossID = 7,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16924 }, -- Pauldrons of Transcendence
 				{ 2,  16917 }, -- Netherwind Mantle
@@ -6122,6 +5950,7 @@ data["BlackwingLair"] = {
 			Level = 999,
 			DisplayIDs = {{11380}},
 			AtlasMapBossID = 8,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  16923 }, -- Robes of Transcendence
 				{ 2,  16916 }, -- Netherwind Robes
@@ -6157,6 +5986,7 @@ data["BlackwingLair"] = {
 		{ -- BWLTrashMobs
 			name = AL["Trash"],
 			ExtraList = true,
+			ContentPhase = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  19436 }, -- Cloak of Draconic Might
 				{ 2,  19439 }, -- Interlaced Shadow Jerkin
@@ -6183,7 +6013,7 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 	AtlasMapFile_AL = "TheRuinsofAhnQiraj",
 	ContentType = RAID20_CONTENT,
 	LoadDifficulty = RAID20_DIFF,
-	ContentPhase = 5,
+	ContentPhase = 7,
 	items = {
 		{ -- AQ20Kurinnaxx
 			name = AL["Kurinnaxx"],
@@ -6407,7 +6237,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 	AtlasMapFile_AL = "TheTempleofAhnQiraj",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 5,
+	ContentPhase = 7,
 	items = {
 		{ -- AQ40Skeram
 			name = AL["The Prophet Skeram"],
@@ -6662,7 +6492,7 @@ data["Naxxramas"] = {
 	AtlasMapFile_AL = "Naxxramas",
 	ContentType = RAID40_CONTENT,
 	LoadDifficulty = RAID40_DIFF,
-	ContentPhase = 6,
+	ContentPhase = 8,
 	items = {
 		-- The Arachnid Quarter
 		{ -- NAXAnubRekhan
@@ -7019,5 +6849,655 @@ data["Naxxramas"] = {
 			},
 		},
 		T3_SET,
+	},
+}
+
+data["BlackfathomDeeps2"] = {
+	MapID = 719,
+	InstanceID = 48,
+	AtlasModule = ATLAS_MODULE_NAME,
+	AtlasMapID = "BlackfathomDeeps",
+	AtlasMapFile = {"CL_BlackfathomDeepsA", "CL_BlackfathomDeepsEnt"},
+	AtlasMapFile_AL = {"BlackfathomDeeps", "BlackfathomDeepsEnt"},
+	ContentType = RAID_CONTENT,
+	LevelRange = {25, 25, 39},
+	ContentPhase = 1,
+	items = {
+		{ -- BFDBaronAquanis
+			name = AL["Baron Aquanis"],
+			npcID = 202699,
+			Level = GetForVersion(28,24),
+			DisplayIDs = {{110}},
+			[NORMAL_DIFF] = {
+				{ 1,  211454 }, -- Strange Water Globe
+				{ 2,  211852 }, -- Handwraps of Befouled Water
+				{ 3,  209423 }, -- Flowing Scarf
+				{ 4,  209421 }, -- Cord of Aquanis
+				{ 5,  209828 }, -- Sub-Zero Pauldrons
+				{ 6,  209422 }, -- High Tide Choker
+				{ 7,  209825 }, -- Droplet Choker
+				{ 8,  204807 }, -- Fathomblade
+				{ 9,  204804 }, -- Hydraxian Bangles
+				{ 10,  209676 }, -- Shoulderguards of Crushing Depths
+				{ 11,  209590 }, -- Cracked Water Globe
+				{ 12,  209677 }, -- Loop of Swift Currents
+			},
+		},
+		{ -- BFDGhamoora
+			name = AL["Ghamoo-ra"],
+			npcID = 201722,
+			Level = GetForVersion(25,23),
+			DisplayIDs = {{5027}},
+			[NORMAL_DIFF] = {
+				{ 1,  209436 }, -- Chipped Bite of Serra'kis
+				{ 2,  209830 }, -- Ironhide Arbalest
+				{ 3,  209418 }, -- Adamantine Tortoise Armor
+				{ 4,  209824 }, -- Shimmering Shoulderpads
+				{ 5,  209523 }, -- Shimmering Thresher Cape
+				{ 6,  209432 }, -- Ghamoo-ra's Cinch
+				{ 7,  209678 }, -- Mantle of the Thresher Slayer
+				{ 8,  209424 }, -- Shell Plate Barrier
+				{ 9,  209675 }, -- Clamweave Tunic
+				{ 10,  209524 }, -- Bindings of Serra'kis
+			},
+		},
+		{ -- BFDLadySarevess
+			name = AL["Lady Sarevess"],
+			npcID = 204068,
+			Level = GetForVersion(25,23),
+			DisplayIDs = {{4979}},
+			[NORMAL_DIFF] = {
+				{ 1,  209566 }, -- Leggings of the Faithful
+				{ 2,  211789 }, -- Artemis Cowl
+				{ 3,  211842 }, -- Rakkamar's Tattered Thinking Cap
+				{ 4,  209680 }, -- Waterproof Scarf
+				{ 5,  209525 }, -- Honed Darkwater Talwar
+				{ 6,  209565 }, -- Band of Deep Places
+				{ 7,  211843 }, -- Mask of Scorn
+				{ 8,  209563 }, -- Naga Heartrender
+				{ 9,  209564 }, -- Guardian's Trident
+				{ 10,  209527 }, -- Naga Battle Gauntlets
+				{ 11,  209822 }, -- Strength of Purpose
+				{ 12,  209679 }, -- Azshari Novice's Shoulderpads
+				{ 13,  209823 }, -- Signet of Beasts
+			},
+		},
+		{ -- BFDGelihast
+			name = AL["Gelihast"],
+			npcID = 204921,
+			Level = GetForVersion(26,24),
+			DisplayIDs = {{1773}},
+			[NORMAL_DIFF] = {
+				{ 1,  209569 }, -- Murloc Hide Kneeboots
+				{ 2,  209559 }, -- Twilight Sage's Walking Stick
+				{ 3,  209568 }, -- Algae Gauntlets
+				{ 4,  209820 }, -- Black Shroud Choker
+				{ 5,  209573 }, -- Wrathful Spire
+				{ 6,  209567 }, -- Coral Reef Axe
+				{ 7,  209571 }, -- Deadlight
+				{ 8,  209670 }, -- Skinwalkers
+				{ 9,  209570 }, -- Tome of Cavern Lore
+				{ 10,  209821 }, -- Ring of Shadowsight
+				{ 11,  209572 }, -- Black Boiled Leathers
+				{ 12,  209681 }, -- Black Murloc Egg
+				{ 13,  211491 }, -- Bottomless Murloc Skin Bag
+				{ 16,  211505 }, -- Twilight Avenger's Helm
+				{ 17,  211504 }, -- Twilight Avenger's Chain
+				{ 18,  211506 }, -- Twilight Avenger's Boots
+				{ 20,  211507 }, -- Twilight Elementalist's Cowl
+				{ 21,  211509 }, -- Twilight Elementalist's Robe
+				{ 22,  211508 }, -- Twilight Elementalist's Footpads
+				{ 24,  211510 }, -- Twilight Slayer's Cowl
+				{ 25,  211512 }, -- Twilight Slayer's Tunic 
+				{ 26,  211511 }, -- Twilight Slayer's Footpads
+				{ 28,  209683 }, -- Twilight Invoker's Shawl
+				{ 29,  209671 }, -- Twilight Invoker's Robes
+				{ 30,  209669 }, -- Twilight Invoker's Shoes
+			},
+		},
+		{ -- BFDOldSerrakis
+			name = AL["Lorgus Jett"],
+			npcID = 207356,
+			Level = GetForVersion(26,24),
+			DisplayIDs = {{1816}},
+			[NORMAL_DIFF] = {
+				{ 1,  209560 }, -- Hammer of Righteous Judgement
+				{ 2,  209576 }, -- Mind-Expanding Mushroom
+				{ 3,  209818 }, -- Sun-Touched Crescent
+				{ 4,  209581 }, -- Silver Hand Sabatons
+				{ 5,  209578 }, -- Glowing Leather Bands
+				{ 6,  209682 }, -- Sturdy Hood
+				{ 7,  209574 }, -- Discarded Tenets of the Silver Hand
+				{ 8,  209577 }, -- Fist of the Wild
+				{ 9,  209575 }, -- Carved Driftwood Icon
+				{ 10,  209579 }, -- Crashing Thunder
+				{ 16,  211505 }, -- Twilight Avenger's Helm
+				{ 17,  211504 }, -- Twilight Avenger's Chain
+				{ 18,  211506 }, -- Twilight Avenger's Boots
+				{ 20,  211507 }, -- Twilight Elementalist's Cowl
+				{ 21,  211509 }, -- Twilight Elementalist's Robe
+				{ 22,  211508 }, -- Twilight Elementalist's Footpads
+				{ 24,  211510 }, -- Twilight Slayer's Cowl
+				{ 25,  211512 }, -- Twilight Slayer's Tunic 
+				{ 26,  211511 }, -- Twilight Slayer's Footpads
+				{ 28,  209683 }, -- Twilight Invoker's Shawl
+				{ 29,  209671 }, -- Twilight Invoker's Robes
+				{ 30,  209669 }, -- Twilight Invoker's Shoes
+
+			},
+		},
+		{ -- BFDTwilightLordKelris
+			name = AL["Twilight Lord Kelris"],
+			npcID = 4832,
+			Level = GetForVersion(27,24),
+			DisplayIDs = {{4939}},
+			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
+			[NORMAL_DIFF] = {
+				{ 1,  209694 }, -- Blackfathom Ritual Dagger
+				{ 2,  209672 }, -- Black Fingerless Gloves
+				{ 3,  209686 }, -- Jagged Bone Necklace
+				{ 4,  209667 }, -- Gaze Dreamer Leggings
+				{ 5,  209668 }, -- Signet of the Twilight Lord
+				{ 6,  211455 }, -- Slick Fingerless Gloves
+				{ 7,  209817 }, -- Voidwalker Brooch
+				{ 8,  209674 }, -- Phoenix Ignition
+				{ 9,  211458 }, -- Tome of Shadow Warding
+				{ 10,  211457 }, -- Twilight Defender's Girdle
+				{ 11,  209673 }, -- Glowing Fetish Amulet
+				{ 12,  209816 }, -- Fetish of Mischief
+				{ 13,  209561 }, -- Rod of the Ancient Sleepwalker
+				{ 14,  211492 }, -- Kelris's Satchel
+				{ 16,  211505 }, -- Twilight Avenger's Helm
+				{ 17,  211504 }, -- Twilight Avenger's Chain
+				{ 18,  211506 }, -- Twilight Avenger's Boots
+				{ 20,  211507 }, -- Twilight Elementalist's Cowl
+				{ 21,  211509 }, -- Twilight Elementalist's Robe
+				{ 22,  211508 }, -- Twilight Elementalist's Footpads
+				{ 24,  211510 }, -- Twilight Slayer's Cowl
+				{ 25,  211512 }, -- Twilight Slayer's Tunic 
+				{ 26,  211511 }, -- Twilight Slayer's Footpads
+				{ 28,  209683 }, -- Twilight Invoker's Shawl
+				{ 29,  209671 }, -- Twilight Invoker's Robes
+				{ 30,  209669 }, -- Twilight Invoker's Shoes
+				
+			},
+		},
+		
+		{ -- BFDAkumai
+			name = AL["Aku'mai"],
+			npcID = 213334,
+			Level = GetForVersion(28,24),
+			DisplayIDs = {{2837}},
+			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
+			[NORMAL_DIFF] = {
+				{ 1,  209693 }, -- Perfect Blackfathom Pearl
+				{ 2,  211452 }, -- Perfect Blackfathom Pearl
+				{ 4,  209692 }, -- Sentinel Pauldrons
+				{ 5,  211456 }, -- Dagger of Willing Sacrifice
+				{ 6,  209685 }, -- Ancient Moss Cinch
+				{ 7,  209688 }, -- Bael Modan Blunderbuss
+				{ 8,  209687 }, -- Hydra Hide Cuirass
+				{ 9,  209690 }, -- Shadowscale Coif
+				{ 10,  209691 }, -- Vampiric Boot Knife
+				{ 11,  209580 }, -- Gusting Wind
+				{ 12,  209684 }, -- Soul Leech Pants
+				{ 13,  209689 }, -- Crabshell Waders
+				{ 14,  209534 }, -- Azshari Arbalest
+				{ 15,  209562 }, -- Deadly Strike of the Hydra
+				{ 16,  211505 }, -- Twilight Avenger's Helm
+				{ 17,  211504 }, -- Twilight Avenger's Chain
+				{ 18,  211506 }, -- Twilight Avenger's Boots
+				{ 20,  211507 }, -- Twilight Elementalist's Cowl
+				{ 21,  211509 }, -- Twilight Elementalist's Robe
+				{ 22,  211508 }, -- Twilight Elementalist's Footpads
+				{ 24,  211510 }, -- Twilight Slayer's Cowl
+				{ 25,  211512 }, -- Twilight Slayer's Tunic 
+				{ 26,  211511 }, -- Twilight Slayer's Footpads
+				{ 28,  209683 }, -- Twilight Invoker's Shawl
+				{ 29,  209671 }, -- Twilight Invoker's Robes
+				{ 30,  209669 }, -- Twilight Invoker's Shoes
+			},
+		},
+		{ -- BFDTrash
+			name = AL["Trash"],
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  1486 }, -- Tree Bark Jacket
+				{ 2,  3416 }, -- Martyr's Chain
+				{ 3,  1491 }, -- Ring of Precision
+				{ 4,  3414 }, -- Crested Scepter
+				{ 5,  1454 }, -- Axe of the Enforcer
+				{ 6,  1481 }, -- Grimclaw
+				{ 7,  2567 }, -- Evocator's Blade
+				{ 8,  3413 }, -- Doomspike
+				{ 9,  3417 }, -- Onyx Claymore
+				{ 10, 3415 }, -- Staff of the Friar
+				{ 11, 2271 }, -- Staff of the Blessed Seer
+			},
+		},
+	},
+}
+
+data["Gnomeregan2"] = {
+	MapID = 721,
+	InstanceID = 90,
+	AtlasModule = ATLAS_MODULE_NAME,
+	AtlasMapID = "Gnomeregan",
+	AtlasMapFile = {"CL_Gnomeregan", "CL_GnomereganEnt"},
+	AtlasMapFile_AL = {"Gnomeregan", "GnomereganEnt"},
+	ContentType = RAID_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	LevelRange = {40, 40, 49},
+	ContentPhase = 2,
+	items = {
+		{ -- Grubbis
+			name = AL["Grubbis"],
+			npcID = 217280,
+			Level = 40,
+			DisplayIDs = {{117047}},
+			[NORMAL_DIFF] = {
+				{ 1,  213288 }, -- Grubbis Grubby Gauntlets
+				{ 2,  213304 }, -- Troggslayer Pauldrons
+				{ 3,  213321 }, -- Volatile Concoction Belt
+				{ 4,  213294 }, -- Caverndeep Sabatons
+				{ 5,  213327 }, -- Belt of the Trogg Berserker
+				{ 6,  213322 }, -- Skullduggery Waistband
+				{ 7,  213351 }, -- Irradiated Tower Shield
+				{ 8,  213542 }, -- The Necro-Gnomicon
+				{ 9,  213323 }, -- Cord of Deep Earth
+				{ 10,  215435 }, -- Libram of Benediction
+				{ 11,  213324 }, -- Electromagnetic Waistcord
+				{ 12,  213326 }, -- Girdle of Reclamation
+				{ 13,  215436 }, -- Totem of Invigorating Flame
+				{ 14,  215437 }, -- Trogg Transfigurator 3000
+				{ 15,  216490 }, -- Idol of Wrath
+			},
+		},
+		{ -- GnViscousFallout
+			name = AL["Viscous Fallout"],
+			npcID = 220007,
+			Level = GetForVersion(32,28),
+			DisplayIDs = {{5497}},
+			[NORMAL_DIFF] = {
+				{ 1,  213307 }, -- Drape of Dismantling
+				{ 2,  213355 }, -- Falco's Sting
+				{ 3,  213352 }, -- Gear-Mender's Grace
+				{ 4,  213289 }, -- Hydrostaff
+				{ 5,  213285 }, -- Lev's Oil-Stained Bindings
+				{ 6,  213301 }, -- Synthetic Mantle
+				{ 7,  213302 }, -- Mantle of the Cunning Negotiator
+				{ 8,  213299 }, -- Petrolspill Pants
+				{ 9,  213413 }, -- Generously Padded Shoulderpads
+				{ 10,  213290 }, -- Acidic Waders
+				{ 11,  213291 }, -- Toxic Revenger II
+				{ 12,  213353 }, -- Defibrillating Staff
+			},
+		},
+		{ -- GnElectrocutioner6000
+			name = AL["Electrocutioner 6000"],
+			npcID = 220072,
+			Level = GetForVersion(30,28),
+			DisplayIDs = {{118007}},
+			[NORMAL_DIFF] = {
+				{ 1,  213319 }, -- Machinist's Gloves
+				{ 2,  213300 }, -- Fighter Ace Gloves
+				{ 3,  213309 }, -- Cloak of Invention
+				{ 4,  213287 }, -- Electrocutioner Hexnut
+				{ 5,  213560 }, -- Mechanostrider Muffler
+				{ 6,  213298 }, -- Mechbuilder's Overalls
+				{ 7,  213293}, -- Hi-tech Supergun Mk.VII
+				{ 8,  213559 }, -- Mechanostrider Gear Shifter
+				{ 9,  216494}, -- Aragriar's Whimsical World Warper
+				{ 10,  213354 }, -- Staff of the Evil Genius
+				{ 11,  213414 }, -- Mech-Mender's Sash
+				{ 12,  213418 }, -- Welded Truesilver Ringlets
+				{ 13,  213279 }, -- Reflective Skullcap
+				{ 16,  215377 }, -- Irradiated Robe
+				{ 17,  215379 }, -- Irradiated Trousers
+				{ 18,  215378 }, -- Irradiated Boots
+				{ 20,  213286 }, -- Electrocutioner's Needle
+				{ 22,  217008 }, -- Power Depleted Chest
+				{ 23,  217009 }, -- Power Depleted Legs
+				{ 24,  217007 }, -- Power Depleted Boots
+
+			},
+		},
+		{ -- GnCrowdPummeler960
+			name = AL["Crowd Pummeler 9-60"],
+			npcID = 215728,
+			Level = GetForVersion(32,28),
+			DisplayIDs = {{6774}},
+			AtlasMapBossID = 6,
+			[NORMAL_DIFF] = {
+				{ 1,  213295 }, -- Ultrasonic Vibroblade
+				{ 2,  213419 }, -- 9-60 Repair Manual
+				{ 3,  213408 }, -- Gyromatic Macro-Adjustor
+				{ 4,  213278 }, -- Bonk-Maestro's Handguards
+				{ 5,  213442 }, -- Cogmaster's Claw
+				{ 6,  213317 }, -- Experimental Aim Stabilizers
+				{ 7,  213292 }, -- Gizmotron Gigachopper
+				{ 8,  213340 }, -- Gnomebot Operators Boots
+				{ 9,  213415 }, -- Tinker's Wrist Wraps
+				{ 10,  213305 }, -- Machined Alloy Shoulderplates
+				{ 11,  210741 }, -- Automatic Crowd Pummeler
+				{ 13,  215449 }, -- World Shrinker
+				{ 14,  213412 }, -- Dielectric Safety Shield
+			},
+		},
+		{ -- GnMechanicalMenagerie
+			name = AL["The Mechanical Menagerie"],
+			npcID = 218242,
+			Level = GetForVersion(33,28),
+			DisplayIDs = {{117365}},
+			[NORMAL_DIFF] = {
+				{ 1,  213296 }, -- Supercharged Headchopper
+				{ 2,  213297 }, -- Oscillating Blasthammer
+				{ 3,  213306 }, -- Ingenuity's Cover
+				{ 4,  213325 }, -- Darkvision Girdle
+				{ 5,  213411 }, -- Izzleflick's Inextinguishable Igniter
+				{ 6,  213280 }, -- Marksman's Scopevisor
+				{ 7,  213318 }, -- Ornate Dark Iron Bangles
+				{ 8,  213320 }, -- Fingers of Arcane Accuracy
+				{ 9,  213308 }, -- Prototype Parachute Cloak
+				{ 10,  213417 }, -- Truesilver Filament Coif
+				{ 11,  213303 }, -- Lightning Rod Spaulders
+				{ 13,  215378 }, -- Irradiated Boots
+				{ 14,  215379 }, -- Irradiated Trousers
+				{ 15,  215377 }, -- Irradiated Robe
+				{ 16,  215380 }, -- Power-Assisted Lifting Belt
+				{ 17,  213410 }, -- Glimmering Gizmoblade
+				{ 19,  217008 }, -- Power Depleted Chest
+				{ 20,  217009 }, -- Power Depleted Legs	
+				{ 21,  217007 }, -- Power Depleted Boots		
+			},
+		},
+		{ -- GnMekgineerThermaplugg
+			name = AL["Mekgineer Thermaplugg"],
+			npcID = 218537,
+			Level = GetForVersion(34,28),
+			DisplayIDs = {{117499}},
+			[NORMAL_DIFF] = {
+				{ 1,  217350 }, -- Thermaplugg's Engineering Notes
+				{ 2,  217351 }, -- Thermaplugg's Engineering Notes
+				{ 4,  213281 }, -- Electromagnetic Hyperflux Reactivator
+				{ 5,  213348 }, -- Gyromatic Experiment 420b
+				{ 6,  213349 }, -- Gniodine Pill Bottle
+				{ 7,  213350 }, -- Wirdal's Hardened Core
+				{ 8,  213347 }, -- Miniaturized Combustion Chamber
+				{ 9,  215461 }, -- Domesticated Attack Chicken
+				{ 11,  215379 }, -- Irradiated Trousers
+				{ 12,  215377 }, -- Irradiated Robe
+				{ 13,  215378 }, -- Irradiated Boots
+				{ 16,  213283 }, -- Hypercharged Gear of Conflagration
+				{ 17,  213284 }, -- Hypercharged Gear of Devastation
+				{ 18,  213282 }, -- Hypercharged Gear of Innovation
+				{ 20,  213356 }, -- Thermaplugg's Custom Blaster
+				{ 21,  213409 }, -- Mekgatorque's Arcano-Shredder
+				{ 22,  213416 }, -- Thermaplugg's Rocket Cleaver
+				{ 24,  216608 }, -- Radiant Ray Reflectors
+				{ 25,  13325 }, -- Fluorescent Green Mechanostrider
+				{ 27,  217008 }, -- Power Depleted Chest
+				{ 28,  217009 }, -- Power Depleted Legs
+				{ 29,  217007 }, -- Power Depleted Boots
+			},
+		},
+		{ -- GnTrash
+			name = AL["Trash"],
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  9508 }, -- Mechbuilder's Overalls
+				{ 2,  9491 }, -- Hotshot Pilot's Gloves
+				{ 3,  9509 }, -- Petrolspill Leggings
+				{ 4,  9510 }, -- Caverndeep Trudgers
+				{ 5,  9487 }, -- Hi-tech Supergun
+				{ 6,  9485 }, -- Vibroblade
+				{ 7,  9488 }, -- Oscillating Power Hammer
+				{ 8,  9486 }, -- Supercharger Battle Axe
+				{ 9,  9490 }, -- Gizmotron Megachopper
+				{ 11, 9489 }, -- Gyromatic Icemaker
+				{ 12, 11827 }, -- Schematic: Lil' Smoky
+				--{ 15, 11826 }, -- Lil' Smoky
+				{ 16, 9327 }, -- Security DELTA Data Access Card
+				{ 18, 7191 }, -- Fused Wiring
+				{ 19, 9308 }, -- Grime-Encrusted Object
+				{ 20, 9326 }, -- Grime-Encrusted Ring
+				{ 22, 9279 }, -- White Punch Card
+				{ 23, 9280 }, -- Yellow Punch Card
+				{ 24, 9282 }, -- Blue Punch Card
+				{ 25, 9281 }, -- Red Punch Card
+				{ 26, 9316 }, -- Prismatic Punch Card
+				{ 28, "INV_Box_01", nil, AL["SoD Only:"], nil },
+				{ 29, 213427 }, -- Grime-Encrusted Salvage
+			},
+		},
+	},
+}
+
+data["TheTempleOfAtal'Hakkar2"] = {
+	MapID = 1477,
+	InstanceID = 109,
+	AtlasModule = ATLAS_MODULE_NAME,
+	AtlasMapID = "TheTempleOfAtal'Hakkar",
+	AtlasMapFile = { "CL_TheSunkenTemple", "CL_TheSunkenTempleEnt" },
+	AtlasMapFile_AL = { "TheSunkenTemple", "TheSunkenTempleEnt" },
+	ContentType = RAID_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	LevelRange = GetForVersion({50, 50, 59},{50, 50, 59}),
+	ContentPhase = 3,
+	items = {
+		{ -- STAtalalarion
+			name = AL["Atal'alarion"],
+			npcID = 218624,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{7873}},
+			AtlasMapBossID = 1,
+			[NORMAL_DIFF] = {
+				{ 1,  220539 }, -- Warbands of Sacrifice
+				{ 2,  220529 }, -- Spaulders of Fanaticism
+				{ 3,  220527 }, -- Atal'ai Berserker's Mantle
+				{ 4,  220602 }, -- Sewer Turtle Half-Shell
+				{ 5,  220568 }, -- Temple Explorer's Gun Axe
+				{ 6,  220567 }, -- Bloodied Headspike
+				{ 7,  220615 }, -- Panther Fur Cloak
+				{ 8,  220554 }, -- Atal'alarion's Tusk Band
+				{ 9,  220511 }, -- Greathelm of the Nightmare
+				{ 10,  220561 }, -- Tenacious Troll Kickers
+				{ 11,  220537 }, -- Dreamer's Darkwater Bracers
+				{ 12,  220580 }, -- Madness of the Avatar
+				{ 13,  220635 }, -- Atal'alarion's Enchanted Boulder
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STFesteringRotslime
+			name = AL["Festering Rotslime"],
+			npcID = 218819,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{119351}},
+			[NORMAL_DIFF] = {
+				{ 1, 220542 }, -- Polluted Murkwater Gauntlets
+				{ 2, 220552 }, -- Waistguard of Pain
+				{ 3, 220538 }, -- Cursed Slimescale Bracers
+				{ 4, 220545 }, -- Foul Smelling Fighter's Gloves
+				{ 5, 220546 }, -- Hands of the Tormented
+				{ 6, 220540 }, -- Corruption Laden Handguards
+				{ 7, 220569 }, -- Blistering Ragehammer
+				{ 8, 220550 }, -- Temple Looter's Waistband
+				{ 9, 220518 }, -- Ba'ham's Dusty Hat
+				{ 10, 220541 }, -- Disease-Ridden Plate Fists
+				{ 11, 220571 }, -- Stinging Longbow
+				{ 12, 220565 }, -- Ethereal Mistwalker Boots
+				{ 13, 221484 }, -- Witch Doctor's Hex Stick
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STAtalaiDefenders
+			name = AL["Atal'ai Defenders"],
+			npcID = 221637,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{118789}},
+			[NORMAL_DIFF] = {
+				{ 1,  220555 }, -- Atal'ai Serpentscale Girdle
+				{ 2,  220532 }, -- Reinforced Atal'ai Spaulders
+				{ 3,  220516 }, -- Gasher's Forgotten Visor
+				{ 4,  220591 }, -- Mijan's Restorative Rod
+				{ 5,  220558 }, -- Atal'ai Assassin's Leggings
+				{ 6,  220572 }, -- Rinzo's Rapid Repeater
+				{ 7,  220528 }, -- Atal'ai Huntsman's Shoulders
+				{ 8,  220611 }, -- Hukku's Hex Cape
+				{ 9,  220533 }, -- Reforged Atal'ai Breastplate
+				{ 10,  220522 }, -- Soulcatcher Crown
+				{ 11,  220674 }, -- Debased Stealthblade
+				{ 12,  220548 }, -- Atal'ai Hexxer's Gloves
+				{ 13,  220560 }, -- Silvershell Legplates
+				{ 14,  220638 }, -- Unorthodox Hex Stick
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STDreamscytheandWeaver
+			name = AL["Dreamscythe and Weaver"],
+			npcID = 220833,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{6379}},
+			[NORMAL_DIFF] = {
+				{ 1, 220549 }, -- Dawnspire Strap
+				{ 2, 220521 }, -- Hakkari Ritualist's Headdress
+				{ 3, 220587 }, -- Sacrificial Dream Dagger
+				{ 4, 220536 }, -- Atal'ai Medicine Man's Wrists
+				{ 5, 220581 }, -- Snake Clobberer
+				{ 6, 220566 }, -- Smolder Claw
+				{ 7, 220551 }, -- Devotee's Sash of the Emerald Dream
+				{ 8, 220584 }, -- Flamebreath Blade
+				{ 9, 220519 }, -- Voodoo Feathered Headdress
+				{ 10, 220544 }, -- Bloodflare Talons
+				{ 11, 220594 }, -- Scythe of the Dream
+				{ 12, 220609 }, -- Drape of Nightfall
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STJammalanandOgom
+			name = AL["Jammal'an and Ogom"],
+			npcID = 218721,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{6708}},
+			[NORMAL_DIFF] = {
+				{ 1, 220578 }, -- Fist of the Forsaken
+				{ 2, 220556 }, -- Kilt of the Fallen Atal'ai Prophet
+				{ 3, 220601 }, -- Hakkari Witch Doctor's Guard
+				{ 4, 220575 }, -- Eater of the Damned
+				{ 5, 220547 }, -- Gloves of the Fallen Atal'ai Prophet
+				{ 6, 220583 }, -- Vile Blade of the Wretched
+				{ 7, 220576 }, -- Axe of the Atal'ai Executioner
+				{ 8, 220625 }, -- Resilience of the Exiled
+				{ 9, 220624 }, -- Bloodstained Charm of Valor
+				{ 10, 220535 }, -- Garments of the Atal'ai Prophet
+				{ 11, 220623 }, -- Jin'do's Lost Locket
+				{ 12, 220605 }, -- Libram of Sacrilege
+				{ 13, 220515 }, -- Enchanted Emerald Helmet
+				{ 14, 220586 }, -- Hubris, the Bandit Brander
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STMorphazandHazzas
+			name = AL["Morphaz and Hazzas"],
+			npcID = 221943,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{9584}},
+			AtlasMapBossID = 7,
+			[NORMAL_DIFF] = {
+				{ 1, 220965 }, -- Scalebane Greataxe
+				{ 2, 220514 }, -- Visor of Verdant Feathers
+				{ 3, 220553 }, -- Belt of the Forsaken Worshipper
+				{ 4, 220543 }, -- Emerald Scalemail Gloves
+				{ 5, 220563 }, -- Boots of the Atal'ai Blood Shaman
+				{ 6, 220599 }, -- Drakestone of the Blood Prophet
+				{ 7, 220598 }, -- Drakestone of the Nightmare Harbinger
+				{ 8, 220559 }, -- Revitalized Drake Scale Leggings
+				{ 9, 220606 }, -- Idol of the Dream
+				{ 10, 220607 }, -- Totem of Tormented Ancestry
+				{ 11, 220597 }, -- Drakestone of the Dream Harbinger
+				{ 12, 220512 }, -- Immaculate Goldsteel Helmet
+				{ 13, 220589 }, -- Serpent's Striker
+				{ 14, 220596 }, -- Ancient Divining Rod
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STEranikus
+			name = AL["Shade of Eranikus"],
+			npcID = 218571,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{117504}},
+			[NORMAL_DIFF] = {
+				{ 1, 220604 }, -- Nightmare Trophy
+				{ 2, 220622 }, -- Perfectly Preserved Dragon's Eye
+				{ 3, 220564 }, -- Restored Slitherscale Boots
+				{ 4, 220603 }, -- Rod of Irreversible Corrosion
+				{ 5, 220523 }, -- Visage of the Exiled
+				{ 6, 220600 }, -- Crest of Preeminence
+				{ 7, 220574 }, -- Sharpened Tooth of Eranikus
+				{ 8, 220573 }, -- Dreadstalker's Hunting Bow
+				{ 9, 220595 }, -- Nightmare Focus Staff
+				{ 10, 220579 }, -- Witch Doctor's Stick of Mojo
+				{ 11, 220585 }, -- Degraded Dire Nail
+				{ 12, 220582 }, -- Dragon's Cry
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+				{ 19,  221475 }, -- Essence of Eranikus
+			},
+		},
+		{ -- STAvatarofHakkar
+			name = AL["Avatar of Hakkar"],
+			npcID = 221394,
+			DisplayIDs = {{8053}},
+			AtlasMapBossID = 3,
+			Level = 48,
+			[NORMAL_DIFF] = {
+				{ 1, 221363 }, -- Scapula of the Fallen Avatar
+				{ 2, 221346 }, -- Scapula of the Fallen Avatar
+				{ 4, 220608 }, -- Featherskin Drape
+				{ 5, 220530 }, -- Will of the Atal'ai Warrior
+				{ 6, 220577 }, -- Might of the Blood Loa
+				{ 7, 220557 }, -- Cursed Windscale Sarong
+				{ 8, 220562 }, -- Bloodshot Battle Greaves
+				{ 9,  220636 }, -- Atal'ai Blood Icon
+				{ 10,  220637 }, -- Atal'ai Ritual Token
+				{ 12, 220634 }, -- Atal'ai Blood Ritual Charm
+				{ 13, 220633 }, -- Atal'ai Blood Ritual Badge
+				{ 14, 220632 }, -- Atal'ai Blood Ritual Medallion
+				{ 16, 220590 }, -- Spire of Hakkari Worship
+				{ 17, 220620 }, -- Wind Serpent Skull
+				{ 18, 220534 }, -- Eternal Embrace of the Wind Serpent
+				{ 19, 220686 }, -- Chieftain's Bane
+				{ 20, 220588 }, -- Cobra Fang Claw
+			},
+		},
+		{ -- STTrash
+			name = AL["Trash"],
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  10630 }, -- Soulcatcher Halo
+				{ 2,  10632 }, -- Slimescale Bracers
+				{ 3,  10631 }, -- Murkwater Gauntlets
+				{ 4,  10633 }, -- Silvershell Leggings
+				{ 5,  10629 }, -- Mistwalker Boots
+				{ 6,  10634 }, -- Mindseye Circle
+				{ 7,  10624 }, -- Stinging Bow
+				{ 8,  10623 }, -- Winter's Bite
+				{ 9,  10625 }, -- Stealthblade
+				{ 10, 10626 }, -- Ragehammer
+				{ 11, 10628 }, -- Deathblow
+				{ 12, 10627 }, -- Bludgeon of the Grinning Dog
+				{ 16, 10782 }, -- Hakkari Shroud
+				{ 17, 10781 }, -- Hakkari Breastplate
+				{ 18, 10780 }, -- Mark of Hakkar
+				{ 20, 16216 }, -- Formula: Enchant Cloak - Greater Resistance
+				{ 21, 15733 }, -- Pattern: Green Dragonscale Leggings
+			},
+		},
 	},
 }

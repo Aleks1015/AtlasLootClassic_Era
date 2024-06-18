@@ -64,16 +64,37 @@ AtlasLoot.CLASSIC_VERSION_NUM 	= 1
 AtlasLoot.BC_VERSION_NUM 		= 2
 AtlasLoot.WRATH_VERSION_NUM 	= 3
 
-AtlasLoot.GAME_VERSION_TEXTURES = {
-	[AtlasLoot.CLASSIC_VERSION_NUM] = 538639,
-	[AtlasLoot.BC_VERSION_NUM] = 131194,
-	[AtlasLoot.WRATH_VERSION_NUM] = 235509,
-}
-
 AtlasLoot.IS_CLASSIC = false
 AtlasLoot.IS_BC = false
 AtlasLoot.IS_WRATH = false
 AtlasLoot.IS_RETAIL = false
+
+AtlasLoot.IS_SEASONAL = false
+AtlasLoot.IS_SEASONAL = C_Seasons.HasActiveSeason()
+AtlasLoot.IS_SOD = false
+AtlasLoot.SEASON = 0
+
+if AtlasLoot.IS_SEASONAL then 
+	AtlasLoot.SEASON = C_Seasons.GetActiveSeason()
+	--3 - Hardcore
+	--2 - Season of Discovery
+	--1 - Season of Mastery (old)
+	if AtlasLoot.SEASON == 2 then AtlasLoot.IS_SOD = true end
+end
+
+if AtlasLoot.IS_SOD then
+	AtlasLoot.GAME_VERSION_TEXTURES = {
+		[AtlasLoot.CLASSIC_VERSION_NUM] = 4527368,
+		[AtlasLoot.BC_VERSION_NUM] = 131194,
+		[AtlasLoot.WRATH_VERSION_NUM] = 235509,
+	}
+else
+	AtlasLoot.GAME_VERSION_TEXTURES = {
+		[AtlasLoot.CLASSIC_VERSION_NUM] = 538639,
+		[AtlasLoot.BC_VERSION_NUM] = 131194,
+		[AtlasLoot.WRATH_VERSION_NUM] = 235509,
+	}
+end
 
 local CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then

@@ -1,4 +1,4 @@
-if AtlasLoot.IS_SOD then return end
+if AtlasLoot.IS_SOD == false then return end
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
@@ -23,6 +23,7 @@ local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
 local ALLIANCE_DIFF
 local HORDE_DIFF
 local LOAD_DIFF
+
 if UnitFactionGroup("player") == "Horde" then
 	HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
 	ALLIANCE_DIFF = data:AddDifficulty(FACTION_ALLIANCE, "alliance", nil, 1)
@@ -41,6 +42,7 @@ local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
+local SOD_CONTENT = data:AddContentType(AL["SoD Exclusives"], ATLASLOOT_RAID20_COLOR)
 local PVP_CONTENT = data:AddContentType(AL["Battlegrounds"], ATLASLOOT_PVP_COLOR)
 local GENERAL_CONTENT = data:AddContentType(GENERAL, ATLASLOOT_RAID40_COLOR)
 
@@ -138,7 +140,7 @@ data["AlteracValley"] = {
 	AtlasMapID = "AlteracValley",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
+	ContentPhase = 4,
 	items = {
 		{ -- AVRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -261,7 +263,7 @@ data["WarsongGulch"] = {
 	AtlasMapID = "WarsongGulch",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
+	ContentPhase = 1,
 	items = {
 		{ -- WSGRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -490,7 +492,7 @@ data["ArathiBasin"] = {
 	AtlasMapID = "ArathiBasin",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 2,
 	items = {
 		{ -- ABRepRevered
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -947,6 +949,198 @@ data["Insignia"] = {
 				{ 6,  18853 }, -- Druid
 				{ 7,  18845 }, -- Shaman
 				{ 8,  18850 }, -- Mage
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["SoD Level 25"] = {
+	name = AL["SoD Level 25"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 1,
+	items = {
+		{
+			name = AL["Level 25"],
+			[HORDE_DIFF] = {
+				{ 1, "f889rep5" },
+				{ 2,  211500 }, --Resilient Cloth Headband
+				{ 3,  211857 }, --Resilient Leather Mask
+				{ 4,  211856 }, --Resilient Mail Coif
+				{ 5,  211499 }, --Trainee's Outrider Wolf
+				{ 7, "f889rep7" },
+				{ 8,  212584 }, --Advisor's Gnarled Staff
+				{ 9,  212585 }, --Outrider's Bow
+				{ 10,  212586 }, --Legionnaire's Sword
+				{ 11,  212587 }, --Scout's Blade
+				{ 16,  213088 }, --Sergeant's Cloak
+			},
+			[ALLIANCE_DIFF] = {
+				{ 1, "f890rep5" },
+				{ 2,  211500 }, --Resilient Cloth Headband
+				{ 3,  211857 }, --Resilient Leather Mask
+				{ 4,  211856 }, --Resilient Mail Coif
+				{ 5,  211498 }, --Trainee's Sentinel Nightsaber
+				{ 7, "f890rep7" },
+				{ 8,  212580 }, --Lorekeeper's Staff
+				{ 9,  212581 }, --Outrunner's Bow
+				{ 10,  212582 }, --Protector's Sword
+				{ 11,  212583 }, --Sentinel's Blade
+				{ 16,  213087 }, --Sergeant's Cloak
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["SoD Level 40"] = {
+	name = AL["SoD Level 40"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 1,
+	items = {
+		{
+		name = AL["STV Blood Moon"],
+			[NORMAL_DIFF] = {
+				{ 1, 216621 }, -- Blooddrenched Drape
+				{ 2, 216620 }, -- Bloodrot Cloak
+				{ 3, 216623 }, -- Cape of Hemostasis
+				{ 4, 216622 }, -- Coagulated Cloak
+				{ 5, 216570 }, -- Reins of the Golden Sabercat
+				{ 6, 216492 }, -- Whistle of the Mottled Blood Raptor
+			},
+		},
+		{
+		name = AL["STV Blood Moon Epics 1"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 2, 216498 }, -- Enchanted Sanguine Grimoire 
+				{ 3, 216499 }, -- Bloodbark Crusher 
+				{ 4, 216500 }, -- Bloodbonded Grove Talisman
+				{ 6, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 7, 216513 }, -- Tigerblood Talisman
+				{ 8, 216514 }, -- Sanguine Quiver
+				{ 9, 216515 }, -- Sanguine Ammo Pouch
+				{ 10, 216516 }, -- Bloodlash Bow
+				{ 12, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 13, 216510 }, -- Blood Resonance Circle 
+				{ 14, 216511 }, -- Emberblood Seal 
+				{ 15, 216512 }, -- Loop of Chilled Veins 
+				{ 16, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 17, 216504 }, -- Eclipsed Bloodlight Saber 
+				{ 18, 216505 }, -- Bloodlight Crusader's Radiance 
+				{ 19, 216506 }, -- Bloodlight Avenger's Edge 
+				{ 20, 216607 }, -- Bloodlight Offering 
+				{ 22, "INV_Box_01", nil, AL["Priest"], nil },
+				{ 23, 216517 }, -- Sanguine Sanctuary 
+				{ 24, 216518 }, -- Blood Covenant Seal
+				{ 25, 216519 }, -- Sanguine Shadow Band 
+			},
+		},
+		{
+		name = AL["STV Blood Moon Epics 2"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 2, 216520 }, -- Bloodharvest Blade
+				{ 3, 216521 }, -- Swift Sanguine Strikers
+				{ 4, 216522 }, -- Blood Spattered Stiletto 
+				{ 6, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 7, 216501 }, -- Bloodstorm Barrier
+				{ 8, 216502 }, -- Bloodstorm War Totem 
+				{ 9, 216503 }, -- Bloodstorm Jewel 
+				{ 10, 216615 }, -- Ancestral Bloodstorm Beacon 
+				{ 12, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 13, 216507 }, -- Umbral Bloodseal
+				{ 14, 216508 }, -- Infernal Bloodcoil Band
+				{ 15, 216509 }, -- Infernal Pact Essence 
+				{ 16, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 17, 216495 }, -- Sanguine Crusher 
+				{ 18, 216496 }, -- Sanguine Skullcrusher 
+				{ 19, 216497 }, -- Exsanguinar 
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["SoD Level 50"] = {
+	name = AL["SoD Level 50"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 1,
+	items = {
+		{
+		name = AL["STV Blood Moon Epics 1"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 2, 221447 }, -- Ritualist's Bloodmoon Grimoire
+				{ 3, 221446 }, -- Ritualist's Hammer
+				{ 4, 221448 }, -- Talisman of the Corrupted Grove
+				{ 6, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 7, 221451 }, -- Bloodthirst Crossbow
+				{ 8, 221450 }, -- Gurubashi Pit Fighter's Bow
+				{ 10, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 11, 221452 }, -- Bloodfocused Arcane Band
+				{ 12, 221453 }, -- Band of Boiling Blood 
+				{ 13, 221454 }, -- Glacial Blood Band
+				{ 16, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 17, 221457 }, -- Libram of Draconic Destruction
+				{ 18, 221455 }, -- Bloodlight Reverence
+				{ 19, 221456 }, -- Eclipsed Sanguine Saber
+				{ 20, 220173 }, -- Parasomnia
+				{ 22, "INV_Box_01", nil, AL["Priest"], nil },
+				{ 23, 221459 }, -- Seal of the Sacrificed
+				{ 24, 221458 }, -- Shadowy Band of Victory
+			},
+		},
+		{
+		name = AL["STV Blood Moon Epics 2"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 2, 221460 }, -- Gurubashi Backstabber
+				{ 3, 221462 }, -- Bloodied Sword of Speed
+				{ 5, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 6, 221464 }, -- Totem of Fiery Precision
+				{ 7, 221463 }, -- Ancestral Voodoo Doll
+				{ 8, 221465 }, -- Corrupted Smashbringer
+				{ 10, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 11, 221466 }, -- Loop of Burning Blood
+				{ 12, 221467 }, -- Eye of the Bloodmoon
+				{ 16, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 17, 221469 }, -- Headhunter's Barbed Spear
+				{ 18, 221468 }, -- Wall of Whispers
+				{ 19, 220173 }, -- Parasomnia
+			},
+		},
+		{
+		name = AL["Level 50 PvP Sets"],
+		TableType = SET_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Horde"], nil },
+				{ 2, 1618 }, --Blood Guard's Plate
+				{ 4, 1624 },
+				{ 5, 1623 },
+				{ 6, 1622 },
+				{ 7, 1625 },
+				{ 9, 1627 },
+				{ 10, 1631 },
+				{ 11, 1629 },
+				{ 13, 1633 },
+				{ 14, 1635 },
+				{ 16, "INV_Box_01", nil, AL["Alliance"], nil },
+				{ 17, 1619 },
+				{ 18, 1620 },
+				{ 19, 1621 },
+				{ 21, 1665 },
+				{ 22, 1626 },
+				{ 24, 1628 },
+				{ 25, 1630 },
+				{ 26, 1632 },
+				{ 28, 1634 },
+				{ 29, 1636 },
 			},
 		},
 		PVP_RANKS,
