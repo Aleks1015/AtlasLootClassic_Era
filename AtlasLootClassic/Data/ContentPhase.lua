@@ -22,7 +22,7 @@ if AtlasLoot.IS_SOD then
     --6 - ZG / Green Dragons
     --7 - AQ 
     --8 - Naxxramas
-    ACTIVE_PASE_LIST[AtlasLoot.CLASSIC_VERSION_NUM] = 3
+    ACTIVE_PASE_LIST[AtlasLoot.CLASSIC_VERSION_NUM] = 4
 end
 local ACTIVE_PHASE = ACTIVE_PASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PASE_LIST[1]
 
