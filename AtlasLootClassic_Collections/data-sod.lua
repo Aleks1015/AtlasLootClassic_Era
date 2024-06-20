@@ -769,7 +769,7 @@ data["WorldEpics"] = {
 			name = AL["Two-Handed Weapons"],
 			[NORMAL_ITTYPE] = {
 				-- Axe
-				{ 1, 2801 }, -- Blade of Hanna
+				{ 1, 227691 }, -- Blade of Hanna (SoD)
 				{ 2, 647 }, -- Destiny
 				{ 3, 2291 }, -- Kang the Decapitator
 				{ 4, 870 }, -- Fiery War Axe
@@ -2082,6 +2082,7 @@ data["Wild Offerings"] = {
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	ContentPhase = 3,
 	items = {
 		{
 			name = AL["Wild Offering Rewards"],
@@ -2093,6 +2094,217 @@ data["Wild Offerings"] = {
 				{ 5, 223193 }, -- Crown of the Dreamweaver
 				{ 6, 223196 }, -- Godslayer's Greaves
 				{ 7, 221491 }, -- Shadowtooth Bag
+			},
+		},
+	},
+}
+
+data["Phase 4 - PTR Loot"] = {
+	name = AL["Phase 4 - PTR Loot"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	ContentPhase = 4,
+	items = {
+		{
+			name = AL["Weapons"],
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{1, 227691}, --Blade of Hanna
+				{2, 225893}, --Epoch's End
+				{3, 227684}, --Sulfuron Hammer
+				{4, 227683}, --Sulfuras, Hand of Ragnaros
+				{6, "INV_Box_02", nil, AL["Incomplete Items"], nil },
+				{7, 224582}, --unknown
+				{8, 227688}, --unknown
+			},
+		},
+		{
+			name = AL["Warrior"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0"), nil },
+				{2, 226769}, --Helm of Valor
+				{3, 226768}, --Spaulders of Valor
+				{4, 226770}, --Breastplate of Valor
+				{5, 226765}, --Belt of Valor
+				{6, 226767}, --Legplates of Valor
+				{7, 226764}, --Boots of Valor
+				{8, 226766}, --Bracers of Valor
+				{9, 226771}, --Gauntlets of Valor
+				{16, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(1)"), nil },
+				{17, 226860}, --Crown of Heroism
+				{18, 226858}, --Spaulders of Heroism
+				{19, 226862}, --Breastplate of Heroism
+				{20, 226864}, --Belt of Heroism
+				{21, 226859}, --Legplates of Heroism
+				{22, 226857}, --Battleboots of Heroism
+				{23, 226863}, --Bracers of Heroism
+				{24, 226861}, --Gauntlets of Heroism
+				{101, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(2)"), nil },
+				{102, 226869}, --Faceguard of Heroism
+				{103, 226867}, --Pauldrons of Heroism
+				{104, 226872}, --Chestguard of Heroism
+				{105, 226866}, --Waistguard of Heroism
+				{106, 226868}, --Legguards of Heroism
+				{107, 226871}, --Sabatons of Heroism
+				{108, 226865}, --Wristguards of Heroism
+				{109, 226870}, --Handguards of Heroism
+				{116, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(3)"), nil },
+				{117, 226877}, --Helm of Heroism
+				{118, 226875}, --Shoulders of Heroism
+				{119, 226880}, --Chest of Heroism
+				{120, 226874}, --Waist of Heroism
+				{121, 226876}, --Legs of Heroism
+				{122, 226879}, --Boots of Heroism
+				{123, 226873}, --Wrists of Heroism
+				{124, 226878}, --Gloves of Heroism
+			},
+		},
+		{
+			name = AL["Rogue"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226707}, --Shadowcraft Cap
+				{3, 226706}, --Shadowcraft Spaulders
+				{4, 226700}, --Shadowcraft Tunic
+				{5, 226701}, --Shadowcraft Belt
+				{6, 226705}, --Shadowcraft Pants
+				{7, 226703}, --Shadowcraft Boots
+				{8, 226704}, --Shadowcraft Bracers
+				{9, 226702}, --Shadowcraft Gloves
+				{16, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(1)"), nil },
+				{17, 226829}, --Darkmantle Cap
+				{18, 226826}, --Darkmantle Spaulders
+				{19, 226825}, --Darkmantle Tunic
+				{20, 226832}, --Darkmantle Belt
+				{21, 226827}, --Darkmantle Pants
+				{22, 226831}, --Darkmantle Footpads
+				{23, 226830}, --Darkmantle Bracers
+				{24, 226828}, --Darkmantle Grips
+				{101, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(2)"), nil },
+				{102, 226841}, --Darkmantle Faceguard
+				{103, 226837}, --Darkmantle Pauldrons
+				{104, 226843}, --Darkmantle Armor
+				{105, 226836}, --Darkmantle Waistguard
+				{106, 226838}, --Darkmantle Legguards
+				{107, 226842}, --Darkmantle Treads
+				{108, 226835}, --Darkmantle Wristguards
+				{109, 226840}, --Darkmantle Handguards
+				{116, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(3)"), nil },
+				{117, 226849}, --Darkmantle Helm
+				{118, 226847}, --Darkmantle Shoulders
+				{119, 226852}, --Darkmantle Chest
+				{120, 226846}, --Darkmantle Waist
+				{121, 226848}, --Darkmantle Legs
+				{122, 226851}, --Darkmantle Boots
+				{123, 226845}, --Darkmantle Wrists
+				{124, 226850}, --Darkmantle Gloves
+			},
+		},
+		{
+			name = AL["Druid"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226708}, --Wildheart Cowl
+				{3, 226710}, --Wildheart Spaulders
+				{4, 226715}, --Wildheart Vest
+				{5, 226712}, --Wildheart Belt
+				{6, 226709}, --Wildheart Kilt
+				{7, 226713}, --Wildheart Boots
+				{8, 226714}, --Wildheart Bracers
+				{9, 226711}, --Wildheart Gloves
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},	
+		{
+			name = AL["Warlock"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226762}, --Dreadmist Mask
+				{3, 226756}, --Dreadmist Mantle
+				{4, 226761}, --Dreadmist Belt
+				{5, 226760}, --Dreadmist Leggings
+				{6, 226763}, --Dreadmist Sandals
+				{7, 226759}, --Dreadmist Bracers
+				{8, 226758}, --Dreadmist Wraps
+				{9, 226757}, --Dreadmist Robe
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},			
+		{
+			name = AL["Hunter"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226720}, --Beaststalker's Cap
+				{3, 226716}, --Beaststalker's Mantle
+				{4, 226723}, --Beaststalker's Tunic
+				{5, 226718}, --Beaststalker's Belt
+				{6, 226719}, --Beaststalker's Pants
+				{7, 226722}, --Beaststalker's Boots
+				{8, 226717}, --Beaststalker's Bindings
+				{9, 226721}, --Beaststalker's Gloves
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},	
+		{
+			name = AL["Mage"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226728}, --Magister's Crown
+				{3, 226726}, --Magister's Mantle
+				{4, 226724}, --Magister's Belt
+				{5, 226727}, --Magister's Leggings
+				{6, 226730}, --Magister's Boots
+				{7, 226725}, --Magister's Bindings
+				{8, 226731}, --Magister's Gloves
+				{9, 226729}, --Magister's Robes
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},
+		{
+			name = AL["Paladin"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226733}, --Lightforge Helm
+				{3, 226735}, --Lightforge Spaulders
+				{4, 226734}, --Lightforge Breastplate
+				{5, 226732}, --Lightforge Belt
+				{6, 226736}, --Lightforge Legplates
+				{7, 226738}, --Lightforge Boots
+				{8, 226739}, --Lightforge Bracers
+				{9, 226737}, --Lightforge Gauntlets
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},
+		{
+			name = AL["Shaman"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226755}, --Coif of Elements
+				{3, 226753}, --Pauldrons of Elements
+				{4, 226749}, --Vest of Elements
+				{5, 226754}, --Cord of Elements
+				{6, 226750}, --Kilt of Elements
+				{7, 226752}, --Boots of Elements
+				{8, 226751}, --Bindings of Elements
+				{9, 226748}, --Gauntlets of Elements
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+		},
+		{
+			name = AL["Priest"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, AL["Tier 0"], nil },
+				{2, 226746}, --Devout Crown
+				{3, 226741}, --Devout Mantle
+				{4, 226744}, --Devout Belt
+				{5, 226747}, --Devout Skirt
+				{6, 226743}, --Devout Sandals
+				{7, 226742}, --Devout Bracers
+				{8, 226740}, --Devout Gloves
+				{9, 226745}, --Devout Robe
+				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
 			},
 		},
 	},
