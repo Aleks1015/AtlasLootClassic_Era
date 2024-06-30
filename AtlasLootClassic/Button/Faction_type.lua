@@ -113,6 +113,16 @@ local FACTION_KEY = {
 	[609] = "Cenarion Circle",
 	[749] = "Hydraxian Waterlords",
 	[910] = "Brood of Nozdormu",
+
+	-- SoD 
+
+	[2586] = AL["Azeroth Commerce Authority"],
+	[2587] = AL["Durotar Supply and Logistics"],
+	[2634] = AL["Blood Moon"],
+	[2641] = AL["Emerald Wardens"],	
+	[889] = AL["Warsong Outriders"],
+	[890] = AL["Silverwing Sentinels"],
+
 	-- BC
 	[922] = AL["Tranquillien"], -- Horde only
 	[941] = AL["The Mag'har"], -- Horde only
@@ -153,14 +163,7 @@ end
 -- TODO: Create faction data module?
 function AtlasLoot:Faction_GetFactionName(factionID)
 	local name = GetFactionInfoByID(factionID)
-	--return name or FACTION_KEY[factionID] or FACTION.." "..factionID  ##PRE-FIX##
-	--temp fix for bug re name Durotar Supply and Logistics faction 2587  ##BEGIN##
-	if factionID == 2587 then
-		return "Durotar Supply and Logistics"
-	else
-		return name or FACTION_KEY[factionID] or FACTION.." "..factionID
-	end
-	--temp fix ##END##
+	return name or FACTION_KEY[factionID] or FACTION.." "..factionID
 end
 
 function Faction.OnSet(button, second)
