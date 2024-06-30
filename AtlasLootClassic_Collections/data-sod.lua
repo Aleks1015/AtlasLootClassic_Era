@@ -2123,7 +2123,7 @@ data["Phase 4 - PTR Loot"] = {
 		{
 			name = AL["Warrior"],
 			[NORMAL_DIFF] = {
-				{1, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0"), nil },
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226769}, --Helm of Valor
 				{3, 226768}, --Spaulders of Valor
 				{4, 226770}, --Breastplate of Valor
@@ -2132,7 +2132,7 @@ data["Phase 4 - PTR Loot"] = {
 				{7, 226764}, --Boots of Valor
 				{8, 226766}, --Bracers of Valor
 				{9, 226771}, --Gauntlets of Valor
-				{16, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(1)"), nil },
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(1)"), nil },
 				{17, 226860}, --Crown of Heroism
 				{18, 226858}, --Spaulders of Heroism
 				{19, 226862}, --Breastplate of Heroism
@@ -2141,7 +2141,7 @@ data["Phase 4 - PTR Loot"] = {
 				{22, 226857}, --Battleboots of Heroism
 				{23, 226863}, --Bracers of Heroism
 				{24, 226861}, --Gauntlets of Heroism
-				{101, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(2)"), nil },
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
 				{102, 226869}, --Faceguard of Heroism
 				{103, 226867}, --Pauldrons of Heroism
 				{104, 226872}, --Chestguard of Heroism
@@ -2150,7 +2150,7 @@ data["Phase 4 - PTR Loot"] = {
 				{107, 226871}, --Sabatons of Heroism
 				{108, 226865}, --Wristguards of Heroism
 				{109, 226870}, --Handguards of Heroism
-				{116, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(3)"), nil },
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
 				{117, 226877}, --Helm of Heroism
 				{118, 226875}, --Shoulders of Heroism
 				{119, 226880}, --Chest of Heroism
@@ -2173,7 +2173,7 @@ data["Phase 4 - PTR Loot"] = {
 				{7, 226703}, --Shadowcraft Boots
 				{8, 226704}, --Shadowcraft Bracers
 				{9, 226702}, --Shadowcraft Gloves
-				{16, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(1)"), nil },
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(1)"), nil },
 				{17, 226829}, --Darkmantle Cap
 				{18, 226826}, --Darkmantle Spaulders
 				{19, 226825}, --Darkmantle Tunic
@@ -2182,7 +2182,7 @@ data["Phase 4 - PTR Loot"] = {
 				{22, 226831}, --Darkmantle Footpads
 				{23, 226830}, --Darkmantle Bracers
 				{24, 226828}, --Darkmantle Grips
-				{101, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(2)"), nil },
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
 				{102, 226841}, --Darkmantle Faceguard
 				{103, 226837}, --Darkmantle Pauldrons
 				{104, 226843}, --Darkmantle Armor
@@ -2191,7 +2191,7 @@ data["Phase 4 - PTR Loot"] = {
 				{107, 226842}, --Darkmantle Treads
 				{108, 226835}, --Darkmantle Wristguards
 				{109, 226840}, --Darkmantle Handguards
-				{116, "INV_Box_02", nil, format(AL["Tier %s Sets"], "0.5(3)"), nil },
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
 				{117, 226849}, --Darkmantle Helm
 				{118, 226847}, --Darkmantle Shoulders
 				{119, 226852}, --Darkmantle Chest
