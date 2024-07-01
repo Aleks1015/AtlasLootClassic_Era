@@ -3349,7 +3349,6 @@ data["DireMaulEast"] = {
 			npcID = 16097,
 			DisplayIDs = {{16000}},
 			ExtraList = true,
-			ContentPhase = 8,
 			AtlasMapBossID = 5,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
