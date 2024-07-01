@@ -2297,6 +2297,42 @@ data["Phase_4_PTR"] = {
 				{123, 226873}, --Wrists of Heroism
 				{124, 226878}, --Gloves of Heroism
 			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+				{2, 226488}, --Helm of Might
+				{3, 226491}, --Shoulderplates of Might
+				{4, 226489}, --Breastplate of Might
+				{5, 226485}, --Belt of Might
+				{6, 226490}, --Legplates of Might
+				{7, 226487}, --Sabatons of Might
+				{8, 226484}, --Bracers of Might
+				{9, 226486}, --Gauntlets of Might
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+				{17, 226495}, --Jaws of Might
+				{18, 226492}, --Pauldrons of Might
+				{19, 226494}, --Hauberk of Might
+				{20, 226498}, --Sash of Might
+				{21, 226493}, --Leggings of Might
+				{22, 226496}, --Treads of Might
+				{23, 226499}, --Armguards of Might
+				{24, 226497}, --Hands of Might				
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1"), nil },
+				{2, 227043}, --Champion's Plate Helm
+				{3, 227042}, --Champion's Plate Shoulders
+				{4, 227049}, --Legionnaire's Plate Hauberk
+				{5, 227048}, --Legionnaire's Plate Leggings
+				{6, 227051}, --Blood Guard's Plate Greaves
+				{7, 227050}, --Blood Guard's Plate Gauntlets
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2"), nil },
+				{10, 227044}, --Lieutenant Commander's Plate Helm
+				{11, 227045}, --Lieutenant Commander's Plate Shoulders
+				{12, 227046}, --Knight-Captain's Plate Hauberk
+				{13, 227047}, --Knight-Captain's Plate Leggings
+				{14, 227052}, --Knight-Lieutenant's Plate Greaves
+				{15, 227053}, --Knight-Lieutenant's Plate Gauntlets				
+			},
 		},
 		{
 			name = AL["Rogue"],
@@ -2462,42 +2498,42 @@ data["Phase_4_PTR"] = {
 				{124, 226675}, --Cenarion Armor				
 			},
 			[PVP_DIFF] = {
-				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(1)"), nil },
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1"), nil },
 				{2, 227186}, --Champion's Dragonhide Helm
 				{3, 227184}, --Champion's Dragonhide Spaulders
 				{4, 227189}, --Legionnaire's Dragonhide Armor
 				{5, 227185}, --Legionnaire's Dragonhide Pants
 				{6, 227188}, --Blood Guard's Dragonhide Boots
 				{7, 227187}, --Blood Guard's Dragonhide Gloves
-				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(2)"), nil },
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2"), nil },
 				{10, 227205}, --Champion's Dragonhide Headdress
 				{11, 227207}, --Champion's Dragonhide Pauldrons
 				{12, 227202}, --Legionnaire's Dragonhide Tunic
 				{13, 227206}, --Legionnaire's Dragonhide Legguards
 				{14, 227203}, --Blood Guard's Dragonhide Greaves
 				{15, 227204}, --Blood Guard's Dragonhide Gauntlets
-				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "3"), nil },
 				{17, 227174}, --Champion's Dragonhide Headguard
 				{18, 227175}, --Champion's Dragonhide Shoulders
 				{19, 227179}, --Legionnaire's Dragonhide Chestpiece
 				{20, 227177}, --Legionnaire's Dragonhide Leggings
 				{21, 227181}, --Blood Guard's Dragonhide Treads
 				{22, 227180}, --Blood Guard's Dragonhide Grips
-				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "4"), nil },
 				{25, 227192}, --Lieutenant Commander's Dragonhide Helm
 				{26, 227190}, --Lieutenant Commander's Dragonhide Spaulders
 				{27, 227195}, --Knight-Captain's Dragonhide Armor
 				{28, 227191}, --Knight-Captain's Dragonhide Pants
 				{29, 227194}, --Knight-Lieutenant's Dragonhide Boots
 				{30, 227193}, --Knight-Lieutenant's Dragonhide Gloves
-				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(2)"), nil },
+				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "5"), nil },
 				{102, 227199}, --Lieutenant Commander's Dragonhide Headdress
 				{103, 227201}, --Lieutenant Commander's Dragonhide Pauldrons
 				{104, 227196}, --Knight-Captain's Dragonhide Tunic
 				{105, 227200}, --Knight-Captain's Dragonhide Legguards
 				{106, 227197}, --Knight-Lieutenant's Dragonhide Greaves
 				{107, 227198}, --Knight-Lieutenant's Dragonhide Gauntlets
-				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(3)"), nil },
+				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "6"), nil },
 				{110, 227173}, --Lieutenant Commander's Dragonhide Headguard
 				{111, 227172}, --Lieutenant Commander's Dragonhide Shoulders
 				{112, 227176}, --Knight-Captain's Dragonhide Chestpiece
@@ -2518,7 +2554,60 @@ data["Phase_4_PTR"] = {
 				{7, 226759}, --Dreadmist Bracers
 				{8, 226758}, --Dreadmist Wraps
 				{9, 226757}, --Dreadmist Robe
-				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(1)"), nil },
+				{17, 226909}, --Deathmist Mask
+				{18, 226912}, --Deathmist Mantle
+				{19, 226905}, --Deathmist Belt
+				{20, 226910}, --Deathmist Leggings
+				{21, 226908}, --Deathmist Sandals
+				{22, 226907}, --Deathmist Bracers
+				{23, 226911}, --Deathmist Wraps
+				{24, 226906}, --Deathmist Robe
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },			
+				{102, 226917}, --Deathmist Hood
+				{103, 226915}, --Deathmist Epaulets
+				{104, 226914}, --Deathmist Cord
+				{105, 226916}, --Deathmist Pants
+				{106, 226919}, --Deathmist Treads
+				{107, 226913}, --Deathmist Bindings
+				{108, 226918}, --Deathmist Grasps
+				{109, 226920}, --Deathmist Embrace
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+				{102, 226925}, --Deathmist Helm
+				{103, 226923}, --Deathmist Shoulders
+				{104, 226922}, --Deathmist Waist
+				{105, 226924}, --Deathmist Legs
+				{106, 226927}, --Deathmist Boots
+				{107, 226921}, --Deathmist Wrists
+				{108, 226926}, --Deathmist Gloves
+				{109, 226928}, --Deathmist Chest
+			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+				{2, 226549}, --Felheart Horns
+				{3, 226550}, --Felheart Shoulder Pads
+				{4, 226551}, --Felheart Belt
+				{5, 226547}, --Felheart Pants
+				{6, 226554}, --Felheart Slippers
+				{7, 226553}, --Felheart Bracers
+				{8, 226552}, --Felheart Gloves
+				{9, 226548}, --Felheart Robes				
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1"), nil },
+				{2, 227090}, --Champion's Dreadweave Cowl
+				{3, 227092}, --Champion's Dreadweave Spaulders
+				{4, 227097}, --Legionnaire's Dreadweave Legguards
+				{5, 227098}, --Blood Guard's Dreadweave Walkers
+				{6, 227099}, --Blood Guard's Dreadweave Handwraps
+				{7, 227094}, --Legionnaire's Dreadweave Tunic
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2"), nil },
+				{10, 227093}, --Lieutenant Commander's Dreadweave Cowl
+				{11, 227091}, --Lieutenant Commander's Dreadweave Spaulders
+				{12, 227095}, --Knight-Captain's Dreadweave Legguards
+				{13, 227101}, --Knight-Lieutenant's Dreadweave Walkers
+				{14, 227100}, --Knight-Lieutenant's Dreadweave Handwraps
+				{15, 227096}, --Knight-Captain's Dreadweave Tunic
 			},
 		},			
 		{
@@ -2533,7 +2622,83 @@ data["Phase_4_PTR"] = {
 				{7, 226722}, --Beaststalker's Boots
 				{8, 226717}, --Beaststalker's Bindings
 				{9, 226721}, --Beaststalker's Gloves
-				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(1)"), nil },
+				{17, 226887}, --Beastmaster's Cap
+				{18, 226884}, --Beastmaster's Mantle
+				{19, 226886}, --Beastmaster's Tunic
+				{20, 226888}, --Beastmaster's Belt
+				{21, 226882}, --Beastmaster's Pants
+				{22, 226881}, --Beastmaster's Treads
+				{23, 226885}, --Beastmaster's Bindings
+				{24, 226883}, --Beastmaster's Gauntlets
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
+				{102, 226893}, --Beastmaster's Coif
+				{103, 226891}, --Beastmaster's Pauldrons
+				{104, 226896}, --Beastmaster's Chain
+				{105, 226890}, --Beastmaster's Bindings
+				{106, 226892}, --Beastmaster's Leggings
+				{107, 226895}, --Beastmaster's Greaves
+				{108, 226889}, --Beastmaster's Bracers
+				{109, 226894}, --Beastmaster's Fists
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+				{117, 226901}, --Beastmaster's Helm
+				{118, 226899}, --Beastmaster's Shoulders
+				{119, 226904}, --Beastmaster's Chest
+				{120, 226898}, --Beastmaster's Waist
+				{121, 226900}, --Beastmaster's Legs
+				{122, 226903}, --Beastmaster's Boots
+				{123, 226897}, --Beastmaster's Wrists
+				{124, 226902}, --Beastmaster's Gloves
+			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+				{2, 226533}, --Giantstalker's Helmet
+				{3, 226527}, --Giantstalker's Epaulets
+				{4, 226534}, --Giantstalker's Breastplate
+				{5, 226529}, --Giantstalker's Belt
+				{6, 226532}, --Giantstalker's Leggings
+				{7, 226531}, --Giantstalker's Boots
+				{8, 226530}, --Giantstalker's Bracers
+				{9, 226528}, --Giantstalker's Gloves
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+				{17, 226536}, --Giantstalker's Guise
+				{18, 226543}, --Giantstalker's Spauldrons
+				{19, 226535}, --Giantstalker's Chainmail
+				{20, 226542}, --Giantstalker's Girdle
+				{21, 226537}, --Giantstalker's Chain Leggings
+				{22, 226538}, --Giantstalker's Sabatons
+				{23, 226541}, --Giantstalker's Wristguards
+				{24, 226540}, --Giantstalker's Handguards
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1"), nil },
+				{2, 227080}, --Champion's Chain Greathelm
+				{3, 227078}, --Champion's Chain Pauldrons
+				{4, 227083}, --Legionnaire's Chain Armor
+				{5, 227079}, --Legionnaire's Chain Legplates
+				{6, 227082}, --Blood Guard's Chain Sabatons
+				{7, 227081}, --Blood Guard's Chain Grips
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2"), nil },
+				{10, 227067}, --Champion's Chain Helm
+				{11, 227069}, --Champion's Chain Shoulders
+				{12, 227071}, --Legionnaire's Chain Hauberk
+				{13, 227073}, --Legionnaire's Chain Legguards
+				{14, 227074}, --Blood Guard's Chain Greaves
+				{15, 227075}, --Blood Guard's Chain Vices
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+				{17, 227086}, --Lieutenant Commander's Chain Greathelm
+				{18, 227084}, --Lieutenant Commander's Chain Pauldrons
+				{19, 227089}, --Knight-Captain's Chain Armor
+				{20, 227085}, --Knight-Captain's Chain Legplates
+				{21, 227088}, --Knight-Lieutenant's Chain Sabatons
+				{22, 227087}, --Knight-Lieutenant's Chain Grips
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+				{25, 227066}, --Lieutenant Commander's Chain Helm
+				{26, 227068}, --Lieutenant Commander's Chain Shoulders
+				{27, 227070}, --Knight-Captain's Chain Hauberk
+				{28, 227072}, --Knight-Captain's Chain Legguards
+				{29, 227076}, --Knight-Lieutenant's Chain Greaves
+				{30, 227077}, --Knight-Lieutenant's Chain Vices
 			},
 		},	
 		{
@@ -2550,6 +2715,29 @@ data["Phase_4_PTR"] = {
 				{9, 226729}, --Magister's Robes
 				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
 			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
+
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(1)"), nil },
+	
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(2)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(2)"), nil },
+
+				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(3)"), nil },
+
+			},
 		},
 		{
 			name = AL["Paladin"],
@@ -2564,6 +2752,29 @@ data["Phase_4_PTR"] = {
 				{8, 226739}, --Lightforge Bracers
 				{9, 226737}, --Lightforge Gauntlets
 				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
+
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(1)"), nil },
+	
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(2)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(2)"), nil },
+
+				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(3)"), nil },
+
 			},
 		},
 		{
@@ -2580,6 +2791,29 @@ data["Phase_4_PTR"] = {
 				{9, 226748}, --Gauntlets of Elements
 				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
 			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
+
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(1)"), nil },
+	
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(2)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(2)"), nil },
+
+				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(3)"), nil },
+
+			},
 		},
 		{
 			name = AL["Priest"],
@@ -2594,6 +2828,29 @@ data["Phase_4_PTR"] = {
 				{8, 226740}, --Devout Gloves
 				{9, 226745}, --Devout Robe
 				{11, "INV_Box_02", nil, AL["Tier 0.5"], nil },
+			},
+			[T1_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(1)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Tier %s Set"], "1(2)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(2)"), nil },
+
+				{116, "INV_Box_02", nil, format(AL["Tier %s Set"], "0.5(3)"), nil },
+			},
+			[PVP_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(1)"), nil },
+	
+				{9, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(2)"), nil },
+
+				{16, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "1(3)"), nil },
+
+				{24, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(1)"), nil },
+
+				{101, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(2)"), nil },
+
+				{109, "INV_Box_02", nil, format(AL["Rare PVP Set %s"], "2(3)"), nil },
+
 			},
 		},
 	},
