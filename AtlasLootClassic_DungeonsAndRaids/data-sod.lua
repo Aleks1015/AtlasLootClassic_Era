@@ -5218,28 +5218,28 @@ data["MoltenCore"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 17204 }, -- Eye of Sulfuras
 				{ 2, 19017 }, -- Essence of the Firelord
-				{ 4,  16922 }, -- Leggings of Transcendence
-				{ 5,  16915 }, -- Netherwind Pants
-				{ 6,  16930 }, -- Nemesis Leggings
-				{ 7,  16909 }, -- Bloodfang Pants
-				{ 8,  16901 }, -- Stormrage Legguards
-				{ 9,  16938 }, -- Dragonstalker's Legguards
-				{ 10,  16946 }, -- Legplates of Ten Storms
-				{ 11,  16954 }, -- Judgement Legplates
-				{ 12,  16962 }, -- Legplates of Wrath
-				{ 14, 17082 }, -- Shard of the Flame
-				{ 16, 18817 }, -- Crown of Destruction
-				{ 17, 18814 }, -- Choker of the Fire Lord
-				{ 18, 17102 }, -- Cloak of the Shrouded Mists
-				{ 19, 17107 }, -- Dragon's Blood Cape
-				{ 20, 19137 }, -- Onslaught Girdle
-				{ 21, 17063 }, -- Band of Accuria
-				{ 22, 19138 }, -- Band of Sulfuras
-				{ 23, 18815 }, -- Essence of the Pure Flame
-				{ 24, 17106 }, -- Malistar's Defender
-				{ 25, 18816 }, -- Perdition's Blade
-				{ 26, 17104 }, -- Spinal Reaper
-				{ 27, 17076 }, -- Bonereaver's Edge
+				--{ 4,  16922 }, -- Leggings of Transcendence
+				--{ 5,  16915 }, -- Netherwind Pants
+				--{ 6,  16930 }, -- Nemesis Leggings
+				--{ 7,  16909 }, -- Bloodfang Pants
+				--{ 8,  16901 }, -- Stormrage Legguards
+				--{ 9,  16938 }, -- Dragonstalker's Legguards
+				--{ 10,  16946 }, -- Legplates of Ten Storms
+				--{ 11,  16954 }, -- Judgement Legplates
+				--{ 12,  16962 }, -- Legplates of Wrath
+				{ 4, 17082 }, -- Shard of the Flame
+				{ 5, 18817 }, -- Crown of Destruction
+				{ 6, 18814 }, -- Choker of the Fire Lord
+				{ 7, 17102 }, -- Cloak of the Shrouded Mists
+				{ 8, 17107 }, -- Dragon's Blood Cape
+				{ 9, 19137 }, -- Onslaught Girdle
+				{ 10, 17063 }, -- Band of Accuria
+				{ 11, 19138 }, -- Band of Sulfuras
+				{ 12, 18815 }, -- Essence of the Pure Flame
+				{ 13, 17106 }, -- Malistar's Defender
+				{ 14, 18816 }, -- Perdition's Blade
+				{ 15, 17104 }, -- Spinal Reaper
+				{ 16, 17076 }, -- Bonereaver's Edge
 			},
 		},
 		{ -- MCRANDOMBOSSDROPS
@@ -5311,27 +5311,27 @@ data["Onyxia"] = {
 			AtlasMapBossID = 3,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  16921 }, -- Halo of Transcendence
-				{ 2,  16914 }, -- Netherwind Crown
-				{ 3,  16929 }, -- Nemesis Skullcap
-				{ 4,  16908 }, -- Bloodfang Hood
-				{ 5,  16900 }, -- Stormrage Cover
-				{ 6,  16939 }, -- Dragonstalker's Helm
-				{ 7,  16947 }, -- Helmet of Ten Storms
-				{ 8,  16955 }, -- Judgement Crown
-				{ 9,  16963 }, -- Helm of Wrath
-				{ 11, 18423 }, -- Head of Onyxia
-				{ 12, 15410 }, -- Scale of Onyxia
-				{ 16, 18705 }, -- Mature Black Dragon Sinew
-				{ 18, 18205 }, -- Eskhandar's Collar
-				{ 19, 17078 }, -- Sapphiron Drape
-				{ 20, 18813 }, -- Ring of Binding
-				{ 21, 17064 }, -- Shard of the Scale
-				{ 22, 17067 }, -- Ancient Cornerstone Grimoire
-				{ 23, 17068 }, -- Deathbringer
-				{ 24, 17075 }, -- Vis'kag the Bloodletter
-				{ 26, 17966 }, -- Onyxia Hide Backpack
-				{ 27, 11938 }, -- Sack of Gems
+				--{ 1,  16921 }, -- Halo of Transcendence
+				--{ 2,  16914 }, -- Netherwind Crown
+				--{ 3,  16929 }, -- Nemesis Skullcap
+				--{ 4,  16908 }, -- Bloodfang Hood
+				--{ 5,  16900 }, -- Stormrage Cover
+				--{ 6,  16939 }, -- Dragonstalker's Helm
+				--{ 7,  16947 }, -- Helmet of Ten Storms
+				--{ 8,  16955 }, -- Judgement Crown
+				--{ 9,  16963 }, -- Helm of Wrath
+				--{ 11, 18423 }, -- Head of Onyxia
+				{ 1, 15410 }, -- Scale of Onyxia
+				{ 2, 18705 }, -- Mature Black Dragon Sinew
+				{ 3, 18205 }, -- Eskhandar's Collar
+				{ 4, 17078 }, -- Sapphiron Drape
+				{ 5, 18813 }, -- Ring of Binding
+				{ 6, 17064 }, -- Shard of the Scale
+				{ 7, 17067 }, -- Ancient Cornerstone Grimoire
+				{ 8, 17068 }, -- Deathbringer
+				{ 9, 17075 }, -- Vis'kag the Bloodletter
+				{ 24, 17966 }, -- Onyxia Hide Backpack
+				{ 25, 11938 }, -- Sack of Gems
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems
 				{ 0, 17963 }, -- Green Sack of Gems
