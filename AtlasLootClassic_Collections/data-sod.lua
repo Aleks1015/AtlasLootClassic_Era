@@ -2119,6 +2119,26 @@ data["Phase_4_PTR"] = {
 	ContentPhase = 4,
 	items = {
 		{
+			name = AL["Test"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 227823}, --Fine Flarecore Gloves
+				{2, 227850}, --Sageblade of the Archmagus
+				{3, 227857}, --Desecration
+				{4, 227947}, --Golem Fitted Pauldrons
+				{5, 227962}, --Flarethorn
+				{6, 227974}, --Lavastone Hammer
+				{7, 227986}, --Wristguards of Renown
+				{8, 227987}, --Sash of the Grand Hunt
+				{9, 228028}, --Blade of Necromancy
+				{10, 228094}, --Dreadlord's Blade
+				{11, 228476}, --Embroidered Belt of the Archmage
+				{12, 228594}, --Kayser's Boots of Precision
+				{13, 228677}, --Spellweaver's Turban
+				{14, 228679}, --Quel'Serrar
+			},
+		},
+		{
 			name = AL["Weapons - 1H"],
 			ContentPhase = 4,
 			[RARE_DIFF] = {
