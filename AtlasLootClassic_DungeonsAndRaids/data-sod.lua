@@ -5796,7 +5796,7 @@ data["BlackwingLair"] = {
 				{ 8,  16952 }, -- Judgement Belt
 				{ 9,  16960 }, -- Waistband of Wrath
 				{ 16, 19339 }, -- Mind Quickening Gem
-				{ 17, 19340 }, -- Rune of Metamorphosis
+				{ 17, 210980 }, -- Rune of Metamorphosis
 				{ 19, 19372 }, -- Helm of Endless Rage
 				{ 20, 19371 }, -- Pendant of the Fallen Dragon
 				{ 21, 19348 }, -- Red Dragonscale Protector
@@ -7258,7 +7258,7 @@ data["Gnomeregan2"] = {
 			name = AL["Trash"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  9508 }, -- Mechbuilder's Overalls
+				{ 1,  213298 }, -- Mechbuilder's Overalls
 				{ 2,  9491 }, -- Hotshot Pilot's Gloves
 				{ 3,  9509 }, -- Petrolspill Leggings
 				{ 4,  9510 }, -- Caverndeep Trudgers
@@ -7273,7 +7273,7 @@ data["Gnomeregan2"] = {
 				{ 16, 9327 }, -- Security DELTA Data Access Card
 				{ 18, 7191 }, -- Fused Wiring
 				{ 19, 9308 }, -- Grime-Encrusted Object
-				{ 20, 9326 }, -- Grime-Encrusted Ring
+				{ 20, 216661 }, -- Grime-Encrusted Ring
 				{ 22, 9279 }, -- White Punch Card
 				{ 23, 9280 }, -- Yellow Punch Card
 				{ 24, 9282 }, -- Blue Punch Card
@@ -7434,7 +7434,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 10, 220607 }, -- Totem of Tormented Ancestry
 				{ 11, 220597 }, -- Drakestone of the Dream Harbinger
 				{ 12, 220512 }, -- Immaculate Goldsteel Helmet
-				{ 13, 220589 }, -- Serpent's Striker
+				{ 13, 224409 }, -- Serpent's Striker
 				{ 14, 220596 }, -- Ancient Divining Rod
 				{ 16,  220636 }, -- Atal'ai Blood Icon
 				{ 17,  220637 }, -- Atal'ai Ritual Token
@@ -7471,7 +7471,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 			Level = 48,
 			[NORMAL_DIFF] = {
 				{ 1, 221363 }, -- Scapula of the Fallen Avatar
-				{ 2, 221346 }, -- Scapula of the Fallen Avatar
+				{ 2, 221363 }, -- Scapula of the Fallen Avatar
 				{ 4, 220608 }, -- Featherskin Drape
 				{ 5, 220530 }, -- Will of the Atal'ai Warrior
 				{ 6, 220577 }, -- Might of the Blood Loa
@@ -7505,9 +7505,9 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 10, 10626 }, -- Ragehammer
 				{ 11, 10628 }, -- Deathblow
 				{ 12, 10627 }, -- Bludgeon of the Grinning Dog
-				{ 16, 10782 }, -- Hakkari Shroud
-				{ 17, 10781 }, -- Hakkari Breastplate
-				{ 18, 10780 }, -- Mark of Hakkar
+				{ 16, 223326 }, -- Hakkari Shroud
+				{ 17, 223325 }, -- Hakkari Breastplate
+				{ 18, 223327 }, -- Mark of Hakkar
 				{ 20, 16216 }, -- Formula: Enchant Cloak - Greater Resistance
 				{ 21, 15733 }, -- Pattern: Green Dragonscale Leggings
 			},
