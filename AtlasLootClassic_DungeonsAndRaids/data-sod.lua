@@ -22,6 +22,7 @@ local ALIL = AtlasLoot.IngameLocales
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
+local MOLTEN_DIFF = data:AddDifficulty(AL["Molten"], nil, nil, nil,true)
 local RAID10_DIFF = data:AddDifficulty("10RAID")
 local RAID20_DIFF = data:AddDifficulty("20RAID")
 local RAID40_DIFF = data:AddDifficulty("40RAID")
@@ -4928,9 +4929,14 @@ data["MoltenCore"] = {
 				{ 24, 228261 },	-- Quick Strike Ring
 				{ 25, 228255 },	-- Talisman of Ephemeral Power
 				{ 26, 228259 },	-- Fire Runed Grimoire
-				{ 27, 228519 },	-- Striker's Mark
-				{ 28, 228463 },	-- Earthshaker
-				{ 29, 228459 },	-- Obsidian Edged Blade
+				{ 27, 228252 },	-- Striker's Mark
+				{ 28, 228248 },	-- Earthshaker
+				{ 29, 228229 },	-- Obsidian Edged Blade
+			},
+			[MOLTEN_DIFF] = {
+				{ 1, 228519 },	-- Striker's Mark (Molten)
+				{ 2, 228463 },	-- Earthshaker (Molten)
+				{ 3, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
 		},
 		{	--MCGehennas
@@ -4975,8 +4981,8 @@ data["MoltenCore"] = {
 				{ 7,  226647 },	-- Cenarion Helm
 				{ 8,  226533 },	-- Giantstalker's Helmet
 				{ 9,  226612 },	-- Earthfury Helmet
-				{ 10,  226590 },	-- Lawbringer Helm
-				{ 11,  226488 },	-- Helm of Might
+				{ 10, 226590 },	-- Lawbringer Helm
+				{ 11, 226488 },	-- Helm of Might
 				{ 16, 228258 },	-- Deep Earth Spaulders
 				{ 17, 228257 },	-- Aged Core Leather Gloves
 				{ 18, 228260 },	-- Flameguard Gauntlets
@@ -4987,12 +4993,19 @@ data["MoltenCore"] = {
 				{ 23, 228261 },	-- Quick Strike Ring
 				{ 24, 228255 },	-- Talisman of Ephemeral Power
 				{ 25, 228259 },	-- Fire Runed Grimoire
-				{ 26, 228702 },	-- Drillborer Disk
+				{ 26, 228266 },	-- Drillborer Disk
 				{ 27, 228267 },	-- Gutgore Ripper
-				{ 28, 228462 },	-- Aurastone Hammer
-				{ 29, 228506 },	-- Brutality Blade
-				{ 30, 228459 },	-- Obsidian Edged Blade
+				{ 28, 228264 },	-- Aurastone Hammer
+				{ 29, 228265 },	-- Brutality Blade
+				{ 30, 228229 },	-- Obsidian Edged Blade
 			},
+			[MOLTEN_DIFF] = {
+				{ 1, 228702 },	-- Drillborer Disk (Molten)
+				{ 2, 228462 },	-- Aurastone Hammer (Molten)
+				{ 3, 228506 },	-- Brutality Blade (Molten)
+				{ 4, 228459 },	-- Obsidian Edged Blade (Molten)
+			},
+
 		},
 		{	--MCShazzrah
 			name = AL["Shazzrah"],
@@ -5045,7 +5058,10 @@ data["MoltenCore"] = {
 				{ 24, 228268 },	-- Seal of the Archmagus
 				{ 25, 228255 },	-- Talisman of Ephemeral Power
 				{ 26, 228259 },	-- Fire Runed Grimoire
-				{ 27, 228459 },	-- Obsidian Edged Blade
+				{ 27, 228229 },	-- Obsidian Edged Blade
+			},
+			[MOLTEN_DIFF] = {
+				{ 1, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
 		},
 		{	--MCGolemagg
@@ -5077,9 +5093,13 @@ data["MoltenCore"] = {
 				{ 24, 228255 },	-- Talisman of Ephemeral Power
 				{ 25, 228259 },	-- Fire Runed Grimoire
 				{ 26, 228270 },	-- Blastershot Launcher
-				{ 27, 228517 },	-- Azuresong Mageblade
-				{ 28, 228459 },	-- Obsidian Edged Blade
+				{ 27, 228269 },	-- Azuresong Mageblade
+				{ 28, 228229 },	-- Obsidian Edged Blade
 				{ 29, 228271 },	-- Staff of Dominance
+			},
+			[MOLTEN_DIFF] = {
+				{ 1, 228517 },	-- Azuresong Mageblade
+				{ 2, 228459 },	-- Obsidian Edged Blade
 			},
 		},
 		{ -- MCSulfuron
@@ -5124,10 +5144,13 @@ data["MoltenCore"] = {
 				{ 6,  228284 }, -- Wristguards of True Flight
 				{ 7,  228275 }, -- Core Forged Greaves
 				{ 8,  228274 }, -- Cauterizing Band
-				{ 9,  228701 }, -- Core Hound Tooth
+				{ 9,  228277 }, -- Core Hound Tooth
 				{ 10, 228278 }, -- Finkle's Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
+			},
+			[MOLTEN_DIFF] = {
+				{ 1,  228701 }, -- Core Hound Tooth (Molten)
 			},
 		},
 		{ -- MCRagnaros
@@ -5140,15 +5163,6 @@ data["MoltenCore"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 227728 }, -- Eye of Sulfuras
 				{ 2, 19017 }, -- Essence of the Firelord
-				--{ 4,  16922 }, -- Leggings of Transcendence
-				--{ 5,  16915 }, -- Netherwind Pants
-				--{ 6,  16930 }, -- Nemesis Leggings
-				--{ 7,  16909 }, -- Bloodfang Pants
-				--{ 8,  16901 }, -- Stormrage Legguards
-				--{ 9,  16938 }, -- Dragonstalker's Legguards
-				--{ 10,  16946 }, -- Legplates of Ten Storms
-				--{ 11,  16954 }, -- Judgement Legplates
-				--{ 12,  16962 }, -- Legplates of Wrath
 				{ 4, 228297 }, -- Shard of the Flame
 				{ 5, 228291 }, -- Crown of Destruction
 				{ 6, 228289 }, -- Choker of the Fire Lord
@@ -5159,9 +5173,14 @@ data["MoltenCore"] = {
 				{ 11, 228287 }, -- Band of Sulfuras
 				{ 12, 228293 }, -- Essence of the Pure Flame
 				{ 13, 228294 }, -- Malistar's Defender
-				{ 14, 228511 }, -- Perdition's Blade
-				{ 15, 228460 }, -- Spinal Reaper
-				{ 16, 228461 }, -- Bonereaver's Edge
+				{ 14, 228296 }, -- Perdition's Blade
+				{ 15, 228299 }, -- Spinal Reaper
+				{ 16, 228288 }, -- Bonereaver's Edge
+			},
+			[MOLTEN_DIFF] = {
+				{ 1, 228511 }, -- Perdition's Blade (Molten)
+				{ 2, 228460 }, -- Spinal Reaper (Molten)
+				{ 3, 228461 }, -- Bonereaver's Edge (Molten)
 			},
 		},
 		{ -- MCRANDOMBOSSDROPS
@@ -5208,6 +5227,17 @@ data["MoltenCore"] = {
 				{ 22, 226618 }, -- Earthfury Bracers
 				{ 23, 226589 }, -- Lawbringer Bracers
 				{ 24, 226484 }, -- Bracers of Might
+			},
+		},
+		{ -- MC Phase 4 New Items - Unknown drop
+			name = AL["Unknown"],
+			ExtraList = true,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228128 }, -- Hammer of The Black Anvil
+			},
+			[MOLTEN_DIFF] = {
+				{ 1,  228508 }, -- Hammer of The Black Anvil
 			},
 		},
 		T1_SET,
