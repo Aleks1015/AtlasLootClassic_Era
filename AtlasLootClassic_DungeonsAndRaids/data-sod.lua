@@ -2120,7 +2120,7 @@ data["BlackrockDepths"] = {
 			DisplayIDs = {{8760}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  227952 }, -- Savage Gladiator Chain
+				{ 1,  11726 }, -- Savage Gladiator Chain
 				{ 2,  22271 }, -- Leggings of Frenzied Magic
 				{ 3,  22257 }, -- Bloodclot Band
 				{ 4,  227962 }, -- Flarethorn
