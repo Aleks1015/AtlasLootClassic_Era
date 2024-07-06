@@ -5263,25 +5263,17 @@ data["Onyxia"] = {
 			AtlasMapBossID = 3,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				--{ 1,  16921 }, -- Halo of Transcendence
-				--{ 2,  16914 }, -- Netherwind Crown
-				--{ 3,  16929 }, -- Nemesis Skullcap
-				--{ 4,  16908 }, -- Bloodfang Hood
-				--{ 5,  16900 }, -- Stormrage Cover
-				--{ 6,  16939 }, -- Dragonstalker's Helm
-				--{ 7,  16947 }, -- Helmet of Ten Storms
-				--{ 8,  16955 }, -- Judgement Crown
-				--{ 9,  16963 }, -- Helm of Wrath
-				--{ 11, 18423 }, -- Head of Onyxia
-				{ 1, 15410 }, -- Scale of Onyxia
-				{ 2, 18705 }, -- Mature Black Dragon Sinew
-				{ 3, 18205 }, -- Eskhandar's Collar
-				{ 4, 17078 }, -- Sapphiron Drape
-				{ 5, 18813 }, -- Ring of Binding
-				{ 6, 228298 }, -- Shard of the Scale
-				{ 7, 17067 }, -- Ancient Cornerstone Grimoire
-				{ 8, 17068 }, -- Deathbringer
-				{ 9, 17075 }, -- Vis'kag the Bloodletter
+				{ 1, 228688 }, -- Head of Onyxia (Alliance)
+				--{ 2, 228689 }, -- Head of Onyxia (Horde)
+				{ 2, 15410 }, -- Scale of Onyxia
+				{ 4, 18705 }, -- Mature Black Dragon Sinew
+				{ 5, 228759 }, -- Eskhandar's Collar
+				{ 6, 17078 }, -- Sapphiron Drape
+				{ 7, 18813 }, -- Ring of Binding
+				{ 8, 228298 }, -- Shard of the Scale
+				{ 9, 17067 }, -- Ancient Cornerstone Grimoire
+				{ 10, 17068 }, -- Deathbringer
+				{ 11, 17075 }, -- Vis'kag the Bloodletter
 				{ 24, 17966 }, -- Onyxia Hide Backpack
 				{ 25, 11938 }, -- Sack of Gems
 				-- Hidden items

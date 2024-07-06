@@ -488,7 +488,8 @@ else
 		[12780] = { 13966, 13968, 13965, type = 3 }, -- General Drakkisath's Command
 		[7666] = { 7673, type = 3 }, -- Shattered Necklace
 		[19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
-		[18423] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
+		[228688] = { 228685, 228687, 228686, type = 3 }, --Head of Onyxia (Alliance)
+		[228689] = { 228685, 228687, 228686, type = 3 }, --Head of Onyxia (Horde)
 		[20644] = { 20600, type = 3 }, -- Shrouded in Nightmare
 	
 		-- Quest objective
