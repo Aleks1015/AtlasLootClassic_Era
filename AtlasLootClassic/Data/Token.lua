@@ -450,7 +450,7 @@ else
 		[12033] = { 7910, 1529, 7909, 12361, 1705, 12799, 7971, 5500, 12800, 1206, 12364, type = 2 },		-- Thaurissan Family Jewels
 	
 		-- Misc
-		[11086] = { 9372, 0, 9379, 11086 }, -- Jang'thraze the Protector
+		[11086] = { 223526, 0, 9379, 11086 }, -- Jang'thraze the Protector
 		[9379] =  11086, -- Sang'thraze the Deflector
 		[18784] = { 12725, 0, 18783, 18784 }, -- Top Half of Advanced Armorsmithing: Volume III
 		[18783] = 18784, -- Bottom Half of Advanced Armorsmithing: Volume III
