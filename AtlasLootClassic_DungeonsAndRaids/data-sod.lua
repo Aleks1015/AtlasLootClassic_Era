@@ -7356,7 +7356,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 10, 220607 }, -- Totem of Tormented Ancestry
 				{ 11, 220597 }, -- Drakestone of the Dream Harbinger
 				{ 12, 220512 }, -- Immaculate Goldsteel Helmet
-				{ 13, 224409 }, -- Serpent's Striker
+				{ 13, 224589 }, -- Serpent's Striker
 				{ 14, 220596 }, -- Ancient Divining Rod
 				{ 16,  220636 }, -- Atal'ai Blood Icon
 				{ 17,  220637 }, -- Atal'ai Ritual Token
