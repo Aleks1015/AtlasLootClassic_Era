@@ -1012,9 +1012,6 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 1,  7709 }, -- Blighted Leggings
 				{ 2,  217295 }, -- Necrotic Wand
 				{ 3,  217296 }, -- Ghostshard Talisman
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217295 }, -- Necrotic Wand
-				{ 18, 217296 }, -- Ghostshard Talisman			
 			},
 		},
 		{ -- SMFallenChampion
@@ -1028,8 +1025,6 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 1,  217294 }, -- Embalmed Shroud
 				{ 2,  7690 }, -- Ebon Vise
 				{ 3,  7689 }, -- Morbid Dawn
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217294 }, -- Embalmed Shroud
 			},
 		},
 		{ -- SMIronspine
@@ -1159,11 +1154,6 @@ data["ScarletMonasteryLibrary"] = {
 				{ 2,  217299 }, -- Illusionary Rod
 				{ 4,  217298 }, -- Mantle of Doan
 				{ 5,  217297 }, -- Robe of Doan
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217299 }, -- Illusionary Rod
-				{ 19, 217298 }, -- Mantle of Doan
-				{ 20, 217297 }, -- Robe of Doan
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 22,  34227 }), -- Deadman's Hand
 			},
 		},
 		{ -- SMLTrash
@@ -1308,8 +1298,6 @@ data["ScarletMonasteryCathedral"] = {
 				{ 2,  10330 }, -- Scarlet Leggings
 				{ 3,  7726 }, -- Aegis of the Scarlet Commander
 				{ 4,  217302 }, -- Mograine's Might
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217302 }, -- Mograine's Might
 			},
 		},
 		{ -- SMWhitemane
@@ -1322,10 +1310,6 @@ data["ScarletMonasteryCathedral"] = {
 				{ 1,  217300 }, -- Whitemane's Chapeau
 				{ 2,  217301 }, -- Triune Amulet
 				{ 3,  7721 }, -- Hand of Righteousness
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217300 }, -- Whitemane's Chapeau
-				{ 18, 217301 }, -- Triune Amulet
-
 			},
 		},
 		{ -- SMCTrash
@@ -1386,8 +1370,6 @@ data["RazorfenDowns"] = {
 				{ 1,  217293 }, -- Silky Spider Cape
 				{ 2,  10775 }, -- Carapace of Tuten'kash
 				{ 3,  10777 }, -- Arachnid Gloves
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217293 }, -- Silky Spider Cape
 			},
 		},
 		{ -- RFDMordreshFireEye
@@ -1400,11 +1382,6 @@ data["RazorfenDowns"] = {
 				{ 1,  217290 }, -- Glowing Eye of Mordresh
 				{ 2,  217292 }, -- Deathmage Sash
 				{ 3,  217291 }, -- Mordresh's Lifeless Skull
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217290 }, -- Glowing Eye of Mordresh
-				{ 18, 217292 }, -- Deathmage Sash
-				{ 19, 217291 }, -- Mordresh's Lifeless Skull
-
 			},
 		},
 		{ -- RFDGlutton
@@ -1443,9 +1420,6 @@ data["RazorfenDowns"] = {
 				{ 3,  217289 }, -- Deathchill Armor
 				{ 4,  10761 }, -- Coldrage Dagger
 				{ 6,  10765 }, -- Bonefingers
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217288 }, -- Robes of the Lich
-				{ 18, 217289 }, -- Deathchill Armor
 			},
 		},
 		{ -- RFDPlaguemaw
@@ -1564,11 +1538,6 @@ data["Uldaman"] = {
 				{ 3,  217304 }, -- Revelosh's Gloves
 				{ 4,  217306 }, -- Revelosh's Boots
 				{ 6,  7741 }, -- The Shaft of Tsol
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217304 }, -- Revelosh's Gloves
-				{ 18, 217307 }, -- Revelosh's Spaulders
-				{ 19, 217305 }, -- Revelosh's Armguards
-				{ 20, 217306 }, -- Revelosh's Boots
 			},
 		},
 		{ -- UldIronaya
@@ -1581,8 +1550,6 @@ data["Uldaman"] = {
 				{ 1,  9409 }, -- Ironaya's Bracers
 				{ 2,  217303 }, -- Stoneweaver Leggings
 				{ 3,  217704 }, -- Ironshod Bludgeon
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 217303 }, -- Whitemane's Chapeau
 			},
 		},
 		{ -- UldObsidianSentinel
@@ -1630,9 +1597,6 @@ data["Uldaman"] = {
 				{ 2,  223536 }, -- Grimlok's Charge
 				{ 3,  9414 }, -- Oilskin Leggings
 				{ 5, 7670 }, -- Shattered Necklace Sapphire
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223536 }, -- Grimlok's Charge
-				{ 18, 223535 }, -- Grimlok's Tribal Vestments
 			},
 		},
 		{ -- UldArchaedas
@@ -1662,9 +1626,6 @@ data["Uldaman"] = {
 				{ 9,  9396 }, -- Legguards of the Vault
 				{ 10, 9393 }, -- Beacon of Hope
 				{ 12, 7666 }, -- Shattered Necklace
-				{ 14, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 15, 223537 }, -- Skullplate Bracers
-				--{ 13, 7673 }, -- Talvash's Enhancing Necklace
 				{ 16, 9381 }, -- Earthen Rod
 				{ 17, 9426 }, -- Monolithic Bow
 				{ 18, 9422 }, -- Shadowforge Bushmaster
@@ -1738,11 +1699,6 @@ data["Zul'Farrak"] = {
 				{ 2,  223532 }, -- Lifeblood Amulet
 				{ 3,  9639 }, -- The Hand of Antu'sul
 				{ 5,  9379 }, -- Sang'thraze the Deflector
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17,  223526 }, -- Sul'thraze the Lasher
-				{ 18,  223532 }, -- Lifeblood Amulet
-
-
 			},
 		},
 		{ -- ZFThekatheMartyr
@@ -1777,8 +1733,6 @@ data["Zul'Farrak"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  223534 }, -- Jumanza Grips
 				{ 2,  18082 }, -- Zum'rah's Vexing Cane
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17,  223534 }, -- Jumanza Grips
 			},
 		},
 		{ -- ZFNekrumGutchewer
@@ -1803,9 +1757,6 @@ data["Zul'Farrak"] = {
 				{ 2,  223529 }, -- Jinxed Hoodoo Skin
 				{ 3,  223530 }, -- Jinxed Hoodoo Kilt
 				{ 4,  9475 }, -- Diabolic Skiver
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17,  223529 }, -- Jinxed Hoodoo Skin
-				{ 18,  223530 }, -- Jinxed Hoodoo Kilt
 			},
 		},
 		{ -- ZFDustwraith
@@ -1817,8 +1768,6 @@ data["Zul'Farrak"] = {
 			specialType = "rare",
 			[NORMAL_DIFF] = {
 				{ 1,  223533 }, -- Desertwalker Cane
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223533 }, -- Desertwalker Cane
 			},
 		},
 		{ -- ZFSandfury
@@ -1863,9 +1812,6 @@ data["Zul'Farrak"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  223528 }, -- Gahz'rilla Scale Armor
 				{ 3,  223527 }, -- Gahz'rilla Fang
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223528 }, -- Gahz'rilla Scale Armor
-				{ 18, 223527 }, -- Gahz'rilla Fang
 			},
 		},
 		{ -- ZFChiefUkorzSandscalp
@@ -1880,10 +1826,6 @@ data["Zul'Farrak"] = {
 				{ 3,  9478 }, -- Ripsaw
 				{ 4,  9477 }, -- The Chief's Enforcer
 				{ 6,  11086 }, -- Jang'thraze the Protector
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223531 }, -- Big Bad Pauldrons
-				{ 18, 223526 }, -- Sul'thraze the Lasher
-				{ 19, 223963 }, -- Embrace of the Lycan
 			},
 		},
 		{ -- ZFZerillis
@@ -1963,8 +1905,6 @@ data["Maraudon"] = {
 				{ 2,  223543 }, -- Vinerot Sandals
 				{ 4,  17750 }, -- Chloromesh Girdle
 				{ 5,  17751 }, -- Brusslehide Leggings
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223543 }, -- Vinerot Sandals
 			},
 		},
 		{ -- MaraKhanMaraudos
@@ -2012,8 +1952,6 @@ data["Maraudon"] = {
 				{ 1,  223525 }, -- Soothsayer's Headdress
 				{ 2,  17739 }, -- Grovekeeper's Drape
 				{ 3,  17738 }, -- Claw of Celebras
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223525 }, -- Soothsayer's Headdress
 			},
 		},
 		{ -- MaraLandslide
@@ -2026,11 +1964,7 @@ data["Maraudon"] = {
 				{ 1,  223522 }, -- Helm of the Mountain
 				{ 2,  17736 }, -- Rockgrip Gauntlets
 				{ 3,  223523 }, -- Cloud Stone
-				{ 4,  17943 }, -- Fist of Stone
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223522 }, -- Helm of the Mountain
-				{ 18, 223523 }, -- Cloud Stone
-				{ 19, 223524 }, -- Fist of Stone
+				{ 4,  223524 }, -- Fist of Stone
 			},
 		},
 		{ -- MaraTinkererGizlock
@@ -2043,10 +1977,6 @@ data["Maraudon"] = {
 				{ 1,  223545 }, -- Gizlock's Hypertech Buckler
 				{ 2,  223542 }, -- Megashot Rifle
 				{ 3,  223520 }, -- Inventor's Focal Sword
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223545 }, -- Gizlock's Hypertech Buckler
-				{ 18, 223542 }, -- Megashot Rifle
-				{ 19, 223520 }, -- Inventor's Focal Sword
 			},
 		},
 		{ -- MaraRotgrip
@@ -2059,8 +1989,6 @@ data["Maraudon"] = {
 				{ 1,  223521 }, -- Rotgrip Mantle
 				{ 2,  17728 }, -- Albino Crocscale Boots
 				{ 3,  17730 }, -- Gatorbite Axe
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223521 }, -- Rotgrip Mantle
 			},
 		},
 		{ -- MaraPrincessTheradras
@@ -2078,12 +2006,6 @@ data["Maraudon"] = {
 				{ 7,  17713 }, -- Blackstone Ring
 				{ 8,  223518 }, -- Charstone Dirk
 				{ 9,  221780 }, -- Princess Theradras' Scepter
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223519 }, -- Eye of Theradras
-				{ 18, 223541 }, -- Gemshard Heart
-				{ 19, 223518 }, -- Charstone Dirk
-				{ 20, 221780 }, -- Princess Theradras' Scepter
-				{ 21, 223964 }, -- Blade of Eternal Darkness
 			},
 		},
 		{ -- MaraNamelesProphet
