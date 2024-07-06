@@ -996,8 +996,8 @@ data["ScarletMonasteryGraveyard"] = {
 			specialType = "rare",
 			[NORMAL_DIFF] = {
 				{ 1,  7709 }, -- Blighted Leggings
-				{ 2,  7708 }, -- Necrotic Wand
-				{ 3,  7731 }, -- Ghostshard Talisman
+				{ 2,  217295 }, -- Necrotic Wand
+				{ 3,  217296 }, -- Ghostshard Talisman
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217295 }, -- Necrotic Wand
 				{ 18, 217296 }, -- Ghostshard Talisman			
@@ -1011,7 +1011,7 @@ data["ScarletMonasteryGraveyard"] = {
 			specialType = "rare",
 			AtlasMapBossID = "1'",
 			[NORMAL_DIFF] = {
-				{ 1,  7691 }, -- Embalmed Shroud
+				{ 1,  217294 }, -- Embalmed Shroud
 				{ 2,  7690 }, -- Ebon Vise
 				{ 3,  7689 }, -- Morbid Dawn
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1142,9 +1142,9 @@ data["ScarletMonasteryLibrary"] = {
 			AtlasMapBossID = 2,
 			[NORMAL_DIFF] = {
 				{ 1,  7714 }, -- Hypnotic Blade
-				{ 2,  7713 }, -- Illusionary Rod
-				{ 4,  7712 }, -- Mantle of Doan
-				{ 5,  7711 }, -- Robe of Doan
+				{ 2,  217299 }, -- Illusionary Rod
+				{ 4,  217298 }, -- Mantle of Doan
+				{ 5,  217297 }, -- Robe of Doan
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217299 }, -- Illusionary Rod
 				{ 19, 217298 }, -- Mantle of Doan
@@ -1293,7 +1293,7 @@ data["ScarletMonasteryCathedral"] = {
 				{ 1,  7724 }, -- Gauntlets of Divinity
 				{ 2,  10330 }, -- Scarlet Leggings
 				{ 3,  7726 }, -- Aegis of the Scarlet Commander
-				{ 4,  7723 }, -- Mograine's Might
+				{ 4,  217302 }, -- Mograine's Might
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217302 }, -- Mograine's Might
 			},
@@ -1305,8 +1305,8 @@ data["ScarletMonasteryCathedral"] = {
 			DisplayIDs = {{2043}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  7720 }, -- Whitemane's Chapeau
-				{ 2,  7722 }, -- Triune Amulet
+				{ 1,  217300 }, -- Whitemane's Chapeau
+				{ 2,  217301 }, -- Triune Amulet
 				{ 3,  7721 }, -- Hand of Righteousness
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217300 }, -- Whitemane's Chapeau
@@ -1369,7 +1369,7 @@ data["RazorfenDowns"] = {
 			DisplayIDs = {{7845}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
-				{ 1,  10776 }, -- Silky Spider Cape
+				{ 1,  217293 }, -- Silky Spider Cape
 				{ 2,  10775 }, -- Carapace of Tuten'kash
 				{ 3,  10777 }, -- Arachnid Gloves
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1383,9 +1383,9 @@ data["RazorfenDowns"] = {
 			DisplayIDs = {{8055}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  10769 }, -- Glowing Eye of Mordresh
-				{ 2,  10771 }, -- Deathmage Sash
-				{ 3,  10770 }, -- Mordresh's Lifeless Skull
+				{ 1,  217290 }, -- Glowing Eye of Mordresh
+				{ 2,  217292 }, -- Deathmage Sash
+				{ 3,  217291 }, -- Mordresh's Lifeless Skull
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217290 }, -- Glowing Eye of Mordresh
 				{ 18, 217292 }, -- Deathmage Sash
@@ -1425,8 +1425,8 @@ data["RazorfenDowns"] = {
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  10763 }, -- Icemetal Barbute
-				{ 2,  10762 }, -- Robes of the Lich
-				{ 3,  10764 }, -- Deathchill Armor
+				{ 2,  217288 }, -- Robes of the Lich
+				{ 3,  217289 }, -- Deathchill Armor
 				{ 4,  10761 }, -- Coldrage Dagger
 				{ 6,  10765 }, -- Bonefingers
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1545,10 +1545,10 @@ data["Uldaman"] = {
 			DisplayIDs = {{5945}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  9389 }, -- Revelosh's Spaulders
-				{ 2,  9388 }, -- Revelosh's Armguards
-				{ 3,  9390 }, -- Revelosh's Gloves
-				{ 4,  9387 }, -- Revelosh's Boots
+				{ 1,  217307 }, -- Revelosh's Spaulders
+				{ 2,  217305 }, -- Revelosh's Armguards
+				{ 3,  217304 }, -- Revelosh's Gloves
+				{ 4,  217306 }, -- Revelosh's Boots
 				{ 6,  7741 }, -- The Shaft of Tsol
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217304 }, -- Revelosh's Gloves
@@ -1565,8 +1565,8 @@ data["Uldaman"] = {
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  9409 }, -- Ironaya's Bracers
-				{ 2,  9407 }, -- Stoneweaver Leggings
-				{ 3,  9408 }, -- Ironshod Bludgeon
+				{ 2,  217303 }, -- Stoneweaver Leggings
+				{ 3,  217704 }, -- Ironshod Bludgeon
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217303 }, -- Whitemane's Chapeau
 			},
@@ -1612,8 +1612,8 @@ data["Uldaman"] = {
 			DisplayIDs = {{11165}},
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,  9415 }, -- Grimlok's Tribal Vestments
-				{ 2,  9416 }, -- Grimlok's Charge
+				{ 1,  223535 }, -- Grimlok's Tribal Vestments
+				{ 2,  223536 }, -- Grimlok's Charge
 				{ 3,  9414 }, -- Oilskin Leggings
 				{ 5, 7670 }, -- Shattered Necklace Sapphire
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1644,7 +1644,7 @@ data["Uldaman"] = {
 				{ 5,  9397 }, -- Energy Cloak
 				{ 6,  9406 }, -- Spirewind Fetter
 				{ 7,  9428 }, -- Unearthed Bands
-				{ 8,  9432 }, -- Skullplate Bracers
+				{ 8,  223537 }, -- Skullplate Bracers
 				{ 9,  9396 }, -- Legguards of the Vault
 				{ 10, 9393 }, -- Beacon of Hope
 				{ 12, 7666 }, -- Shattered Necklace
@@ -1721,7 +1721,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  9640 }, -- Vice Grips
-				{ 2,  9641 }, -- Lifeblood Amulet
+				{ 2,  223532 }, -- Lifeblood Amulet
 				{ 3,  9639 }, -- The Hand of Antu'sul
 				{ 5,  9379 }, -- Sang'thraze the Deflector
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1761,7 +1761,7 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{6434}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  18083 }, -- Jumanza Grips
+				{ 1,  223534 }, -- Jumanza Grips
 				{ 2,  18082 }, -- Zum'rah's Vexing Cane
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17,  223534 }, -- Jumanza Grips
@@ -1786,8 +1786,8 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  9470 }, -- Bad Mojo Mask
-				{ 2,  9473 }, -- Jinxed Hoodoo Skin
-				{ 3,  9474 }, -- Jinxed Hoodoo Kilt
+				{ 2,  223529 }, -- Jinxed Hoodoo Skin
+				{ 3,  223530 }, -- Jinxed Hoodoo Kilt
 				{ 4,  9475 }, -- Diabolic Skiver
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17,  223529 }, -- Jinxed Hoodoo Skin
@@ -1802,7 +1802,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 4,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
-				{ 1,  12471 }, -- Desertwalker Cane
+				{ 1,  223533 }, -- Desertwalker Cane
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223533 }, -- Desertwalker Cane
 			},
@@ -1847,8 +1847,8 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{7271}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  9469 }, -- Gahz'rilla Scale Armor
-				{ 3,  9467 }, -- Gahz'rilla Fang
+				{ 1,  223528 }, -- Gahz'rilla Scale Armor
+				{ 3,  223527 }, -- Gahz'rilla Fang
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223528 }, -- Gahz'rilla Scale Armor
 				{ 18, 223527 }, -- Gahz'rilla Fang
@@ -1861,8 +1861,8 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{6439}},
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  9479 }, -- Embrace of the Lycan
-				{ 2,  9476 }, -- Big Bad Pauldrons
+				{ 1,  223963 }, -- Embrace of the Lycan
+				{ 2,  223531 }, -- Big Bad Pauldrons
 				{ 3,  9478 }, -- Ripsaw
 				{ 4,  9477 }, -- The Chief's Enforcer
 				{ 6,  11086 }, -- Jang'thraze the Protector
@@ -1880,7 +1880,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 8,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
-				{ 1,  12470 }, -- Sandstalker Ankleguards
+				{ 1,  223962 }, -- Sandstalker Ankleguards
 			},
 		},
 		{ -- ZFTrash
@@ -1946,7 +1946,7 @@ data["Maraudon"] = {
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
 				{ 1,  17749 }, -- Phytoskin Spaulders
-				{ 2,  17748 }, -- Vinerot Sandals
+				{ 2,  223543 }, -- Vinerot Sandals
 				{ 4,  17750 }, -- Chloromesh Girdle
 				{ 5,  17751 }, -- Brusslehide Leggings
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1995,7 +1995,7 @@ data["Maraudon"] = {
 			DisplayIDs = {{12350}},
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  17740 }, -- Soothsayer's Headdress
+				{ 1,  223525 }, -- Soothsayer's Headdress
 				{ 2,  17739 }, -- Grovekeeper's Drape
 				{ 3,  17738 }, -- Claw of Celebras
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2009,9 +2009,9 @@ data["Maraudon"] = {
 			DisplayIDs = {{12293}},
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,  17734 }, -- Helm of the Mountain
+				{ 1,  223522 }, -- Helm of the Mountain
 				{ 2,  17736 }, -- Rockgrip Gauntlets
-				{ 3,  17737 }, -- Cloud Stone
+				{ 3,  223523 }, -- Cloud Stone
 				{ 4,  17943 }, -- Fist of Stone
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223522 }, -- Helm of the Mountain
@@ -2026,9 +2026,9 @@ data["Maraudon"] = {
 			DisplayIDs = {{7125}},
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,  17718 }, -- Gizlock's Hypertech Buckler
-				{ 2,  17717 }, -- Megashot Rifle
-				{ 3,  17719 }, -- Inventor's Focal Sword
+				{ 1,  223545 }, -- Gizlock's Hypertech Buckler
+				{ 2,  223542 }, -- Megashot Rifle
+				{ 3,  223520 }, -- Inventor's Focal Sword
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223545 }, -- Gizlock's Hypertech Buckler
 				{ 18, 223542 }, -- Megashot Rifle
@@ -2042,7 +2042,7 @@ data["Maraudon"] = {
 			DisplayIDs = {{13589}},
 			AtlasMapBossID = 10,
 			[NORMAL_DIFF] = {
-				{ 1,  17732 }, -- Rotgrip Mantle
+				{ 1,  223521 }, -- Rotgrip Mantle
 				{ 2,  17728 }, -- Albino Crocscale Boots
 				{ 3,  17730 }, -- Gatorbite Axe
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2056,14 +2056,14 @@ data["Maraudon"] = {
 			DisplayIDs = {{12292}},
 			AtlasMapBossID = 11,
 			[NORMAL_DIFF] = {
-				{ 1,  17780 }, -- Blade of Eternal Darkness
-				{ 3,  17715 }, -- Eye of Theradras
-				{ 4,  17707 }, -- Gemshard Heart
+				{ 1,  223964 }, -- Blade of Eternal Darkness
+				{ 3,  223519 }, -- Eye of Theradras
+				{ 4,  223541 }, -- Gemshard Heart
 				{ 5,  17714 }, -- Bracers of the Stone Princess
 				{ 6,  17711 }, -- Elemental Rockridge Leggings
 				{ 7,  17713 }, -- Blackstone Ring
-				{ 8,  17710 }, -- Charstone Dirk
-				{ 9,  17766 }, -- Princess Theradras' Scepter
+				{ 8,  223518 }, -- Charstone Dirk
+				{ 9,  221780 }, -- Princess Theradras' Scepter
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223519 }, -- Eye of Theradras
 				{ 18, 223541 }, -- Gemshard Heart
@@ -2168,7 +2168,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11626 }, -- Blackveil Cape
 				{ 2,  11624 }, -- Kentic Amice
 				{ 3,  22240 }, -- Greaves of Withering Despair
-				{ 4,  11625 }, -- Enthralled Sphere
+				{ 4,  223539 }, -- Enthralled Sphere
 				{ 5,  11623 }, -- Spritecaster Cape
 				{ 7,  11140 }, -- Prison Cell Key
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2185,8 +2185,8 @@ data["BlackrockDepths"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  11623 }, -- Spritecaster Cape
 				{ 2,  11627 }, -- Fleetfoot Greaves
-				{ 3,  11628 }, -- Houndmaster's Bow
-				{ 4,  11629 }, -- Houndmaster's Rifle
+				{ 3,  223540 }, -- Houndmaster's Bow
+				{ 4,  223982 }, -- Houndmaster's Rifle
 				{ 5,  11626 }, -- Blackveil Cape
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223540 }, -- Houndmaster's Bow
@@ -2203,10 +2203,10 @@ data["BlackrockDepths"] = {
 			DisplayIDs = {{8760}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  11726 }, -- Savage Gladiator Chain
+				{ 1,  227952 }, -- Savage Gladiator Chain
 				{ 2,  22271 }, -- Leggings of Frenzied Magic
 				{ 3,  22257 }, -- Bloodclot Band
-				{ 4,  22266 }, -- Flarethorn
+				{ 4,  227962 }, -- Flarethorn
 			},
 		},
 		{ -- BRDGrizzle
@@ -2217,7 +2217,7 @@ data["BlackrockDepths"] = {
 			DisplayIDs = {{7873}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  11722 }, -- Dregmetal Spaulders
+				{ 1,  223544 }, -- Dregmetal Spaulders
 				{ 2,  11703 }, -- Stonewall Girdle
 				{ 3,  22270 }, -- Entrenching Boots
 				{ 4,  11702 }, -- Grizzle's Skinner
@@ -2235,7 +2235,7 @@ data["BlackrockDepths"] = {
 			DisplayIDs = {{523}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  11685 }, -- Splinthide Shoulders
+				{ 1,  223987 }, -- Splinthide Shoulders
 				{ 2,  11679 }, -- Rubicund Armguards
 				{ 4,  11686 }, -- Girdle of Beastial Fury
 				{ 5,  11730 }, -- Savage Gladiator Grips
@@ -2254,7 +2254,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11665 }, -- Ogreseer Fists
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
-				{ 4,  11824 }, -- Cyclopean Band
+				{ 4,  223985 }, -- Cyclopean Band
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223985 }, -- Cyclopean Band
 			},
@@ -2268,7 +2268,7 @@ data["BlackrockDepths"] = {
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  11678 }, -- Carapace of Anub'shiah
-				{ 2,  11677 }, -- Graverot Cape
+				{ 2,  223986 }, -- Graverot Cape
 				{ 3,  11675 }, -- Shadefiend Boots
 				{ 4,  11731 }, -- Savage Gladiator Greaves
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2284,7 +2284,7 @@ data["BlackrockDepths"] = {
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  11633 }, -- Spiderfang Carapace
-				{ 2,  11634 }, -- Silkweb Gloves
+				{ 2,  223984 }, -- Silkweb Gloves
 				{ 3,  11635 }, -- Hookfang Shanker
 				{ 4,  11729 }, -- Savage Gladiator Helm
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2302,10 +2302,10 @@ data["BlackrockDepths"] = {
 			AtlasMapBossID = 7,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
-				{ 1,  11747 }, -- Flamestrider Robes
-				{ 2,  11749 }, -- Searingscale Leggings
+				{ 1,  223981 }, -- Flamestrider Robes
+				{ 2,  223980 }, -- Searingscale Leggings
 				{ 3,  11748 }, -- Pyric Caduceus
-				{ 4,  11750 }, -- Kindling Stave
+				{ 4,  223538 }, -- Kindling Stave
 				{ 6,  11207 }, -- Formula: Enchant Weapon - Fiery Weapon
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223981 }, -- Flamestrider Robes
@@ -2348,7 +2348,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11782 }, -- Boreal Mantle
 				{ 2,  22241 }, -- Dark Warder's Pauldrons
 				{ 3,  11783 }, -- Chillsteel Girdle
-				{ 4,  11784 }, -- Arbiter's Blade
+				{ 4,  223983 }, -- Arbiter's Blade
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223983 }, -- Arbiter's Blade
 				
@@ -7244,7 +7244,7 @@ data["Gnomeregan2"] = {
 			name = AL["Trash"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  9508 }, -- Mechbuilder's Overalls
+				{ 1,  213298 }, -- Mechbuilder's Overalls
 				{ 2,  9491 }, -- Hotshot Pilot's Gloves
 				{ 3,  9509 }, -- Petrolspill Leggings
 				{ 4,  9510 }, -- Caverndeep Trudgers
@@ -7259,7 +7259,7 @@ data["Gnomeregan2"] = {
 				{ 16, 9327 }, -- Security DELTA Data Access Card
 				{ 18, 7191 }, -- Fused Wiring
 				{ 19, 9308 }, -- Grime-Encrusted Object
-				{ 20, 9326 }, -- Grime-Encrusted Ring
+				{ 20, 216661 }, -- Grime-Encrusted Ring
 				{ 22, 9279 }, -- White Punch Card
 				{ 23, 9280 }, -- Yellow Punch Card
 				{ 24, 9282 }, -- Blue Punch Card
@@ -7491,9 +7491,9 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 10, 10626 }, -- Ragehammer
 				{ 11, 10628 }, -- Deathblow
 				{ 12, 10627 }, -- Bludgeon of the Grinning Dog
-				{ 16, 10782 }, -- Hakkari Shroud
-				{ 17, 10781 }, -- Hakkari Breastplate
-				{ 18, 10780 }, -- Mark of Hakkar
+				{ 16, 223326 }, -- Hakkari Shroud
+				{ 17, 223325 }, -- Hakkari Breastplate
+				{ 18, 223327 }, -- Mark of Hakkar
 				{ 20, 16216 }, -- Formula: Enchant Cloak - Greater Resistance
 				{ 21, 15733 }, -- Pattern: Green Dragonscale Leggings
 			},
