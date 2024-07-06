@@ -266,17 +266,17 @@ local DM_BOOKS = { -- DMBooks
 	IgnoreAsSource = true,
 	ContentPhase = 4,
 	[NORMAL_DIFF] = {
-		{ 1,  18401 }, -- Foror's Compendium of Dragon Slaying
+		{ 1,  228680 }, -- Foror's Compendium of Dragon Slaying
 		{ 3,  18362 }, -- Holy Bologna: What the Light Won't Tell You
-		{ 4,  18358 }, -- The Arcanist's Cookbook
+		{ 4,  228693 }, -- The Arcanist's Cookbook
 		{ 5,  18360 }, -- Harnessing Shadows
-		{ 6,  18356 }, -- Garona: A Study on Stealth and Treachery
+		{ 6,  228691 }, -- Garona: A Study on Stealth and Treachery
 		{ 7,  18364 }, -- The Emerald Dream
 		{ 8,  18361 }, -- The Greatest Race of Hunters
 		{ 9,  18363 }, -- Frost Shock and You
-		{ 10, 18359 }, -- The Light and How to Swing It
-		{ 11, 18357 }, -- Codex of Defense
-		--{ 16, 18348 }, -- Quel'Serrar
+		{ 10, 228690 }, -- The Light and How to Swing It
+		{ 11, 228692 }, -- Codex of Defense
+		--{ 16, 228679 }, -- Quel'Serrar
 		{ 18, 18333 }, -- Libram of Focus
 		{ 19, 18334 }, -- Libram of Protection
 		{ 20, 18332 }, -- Libram of Rapidity
@@ -1010,8 +1010,8 @@ data["ScarletMonasteryGraveyard"] = {
 			specialType = "rare",
 			[NORMAL_DIFF] = {
 				{ 1,  7709 }, -- Blighted Leggings
-				{ 2,  7708 }, -- Necrotic Wand
-				{ 3,  7731 }, -- Ghostshard Talisman
+				{ 2,  217295 }, -- Necrotic Wand
+				{ 3,  217296 }, -- Ghostshard Talisman
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217295 }, -- Necrotic Wand
 				{ 18, 217296 }, -- Ghostshard Talisman			
@@ -1025,7 +1025,7 @@ data["ScarletMonasteryGraveyard"] = {
 			specialType = "rare",
 			AtlasMapBossID = "1'",
 			[NORMAL_DIFF] = {
-				{ 1,  7691 }, -- Embalmed Shroud
+				{ 1,  217294 }, -- Embalmed Shroud
 				{ 2,  7690 }, -- Ebon Vise
 				{ 3,  7689 }, -- Morbid Dawn
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1156,9 +1156,9 @@ data["ScarletMonasteryLibrary"] = {
 			AtlasMapBossID = 2,
 			[NORMAL_DIFF] = {
 				{ 1,  7714 }, -- Hypnotic Blade
-				{ 2,  7713 }, -- Illusionary Rod
-				{ 4,  7712 }, -- Mantle of Doan
-				{ 5,  7711 }, -- Robe of Doan
+				{ 2,  217299 }, -- Illusionary Rod
+				{ 4,  217298 }, -- Mantle of Doan
+				{ 5,  217297 }, -- Robe of Doan
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217299 }, -- Illusionary Rod
 				{ 19, 217298 }, -- Mantle of Doan
@@ -1307,7 +1307,7 @@ data["ScarletMonasteryCathedral"] = {
 				{ 1,  7724 }, -- Gauntlets of Divinity
 				{ 2,  10330 }, -- Scarlet Leggings
 				{ 3,  7726 }, -- Aegis of the Scarlet Commander
-				{ 4,  7723 }, -- Mograine's Might
+				{ 4,  217302 }, -- Mograine's Might
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217302 }, -- Mograine's Might
 			},
@@ -1319,8 +1319,8 @@ data["ScarletMonasteryCathedral"] = {
 			DisplayIDs = {{2043}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  7720 }, -- Whitemane's Chapeau
-				{ 2,  7722 }, -- Triune Amulet
+				{ 1,  217300 }, -- Whitemane's Chapeau
+				{ 2,  217301 }, -- Triune Amulet
 				{ 3,  7721 }, -- Hand of Righteousness
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217300 }, -- Whitemane's Chapeau
@@ -1383,7 +1383,7 @@ data["RazorfenDowns"] = {
 			DisplayIDs = {{7845}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
-				{ 1,  10776 }, -- Silky Spider Cape
+				{ 1,  217293 }, -- Silky Spider Cape
 				{ 2,  10775 }, -- Carapace of Tuten'kash
 				{ 3,  10777 }, -- Arachnid Gloves
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1397,9 +1397,9 @@ data["RazorfenDowns"] = {
 			DisplayIDs = {{8055}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  10769 }, -- Glowing Eye of Mordresh
-				{ 2,  10771 }, -- Deathmage Sash
-				{ 3,  10770 }, -- Mordresh's Lifeless Skull
+				{ 1,  217290 }, -- Glowing Eye of Mordresh
+				{ 2,  217292 }, -- Deathmage Sash
+				{ 3,  217291 }, -- Mordresh's Lifeless Skull
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217290 }, -- Glowing Eye of Mordresh
 				{ 18, 217292 }, -- Deathmage Sash
@@ -1439,8 +1439,8 @@ data["RazorfenDowns"] = {
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  10763 }, -- Icemetal Barbute
-				{ 2,  10762 }, -- Robes of the Lich
-				{ 3,  10764 }, -- Deathchill Armor
+				{ 2,  217288 }, -- Robes of the Lich
+				{ 3,  217289 }, -- Deathchill Armor
 				{ 4,  10761 }, -- Coldrage Dagger
 				{ 6,  10765 }, -- Bonefingers
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1559,10 +1559,10 @@ data["Uldaman"] = {
 			DisplayIDs = {{5945}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  9389 }, -- Revelosh's Spaulders
-				{ 2,  9388 }, -- Revelosh's Armguards
-				{ 3,  9390 }, -- Revelosh's Gloves
-				{ 4,  9387 }, -- Revelosh's Boots
+				{ 1,  217307 }, -- Revelosh's Spaulders
+				{ 2,  217305 }, -- Revelosh's Armguards
+				{ 3,  217304 }, -- Revelosh's Gloves
+				{ 4,  217306 }, -- Revelosh's Boots
 				{ 6,  7741 }, -- The Shaft of Tsol
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217304 }, -- Revelosh's Gloves
@@ -1579,8 +1579,8 @@ data["Uldaman"] = {
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  9409 }, -- Ironaya's Bracers
-				{ 2,  9407 }, -- Stoneweaver Leggings
-				{ 3,  9408 }, -- Ironshod Bludgeon
+				{ 2,  217303 }, -- Stoneweaver Leggings
+				{ 3,  217704 }, -- Ironshod Bludgeon
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 217303 }, -- Whitemane's Chapeau
 			},
@@ -1626,8 +1626,8 @@ data["Uldaman"] = {
 			DisplayIDs = {{11165}},
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,  9415 }, -- Grimlok's Tribal Vestments
-				{ 2,  9416 }, -- Grimlok's Charge
+				{ 1,  223535 }, -- Grimlok's Tribal Vestments
+				{ 2,  223536 }, -- Grimlok's Charge
 				{ 3,  9414 }, -- Oilskin Leggings
 				{ 5, 7670 }, -- Shattered Necklace Sapphire
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1658,7 +1658,7 @@ data["Uldaman"] = {
 				{ 5,  9397 }, -- Energy Cloak
 				{ 6,  9406 }, -- Spirewind Fetter
 				{ 7,  9428 }, -- Unearthed Bands
-				{ 8,  9432 }, -- Skullplate Bracers
+				{ 8,  223537 }, -- Skullplate Bracers
 				{ 9,  9396 }, -- Legguards of the Vault
 				{ 10, 9393 }, -- Beacon of Hope
 				{ 12, 7666 }, -- Shattered Necklace
@@ -1735,7 +1735,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  9640 }, -- Vice Grips
-				{ 2,  9641 }, -- Lifeblood Amulet
+				{ 2,  223532 }, -- Lifeblood Amulet
 				{ 3,  9639 }, -- The Hand of Antu'sul
 				{ 5,  9379 }, -- Sang'thraze the Deflector
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -1775,7 +1775,7 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{6434}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  18083 }, -- Jumanza Grips
+				{ 1,  223534 }, -- Jumanza Grips
 				{ 2,  18082 }, -- Zum'rah's Vexing Cane
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17,  223534 }, -- Jumanza Grips
@@ -1800,8 +1800,8 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  9470 }, -- Bad Mojo Mask
-				{ 2,  9473 }, -- Jinxed Hoodoo Skin
-				{ 3,  9474 }, -- Jinxed Hoodoo Kilt
+				{ 2,  223529 }, -- Jinxed Hoodoo Skin
+				{ 3,  223530 }, -- Jinxed Hoodoo Kilt
 				{ 4,  9475 }, -- Diabolic Skiver
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17,  223529 }, -- Jinxed Hoodoo Skin
@@ -1816,7 +1816,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 4,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
-				{ 1,  12471 }, -- Desertwalker Cane
+				{ 1,  223533 }, -- Desertwalker Cane
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223533 }, -- Desertwalker Cane
 			},
@@ -1861,8 +1861,8 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{7271}},
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  9469 }, -- Gahz'rilla Scale Armor
-				{ 3,  9467 }, -- Gahz'rilla Fang
+				{ 1,  223528 }, -- Gahz'rilla Scale Armor
+				{ 3,  223527 }, -- Gahz'rilla Fang
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223528 }, -- Gahz'rilla Scale Armor
 				{ 18, 223527 }, -- Gahz'rilla Fang
@@ -1875,8 +1875,8 @@ data["Zul'Farrak"] = {
 			DisplayIDs = {{6439}},
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  9479 }, -- Embrace of the Lycan
-				{ 2,  9476 }, -- Big Bad Pauldrons
+				{ 1,  223963 }, -- Embrace of the Lycan
+				{ 2,  223531 }, -- Big Bad Pauldrons
 				{ 3,  9478 }, -- Ripsaw
 				{ 4,  9477 }, -- The Chief's Enforcer
 				{ 6,  11086 }, -- Jang'thraze the Protector
@@ -1894,7 +1894,7 @@ data["Zul'Farrak"] = {
 			AtlasMapBossID = 8,
 			specialType = "rare",
 			[NORMAL_DIFF] = {
-				{ 1,  12470 }, -- Sandstalker Ankleguards
+				{ 1,  223962 }, -- Sandstalker Ankleguards
 			},
 		},
 		{ -- ZFTrash
@@ -1960,7 +1960,7 @@ data["Maraudon"] = {
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
 				{ 1,  17749 }, -- Phytoskin Spaulders
-				{ 2,  17748 }, -- Vinerot Sandals
+				{ 2,  223543 }, -- Vinerot Sandals
 				{ 4,  17750 }, -- Chloromesh Girdle
 				{ 5,  17751 }, -- Brusslehide Leggings
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2009,7 +2009,7 @@ data["Maraudon"] = {
 			DisplayIDs = {{12350}},
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  17740 }, -- Soothsayer's Headdress
+				{ 1,  223525 }, -- Soothsayer's Headdress
 				{ 2,  17739 }, -- Grovekeeper's Drape
 				{ 3,  17738 }, -- Claw of Celebras
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2023,9 +2023,9 @@ data["Maraudon"] = {
 			DisplayIDs = {{12293}},
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,  17734 }, -- Helm of the Mountain
+				{ 1,  223522 }, -- Helm of the Mountain
 				{ 2,  17736 }, -- Rockgrip Gauntlets
-				{ 3,  17737 }, -- Cloud Stone
+				{ 3,  223523 }, -- Cloud Stone
 				{ 4,  17943 }, -- Fist of Stone
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223522 }, -- Helm of the Mountain
@@ -2040,9 +2040,9 @@ data["Maraudon"] = {
 			DisplayIDs = {{7125}},
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,  17718 }, -- Gizlock's Hypertech Buckler
-				{ 2,  17717 }, -- Megashot Rifle
-				{ 3,  17719 }, -- Inventor's Focal Sword
+				{ 1,  223545 }, -- Gizlock's Hypertech Buckler
+				{ 2,  223542 }, -- Megashot Rifle
+				{ 3,  223520 }, -- Inventor's Focal Sword
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223545 }, -- Gizlock's Hypertech Buckler
 				{ 18, 223542 }, -- Megashot Rifle
@@ -2056,7 +2056,7 @@ data["Maraudon"] = {
 			DisplayIDs = {{13589}},
 			AtlasMapBossID = 10,
 			[NORMAL_DIFF] = {
-				{ 1,  17732 }, -- Rotgrip Mantle
+				{ 1,  223521 }, -- Rotgrip Mantle
 				{ 2,  17728 }, -- Albino Crocscale Boots
 				{ 3,  17730 }, -- Gatorbite Axe
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
@@ -2070,14 +2070,14 @@ data["Maraudon"] = {
 			DisplayIDs = {{12292}},
 			AtlasMapBossID = 11,
 			[NORMAL_DIFF] = {
-				{ 1,  17780 }, -- Blade of Eternal Darkness
-				{ 3,  17715 }, -- Eye of Theradras
-				{ 4,  17707 }, -- Gemshard Heart
+				{ 1,  223964 }, -- Blade of Eternal Darkness
+				{ 3,  223519 }, -- Eye of Theradras
+				{ 4,  223541 }, -- Gemshard Heart
 				{ 5,  17714 }, -- Bracers of the Stone Princess
 				{ 6,  17711 }, -- Elemental Rockridge Leggings
 				{ 7,  17713 }, -- Blackstone Ring
-				{ 8,  17710 }, -- Charstone Dirk
-				{ 9,  17766 }, -- Princess Theradras' Scepter
+				{ 8,  223518 }, -- Charstone Dirk
+				{ 9,  221780 }, -- Princess Theradras' Scepter
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223519 }, -- Eye of Theradras
 				{ 18, 223541 }, -- Gemshard Heart
@@ -2268,7 +2268,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11665 }, -- Ogreseer Fists
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
-				{ 4,  11824 }, -- Cyclopean Band
+				{ 4,  223985 }, -- Cyclopean Band
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223985 }, -- Cyclopean Band
 			},
@@ -2503,7 +2503,7 @@ data["BlackrockDepths"] = {
 				{ 1,  227964 }, -- Luminary Kilt
 				{ 2,  227965 }, -- Omnicast Boots
 				{ 3,  11669 }, -- Naglering
-				{ 4,  11819 }, -- Second Wind
+				{ 4,  227967 }, -- Second Wind
 			},
 		},
 		{ -- BRDGuzzler_
@@ -2530,7 +2530,7 @@ data["BlackrockDepths"] = {
 		AtlasMapBossID = 15,
 		ContentPhase = 4,
 		[NORMAL_DIFF] = {
-			{ 1, 18592 }, -- Plans: Sulfuron Hammer
+			{ 1, 227727 }, -- Plans: Sulfuron Hammer
 			},
 		},
 		{ -- Phalanx
@@ -2560,7 +2560,7 @@ data["BlackrockDepths"] = {
 				{ 1,  227973 }, -- Circle of Flame
 				{ 3,  227970 }, -- Cape of the Fire Salamander
 				{ 4,  227971 }, -- Molten Fists
-				{ 5,  11832 }, -- Burst of Knowledge
+				{ 5,  227972 }, -- Burst of Knowledge
 				{ 6,  227934 }, -- Flame Wrath
 				{ 8,  23320 }, -- Tablet of Flame Shock VI
 			},
@@ -2642,13 +2642,13 @@ data["BlackrockDepths"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  227991 }, -- Ironfoe
-				{ 3,  11933 }, -- Imperial Jewel
+				{ 3,  227988 }, -- Imperial Jewel
 				{ 4,  227985 }, -- The Emperor's New Cape
 				{ 5,  227980 }, -- Robes of the Royal Crown
 				{ 6,  227986 }, -- Wristguards of Renown
 				{ 7,  227987 }, -- Sash of the Grand Hunt
 				{ 8,  11934 }, -- Emperor's Seal
-				{ 9,  11815 }, -- Hand of Justice
+				{ 9,  228722 }, -- Hand of Justice
 				{ 10, 227984 }, -- Thaurissan's Royal Scepter
 				{ 11, 227981 }, -- Dreadforge Retaliator
 				{ 12, 227982 }, -- Guiding Stave of Wisdom
@@ -2793,7 +2793,7 @@ data["LowerBlackrockSpire"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  228564 }, -- Ogreseer Tower Boots
-				{ 2,  13283 }, -- Magus Ring
+				{ 2,  228565 }, -- Magus Ring
 				{ 3,  228563 }, -- Globe of D'sak
 			},
 		},
@@ -2825,7 +2825,7 @@ data["LowerBlackrockSpire"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226721 }, -- Beaststalker's Gloves
-				{ 3,  13177 }, -- Talisman of Evasion
+				{ 3,  228574 }, -- Talisman of Evasion
 				{ 4,  228572 }, -- Brazecore Armguards
 				{ 5,  228594 }, -- Kayser's Boots of Precision
 				{ 6,  13173 }, -- Flightblade Throwing Axe
@@ -2860,7 +2860,7 @@ data["LowerBlackrockSpire"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  226713 }, -- Wildheart Boots
 				{ 3,  228577 }, -- Gilded Gauntlets
-				{ 4,  13213 }, -- Smolderweb's Eye
+				{ 4,  228576 }, -- Smolderweb's Eye
 				{ 5,  228573 }, -- Venomspitter
 			},
 		},
@@ -2963,11 +2963,11 @@ data["LowerBlackrockSpire"] = {
 			AtlasMapBossID = 19,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  13143 }, -- Mark of the Dragon Lord
+				{ 1,  228585 }, -- Mark of the Dragon Lord
 				{ 3,  226716 }, -- Beaststalker's Mantle
 				{ 5,  228588 }, -- Reiver Claws
-				{ 6,  13164 }, -- Heart of the Scale
-				{ 7,  22321 }, -- Heart of Wyrmthalak
+				{ 6,  228589 }, -- Heart of the Scale
+				{ 7,  228599 }, -- Heart of Wyrmthalak
 				{ 8,  228601 }, -- Relentless Scythe
 				{ 9,  228586 }, -- Chillpike
 				{ 10, 228587 }, -- Trindlehaven Staff
@@ -3045,7 +3045,7 @@ data["UpperBlackrockSpire"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226748 }, -- Gauntlets of Elements
-				{ 3,  12929 }, -- Emberfury Talisman
+				{ 3,  228584 }, -- Emberfury Talisman
 				{ 4,  228583 }, -- TruestrikeShoulders
 				{ 5,  12905 }, -- Wildfire Cape
 				{ 6,  12926 }, -- Flaming Band
@@ -3141,7 +3141,7 @@ data["UpperBlackrockSpire"] = {
 				{ 9,  228650 }, -- Warmaster Legguards
 				{ 10, 18102 }, -- Dragonrider Boots
 				{ 11, 22247 }, -- Faith Healer's Boots
-				{ 12, 18103 }, -- Band of Rumination
+				{ 12, 228675 }, -- Band of Rumination
 				{ 13, 228653 }, -- Dal'Rend's Sacred Charge
 				{ 14, 228652 }, -- Dal'Rend's Tribal Guardian
 				{ 15, 228603 }, -- Blackhand Doomsaw
@@ -3182,11 +3182,11 @@ data["UpperBlackrockSpire"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  228606 }, -- Blackblade of Shahram
 				{ 3,  228677 }, -- Spellweaver's Turban
-				{ 4,  13141 }, -- Tooth of Gnarr
+				{ 4,  228669 }, -- Tooth of Gnarr
 				{ 5,  22269 }, -- Shadow Prowler's Cloak
 				{ 6,  228670 }, -- Brigam Girdle
-				{ 7,  13098 }, -- Painweaver Band
-				{ 8,  22268 }, -- Draconic Infused Emblem
+				{ 7,  228667 }, -- Painweaver Band
+				{ 8,  228678 }, -- Draconic Infused Emblem
 				{ 9,  22253 }, -- Tome of the Lost
 				{ 10, 12602 }, -- Draconian Deflector
 				{ 12, 15730 }, -- Pattern: Red Dragonscale Breastplate
@@ -3239,11 +3239,11 @@ data["UpperBlackrockSpire"] = {
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  228681 }, -- Ironweave Cowl
-				{ 2,  22340 }, -- Pendant of Celerity
+				{ 2,  228684 }, -- Pendant of Celerity
 				{ 3,  22337 }, -- Shroud of Domination
 				{ 4,  22343 }, -- Handguards of Savagery
 				{ 5,  22342 }, -- Leggings of Torment
-				{ 6,  22339 }, -- Rune Band of Wizardry
+				{ 6,  228683 }, -- Rune Band of Wizardry
 				{ 7,  22336 }, -- Draconian Aegis of the Legion
 				{ 8,  228682 }, -- Lord Valthalak's Staff of Command
 			},
@@ -3299,7 +3299,7 @@ data["DireMaulEast"] = {
 			AtlasMapBossID = 3,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  18317 }, -- Tempest Talisman
+				{ 1,  228054 }, -- Tempest Talisman
 				{ 2,  18322 }, -- Waterspout Boots
 				{ 3,  228052 }, -- Waveslicer
 				{ 5,  19268 }, -- Ace of Elementals
@@ -3338,8 +3338,8 @@ data["DireMaulEast"] = {
 				{ 6,  18318 }, -- Merciful Greaves
 				{ 7,  18321 }, -- Energetic Rod
 				{ 8,  228056 }, -- Fiendish Machete
-				{ 9,  18314 }, -- Ring of Demonic Guile
-				{ 10, 18315 }, -- Ring of Demonic Potency
+				{ 9,  228699 }, -- Ring of Demonic Guile
+				{ 10, 228057 }, -- Ring of Demonic Potency
 			},
 		},
 		{ -- DMETrash
@@ -3432,7 +3432,7 @@ data["DireMaulWest"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18374 }, -- Flamescarred Shoulders
-				{ 2,  18397 }, -- Elder Magus Pendant
+				{ 2,  228067 }, -- Elder Magus Pendant
 				{ 3,  18371 }, -- Mindtap Talisman
 				{ 5,  18350 }, -- Amplifying Cloak
 				{ 6,  18351 }, -- Magically Sealed Bracers
@@ -3738,7 +3738,7 @@ data["DireMaulNorth"] = {
 				{ 6,  228070 }, -- Ogre Forged Hauberk
 				{ 7,  18533 }, -- Gordok Bracers of Power
 				{ 8,  18529 }, -- Elemental Plate Girdle
-				{ 9,  18500 }, -- Tarnished Elven Ring
+				{ 9,  228469 }, -- Tarnished Elven Ring
 				{ 10, 18537 }, -- Counterattack Lodestone
 				{ 11, 18499 }, -- Barrier Shield
 				{ 12, 228473 }, -- Unyielding Maul
@@ -3806,7 +3806,7 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226764 }, -- Boots of Valor
-				{ 3,  13960 }, -- Heart of the Fiend
+				{ 3,  228019 }, -- Heart of the Fiend
 				{ 4,  228001 }, -- Stoneform Shoulders
 				{ 5,  13969 }, -- Loomguard Armbraces
 				{ 6,  228007 }, -- Gargoyle Slashers
@@ -3864,7 +3864,7 @@ data["Scholomance"] = {
 			AtlasMapBossID = 5,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  18760 }, -- Necromantic Band
+				{ 1,  228045 }, -- Necromantic Band
 				{ 2,  18761 }, -- Oblivion's Touch
 				{ 3,  18758 }, -- Specter's Blade
 				{ 4,  228030 }, -- Malicious Axe
@@ -3953,7 +3953,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -3993,7 +3993,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -4032,7 +4032,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -4071,7 +4071,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -4110,7 +4110,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -4148,7 +4148,7 @@ data["Scholomance"] = {
 				{ 23, 14641 }, -- Cadaverous Walkers
 				{ 24, 227998 }, -- Bloodmail Boots
 				{ 25, 227999 }, -- Deathbone Sabatons
-				{ 26, 18684 }, -- Dimly Opalescent Ring
+				{ 26, 228016 }, -- Dimly Opalescent Ring
 				{ 27, 23201 }, -- Libram of Divinity
 				{ 28, 23200 }, -- Totem of Sustaining
 				{ 29, 227996 }, -- Ancient Bone Bow
@@ -4179,7 +4179,7 @@ data["Scholomance"] = {
 				{ 17, 13951 }, -- Vigorsteel Vambraces
 				{ 18, 228042 }, -- Detention Strap
 				{ 19, 13398 }, -- Boots of the Shrieker
-				{ 20, 22433 }, -- Don Mauricio's Band of Domination
+				{ 20, 228046 }, -- Don Mauricio's Band of Domination
 				{ 21, 13938 }, -- Bonecreeper Stylus
 				{ 22, 228024 }, -- Silent Fang
 				{ 23, 228021 }, -- Witchblade
@@ -4241,7 +4241,7 @@ data["Scholomance"] = {
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
 				{ 1,  228038 }, -- Ironweave Pants
-				{ 2,  22326 }, -- Amalgam's Band
+				{ 2,  228047 }, -- Amalgam's Band
 				{ 3,  22331 }, -- Band of the Steadfast Hero
 				{ 4,  228028 }, -- Blade of Necromancy
 				{ 5,  228033 }, -- Hammer of Divine Might
@@ -4318,7 +4318,7 @@ data["Stratholme"] = {
 				{ 3,  228501 }, -- Songbird Blouse
 				{ 4,  228504 }, -- Rainbow Girdle
 				{ 5,  228503 }, -- Woollies of the Prancing Minstrel
-				{ 6,  13379 }, -- Piccolo of the Flaming Fire
+				{ 6,  228502 }, -- Piccolo of the Flaming Fire
 			},
 		},
 		{ -- STRATTheUnforgiven
@@ -4351,7 +4351,7 @@ data["Stratholme"] = {
 				{ 2,  228525 }, -- The Postmaster's Tunic
 				{ 3,  228527 }, -- The Postmaster's Trousers
 				{ 4,  228529 }, -- The Postmaster's Treads
-				{ 5,  13392 }, -- The Postmaster's Seal
+				{ 5,  228524 }, -- The Postmaster's Seal
 				{ 6,  13393 }, -- Malown's Slam
 			},
 		},
@@ -4413,11 +4413,11 @@ data["Stratholme"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  226706 }, -- Shadowcraft Spaulders
 				{ 3,  22407 }, -- Helm of the New Moon
-				{ 4,  22403 }, -- Diana's Pearl Necklace
+				{ 4,  228533 }, -- Diana's Pearl Necklace
 				{ 5,  22405 }, -- Mantle of the Scarlet Crusade
 				{ 6,  18721 }, -- Barrage Girdle
 				{ 7,  13381 }, -- Master Cannoneer Boots
-				{ 8,  13382 }, -- Cannonball Runner
+				{ 8,  228523 }, -- Cannonball Runner
 				{ 9,  228522 }, -- Willey's Portable Howitzer
 				{ 10, 13377 }, -- Miniature Cannon Balls
 				{ 11, 22404 }, -- Willey's Back Scratcher
@@ -4459,7 +4459,7 @@ data["Stratholme"] = {
 				{ 4,  226738 }, -- Lightforge Boots
 				{ 6,  228540 }, -- Crown of Tyranny
 				{ 7,  228545 }, -- Grand Crusader's Helm
-				{ 8,  12103 }, -- Star of Mystaria
+				{ 8,  228536 }, -- Star of Mystaria
 				{ 9, 228546 }, -- Shroud of the Nathrezim
 				{ 10, 13358 }, -- Wyrmtongue Shoulders
 				{ 11, 13369 }, -- Fire Striders
@@ -4487,7 +4487,7 @@ data["Stratholme"] = {
 				{ 4,  18722 }, -- Death Grips
 				{ 5,  23198 }, -- Idol of Brutality
 				{ 6,  228516 }, -- Peacemaker
-				{ 8,  12382 }, -- Key to the City
+				{ 8,  228166 }, -- Key to the City
 			},
 		},
 		{ -- STRATStonespine
@@ -4628,7 +4628,7 @@ data["Stratholme"] = {
 				{ 8,  228551 }, -- Tunic of the Crescent Moon
 				{ 9,  228537 }, -- Dracorian Gauntlets
 				{ 10, 228552 }, -- Gauntlets of Deftness
-				{ 11, 13345 }, -- Seal of Rivendare
+				{ 11, 228538 }, -- Seal of Rivendare
 				{ 12, 22408 }, -- Ritssyn's Wand of Bad Mojo
 				{ 13, 13349 }, -- Scepter of the Unholy
 				{ 14, 13368 }, -- Bonescraper
@@ -4781,13 +4781,13 @@ data["WorldBosses"] = {
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  228353 }, -- Infernal Headcage
-				{ 2,  17111 }, -- Blazefury Medallion
+				{ 2,  228354 }, -- Blazefury Medallion
 				{ 3,  228360 }, -- Eskhandar's Pelt
 				{ 4,  228357 }, -- Blacklight Bracer
 				{ 5,  228351 }, -- Doomhide Gauntlets
 				{ 6,  228355 }, -- Flayed Doomguard Belt
 				{ 7,  228352 }, -- Fel Infused Leggings
-				{ 8,  18543 }, -- Ring of Entropy
+				{ 8,  228359 }, -- Ring of Entropy
 				{ 9,  228397 }, -- Empyrean Demolisher
 				{ 10, 228356 }, -- Amberseal Keeper
 				{ 16, 18665 }, -- The Eye of Shadow
@@ -4964,14 +4964,14 @@ data["MoltenCore"] = {
 				{ 5, 226593 },	-- Lawbringer Boots
 				{ 6, 226486 },	-- Gauntlets of Might
 				{ 16, 228285 },	-- Helm of the Lifegiver
-				{ 17, 17109 },	-- Choker of Enlightenment
+				{ 17, 228247 },	-- Choker of Enlightenment
 				{ 18, 228239 },	-- Robe of Volatile Power
 				{ 19, 228246 },	-- Wristguards of Stability
 				{ 20, 228244 },	-- Manastorm Leggings
 				{ 21, 228245 },	-- Salamander Scale Pants
 				{ 22, 228240 },	-- Flamewaker Legplates
-				{ 23, 18879 },	-- Heavy Dark Iron Ring
-				{ 24, 19147 },	-- Ring of Spell Power
+				{ 23, 228242 },	-- Heavy Dark Iron Ring
+				{ 24, 228243 },	-- Ring of Spell Power
 				{ 25, 228262 },	-- Crimson Shocker
 				{ 26, 228263 },	-- Sorcerous Dagger
 				{ 30, 16665 },	-- Tome of Tranquilizing Shot
@@ -4995,7 +4995,7 @@ data["MoltenCore"] = {
 				{ 8,  226594 },	-- Lawbringer Legplates
 				{ 9,  226490 },	-- Legplates of Might
 				{ 11, 228350 },	-- Eskhandar's Right Claw
-				{ 16, 17065 },	-- Medallion of Steadfast Might
+				{ 16, 228249 },	-- Medallion of Steadfast Might
 				{ 17, 228258 },	-- Deep Earth Spaulders
 				{ 18, 228257 },	-- Aged Core Leather Gloves
 				{ 19, 228260 },	-- Flameguard Gauntlets
@@ -5003,8 +5003,8 @@ data["MoltenCore"] = {
 				{ 21, 228240 },	-- Flamewaker Legplates
 				{ 22, 228253 },	-- Sabatons of the Flamewalker
 				{ 23, 228254 },	-- Magma Tempered Boots
-				{ 24, 18821 },	-- Quick Strike Ring
-				{ 25, 18820 },	-- Talisman of Ephemeral Power
+				{ 24, 228261 },	-- Quick Strike Ring
+				{ 25, 228255 },	-- Talisman of Ephemeral Power
 				{ 26, 228259 },	-- Fire Runed Grimoire
 				{ 27, 228519 },	-- Striker's Mark
 				{ 28, 228463 },	-- Earthshaker
@@ -5031,8 +5031,8 @@ data["MoltenCore"] = {
 				{ 19, 228244 },	-- Manastorm Leggings
 				{ 20, 228245 },	-- Salamander Scale Pants
 				{ 21, 228240 },	-- Flamewaker Legplates
-				{ 22, 18879 },	-- Heavy Dark Iron Ring
-				{ 23, 19147 },	-- Ring of Spell Power
+				{ 22, 228242 },	-- Heavy Dark Iron Ring
+				{ 23, 228243 },	-- Ring of Spell Power
 				{ 24, 228262 },	-- Crimson Shocker
 				{ 25, 228263 },	-- Sorcerous Dagger
 			},
@@ -5062,8 +5062,8 @@ data["MoltenCore"] = {
 				{ 20, 228240 },	-- Flamewaker Legplates
 				{ 21, 228253 },	-- Sabatons of the Flamewalker
 				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 18821 },	-- Quick Strike Ring
-				{ 24, 18820 },	-- Talisman of Ephemeral Power
+				{ 23, 228261 },	-- Quick Strike Ring
+				{ 24, 228255 },	-- Talisman of Ephemeral Power
 				{ 25, 228259 },	-- Fire Runed Grimoire
 				{ 26, 228702 },	-- Drillborer Disk
 				{ 27, 228267 },	-- Gutgore Ripper
@@ -5092,8 +5092,8 @@ data["MoltenCore"] = {
 				{ 19, 228244 },	-- Manastorm Leggings
 				{ 20, 228245 },	-- Salamander Scale Pants
 				{ 21, 228240 },	-- Flamewaker Legplates
-				{ 22, 18879 },	-- Heavy Dark Iron Ring
-				{ 23, 19147 },	-- Ring of Spell Power
+				{ 22, 228242 },	-- Heavy Dark Iron Ring
+				{ 23, 228243 },	-- Ring of Spell Power
 				{ 24, 228262 },	-- Crimson Shocker
 				{ 25, 228263 },	-- Sorcerous Dagger
 			},
@@ -5119,9 +5119,9 @@ data["MoltenCore"] = {
 				{ 20, 228240 },	-- Flamewaker Legplates
 				{ 21, 228253 },	-- Sabatons of the Flamewalker
 				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 18821 },	-- Quick Strike Ring
-				{ 24, 17110 },	-- Seal of the Archmagus
-				{ 25, 18820 },	-- Talisman of Ephemeral Power
+				{ 23, 228261 },	-- Quick Strike Ring
+				{ 24, 228268 },	-- Seal of the Archmagus
+				{ 25, 228255 },	-- Talisman of Ephemeral Power
 				{ 26, 228259 },	-- Fire Runed Grimoire
 				{ 27, 228459 },	-- Obsidian Edged Blade
 			},
@@ -5151,8 +5151,8 @@ data["MoltenCore"] = {
 				{ 20, 228240 },	-- Flamewaker Legplates
 				{ 21, 228253 },	-- Sabatons of the Flamewalker
 				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 18821 },	-- Quick Strike Ring
-				{ 24, 18820 },	-- Talisman of Ephemeral Power
+				{ 23, 228261 },	-- Quick Strike Ring
+				{ 24, 228255 },	-- Talisman of Ephemeral Power
 				{ 25, 228259 },	-- Fire Runed Grimoire
 				{ 26, 228270 },	-- Blastershot Launcher
 				{ 27, 228517 },	-- Azuresong Mageblade
@@ -5178,8 +5178,8 @@ data["MoltenCore"] = {
 				{ 19, 228244 }, -- Manastorm Leggings
 				{ 20, 228245 }, -- Salamander Scale Pants
 				{ 21, 228240 }, -- Flamewaker Legplates
-				{ 22, 18879 }, -- Heavy Dark Iron Ring
-				{ 23, 19147 }, -- Ring of Spell Power
+				{ 22, 228242 }, -- Heavy Dark Iron Ring
+				{ 23, 228243 }, -- Ring of Spell Power
 				{ 24, 228262 }, -- Crimson Shocker
 				{ 25, 228263 }, -- Sorcerous Dagger
 				{ 26, 228272 }, -- Shadowstrike
@@ -5201,7 +5201,7 @@ data["MoltenCore"] = {
 				{ 5,  228282 }, -- Sash of Whispered Secrets
 				{ 6,  228284 }, -- Wristguards of True Flight
 				{ 7,  228275 }, -- Core Forged Greaves
-				{ 8,  19140 }, -- Cauterizing Band
+				{ 8,  228274 }, -- Cauterizing Band
 				{ 9,  228701 }, -- Core Hound Tooth
 				{ 10, 228278 }, -- Finkle's Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
@@ -5216,7 +5216,7 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 10,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 17204 }, -- Eye of Sulfuras
+				{ 1, 227728 }, -- Eye of Sulfuras
 				{ 2, 19017 }, -- Essence of the Firelord
 				--{ 4,  16922 }, -- Leggings of Transcendence
 				--{ 5,  16915 }, -- Netherwind Pants
@@ -5227,15 +5227,15 @@ data["MoltenCore"] = {
 				--{ 10,  16946 }, -- Legplates of Ten Storms
 				--{ 11,  16954 }, -- Judgement Legplates
 				--{ 12,  16962 }, -- Legplates of Wrath
-				{ 4, 17082 }, -- Shard of the Flame
+				{ 4, 228297 }, -- Shard of the Flame
 				{ 5, 228291 }, -- Crown of Destruction
-				{ 6, 18814 }, -- Choker of the Fire Lord
+				{ 6, 228289 }, -- Choker of the Fire Lord
 				{ 7, 228290 }, -- Cloak of the Shrouded Mists
 				{ 8, 228292 }, -- Dragon's Blood Cape
 				{ 9, 228295 }, -- Onslaught Girdle
-				{ 10, 17063 }, -- Band of Accuria
-				{ 11, 19138 }, -- Band of Sulfuras
-				{ 12, 18815 }, -- Essence of the Pure Flame
+				{ 10, 228286 }, -- Band of Accuria
+				{ 11, 228287 }, -- Band of Sulfuras
+				{ 12, 228293 }, -- Essence of the Pure Flame
 				{ 13, 228294 }, -- Malistar's Defender
 				{ 14, 228511 }, -- Perdition's Blade
 				{ 15, 228460 }, -- Spinal Reaper
@@ -5326,7 +5326,7 @@ data["Onyxia"] = {
 				{ 3, 18205 }, -- Eskhandar's Collar
 				{ 4, 17078 }, -- Sapphiron Drape
 				{ 5, 18813 }, -- Ring of Binding
-				{ 6, 17064 }, -- Shard of the Scale
+				{ 6, 228298 }, -- Shard of the Scale
 				{ 7, 17067 }, -- Ancient Cornerstone Grimoire
 				{ 8, 17068 }, -- Deathbringer
 				{ 9, 17075 }, -- Vis'kag the Bloodletter
