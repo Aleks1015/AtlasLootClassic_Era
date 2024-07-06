@@ -1685,7 +1685,6 @@ data["Zul'Farrak"] = {
 				{ 2,  223532 }, -- Lifeblood Amulet
 				{ 3,  9639 }, -- The Hand of Antu'sul
 				{ 5,  9379 }, -- Sang'thraze the Deflector
-				{ 16,  223526 }, -- Sul'thraze the Lasher
 			},
 		},
 		{ -- ZFThekatheMartyr
@@ -1813,7 +1812,6 @@ data["Zul'Farrak"] = {
 				{ 3,  9478 }, -- Ripsaw
 				{ 4,  9477 }, -- The Chief's Enforcer
 				{ 6,  11086 }, -- Jang'thraze the Protector
-				{ 16, 223526 }, -- Sul'thraze the Lasher
 			},
 		},
 		{ -- ZFZerillis
