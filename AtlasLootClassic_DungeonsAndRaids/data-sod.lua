@@ -276,7 +276,7 @@ local DM_BOOKS = { -- DMBooks
 		{ 9,  18363 }, -- Frost Shock and You
 		{ 10, 228690 }, -- The Light and How to Swing It
 		{ 11, 228692 }, -- Codex of Defense
-		--{ 16, 228679 }, -- Quel'Serrar
+		{ 16, 228679 }, -- Quel'Serrar
 		{ 18, 18333 }, -- Libram of Focus
 		{ 19, 18334 }, -- Libram of Protection
 		{ 20, 18332 }, -- Libram of Rapidity
