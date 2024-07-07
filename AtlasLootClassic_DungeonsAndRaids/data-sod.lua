@@ -6945,7 +6945,7 @@ data["BlackfathomDeeps2"] = {
 		},
 		{ -- BFDTwilightLordKelris
 			name = AL["Twilight Lord Kelris"],
-			npcID = 4832,
+			npcID = 209678,
 			Level = GetForVersion(27,24),
 			DisplayIDs = {{4939}},
 			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
