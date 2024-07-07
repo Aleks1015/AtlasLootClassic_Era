@@ -9,7 +9,7 @@ local pairs = pairs
 
 local DropRateData = {
     --[npcID] = { itemID = dropRate },
-            --Baron Aquanis
+        --Baron Aquanis
         [202699] = {
             [211454] = 100,
             [211818] = 100,
