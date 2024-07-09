@@ -2110,8 +2110,8 @@ data["Wild Offerings"] = {
 	},
 }
 
-data["Phase_4_PTR"] = {
-	name = format(AL["Phase %s PTR"], "4"),
+data["Phase_4"] = {
+	name = format(AL["Phase %s"], "4"),
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
