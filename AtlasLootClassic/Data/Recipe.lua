@@ -1941,6 +1941,47 @@ else
 		[217258] = {8,165,439102}, -- Pattern: Enchanter's Cowl
 		[217399] = {4,190,439960}, -- Recipe: Lesser Arcane Elixir
 		[223163] = {10,190,448624}, -- Formula: Scroll of Spatial Mending
+		[227727] = {2,300,460460}, -- Plans: Sulfuron Hammer
+		--Phase 4
+		[227905] = {2,300,461647}, -- Plans: Skyrider's Masterwork Stormhammer
+		[227909] = {2,290,461651}, -- Plans: Fiery Plate Gauntlets of the Hidden Technique
+		[227901] = {2,285,461667}, -- Plans: Tempered Dark Iron Plate
+		[228117] = {2,300,461669}, -- Plans: Refined Arcanite Champion
+		[228250] = {2,300,461671}, -- Plans: Stronger-hold Gauntlets
+		[228114] = {2,300,461675}, -- Plans: Refined Arcanite Reaper
+		[228305] = {2,300,461712}, -- Plans: Refined Hammer of the Titans
+		[228306] = {2,290,461714}, -- Plans: Desecration
+		[228307] = {2,300,461716}, -- Plans: Deadly Heartseeker
+		[228308] = {2,285,461718}, -- Plans: Tranquility
+		[228310] = {2,300,461730}, -- Plans: Hardened Frostguard
+		[228311] = {2,280,461733}, -- Plans: Finely-Enchanted Battlehammer
+		[228312] = {2,300,461735}, -- Plans: Invincible Mail
+		[228313] = {2,295,461737}, -- Plans: Tempest Gauntlets
+		[228314] = {2,300,461739}, -- Plans: Warcrest of the Great Chief
+		[228315] = {2,300,461743}, -- Plans: Sageblade of the Archmagus
+		[228304] = {9,300,461710}, -- Schematic: Fiery Core Sharpshooter Rifle
+		[227899] = {3,295,461645}, -- Pattern: Honed Blue Dragonscale Shoulders
+		[227900] = {3,270,461649}, -- Pattern: Living Green Dragonscale Leggings
+		[227910] = {3,300,461653}, -- Pattern: Brilliant Chromatic Cloak
+		[227902] = {3,290,461655}, -- Pattern: Hardened Black Dragonscale Breastplate
+		[227903] = {3,300,461657}, -- Pattern: Hardened Black Dragonscale Leggings
+		[227904] = {3,300,461659}, -- Pattern: Hardened Black Dragonscale Shoulders
+		[227906] = {3,285,461661}, -- Pattern: Masterwork Volcanic Breastplate
+		[227907] = {3,300,461663}, -- Pattern: Masterwork Volcanic Shoulders
+		[227908] = {3,270,461665}, -- Pattern: Masterwork Volcanic Leggings
+		[227898] = {3,285,461673}, -- Pattern: Honed Blue Dragonscale Breastplate
+		[228251] = {3,270,461677}, -- Pattern: Living Green Dragonscale Gauntlets
+		[228276] = {3,300,461690}, -- Pattern: Mastercrafted Shifting Cloak
+		[228301] = {3,300,461706}, -- Pattern: Swift Flight Vambraces
+		[228309] = {3,260,461720}, -- Pattern: Living Green Dragonscale Breastplate
+		[228119] = {3,290,461722}, -- Pattern: Devilcore Gauntlets
+		[228120] = {3,300,461724}, -- Pattern: Devilcore Leggings
+		[228319] = {3,300,461754}, -- Pattern: Girdle of Arcane Insight
+		[228303] = {8,300,461708}, -- Pattern: Incandescent Mooncloth Robe
+		[228121] = {8,300,461727}, -- Pattern: Leather-Reinforced Runecloth Bag
+		[228316] = {8,300,461747}, -- Pattern: Incandescent Mooncloth Vest
+		[228317] = {8,300,461750}, -- Pattern: Incandescent Mooncloth Circlet
+		[228318] = {8,290,461752}, -- Pattern: Incandescent Mooncloth Leggings
 	}
 end
 
