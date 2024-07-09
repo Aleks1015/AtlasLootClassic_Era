@@ -2220,7 +2220,7 @@ data["Phase_4_PTR"] = {
 				{24, "INV_Box_02", nil, AL["Staves"], nil },
 				{25, 228051}, --Quel'dorai Channeling Rod
 				{26, 227982}, --Guiding Stave of Wisdom
-				{27, 228167}, --Whelpling-Head Trophy
+				--{27, 228167}, --Whelpling-Head Trophy
 				{28, "INV_Box_02", nil, AL["Polarms"], nil },
 				{29, 227934}, --Flame Wrath
 				{30, 228075}, --Spear of Destiny
@@ -2259,8 +2259,8 @@ data["Phase_4_PTR"] = {
 				{3, 228050}, --Satyr's Bow
 				{4, 227996}, --Ancient Bone Bow
 				{16, "INV_Box_02", nil, AL["Wands"], nil },
-				{17, 227942}, --Serpentine Skuller
-				{18, 228187}, --Stick of the Souths Sea
+				--{17, 227942}, --Serpentine Skuller
+				{17, 228187}, --Stick of the Souths Sea
 				{20, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
 				{21, 227812}, --Furbolg Medicine Pouch
 				{22, 227978}, --Magmus Stone
@@ -2271,15 +2271,15 @@ data["Phase_4_PTR"] = {
 			[EPIC_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Bows"], nil },
 				{2, 228252}, --Striker's Mark
-				{4, "INV_Box_02", nil, AL["Crossbows"], nil },
-				{5, 228164}, --Personal Ballista
-				{7, "INV_Box_02", nil, AL["Guns"], nil },
-				{8, 227849}, --Fiery Core Sharpshooter Rifle
-				{9, 228270}, --Blastershot Launcher
-				{11, "INV_Box_02", nil, AL["Wands"], nil },
-				{12, 228262}, --Crimson Shocker
-				{16, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
-				{17, 228259}, --Fire Runed Grimoire
+				--{4, "INV_Box_02", nil, AL["Crossbows"], nil },
+				--{5, 228164}, --Personal Ballista
+				{4, "INV_Box_02", nil, AL["Guns"], nil },
+				{5, 227849}, --Fiery Core Sharpshooter Rifle
+				{6, 228270}, --Blastershot Launcher
+				{8, "INV_Box_02", nil, AL["Wands"], nil },
+				{9, 228262}, --Crimson Shocker
+				{11, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
+				{12, 228259}, --Fire Runed Grimoire
 			},
 		},
 		{
@@ -2473,7 +2473,7 @@ data["Phase_4_PTR"] = {
 				{18, 228002}, --Deathbone Girdle				
 				{20, "INV_Box_02", nil, AL["Legs"], nil },
 				{21, 227959}, --Legplates of the Eternal Guardian
-				{23, 228008}, --Deathbone Legguards
+				{22, 228008}, --Deathbone Legguards
 				{23, 228041}, --Wraithplate Leggings
 				{24, 228069}, --Eldritch Reinforced Legplates
 				{25, 228103}, --Nathrezim's Greaves
