@@ -40,12 +40,11 @@ local DEFAULT_BACKGROUND_COLOR = {0.82, 0.82, 0.82, 0.4}
 -- :SetAtlas()
 local WOW_HEAD_LINK, WOW_HEAD_LINK_LOC
 if AtlasLoot:GetGameVersion() == AtlasLoot.BC_VERSION_NUM then
-	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://tbc.wowhead.com/%s=%d", "https://%s.tbc.wowhead.com/%s=%d"
+	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://www.wowhead.com/tbc/%s=%d", "https://%s.wowhead.com/tbc/%s=%d"
 elseif AtlasLoot:GetGameVersion() == AtlasLoot.WRATH_VERSION_NUM then
-	--WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://wotlk.wowhead.com/%s=%d", "https://%s.wotlk.wowhead.com/%s=%d"
 	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://www.wowhead.com/wotlk/%s=%d", "https://%s.wowhead.com/wotlk/%s=%d"
 else
-	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://classic.wowhead.com/%s=%d", "https://%s.classic.wowhead.com/%s=%d"
+	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://www.wowhead.com/classic/%s=%d", "https://%s.wowhead.com/classic/%s=%d"
 end
 local WOW_HEAD_LOCALE
 local FACTION_INFO_IS_SET_ID = 998

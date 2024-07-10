@@ -236,8 +236,8 @@ data["Blacksmithing"] = {
 	TableType = PROF_ITTYPE,
 	CorrespondingFields = private.BLACKSMITHING_LINK,
 	items = {
-			{
-			name = AL["Seasonal"],
+		{
+			name = AL["Seasonal"].." - "..ALIL["P1-P3"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_02", nil, AL["Mail Armor"], nil },
 				{ 2, 429348 }, --Shifting Silver Breastplate (Phase 1)
@@ -260,6 +260,28 @@ data["Blacksmithing"] = {
 				{ 24, 430397 }, --Blackfathom Sharpening Stone (Phase 1)
 				{ 26, "INV_Box_02", nil, AL["Misc"], nil },
 				{ 27, 435910 }, --Low-Background Truesilver Plates (Phase 2)
+			},
+		},
+		{
+			name = AL["Seasonal"].." - "..ALIL["P4"],
+			[NORMAL_DIFF] = {
+				{ 1, 460460 }, -- Sulfuron Hammer
+				{ 2, 461667 }, -- Tempered Dark Iron Plate
+				{ 3, 461647 }, -- Skyrider's Masterwork Stormhammer
+				{ 4, 461651 }, -- Fiery Plate Gauntlets of the Hidden Technique
+				{ 5, 461675 }, -- Refined Arcanite Reaper
+				{ 6, 461669 }, -- Refined Arcanite Champion
+				{ 8, 461671 }, -- Stronger-hold Gauntlets
+				{ 9, 461712 }, -- Refined Hammer of the Titans
+				{ 10, 461714 }, -- Desecration
+				{ 11, 461716 }, -- Deadly Heartseeker
+				{ 12, 461718 }, -- Tranquility
+				{ 13, 461730 }, -- Hardened Frostguard
+				{ 14, 461733 }, -- Finely-Enchanted Battlehammer
+				{ 15, 461735 }, -- Invincible Mail
+				{ 16, 461737 }, -- Tempest Gauntlets
+				{ 17, 461739 }, -- Warcrest of the Great Chief
+				{ 18, 461743 }, -- Sageblade of the Archmagus
 			},
 		},
 		{
@@ -892,6 +914,8 @@ data["Engineering"] = {
 				{ 19, "INV_Box_01", nil, AL["Misc"], nil },
 				{ 20, 424641 }, --Shredder Autosalvage Unit
 				{ 21, 431362 }, -- Soul Vessel
+				{ 23, "INV_Box_01", nil, AL["Phase 4"], nil },
+				{ 24, 461710 }, --Fiery Core Sharpshooter Rifle
 			}
 		},
 		{
@@ -1134,35 +1158,48 @@ data["Tailoring"] = {
 		{
 			name = AL["Seasonal"],
 			[NORMAL_DIFF] = {
-			{ 1, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Head"], nil },
-			{ 2, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
-			{ 3, 439102 }, -- Enchanter's Cowl
-			{ 5, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Shoulder"], nil },
-			{ 6, 435848 }, --Invoker's Mantle
-			{ 7, 446194 }, --Mantle of Insanity
-			{ 8, 446195 }, --Shoulderpads of the Deranged
-			{ 9, 446193 }, --Fractured Mind Pauldrons
-			{ 10, 439093 }, -- Crimson Silk Shoulders
-			{ 12, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Back"], nil },
-			{ 13, 439094 }, -- Long Silken Cloak
-			{ 16, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Chest"], nil },
-			{ 17, 439086 }, -- Black Mageweave Vest
-			{ 18, 439085 }, -- Crimson Silk Robe
-			{ 19, 439100 }, -- Earthen Vest
-			{ 21, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Wrist"], nil },
-			{ 22, 428424 }, --Phoenix Bindings
-			{ 24, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Waist"], nil },
-			{ 25, 435841 }, --Invoker's Cord
-			{ 26, 439098 }, -- Crimson Silk Belt
-			{ 27, 439091 }, -- Earthen Silk Belt
-			{ 101, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Legs"], nil },
-			{ 102, 439088 }, -- Black Mageweave Leggings
-			{ 104, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Feet"], nil },
-			{ 105, 429351 }, --Extraplanar Spidersilk Boots
-			{ 106, 439097 }, -- Boots of the Enchanter
-			{ 108, "INV_Box_01", nil, AL["Misc"], nil },
-			{ 109, 435827 }, -- Hyperconductive Arcano-Filament
+				{ 1, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Head"], nil },
+				{ 2, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
+				{ 3, 439102 }, -- Enchanter's Cowl
+				{ 5, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Shoulder"], nil },
+				{ 6, 435848 }, --Invoker's Mantle
+				{ 7, 446194 }, --Mantle of Insanity
+				{ 8, 446195 }, --Shoulderpads of the Deranged
+				{ 9, 446193 }, --Fractured Mind Pauldrons
+				{ 10, 439093 }, -- Crimson Silk Shoulders
+				{ 12, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Back"], nil },
+				{ 13, 439094 }, -- Long Silken Cloak
+				{ 16, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Chest"], nil },
+				{ 17, 439086 }, -- Black Mageweave Vest
+				{ 18, 439085 }, -- Crimson Silk Robe
+				{ 19, 439100 }, -- Earthen Vest
+				{ 21, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Wrist"], nil },
+				{ 22, 428424 }, --Phoenix Bindings
+				{ 24, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Waist"], nil },
+				{ 25, 435841 }, --Invoker's Cord
+				{ 26, 439098 }, -- Crimson Silk Belt
+				{ 27, 439091 }, -- Earthen Silk Belt
+				{ 101, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Legs"], nil },
+				{ 102, 439088 }, -- Black Mageweave Leggings
+				{ 104, "INV_Box_01", nil, AL["Armor"].." - "..ALIL["Feet"], nil },
+				{ 105, 429351 }, --Extraplanar Spidersilk Boots
+				{ 106, 439097 }, -- Boots of the Enchanter
+				{ 108, "INV_Box_01", nil, AL["Misc"], nil },
+				{ 109, 435827 }, -- Hyperconductive Arcano-Filament
 			}
+		},
+		{
+			name = AL["Seasonal"].." - "..ALIL["P4"],
+			[NORMAL_DIFF] = {
+				--{ 1, 227896 }, --Pattern: Argent Boots
+				--{ 2, 227897 }, --Pattern: Argent Shoulders
+				{ 1, 461727 }, --Leather-Reinforced Runecloth Bag
+				{ 2, 461708 }, --Incandescent Mooncloth Robe
+				{ 3, 461747 }, --Incandescent Mooncloth Vest
+				{ 4, 461750 }, --Incandescent Mooncloth Circlet
+				{ 5, 461752 }, --Incandescent Mooncloth Leggings
+				{ 6, 462282 }, --Embroidered Belt of the Archmage	
+			},
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Cloak"],
@@ -1500,6 +1537,29 @@ data["Leatherworking"] = {
 			{ 104, "INV_Box_01", nil, AL["Misc"], nil },
 			{ 105, 435819 }, -- Faintly Glowing Leather
 			}
+		},
+		{
+			name = AL["Seasonal"].." - "..ALIL["P4"],
+			[NORMAL_DIFF] = {
+				--{ 1, 227895 }, --Golden Mantle of the Dawn
+				{ 2, 461673 }, --Honed Blue Dragonscale Breastplate
+				{ 3, 461645 }, --Honed Blue Dragonscale Shoulders
+				{ 5, 461649 }, --Living Green Dragonscale Leggings
+				{ 6, 461677 }, --Living Green Dragonscale Gauntlets
+				{ 7, 461720 }, --Living Green Dragonscale Breastplate
+				{ 9, 461655 }, --Hardened Black Dragonscale Breastplate
+				{ 10, 461657 }, --Hardened Black Dragonscale Leggings
+				{ 11, 461659 }, --Hardened Black Dragonscale Shoulders
+				{ 13, 461661 }, --Masterwork Volcanic Breastplate
+				{ 14, 461663 }, --Masterwork Volcanic Shoulders
+				{ 15, 461665 }, --Masterwork Volcanic Leggings
+				{ 16, 461653 }, --Brilliant Chromatic Cloak
+				{ 18, 461722 }, --Devilcore Gauntlets
+				{ 19, 461724 }, --Devilcore Leggings
+				{ 21, 461690 }, --Pattern: Mastercrafted Shifting Cloak
+				{ 22, 461706 }, --Swift Flight Vambraces
+				{ 23, 461754 }, --Girdle of Arcane Insight
+			},
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Cloak"],
@@ -2159,15 +2219,16 @@ data["RoguePoisons"] = {
 				{ 10, 13228 }, -- Wound Poison II
 				{ 11, 13220 }, -- Wound Poison
 				{ 13, 3420  }, -- Crippling Poison
-				{ 17, 25347 }, -- Deadly Poison V
-				{ 18, 11358 }, -- Deadly Poison IV
-				{ 19, 11357 }, -- Deadly Poison III
-				{ 20, 2837  }, -- Deadly Poison II
-				{ 21, 2835  }, -- Deadly Poison
-				{ 24, 11400 }, -- Mind-numbing Poison III
-				{ 25, 8694  }, -- Mind-numbing Poison II
-				{ 26, 5763  }, -- Mind-numbing Poison
-				{ 28, 6510  }, -- Blinding Powder
+				{ 16, 25347 }, -- Deadly Poison V
+				{ 17, 11358 }, -- Deadly Poison IV
+				{ 18, 11357 }, -- Deadly Poison III
+				{ 19, 2837  }, -- Deadly Poison II
+				{ 20, 2835  }, -- Deadly Poison
+				{ 22, 11400 }, -- Mind-numbing Poison III
+				{ 23, 8694  }, -- Mind-numbing Poison II
+				{ 24, 5763  }, -- Mind-numbing Poison
+				{ 26, 6510  }, -- Blinding Powder
+				{ 28, 458822}, -- Occult Poison I
 			}
 		},
 	}
