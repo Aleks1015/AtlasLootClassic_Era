@@ -2110,8 +2110,8 @@ data["Wild Offerings"] = {
 	},
 }
 
-data["Phase_4_PTR"] = {
-	name = format(AL["Phase %s PTR"], "4"),
+data["Phase_4"] = {
+	name = format(AL["Phase %s"], "4"),
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
@@ -2143,55 +2143,82 @@ data["Phase_4_PTR"] = {
 			ContentPhase = 4,
 			[RARE_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Swords"], nil },
-				{2, 228056}, --Fiendish Machete
-				{3, 228026}, --Blade of Blackwood
-				{4, 227993}, --Ebon Hilt of Marduk
-				{5, 227940}, --Lord General's Sword
-				{6, 228024}, --Silent Fang
-				{7, 228028}, --Blade of Necromancy
-				{8, 228094}, --Dreadlord's Blade
-				{9, 227887}, --Hardened Frostguard
-				{10, 227826}, --Dark Iron Flame Reaver
-				{11, "INV_Box_02", nil, AL["Axes"], nil },
-				{12, 228082}, --Warsong Axe
-				{13, 227941}, --Wraith Scythe
-				{14, 228027}, --Iceblade Hacker
-				{15, 227825}, --Molten Dark Iron Destroyer
-				{16, "INV_Box_02", nil, AL["Daggers"], nil },
-				{17, 228015}, --Frightalon
-				{18, 228090}, --Cenarion Ritual Dagger
-				{19, 227884}, --Deadly Heartseeker
-				{20, 227963}, --Blood-etched Blade
-				{21, 228021}, --Witchblade
-				{22, 227962}, --Flarethorn
-				{23, 228185}, --Broken Bottle of Goblino Noir
-				{25, "INV_Box_02", nil, AL["Maces"], nil },
-				{26, 228169}, --The Attitude Adjustor
-				{27, 227881}, --Tranquility
-				{28, 227886}, --Skyrider's Masterwork Stormhammer
-				{29, 228168}, --Goblin Gear Grinder
+				{2, 227940 }, --Lord General's Sword
+				{3, 227993 }, --Ebon Hilt of Marduk
+				{4, 228024 }, --Silent Fang
+				{5, 228026 }, --Blade of Blackwood
+				{6, 228028 }, --Blade of Necromancy
+				{7, 228056 }, --Fiendish Machete
+				{8, 228094 }, --Dreadlord's Blade
+				{9, 228542 }, --Skullforge Reaver
+				{10, 228555 }, --Phase Blade
+				{11, 228652 }, --Dal'Rend's Tribal Guardian
+				{12, 228653 }, --Dal'Rend's Sacred Charge	
+				--{25, 224582 },
+				{16, "INV_Box_02", nil, AL["Axes"], nil },
+				{17, 227941 }, --Wraith Scythe
+				{18, 228027 }, --Iceblade Hacker
+				{19, 228082 }, --Warsong Axe
+				{20, 228535 }, --Bone Slicing Hatchet				
+				{101, "INV_Box_02", nil, AL["Daggers"], nil },
+				{102, 227884 }, --Deadly Heartseeker
+				{103, 227962 }, --Flarethorn
+				{104, 227963 }, --Blood-etched Blade
+				{105, 228015 }, --Frightalon
+				{106, 228021 }, --Witchblade
+				{107, 228090 }, --Cenarion Ritual Dagger
+				{108, 228472 }, --Distracting Dagger
+				{109, 228541 }, --Gift of the Elven Magi
+				{110, 228592 }, --Fang of the Crystal Spider				
+				{116, "INV_Box_02", nil, AL["Maces"], nil },
+				{117, 227881 }, --Tranquility
+				{118, 227935 }, --Hammer of the Fallen Thane
+				{119, 228573 }, --Venomspitter
+				{120, 228600 }, --The Jaw Breaker				
 			},
 			[EPIC_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Swords"], nil },
-				{2, 227840}, --Implacable Blackguard
-				{3, 228265}, --Brutality Blade
-				{4, 227850}, --Sageblade of the Archmagus
-				{5, 228143}, --Shadowflame Sword
-				{6, 228269}, --Azuresong Mageblade
-				{8, "INV_Box_02", nil, AL["Daggers"], nil },
-				{9, 227832}, --Tempered Black Amnesty
-				{10, 228162}, --Deceit
-				{11, 228267}, --Gutgore Ripper
-				{12, 228263}, --Sorcerous Dagger
-				{16, "INV_Box_02", nil, AL["Fist Weapons"], nil },
-				{17, 228145}, --Magmadar's Right Claw
-				{18, 228146}, --Magmadar's Left Claw
-				{20, "INV_Box_02", nil, AL["Maces"], nil },
-				{21, 227842}, --Ebon Fist
-				{22, 228139}, --Fist of the Firesworn
-				{23, 227991}, --Ironfoe
-				{24, 228128}, --Hammer of The Black Anvil
-				{25, 228264}, --Aurastone Hammer
+				{2, 227826 }, --Dark Iron Flame Reaver
+				{3, 227887 }, --Hardened Frostguard
+				{4, 227840 }, --Implacable Blackguard
+				{5, 227850 }, --Sageblade of the Archmagus
+				{6, 228143 }, --Shadowflame Sword
+				{7, 228265 }, --Brutality Blade
+				{8, 228269 }, --Azuresong Mageblade
+				{9, 228506 }, --Brutality Blade
+				{10, 228517 }, --Azuresong Mageblade
+				{11, 228679 }, --Quel'Serrar				
+				{16, "INV_Box_02", nil, AL["Daggers"], nil },
+				{17, 227832 }, --Tempered Black Amnesty
+				{18, 228162 }, --Deceit
+				{19, 228263 }, --Sorcerous Dagger
+				{20, 228267 }, --Gutgore Ripper
+				{21, 228277 }, --Core Hound Tooth
+				{22, 228296 }, --Perdition's Blade
+				{23, 228382 }, --Fang of the Mystics
+				{24, 228511 }, --Perdition's Blade
+				{25, 228701 }, --Core Hound Tooth
+				{26, 228757 }, --Felstriker		
+				{27, 228185 }, --Broken Bottle of Goblino Noir		
+				{101, "INV_Box_02", nil, AL["Fist Weapons"], nil },
+				{102, 228146 }, --Magmadar's Left Claw
+				{103, 228145 }, --Magmadar's Right Claw
+				{104, 228349 }, --Eskhandar's Left Claw
+				{105, 228350 }, --Eskhandar's Right Claw
+				{106, "INV_Box_02", nil, AL["Axes"], nil },
+				{107, 227825 }, --Molten Dark Iron Destroyer		
+				{116, "INV_Box_02", nil, AL["Maces"], nil },
+				{117, 227842 }, --Ebon Fist
+				{118, 227991 }, --Ironfoe
+				{119, 228128 }, --Hammer of The Black Anvil
+				{120, 228139 }, --Fist of the Firesworn
+				{121, 228264 }, --Aurastone Hammer
+				{122, 228397 }, --Empyrean Demolisher
+				{123, 228462 }, --Aurastone Hammer
+				{124, 228508 }, --Hammer of The Black Anvil		
+				{125, 227886 }, --Skyrider's Masterwork Stormhammer
+				{126, 228168 }, --Goblin Gear Grinder
+				{127, 228169 }, --The Attitude Adjustor
 			},
 		},
 		{
@@ -2199,55 +2226,87 @@ data["Phase_4_PTR"] = {
 			ContentPhase = 4,
 			[RARE_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Swords"], nil },
-				{2, 228125}, --Refined Arcanite Champion
-				{3, 227857}, --Desecration
-				{4, 227997}, --Barovian Family Sword
-				{5, 228086}, --Repurposed Shredderblade
-				{7, "INV_Box_02", nil, AL["Axes"], nil },
-				{8, 227948}, --Angerforge's Battle Axe
-				{9, 228052}, --Waveslicer
-				{10, 227981}, --Dreadforge Retaliator
-				{11, 228029}, --Gravestone War Axe
-				{12, 228030}, --Malicious Axe
-				{13, 228108}, --Shadow of Gorehowl
-				{16, "INV_Box_02", nil, AL["Maces"], nil },
-				{17, 227880}, --Finely-Enchanted Battlehammer
-				{18, 227858}, --Hammer of the Wild Gods
-				{19, 227960}, --Impervious Giant
-				{20, 227974}, --Lavastone Hammer
-				{21, 227994}, --Frightskull Shaft
-				{22, 228033}, --Hammer of Divine Might
-				{24, "INV_Box_02", nil, AL["Staves"], nil },
-				{25, 228051}, --Quel'dorai Channeling Rod
-				{26, 227982}, --Guiding Stave of Wisdom
-				--{27, 228167}, --Whelpling-Head Trophy
-				{28, "INV_Box_02", nil, AL["Polarms"], nil },
-				{29, 227934}, --Flame Wrath
-				{30, 228075}, --Spear of Destiny
+				{2, 227857 }, --Desecration
+				{3, 227997 }, --Barovian Family Sword
+				{4, 228086 }, --Repurposed Shredderblade
+				{5, 228478 }, --Barbarous Blade
+				{6, 228601 }, --Relentless Scythe
+				--{9, 227846 },
+				{8, "INV_Box_02", nil, AL["Staves"], nil },
+				{9, 227982 }, --Guiding Stave of Wisdom
+				{10, 228051 }, --Quel'dorai Channeling Rod
+				{11, 228167 }, --Whelpling-Head Trophy
+				{12, 228484 }, --Rod of the Ogre Magi
+				{13, 228587 }, --Trindlehaven Staff
+				{14, 228682 }, --Lord Valthalak's Staff of Command				
+				{16, "INV_Box_02", nil, AL["Axes"], nil },
+				{17, 227948 }, --Angerforge's Battle Axe
+				{18, 227981 }, --Dreadforge Retaliator
+				{19, 228029 }, --Gravestone War Axe
+				{20, 228030 }, --Malicious Axe
+				{21, 228052 }, --Waveslicer
+				{22, 228108 }, --Shadow of Gorehowl
+				--{25, 227688 },
+				--{26, 228116 },					
+				{101, "INV_Box_02", nil, AL["Maces"], nil },
+				{102, 228666 }, --Seeping Willow
+				{103, 227858 }, --Hammer of the Wild Gods
+				{104, 227880 }, --Finely-Enchanted Battlehammer
+				{105, 227960 }, --Impervious Giant
+				{106, 227974 }, --Lavastone Hammer
+				{107, 227994 }, --Frightskull Shaft
+				{108, 228033 }, --Hammer of Divine Might
+				{109, 228473 }, --Unyielding Maul
+				{110, 228544 }, --Hammer of the Grand Crusader
+				{111, 228570 }, --Fist of Omokk
+				{116, "INV_Box_02", nil, AL["Polarms"], nil },
+				{117, 227934 }, --Flame Wrath
+				{118, 228075 }, --Spear of Destiny
+				{119, 228516 }, --Peacemaker
+				{120, 228586 }, --Chillpike
+				{121, 228603 }, --Blackhand Doomsaw				
 			},
 			[EPIC_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Legendary"], nil },
-				{2, 227683}, --Sulfuras, Hand of Ragnaros
+				{2, 227683 }, --Sulfuras, Hand of Ragnaros
 				{4, "INV_Box_02", nil, AL["Swords"], nil },
-				{5, 227691}, --Blade of Hanna
-				{6, 228229}, --Obsidian Edged Blade
-				{9, "INV_Box_02", nil, AL["Maces"], nil },
-				{10, 227684}, --Sulfuron Hammer
-				{11, 228160}, --Faithbringer
-				{12, 228230}, --Refined Hammer of the Titans
-				{13, 228248}, --Earthshaker
-				{16, "INV_Box_02", nil, AL["Staves"], nil },
-				{17, 228022}, --Headmaster's Charge
-				{18, 228166}, --Key to the City
-				{19, 228271}, --Staff of Dominance
-				{21, "INV_Box_02", nil, AL["Polarms"], nil },
-				{22, 228272}, --Shadowstrike
-				{23, 228273}, --Thunderstrike
-				{24, 227833}, --Glaive of Obsidian Fury
-				{25, 228170}, --Makeshift South Sea Oar
-				{27, "INV_Box_02", nil, AL["Axes"], nil },
-				{28, 227843}, --Reaving Nightfall
-				{29, 227845}, --Refined Arcanite Reaper
+				{5, 227691 }, --Blade of Hanna
+				{6, 228229 }, --Obsidian Edged Blade
+				{7, 228288 }, --Bonereaver's Edge
+				{8, 228347 }, --Typhoon
+				{9, 228410 }, --Dreadblade of the Destructor
+				{10, 228459 }, --Obsidian Edged Blade
+				{11, 228461 }, --Bonereaver's Edge
+				{12, 228498 }, --Dreadblade of the Destructor
+				{13, 228543 }, --Runeblade of Baron Rivendare
+				{14, 228606 }, --Blackblade of Shahram
+				{15, 228125 }, --Refined Arcanite Champion			
+				{16, "INV_Box_02", nil, AL["Maces"], nil },
+				{17, 227684 }, --Sulfuron Hammer
+				{18, 228160 }, --Faithbringer
+				{19, 228230 }, --Refined Hammer of the Titans
+				{20, 228248 }, --Earthshaker
+				{21, 228278 }, --Hyperthermically Insulated Lava Dredger
+				{22, 228463 }, --Earthshaker		
+				{24, "INV_Box_02", nil, AL["Axes"], nil },
+				{25, 227843 }, --Reaving Nightfall
+				{26, 227845 }, --Refined Arcanite Reaper
+				{27, 228299 }, --Spinal Reaper
+				{28, 228460 }, --Spinal Reaper
+				{29, 228486 }, --Treant's Bane				
+				{101, "INV_Box_02", nil, AL["Staves"], nil },
+				{102, 228022 }, --Headmaster's Charge
+				{103, 228166 }, --Key to the City
+				{104, 228271 }, --Staff of Dominance
+				{105, 228332 }, --Lok'delar, Stave of the Ancient Keepers
+				{106, 228335 }, --Benediction
+				{107, 228336 }, --Anathema
+				{108, 228356 }, --Amberseal Keeper				
+				{116, "INV_Box_02", nil, AL["Polarms"], nil },
+				{117, 227833 }, --Glaive of Obsidian Fury
+				{118, 228170 }, --Makeshift South Sea Oar
+				{119, 228272 }, --Shadowstrike
+				{120, 228273 }, --Thunderstrike				
 			},
 		},
 		{
@@ -2255,45 +2314,92 @@ data["Phase_4_PTR"] = {
 			ContentPhase = 4,
 			[RARE_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Bows"], nil },
-				{2, 228107}, --Fallen Huntress' Longbow
-				{3, 228050}, --Satyr's Bow
-				{4, 227996}, --Ancient Bone Bow
+				{2, 227996 }, --Ancient Bone Bow
+				{3, 228050 }, --Satyr's Bow
+				{4, 228107 }, --Fallen Huntress' Longbow
+				{6, "INV_Box_02", nil, AL["Crossbows"], nil },
+				{7, 228471 }, --Stoneshatter
+				{8, 228559 }, --Blackcrow
+				{10, "INV_Box_02", nil, AL["Guns"], nil },
+				{11, 228522 }, --Willey's Portable Howitzer
 				{16, "INV_Box_02", nil, AL["Wands"], nil },
-				--{17, 227942}, --Serpentine Skuller
-				{17, 228187}, --Stick of the Souths Sea
-				{20, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
-				{21, 227812}, --Furbolg Medicine Pouch
-				{22, 227978}, --Magmus Stone
-				{23, 227984}, --Thaurissan's Royal Scepter
-				{24, 228039}, --Spellbound Tome
-				{25, 228077}, --Dreambough
+				{17, 228187 }, --Stick of the Souths Sea				
+				{19, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
+				{20, 228563 }, --Globe of D'sak	
+				{21, 227978 }, --Magmus Stone
+				{22, 227984 }, --Thaurissan's Royal Scepter
+				{23, 228039 }, --Spellbound Tome
+				{24, 228077 }, --Dreambough
+				{25, 228548 }, --Scepter of Interminable Focus			
 			},
 			[EPIC_DIFF] = {
 				{1, "INV_Box_02", nil, AL["Bows"], nil },
-				{2, 228252}, --Striker's Mark
-				--{4, "INV_Box_02", nil, AL["Crossbows"], nil },
-				--{5, 228164}, --Personal Ballista
-				{4, "INV_Box_02", nil, AL["Guns"], nil },
-				{5, 227849}, --Fiery Core Sharpshooter Rifle
-				{6, 228270}, --Blastershot Launcher
-				{8, "INV_Box_02", nil, AL["Wands"], nil },
-				{9, 228262}, --Crimson Shocker
-				{11, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
-				{12, 228259}, --Fire Runed Grimoire
+				{2, 228252 }, --Striker's Mark
+				{3, 228519 }, --Striker's Mark
+				{4, 228334 }, --Rhok'delar, Longbow of the Ancient Keepers
+				{6, "INV_Box_02", nil, AL["Guns"], nil },
+				{7, 227849 }, --Fiery Core Sharpshooter Rifle
+				{8, 228270 }, --Blastershot Launcher	
+				{10, "INV_Box_02", nil, AL["Thrown"], nil },
+				{11, 228165 }, --Dragonslayer's Javelin		
+				{16, "INV_Box_02", nil, AL["Wands"], nil },
+				{17, 228262 }, --Crimson Shocker
+				{18, 228381 }, --Cold Snap				
+				{20, "INV_Box_02", nil, AL["Held in Off-hand"], nil },
+				{21, 228259 }, --Fire Runed Grimoire
+				{22, 228539 }, --Book of the Dead
 			},
 		},
 		{
 			name = AL["Shields"],
 			ContentPhase = 4,
 			[RARE_DIFF] = {
-				{1, 228037}, --Rattlecage Buckler
-				{2, 228064}, --Observer's Shield
-				{3, 228106}, --Shield of Life and Death
+				{1, 228037 }, --Rattlecage Buckler
+				{2, 228064 }, --Observer's Shield
+				{3, 228106 }, --Shield of Life and Death
+				{4, 228591 }, --Rhombeard Protector				
 			},
 			[EPIC_DIFF] = {
-				{1, 228142}, --Earth and Fire
-				{2, 228266}, --Drillborer Disk
+				{1, 228142 }, --Earth and Fire
+				{2, 228266 }, --Drillborer Disk
+				{3, 228702 }, --Drillborer Disk
+				{4, 228294 }, --Malistar's Defender
 			},
+		},
+		{
+			name = AL["Librams"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 228173 }, --Libram of the Consecrated
+				{2, 228174 }, --Libram of the Devoted
+				{3, 228175 }, --Libram of Holy Alacrity
+			},
+			--[EPIC_DIFF] = {
+			--},
+		},
+		{
+			name = AL["Idols"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 228180 }, --Idol of the Swarm
+				{2, 228181 }, --Idol of Exsanguination (Cat)
+				{3, 228182 }, --Idol of Exsanguination (Bear)
+				{4, 228183 }, --Idol of the Grove
+			},
+			--[EPIC_DIFF] = {
+			--},
+		},
+		{
+			name = AL["Totems"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 228176 }, --Totem of Thunder
+				{2, 228177 }, --Totem of Raging Fire
+				{3, 228178 }, --Totem of Earthen Vitality
+				{4, 228179 }, --Totem of the Plains
+			},
+			--[EPIC_DIFF] = {
+			--},
 		},
 		{
 			name = AL["Armor"],
@@ -2497,13 +2603,104 @@ data["Phase_4_PTR"] = {
 			},
 		},
 		{
-			name = AL["Jewelry"],
+			name = AL["Rings"],
 			ContentPhase = 4,
 			[RARE_DIFF] = {
-				{1, 227925}, --Beacon of Hydraxis
+				{1, 227936 }, --Diplomat Ring
+				{2, 227983 }, --Dark Iron Seal
+				{3, 228016 }, --Dimly Opalescent Ring
+				{4, 228045 }, --Necromantic Band
+				{5, 228046 }, --Don Mauricio's Band of Domination
+				{6, 228047 }, --Amalgam's Band
+				{7, 228057 }, --Ring of Demonic Potency
+				{8, 228076 }, --Burning Ring of Fire
+				{9, 228080 }, --Resin Loop
+				{10, 228085 }, --Phaseshifted Legion Band
+				{11, 228087 }, --Supercharged Silver Moebius
+				{12, 228186 }, --Abandoned Wedding Band
+				{13, 228469 }, --Tarnished Elven Ring
+				{14, 228524 }, --The Postmaster's Seal
+				{15, 228538 }, --Seal of Rivendare
+				{16, 228565 }, --Magus Ring
+				{17, 228667 }, --Painweaver Band
+				{18, 228675 }, --Band of Rumination
+				{19, 228683 }, --Rune Band of Wizardry
+				{20, 228699 }, --Ring of Demonic Guile
 			},
-			--[EPIC_DIFF] = {
-			--},
+			[EPIC_DIFF] = {
+				{1, 228242 }, --Heavy Dark Iron Ring
+				{2, 228243 }, --Ring of Spell Power
+				{3, 228261 }, --Quick Strike Ring
+				{4, 228268 }, --Seal of the Archmagus
+				{5, 228274 }, --Cauterizing Band
+				{6, 228286 }, --Band of Accuria
+				{7, 228287 }, --Band of Sulfuras
+				{8, 228359 }, --Ring of Entropy
+				{9, 228585 }, --Mark of the Dragon Lord
+				{10, 228687 }, --Dragonslayer's Signet
+			},
+		},
+		{
+			name = AL["Neck"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 228533 }, --Nacreous Shell Necklace
+				{2, 228536 }, --Star of Mystaria
+				{3, 228574 }, --Talisman of Evasion
+				{4, 228584 }, --Emberfury Talisman
+				{5, 228669 }, --Tooth of Gnarr
+				{6, 228684 }, --Pendant of Celerity
+			},
+			[EPIC_DIFF] = {
+				{1, 228137 }, --Heart of Golemagg
+				{2, 228147 }, --Magmadar's Horn
+				{3, 228247 }, --Choker of Enlightenment
+				{4, 228249 }, --Medallion of Steadfast Might
+				{5, 228289 }, --Choker of the Fire Lord
+				{6, 228354 }, --Blazefury Medallion
+				{7, 228685 }, --Onyxia Tooth Pendant
+				{8, 228759 }, --Eskhandar's Collar				
+			},
+		},
+		{
+			name = AL["Trinkets"],
+			ContentPhase = 4,
+			[RARE_DIFF] = {
+				{1, 227925 }, --Beacon of Hydraxis
+				{2, 227967 }, --Second Wind
+				{3, 227972 }, --Burst of Knowledge
+				{4, 227990 }, --Hand of Injustice
+				{5, 228078 }, --Accursed Chalice
+				{6, 228081 }, --Germinating Poisonseed
+				{7, 228083 }, --Gloaming Treeheart
+				{8, 228084 }, --Miniaturized Fire Extinguisher
+				{9, 228089 }, --Woodcarved Moonstalker
+				{10, 228093 }, --Dark Heart of Darkness
+				{11, 228113 }, --Cold Embrace
+				{12, 228464 }, --Royal Seal of Eldre'Thalas
+				{13, 228465 }, --Royal Seal of Eldre'Thalas
+				{14, 228466 }, --Royal Seal of Eldre'Thalas
+				{15, 228467 }, --Royal Seal of Eldre'Thalas
+				{16, 228523 }, --Cannonball Runner
+				{17, 228576 }, --Smolderweb's Eye
+				{18, 228589 }, --Heart of the Scale
+				{19, 228599 }, --Heart of Wyrmthalak
+				{20, 228678 }, --Draconic Infused Emblem
+				{21, 228722 }, --Hand of Justice			
+			},
+			[EPIC_DIFF] = {
+				{1, 227811 }, --Defender of the Timbermaw
+				{2, 227915 }, --Duke's Domain
+				{3, 228122 }, --The Molten Core
+				{4, 228163 }, --Broodmother's Brooch
+				{5, 228188 }, --Prestor's Hairpin
+				{6, 228255 }, --Talisman of Ephemeral Power
+				{7, 228293 }, --Essence of the Pure Flame
+				{8, 228297 }, --Shard of the Flame
+				{9, 228298 }, --Shard of the Scale
+				{10, 228432 }, --Whistle of the Beast
+				{11, 228686 }, --Onyxia Blood Talisman				
+			},
 		},
 		{
 			name = AL["Warrior"],

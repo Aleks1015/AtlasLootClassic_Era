@@ -109,8 +109,8 @@ local T1_SET = {
 	IgnoreAsSource = true,
 	ContentPhase = 4,
 	[ALLIANCE_DIFF] = {
-		{ 1, 1718 }, -- Warlock : Wicked Felheart
-		{ 2, 1717 }, -- Warlock : Corrupted Felheart
+		{ 1, 1717 }, -- Warlock
+		{ 2, 1718 }, -- Warlock
 		{ 4, 1704 }, -- Mage
 		{ 5, 1705 }, -- Mage
 		{ 7, 1698 }, -- Druid 
