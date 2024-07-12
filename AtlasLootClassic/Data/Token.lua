@@ -486,6 +486,7 @@ else
 		[17008] = { 17043, 17042, 17039, type = 3 }, -- Small Scroll
 		[10454] = { 10455, type = 3 }, -- Essence of Eranikus
 		[12780] = { 13966, 13968, 13965, type = 3 }, -- General Drakkisath's Command
+
 		[7666] = { 7673, type = 3 }, -- Shattered Necklace
 		[19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
 		[228688] = { 228685, 228687, 228686, type = 3 }, --Head of Onyxia (Alliance)
@@ -620,12 +621,38 @@ else
 		[217008] = { 213310, 213311, 213312, 213313, 213314, 213315, 213316, 216485, type = 6 },
 		[217009] = { 213328, 213329, 213331, 213332, 213333, 213334, 213330, 216486, type = 6 },
 
-		[220636] = { ICONS.PALADIN,nil, 220642,220643,220648,nil,220650,220651,220652, 0, ICONS.PALADIN,nil, 220660,220661,220662,nil,220653,220654,220656, 0, ICONS.WARRIOR,nil, 220642,220643,220648,nil,220653,220654,220656, 0, ICONS.HUNTER,nil, 220666,220667,220668, 0,  ICONS.ROGUE, nil,220676,220678,220677, 0,  ICONS.SHAMAN,nil, 220665,220663,220664,nil,220657,220658,220659, 0, ICONS.SHAMAN,nil, 220660,220661,220662, 0, type = 6 },
-		[220637] = { ICONS.PRIEST, nil,220683,220684,220685, nil,220680,220679,220681, 0, ICONS.MAGE,nil, 220680,220679,220681, 0, ICONS.WARLOCK, nil,220680,220679,220681,{nil},220783,220781,220784, 0, ICONS.DRUID, nil,220779,220778,220780, nil,220669,220671,220670, 0, ICONS.DRUID, {nil}, 220672,220673,220675, 0, type = 6 },
+		[220636] = { ICONS.PALADIN,nil,220642,220643,220648,nil,220650,220651,220652, 0, ICONS.PALADIN,nil,220660,220661,220662,nil,220653,220654,220656, 0, ICONS.WARRIOR,nil,220642,220643,220648,nil,220653,220654,220656, 0, ICONS.HUNTER,nil,220666,220667,220668, 0,  ICONS.ROGUE, nil,220676,220678,220677, 0, ICONS.SHAMAN,nil,220665,220663,220664,nil,220657,220658,220659, 0, ICONS.SHAMAN,nil, 220660,220661,220662, 0, type = 6 },
+		[220637] = { ICONS.PRIEST,nil,220683,220684,220685,nil,220680,220679,220681, 0, ICONS.MAGE,nil, 220680,220679,220681, 0, ICONS.WARLOCK,nil,220680,220679,220681,{nil},220783,220781,220784, 0, ICONS.DRUID, nil,220779,220778,220780, nil,220669,220671,220670, 0, ICONS.DRUID, {nil}, 220672,220673,220675, 0, type = 6 },
 		[221475] = { 221474, type = 3 },
 		[221363] = { 220626,220627,220628,220629,220630, type = 3 },
 		[221346] = { 220626,220627,220628,220629,220630, type = 3 },
 
+		--MC Tokens
+		[227530] = { ICONS.PRIEST, nil,226577,226580,0, ICONS.MAGE,nil,226555,226570,0, ICONS.WARLOCK,nil,226551,216919,0, type = 6}, --Incandescent Belt (Priest, Mage, Warlock)
+		[227531] = { ICONS.PRIEST, nil,226578,226579,nil,0, ICONS.MAGE,nil,226558,226567,0, ICONS.WARLOCK,nil,226553,216920,0, type = 6}, --Incandescent Bindings (Priest, Mage, Warlock)
+		[227532] = { }, --Incandescent Hood (Priest, Mage, Warlock)
+		[227533] = { }, --Incandescent Gloves (Priest, Mage, Warlock)
+		[227534] = { }, --Incandescent Leggings (Priest, Mage, Warlock)
+		[227535] = { }, --Incandescent Robe (Priest, Mage, Warlock)
+		[227536] = { }, --Incandescent Boots (Priest, Mage, Warlock)
+		[227537] = { }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+		[227750] = { }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+		[227751] = { }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
+		[227752] = { }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+		[227754] = { }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+		[227755] = { }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
+		[227756] = { }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+		[227757] = { }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+		[227758] = { }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+		[227759] = { }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+		[227760] = { }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+		[227761] = { }, --Scorched Core Belt (Warrior, Rogue, Druid)
+		[227762] = { }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+		[227763] = { }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+		[227764] = { }, --Scorched Core  Helm (Warrior, Rogue, Druid)
+		[227765] = { }, --Scorched Core Boots (Warrior, Rogue, Druid)
+		[227766] = { }, --Scorched Core Chest (Warrior, Rogue, Druid)
+		
 		--25
 		[211322] = { {20744, 2}, type = 9 },
 		[211321] = { {11287, 2}, type = 9 },
