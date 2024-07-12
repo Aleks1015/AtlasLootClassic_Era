@@ -61,11 +61,13 @@ local PRICE_INFO_LIST = {
 	["cpvpStrand"] = { currencyID = 124 }, -- Strand of the Ancients Mark of Honor
 
     --- Season of Discovery
-    ["wildoffering"] 	= { itemID = 221262 }, -- Wild Offering
-	["silvermassacre"] 	= { itemID = 221365 }, -- Silver Massacre Coin
-	["silverblood"] 	= { itemID = 213169 }, -- Silver Blood Coin
-	["goldblood"] 	= { itemID = 213170 }, -- Gold Blood Coin
-	["emeraldchip"] 	= { itemID = 219927 }, -- Emerald Chip
+    ["wildoffering"] = { itemID = 221262 }, -- Wild Offering
+	["silvermassacre"] = { itemID = 221365 }, -- Silver Massacre Coin
+	["silverblood"] = { itemID = 213169 }, -- Silver Blood Coin
+	["goldblood"] = { itemID = 213170 }, -- Gold Blood Coin
+	["emeraldchip"] = { itemID = 219927 }, -- Emerald Chip
+    ["tarnishedunderminereal"] = { itemID = 226404 }, -- Tarnished Undermine Real
+    ["firelandsember"] = { itemID = 227801 }, -- Firelands Ember
 }
 
 local VENDOR_PRICE_FORMAT = {}
@@ -90,7 +92,7 @@ if AtlasLoot.IS_SOD == false then
 else
     --Season of Discovery
     VENDOR_PRICES_RAW.CLASSIC = {
-        [223194] = "wildoffering:12",
+     [223194] = "wildoffering:12",
 	 [223195] = "wildoffering:12",
 	 [223197] = "wildoffering:12",
 	 [223192] = "wildoffering:15",
@@ -166,6 +168,67 @@ else
 	 [221443] = "emeraldchip:75",
 	 [220649] = "emeraldchip:50",
 	 [221439] = "emeraldchip:50",
+    --Tarnished Undermine Real
+     [228184] = "tarnishedunderminereal:25",
+     [228170] = "tarnishedunderminereal:50",
+     [228173] = "tarnishedunderminereal:15",
+     [228174] = "tarnishedunderminereal:15",
+     [228175] = "tarnishedunderminereal:15",
+     [228176] = "tarnishedunderminereal:15",
+     [228177] = "tarnishedunderminereal:15",
+     [228178] = "tarnishedunderminereal:15",
+     [228179] = "tarnishedunderminereal:15",
+     [228183] = "tarnishedunderminereal:15",
+     [228180] = "tarnishedunderminereal:15",
+     [228181] = "tarnishedunderminereal:15",
+     [228182] = "tarnishedunderminereal:15",
+     [228187] = "tarnishedunderminereal:50",
+     [228169] = "tarnishedunderminereal:50",
+     [228168] = "tarnishedunderminereal:50",
+     [228185] = "tarnishedunderminereal:50",
+     [227280] = "tarnishedunderminereal:50",
+     [227279] = "tarnishedunderminereal:50",
+     [227282] = "tarnishedunderminereal:50",
+     [228186] = "tarnishedunderminereal:25",
+     [228171] = "tarnishedunderminereal:25",
+     [228121] = "tarnishedunderminereal:50",
+     [226405] = "tarnishedunderminereal:5",
+     [228189] = "tarnishedunderminereal:25",
+     [13522] = "tarnishedunderminereal:50",
+     [13518] = "tarnishedunderminereal:50",
+     [13519] = "tarnishedunderminereal:50",
+     [13520] = "tarnishedunderminereal:50",
+     [13521] = "tarnishedunderminereal:50",
+     --Blackrock Eruption / Firelands Ember
+     [227831] = "19156:1:firelandsember:20:17011:1",
+     [228927] = "20039:1:firelandsember:15:17010:1",
+     [228928] = "20039:1:firelandsember:15:17010:1",
+     [228929] = "20039:1:firelandsember:15:17010:1",
+     [227841] = "20039:1:firelandsember:15:17010:1",
+     [228924] = "20039:1:firelandsember:15:17010:1",
+     [227822] = "16982:1:firelandsember:15:17011:1",
+     [228925] = "20039:1:firelandsember:15:17010:1",
+     [227829] = "16984:1:firelandsember:15:17011:1",
+     [228926] = "20039:1:firelandsember:15:17010:1",
+     [227823] = "16979:1:firelandsember:15:17010:1",
+     [227835] = "19164:1:firelandsember:15:17011:1",
+     [227838] = "19157:1:firelandsember:15:17010:1",
+     [227824] = "19148:1:firelandsember:15:17011:1",
+     [227821] = "16983:1:firelandsember:15:17011:1",
+     [227839] = "19165:1:firelandsember:15:17010:1",
+     [227836] = "17013:1:firelandsember:15:17010:1",
+     [227826] = "17015:1:firelandsember:25:17010:2",
+     [227825] = "17016:1:firelandsember:25:17010:2",
+     [227832] = "19166:1:firelandsember:25:17010:2",
+     [227842] = "19170:1:firelandsember:25:17010:2",
+     [227840] = "19168:1:firelandsember:25:17011:2",
+     [227834] = "16988:1:firelandsember:15:17010:1",
+     [227830] = "16980:1:firelandsember:15:17010:1",
+     [227833] = "19167:1:firelandsember:25:17011:2",
+     [227828] = "19149:1:firelandsember:15:17011:1",
+     [227827] = "16989:1:firelandsember:15:17010:1",
+     [227837] = "19162:1:firelandsember:15:17010:1",
+     [227820] = "17014:1:firelandsember:10:17010:1",
     }
 end
 
