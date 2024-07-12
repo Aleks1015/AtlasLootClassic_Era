@@ -5240,7 +5240,38 @@ data["MoltenCore"] = {
 				{ 1,  228508 }, -- Hammer of The Black Anvil
 			},
 		},
-		T1_SET,
+		{ -- MC Phase 4 Tier Tokens
+			name = AL["Tier Tokens"],
+			ExtraList = true,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
+				{ 2, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 3, 227532 }, --Incandescent Hood (Priest, Mage, Warlock)
+				{ 4, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 5, 227534 }, --Incandescent Leggings (Priest, Mage, Warlock)
+				{ 6, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 7, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+				{ 8, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+				{ 10, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 11, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
+				{ 12, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+				{ 13, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+				{ 14, 227755 }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
+				{ 15, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+				{ 16, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+				{ 17, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+				{ 19, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 20, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 21, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
+				{ 22, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 23, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+				{ 24, 227764 }, --Scorched Core  Helm (Warrior, Rogue, Druid)
+				{ 25, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+				{ 26, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)				
+			},
+		},
+		T1_SET
 	}
 }
 
