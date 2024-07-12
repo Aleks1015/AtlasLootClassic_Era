@@ -4880,24 +4880,18 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 1,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 226557 },	-- Arcanist Boots
-				{ 2, 226552 },	-- Felheart Gloves
-				{ 3, 226645 },	-- Cenarion Boots
-				{ 4, 226613 },	-- Earthfury Boots
-				{ 5, 226593 },	-- Lawbringer Boots
-				{ 6, 226486 },	-- Gauntlets of Might
-				{ 16, 228285 },	-- Helm of the Lifegiver
-				{ 17, 228247 },	-- Choker of Enlightenment
-				{ 18, 228239 },	-- Robe of Volatile Power
-				{ 19, 228246 },	-- Wristguards of Stability
-				{ 20, 228244 },	-- Manastorm Leggings
-				{ 21, 228245 },	-- Salamander Scale Pants
-				{ 22, 228240 },	-- Flamewaker Legplates
-				{ 23, 228242 },	-- Heavy Dark Iron Ring
-				{ 24, 228243 },	-- Ring of Spell Power
-				{ 25, 228262 },	-- Crimson Shocker
-				{ 26, 228263 },	-- Sorcerous Dagger
-				{ 30, 16665 },	-- Tome of Tranquilizing Shot
+				{ 1, 228285 },	-- Helm of the Lifegiver
+				{ 2, 228247 },	-- Choker of Enlightenment
+				{ 3, 228239 },	-- Robe of Volatile Power
+				{ 4, 228246 },	-- Wristguards of Stability
+				{ 5, 228244 },	-- Manastorm Leggings
+				{ 6, 228245 },	-- Salamander Scale Pants
+				{ 7, 228240 },	-- Flamewaker Legplates
+				{ 8, 228242 },	-- Heavy Dark Iron Ring
+				{ 9, 228243 },	-- Ring of Spell Power
+				{ 10, 228262 },	-- Crimson Shocker
+				{ 11, 228263 },	-- Sorcerous Dagger
+				{ 12, 16665 },	-- Tome of Tranquilizing Shot
 			},
 		},
 		{	--MCMagmadar
@@ -4908,35 +4902,25 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 2,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226574 },	-- Pants of Prophecy
-				{ 2,  226561 },	-- Arcanist Leggings
-				{ 3,  226547 },	-- Felheart Pants
-				{ 4,  226445 },	-- Nightslayer Pants
-				{ 5,  226646 },	-- Cenarion Leggings
-				{ 6,  226532 },	-- Giantstalker's Leggings
-				{ 7,  226614 },	-- Earthfury Legguards
-				{ 8,  226594 },	-- Lawbringer Legplates
-				{ 9,  226490 },	-- Legplates of Might
-				{ 11, 228350 },	-- Eskhandar's Right Claw
-				{ 16, 228249 },	-- Medallion of Steadfast Might
-				{ 17, 228258 },	-- Deep Earth Spaulders
-				{ 18, 228257 },	-- Aged Core Leather Gloves
-				{ 19, 228260 },	-- Flameguard Gauntlets
-				{ 20, 228256 },	-- Mana Igniting Cord
-				{ 21, 228240 },	-- Flamewaker Legplates
-				{ 22, 228253 },	-- Sabatons of the Flamewalker
-				{ 23, 228254 },	-- Magma Tempered Boots
-				{ 24, 228261 },	-- Quick Strike Ring
-				{ 25, 228255 },	-- Talisman of Ephemeral Power
-				{ 26, 228259 },	-- Fire Runed Grimoire
-				{ 27, 228252 },	-- Striker's Mark
-				{ 28, 228248 },	-- Earthshaker
-				{ 29, 228229 },	-- Obsidian Edged Blade
-			},
-			[MOLTEN_DIFF] = {
-				{ 1, 228519 },	-- Striker's Mark (Molten)
-				{ 2, 228463 },	-- Earthshaker (Molten)
-				{ 3, 228459 },	-- Obsidian Edged Blade (Molten)
+				{ 1, 228350 },	-- Eskhandar's Right Claw
+				{ 2, 228249 },	-- Medallion of Steadfast Might
+				{ 3, 228258 },	-- Deep Earth Spaulders
+				{ 4, 228257 },	-- Aged Core Leather Gloves
+				{ 5, 228260 },	-- Flameguard Gauntlets
+				{ 6, 228256 },	-- Mana Igniting Cord
+				{ 7, 228240 },	-- Flamewaker Legplates
+				{ 8, 228253 },	-- Sabatons of the Flamewalker
+				{ 9, 228254 },	-- Magma Tempered Boots
+				{ 10, 228261 },	-- Quick Strike Ring
+				{ 11, 228255 },	-- Talisman of Ephemeral Power
+				{ 12, 228259 },	-- Fire Runed Grimoire
+				{ 13, 228252 },	-- Striker's Mark
+				{ 14, 228248 },	-- Earthshaker
+				{ 15, 228229 },	-- Obsidian Edged Blade
+				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 17, 228519 },	-- Striker's Mark (Molten)
+				{ 18, 228463 },	-- Earthshaker (Molten)
+				{ 19, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
 		},
 		{	--MCGehennas
@@ -4947,22 +4931,16 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 3,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226572 },	-- Gloves of Prophecy
-				{ 2,  226441 },	-- Nightslayer Gloves
-				{ 3,  226531 },	-- Giantstalker's Boots
-				{ 4,  226615 },	-- Earthfury Gauntlets
-				{ 5,  226591 },	-- Lawbringer Gauntlets
-				{ 6,  226487 },	-- Sabatons of Might
-				{ 16, 228285 },	-- Helm of the Lifegiver
-				{ 17, 228239 },	-- Robe of Volatile Power
-				{ 18, 228246 },	-- Wristguards of Stability
-				{ 19, 228244 },	-- Manastorm Leggings
-				{ 20, 228245 },	-- Salamander Scale Pants
-				{ 21, 228240 },	-- Flamewaker Legplates
-				{ 22, 228242 },	-- Heavy Dark Iron Ring
-				{ 23, 228243 },	-- Ring of Spell Power
-				{ 24, 228262 },	-- Crimson Shocker
-				{ 25, 228263 },	-- Sorcerous Dagger
+				{ 1, 228285 },	-- Helm of the Lifegiver
+				{ 2, 228239 },	-- Robe of Volatile Power
+				{ 3, 228246 },	-- Wristguards of Stability
+				{ 4, 228244 },	-- Manastorm Leggings
+				{ 5, 228245 },	-- Salamander Scale Pants
+				{ 6, 228240 },	-- Flamewaker Legplates
+				{ 7, 228242 },	-- Heavy Dark Iron Ring
+				{ 8, 228243 },	-- Ring of Spell Power
+				{ 9, 228262 },	-- Crimson Shocker
+				{ 10, 228263 },	-- Sorcerous Dagger
 			},
 		},
 		{	--MCGarr
@@ -4974,38 +4952,27 @@ data["MoltenCore"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 18564 },	-- Bindings of the Windseeker
-				{ 3,  226573 },	-- Circlet of Prophecy
-				{ 4,  226562 },	-- Arcanist Crown
-				{ 5,  226549 },	-- Felheart Horns
-				{ 6,  226446 },	-- Nightslayer Cover
-				{ 7,  226647 },	-- Cenarion Helm
-				{ 8,  226533 },	-- Giantstalker's Helmet
-				{ 9,  226612 },	-- Earthfury Helmet
-				{ 10, 226590 },	-- Lawbringer Helm
-				{ 11, 226488 },	-- Helm of Might
-				{ 16, 228258 },	-- Deep Earth Spaulders
-				{ 17, 228257 },	-- Aged Core Leather Gloves
-				{ 18, 228260 },	-- Flameguard Gauntlets
-				{ 19, 228256 },	-- Mana Igniting Cord
-				{ 20, 228240 },	-- Flamewaker Legplates
-				{ 21, 228253 },	-- Sabatons of the Flamewalker
-				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 228261 },	-- Quick Strike Ring
-				{ 24, 228255 },	-- Talisman of Ephemeral Power
-				{ 25, 228259 },	-- Fire Runed Grimoire
-				{ 26, 228266 },	-- Drillborer Disk
-				{ 27, 228267 },	-- Gutgore Ripper
-				{ 28, 228264 },	-- Aurastone Hammer
-				{ 29, 228265 },	-- Brutality Blade
-				{ 30, 228229 },	-- Obsidian Edged Blade
+				{ 3, 228258 },	-- Deep Earth Spaulders
+				{ 4, 228257 },	-- Aged Core Leather Gloves
+				{ 5, 228260 },	-- Flameguard Gauntlets
+				{ 6, 228256 },	-- Mana Igniting Cord
+				{ 7, 228240 },	-- Flamewaker Legplates
+				{ 8, 228253 },	-- Sabatons of the Flamewalker
+				{ 9, 228254 },	-- Magma Tempered Boots
+				{ 10, 228261 },	-- Quick Strike Ring
+				{ 11, 228255 },	-- Talisman of Ephemeral Power
+				{ 12, 228259 },	-- Fire Runed Grimoire
+				{ 13, 228266 },	-- Drillborer Disk
+				{ 14, 228267 },	-- Gutgore Ripper
+				{ 15, 228264 },	-- Aurastone Hammer
+				{ 16, 228265 },	-- Brutality Blade
+				{ 17, 228229 },	-- Obsidian Edged Blade
+				{ 19, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 20, 228702 },	-- Drillborer Disk (Molten)
+				{ 21, 228462 },	-- Aurastone Hammer (Molten)
+				{ 22, 228506 },	-- Brutality Blade (Molten)
+				{ 23, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
-			[MOLTEN_DIFF] = {
-				{ 1, 228702 },	-- Drillborer Disk (Molten)
-				{ 2, 228462 },	-- Aurastone Hammer (Molten)
-				{ 3, 228506 },	-- Brutality Blade (Molten)
-				{ 4, 228459 },	-- Obsidian Edged Blade (Molten)
-			},
-
 		},
 		{	--MCShazzrah
 			name = AL["Shazzrah"],
@@ -5015,22 +4982,16 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 5,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226571 },	-- Boots of Prophecy
-				{ 2,  226556 },	-- Arcanist Gloves
-				{ 3,  226554 },	-- Felheart Slippers
-				{ 4,  226443 },	-- Nightslayer Boots
-				{ 5,  226648 },	-- Cenarion Gloves
-				{ 6,  226528 },	-- Giantstalker's Gloves
-				{ 16, 228285 },	-- Helm of the Lifegiver
-				{ 17, 228239 },	-- Robe of Volatile Power
-				{ 18, 228246 },	-- Wristguards of Stability
-				{ 19, 228244 },	-- Manastorm Leggings
-				{ 20, 228245 },	-- Salamander Scale Pants
-				{ 21, 228240 },	-- Flamewaker Legplates
-				{ 22, 228242 },	-- Heavy Dark Iron Ring
-				{ 23, 228243 },	-- Ring of Spell Power
-				{ 24, 228262 },	-- Crimson Shocker
-				{ 25, 228263 },	-- Sorcerous Dagger
+				{ 1, 228285 },	-- Helm of the Lifegiver
+				{ 2, 228239 },	-- Robe of Volatile Power
+				{ 3, 228246 },	-- Wristguards of Stability
+				{ 4, 228244 },	-- Manastorm Leggings
+				{ 5, 228245 },	-- Salamander Scale Pants
+				{ 6, 228240 },	-- Flamewaker Legplates
+				{ 7, 228242 },	-- Heavy Dark Iron Ring
+				{ 8, 228243 },	-- Ring of Spell Power
+				{ 9, 228262 },	-- Crimson Shocker
+				{ 10, 228263 },	-- Sorcerous Dagger
 			},
 		},
 		{	--MCGeddon
@@ -5042,26 +5003,20 @@ data["MoltenCore"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  18563 },	-- Bindings of the Windseeker
-				{ 3,  226560 },	-- Arcanist Mantle
-				{ 4,  226550 },	-- Felheart Shoulder Pads
-				{ 5,  226644 },	-- Cenarion Spaulders
-				{ 6,  226611 },	-- Earthfury Epaulets
-				{ 7,  226588 },	-- Lawbringer Spaulders
-				{ 16, 228258 },	-- Deep Earth Spaulders
-				{ 17, 228257 },	-- Aged Core Leather Gloves
-				{ 18, 228260 },	-- Flameguard Gauntlets
-				{ 19, 228256 },	-- Mana Igniting Cord
-				{ 20, 228240 },	-- Flamewaker Legplates
-				{ 21, 228253 },	-- Sabatons of the Flamewalker
-				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 228261 },	-- Quick Strike Ring
-				{ 24, 228268 },	-- Seal of the Archmagus
-				{ 25, 228255 },	-- Talisman of Ephemeral Power
-				{ 26, 228259 },	-- Fire Runed Grimoire
-				{ 27, 228229 },	-- Obsidian Edged Blade
-			},
-			[MOLTEN_DIFF] = {
-				{ 1, 228459 },	-- Obsidian Edged Blade (Molten)
+				{ 3, 228258 },	-- Deep Earth Spaulders
+				{ 4, 228257 },	-- Aged Core Leather Gloves
+				{ 5, 228260 },	-- Flameguard Gauntlets
+				{ 6, 228256 },	-- Mana Igniting Cord
+				{ 7, 228240 },	-- Flamewaker Legplates
+				{ 8, 228253 },	-- Sabatons of the Flamewalker
+				{ 9, 228254 },	-- Magma Tempered Boots
+				{ 10, 228261 },	-- Quick Strike Ring
+				{ 11, 228268 },	-- Seal of the Archmagus
+				{ 12, 228255 },	-- Talisman of Ephemeral Power
+				{ 13, 228259 },	-- Fire Runed Grimoire
+				{ 14, 228229 },	-- Obsidian Edged Blade
+				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 17, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
 		},
 		{	--MCGolemagg
@@ -5072,34 +5027,25 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 7,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226575 },	-- Robes of Prophecy
-				{ 2,  226559 },	-- Arcanist Robes
-				{ 3,  226548 },	-- Felheart Robes
-				{ 4,  226447 },	-- Nightslayer Chestpiece
-				{ 5,  221785 },	-- Cenarion Vestments
-				{ 6,  226534 },	-- Giantstalker's Breastplate
-				{ 7,  226617 },	-- Earthfury Vestments
-				{ 8,  226595 },	-- Lawbringer Chestguard
-				{ 9,  226489 },	-- Breastplate of Might
-				{ 11, 17203 },	-- Sulfuron Ingot
-				{ 16, 228258 },	-- Deep Earth Spaulders
-				{ 17, 228257 },	-- Aged Core Leather Gloves
-				{ 18, 228260 },	-- Flameguard Gauntlets
-				{ 19, 228256 },	-- Mana Igniting Cord
-				{ 20, 228240 },	-- Flamewaker Legplates
-				{ 21, 228253 },	-- Sabatons of the Flamewalker
-				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 228261 },	-- Quick Strike Ring
-				{ 24, 228255 },	-- Talisman of Ephemeral Power
-				{ 25, 228259 },	-- Fire Runed Grimoire
-				{ 26, 228270 },	-- Blastershot Launcher
-				{ 27, 228269 },	-- Azuresong Mageblade
-				{ 28, 228229 },	-- Obsidian Edged Blade
-				{ 29, 228271 },	-- Staff of Dominance
-			},
-			[MOLTEN_DIFF] = {
-				{ 1, 228517 },	-- Azuresong Mageblade
-				{ 2, 228459 },	-- Obsidian Edged Blade
+				{ 1, 17203 },	-- Sulfuron Ingot
+				{ 2, 228258 },	-- Deep Earth Spaulders
+				{ 3, 228257 },	-- Aged Core Leather Gloves
+				{ 4, 228260 },	-- Flameguard Gauntlets
+				{ 5, 228256 },	-- Mana Igniting Cord
+				{ 6, 228240 },	-- Flamewaker Legplates
+				{ 7, 228253 },	-- Sabatons of the Flamewalker
+				{ 8, 228254 },	-- Magma Tempered Boots
+				{ 9, 228261 },	-- Quick Strike Ring
+				{ 10, 228255 },	-- Talisman of Ephemeral Power
+				{ 11, 228259 },	-- Fire Runed Grimoire
+				{ 12, 228270 },	-- Blastershot Launcher
+				{ 13, 228269 },	-- Azuresong Mageblade
+				{ 14, 228229 },	-- Obsidian Edged Blade
+				{ 15, 228271 },	-- Staff of Dominance
+				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 17, 228517 },	-- Azuresong Mageblade
+				{ 18, 228459 },	-- Obsidian Edged Blade
+				
 			},
 		},
 		{ -- MCSulfuron
@@ -5110,21 +5056,17 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 8,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226576 }, -- Mantle of Prophecy
-				{ 2,  226444 }, -- Nightslayer Shoulder Pads
-				{ 3,  226527 }, -- Giantstalker's Epaulets
-				{ 4,  226492 }, -- Pauldrons of Might
-				{ 16, 228285 }, -- Helm of the Lifegiver
-				{ 17, 228239 }, -- Robe of Volatile Power
-				{ 18, 228246 }, -- Wristguards of Stability
-				{ 19, 228244 }, -- Manastorm Leggings
-				{ 20, 228245 }, -- Salamander Scale Pants
-				{ 21, 228240 }, -- Flamewaker Legplates
-				{ 22, 228242 }, -- Heavy Dark Iron Ring
-				{ 23, 228243 }, -- Ring of Spell Power
-				{ 24, 228262 }, -- Crimson Shocker
-				{ 25, 228263 }, -- Sorcerous Dagger
-				{ 26, 228272 }, -- Shadowstrike
+				{ 1, 228285 }, -- Helm of the Lifegiver
+				{ 2, 228239 }, -- Robe of Volatile Power
+				{ 3, 228246 }, -- Wristguards of Stability
+				{ 4, 228244 }, -- Manastorm Leggings
+				{ 5, 228245 }, -- Salamander Scale Pants
+				{ 6, 228240 }, -- Flamewaker Legplates
+				{ 7, 228242 }, -- Heavy Dark Iron Ring
+				{ 8, 228243 }, -- Ring of Spell Power
+				{ 9, 228262 }, -- Crimson Shocker
+				{ 10, 228263 }, -- Sorcerous Dagger
+				{ 11, 228272 }, -- Shadowstrike
 			},
 		},
 		{ -- MCMajordomo
@@ -5148,9 +5090,9 @@ data["MoltenCore"] = {
 				{ 10, 228278 }, -- Finkle's Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
-			},
-			[MOLTEN_DIFF] = {
-				{ 1,  228701 }, -- Core Hound Tooth (Molten)
+				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 21,  228701 }, -- Core Hound Tooth (Molten)
+
 			},
 		},
 		{ -- MCRagnaros
@@ -5176,11 +5118,10 @@ data["MoltenCore"] = {
 				{ 14, 228296 }, -- Perdition's Blade
 				{ 15, 228299 }, -- Spinal Reaper
 				{ 16, 228288 }, -- Bonereaver's Edge
-			},
-			[MOLTEN_DIFF] = {
-				{ 1, 228511 }, -- Perdition's Blade (Molten)
-				{ 2, 228460 }, -- Spinal Reaper (Molten)
-				{ 3, 228461 }, -- Bonereaver's Edge (Molten)
+				{ 18, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 19, 228511 }, -- Perdition's Blade (Molten)
+				{ 20, 228460 }, -- Spinal Reaper (Molten)
+				{ 21, 228461 }, -- Bonereaver's Edge (Molten)
 			},
 		},
 		{ -- MCRANDOMBOSSDROPS
@@ -5205,39 +5146,20 @@ data["MoltenCore"] = {
 			ExtraList = true,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226577 }, -- Girdle of Prophecy
-				{ 2,  226555 }, -- Arcanist Belt
-				{ 3,  226551 }, -- Felheart Belt
-				{ 4,  226440 }, -- Nightslayer Belt
-				{ 5,  226650 }, -- Cenarion Belt
-				{ 6,  226529 }, -- Giantstalker's Belt
-				{ 7,  226616 }, -- Earthfury Belt
-				{ 8,  226592 }, -- Lawbringer Belt
-				{ 9,  226485 }, -- Belt of Might
-				{ 12, 17011 }, -- Lava Core
-				{ 13, 17010 }, -- Fiery Core
-				{ 14, 11382 }, -- Blood of the Mountain
-				{ 15, 17012 }, -- Core Leather
-				{ 16, 226578 }, -- Vambraces of Prophecy
-				{ 17, 226558 }, -- Arcanist Bindings
-				{ 18, 226553 }, -- Felheart Bracers
-				{ 19, 226442 }, -- Nightslayer Bracelets
-				{ 20, 226649 }, -- Cenarion Bracers
-				{ 21, 226530 }, -- Giantstalker's Bracers
-				{ 22, 226618 }, -- Earthfury Bracers
-				{ 23, 226589 }, -- Lawbringer Bracers
-				{ 24, 226484 }, -- Bracers of Might
+				{ 1, 17011 }, -- Lava Core
+				{ 2, 17010 }, -- Fiery Core
+				{ 3, 11382 }, -- Blood of the Mountain
+				{ 4, 17012 }, -- Core Leather
 			},
 		},
 		{ -- MC Phase 4 New Items - Unknown drop
-			name = AL["Unknown"],
+			name = AL["New"],
 			ExtraList = true,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  228128 }, -- Hammer of The Black Anvil
-			},
-			[MOLTEN_DIFF] = {
-				{ 1,  228508 }, -- Hammer of The Black Anvil
+				{ 1, 228128 }, -- Hammer of The Black Anvil
+				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 17, 228508 }, -- Hammer of The Black Anvil
 			},
 		},
 		{ -- MC Phase 4 Tier Tokens
