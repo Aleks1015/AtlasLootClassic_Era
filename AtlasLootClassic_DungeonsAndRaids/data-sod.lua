@@ -3174,6 +3174,119 @@ data["UpperBlackrockSpire"] = {
 	},
 }
 
+data["Demon Fall Canyon"] = {
+	MapID = 15475,
+	--InstanceID = 0,
+	ContentType = DUNGEON_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	ContentPhase = 4,
+	LevelRange = {55, 57, 60},
+	items = {
+		{ -- Grimroot
+			name = AL["Grimroot"],
+			npcID = 226923,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121733}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228083 }, -- Gloaming Treeheart
+				{ 2,  228081 }, -- Germinating Poisonseed
+				{ 3,  228080 }, -- Resin Loop
+				{ 4,  228082 }, -- Warsong Axe
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Diathorus the Seeker
+			name = AL["Diathorus the Seeker"],
+			npcID = 227019,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{10691}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228094 }, -- Dreadlord's Blade
+				{ 2,  228107 }, -- Fallen Huntress' Longbow
+				{ 3,  228106 }, -- Shield of Life and Death
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --The Destructor's Wraith
+			name = AL["The Destructor's Wraith"],
+			npcID = 228022,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121410}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228074 }, -- Hands of Temptation
+				{ 2,  228075 }, -- Spear of Destiny
+				{ 3,  228076 }, -- Burning Ring of Fire
+				{ 4,  228077 }, -- Dreambough
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Zilbagob
+			name = AL["Zilbagob"],
+			npcID = 226922,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121881}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228085 }, -- Phaseshifted Legion Band
+				{ 2,  228086 }, -- Repurposed Shredderblade
+				{ 3,  228088 }, -- Shredder Operator's Dogtags
+				{ 4,  228087 }, -- Supercharged Silver Moebius
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Pyranis
+			name = AL["Pyranis"],
+			npcID = 227140,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{227140}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228093 }, -- Dark Heart of Darkness
+				{ 2,  228090 }, -- Cenarion Ritual Dagger
+				{ 3,  228092 }, -- Druidic Mantle
+				{ 4,  228091 }, -- Thorned Boots
+				{ 5,  228089 }, -- Woodcarved Moonstalker
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Hellscream's Phantom
+			name = AL["Hellscream's Phantom"],
+			npcID = 227028,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121966}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228109 }, -- Legguards of Sacrifice
+				{ 2,  228112 }, -- Nightmare Gown
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ -- Other / Unknown drops
+		name = AL["Other"],
+		ExtraList = true,
+		ContentPhase = 4,
+		[NORMAL_DIFF] = {
+			{ 1,  228113 }, -- Cold Embraces
+			{ 2,  228078 }, -- Accursed Chalice
+			{ 3,  228079 }, -- Cloak of Leaves
+			{ 4,  228103 }, -- Nathrezim's Greaves
+			{ 5,  228111 }, -- Mask of the Godslayer
+			{ 6,  228104 }, -- Robes of Elune
+			{ 7,  228108 }, -- Shadow of Gorehowl
+		},
+	},
+	}
+}
+
 data["DireMaulEast"] = {
 	name = AL["Dire Maul East"],
 	MapID = 2557,
