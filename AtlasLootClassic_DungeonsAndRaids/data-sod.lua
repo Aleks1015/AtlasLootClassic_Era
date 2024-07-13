@@ -3174,9 +3174,10 @@ data["UpperBlackrockSpire"] = {
 	},
 }
 
-data["Demon Fall Canyon"] = {
+data["DemonFallCanyon"] = {
+	name = AL["Demon Fall Canyon"],
 	MapID = 15475,
-	--InstanceID = 0,
+	InstanceID = 15540,
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	ContentPhase = 4,
@@ -3205,9 +3206,10 @@ data["Demon Fall Canyon"] = {
 			DisplayIDs = {{10691}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  228094 }, -- Dreadlord's Blade
-				{ 2,  228107 }, -- Fallen Huntress' Longbow
-				{ 3,  228106 }, -- Shield of Life and Death
+				{ 1,  228104 }, -- Robes of Elune
+				{ 2,  228094 }, -- Dreadlord's Blade
+				{ 3,  228107 }, -- Fallen Huntress' Longbow
+				{ 4,  228106 }, -- Shield of Life and Death
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3223,6 +3225,7 @@ data["Demon Fall Canyon"] = {
 				{ 2,  228075 }, -- Spear of Destiny
 				{ 3,  228076 }, -- Burning Ring of Fire
 				{ 4,  228077 }, -- Dreambough
+				{ 5,  228078 }, -- Accursed Chalice
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3238,6 +3241,7 @@ data["Demon Fall Canyon"] = {
 				{ 2,  228086 }, -- Repurposed Shredderblade
 				{ 3,  228088 }, -- Shredder Operator's Dogtags
 				{ 4,  228087 }, -- Supercharged Silver Moebius
+				{ 5,  228084 }, -- Miniaturized Fire Extinguisher
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3265,8 +3269,11 @@ data["Demon Fall Canyon"] = {
 			DisplayIDs = {{121966}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  228109 }, -- Legguards of Sacrifice
-				{ 2,  228112 }, -- Nightmare Gown
+				{ 1,  228410 }, -- Dreadblade of the Destructor
+				{ 3,  228111 }, -- Mask of the Godslayer
+				{ 4,  228112 }, -- Nightmare Gown
+				{ 5,  228109 }, -- Legguards of Sacrifice
+				{ 6,  228113 }, -- Cold Embraces
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3275,13 +3282,9 @@ data["Demon Fall Canyon"] = {
 		ExtraList = true,
 		ContentPhase = 4,
 		[NORMAL_DIFF] = {
-			{ 1,  228113 }, -- Cold Embraces
-			{ 2,  228078 }, -- Accursed Chalice
-			{ 3,  228079 }, -- Cloak of Leaves
-			{ 4,  228103 }, -- Nathrezim's Greaves
-			{ 5,  228111 }, -- Mask of the Godslayer
-			{ 6,  228104 }, -- Robes of Elune
-			{ 7,  228108 }, -- Shadow of Gorehowl
+			{ 1,  228079 }, -- Cloak of Leaves
+			{ 2,  228103 }, -- Nathrezim's Greaves
+			{ 3,  228108 }, -- Shadow of Gorehowl
 		},
 	},
 	}
@@ -5331,16 +5334,16 @@ data["Onyxia"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 228688 }, -- Head of Onyxia (Alliance)
 				--{ 2, 228689 }, -- Head of Onyxia (Horde)
-				{ 2, 15410 }, -- Scale of Onyxia
-				{ 4, 18705 }, -- Mature Black Dragon Sinew
-				{ 5, 228759 }, -- Eskhandar's Collar
-				{ 6, 17078 }, -- Sapphiron Drape
-				{ 7, 18813 }, -- Ring of Binding
-				{ 8, 228298 }, -- Shard of the Scale
-				{ 9, 17067 }, -- Ancient Cornerstone Grimoire
-				{ 10, 17068 }, -- Deathbringer
-				{ 11, 17075 }, -- Vis'kag the Bloodletter
-				{ 24, 17966 }, -- Onyxia Hide Backpack
+				{ 3, 15410 }, -- Scale of Onyxia
+				{ 5, 18705 }, -- Mature Black Dragon Sinew
+				{ 6, 228759 }, -- Eskhandar's Collar
+				{ 7, 17078 }, -- Sapphiron Drape
+				{ 8, 18813 }, -- Ring of Binding
+				{ 9, 228298 }, -- Shard of the Scale
+				{ 10, 228955 }, -- Ancient Cornerstone Grimoire
+				{ 11, 17068 }, -- Deathbringer
+				{ 12, 17075 }, -- Vis'kag the Bloodletter
+				{ 24, 228992 }, -- Onyxia Hide Backpack
 				{ 25, 11938 }, -- Sack of Gems
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems
