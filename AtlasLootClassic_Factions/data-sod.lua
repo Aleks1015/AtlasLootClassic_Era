@@ -494,7 +494,8 @@ data["HydraxianWaterlords"] = {
 			name = ALIL["Honored"],
 			[NORMAL_DIFF] = {
 				{ 1, "f749rep6" },
-				{ 2, 17333 }, -- Aqual Quintessence
+				{ 2, 17333  }, -- Aqual Quintessence
+				{ 4, 227923 }, -- Water Treads
 			},
 		},
 	},
