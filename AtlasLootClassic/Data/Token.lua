@@ -652,6 +652,7 @@ else
 		[227764] = { ICONS.WARRIOR, nil,226488,226495,0, ICONS.ROGUE,nil,226480,226446,0, ICONS.DRUID,nil,226647,226659,226659,226670,0, type = 6}, --Scorched Core  Helm (Warrior, Rogue, Druid)
 		[227765] = { ICONS.WARRIOR, nil,226487,226496,0, ICONS.ROGUE,nil,226477,226443,0, ICONS.DRUID,nil,226645,226663,226652,226673,0, type = 6}, --Scorched Core Boots (Warrior, Rogue, Druid)
 		[227766] = { ICONS.WARRIOR, nil,226489,226494,0, ICONS.ROGUE,nil,226473,226447,0, ICONS.DRUID,nil,226661,221785,226656,226675,0, type = 6}, --Scorched Core Chest (Warrior, Rogue, Druid)
+
 		--25
 		[211322] = { {20744, 2}, type = 9 },
 		[211321] = { {11287, 2}, type = 9 },
@@ -763,6 +764,7 @@ else
 		[220940] = { {10024, 5}, type = 9 },
 		[220941] = { {13856, 6}, type = 9 },
 		[220942] = { {10034, 4}, type = 9 },
+		[226405] = { "INV_Misc_Bag_10", nil,{12820,"6"},7082,0, "INV_Misc_Bag_10_Black",nil,{12820,"5"},12363,0, "INV_Misc_Bag_10_Blue",nil,{13422,"5"},0, "INV_Misc_Bag_10_Green",nil,{15417,"7"},0, "INV_Misc_Bag_10_Red",nil,{12820,"7"},0, "INV_Misc_Bag_12",nil,{16203,"4"},{8846,"10"}, type = 2}, --Damaged Undermine Supply Crate
 	}
 end
 
