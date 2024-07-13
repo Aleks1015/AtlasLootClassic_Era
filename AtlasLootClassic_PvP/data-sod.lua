@@ -738,25 +738,36 @@ data["ClassSets"] = {
 			name = ALIL["Rare"],
 			ContentPhase = 2,
 			[ALLIANCE_DIFF] = {
-				{ 1, 547 }, -- Warlock
-				{ 3, 549 }, -- Priest
-				{ 16, 546 }, -- Mage
-				{ 5, 548 }, -- Rogue
-				{ 20, 551 }, -- Druid
-				{ 7, 550 }, -- Hunter
-				{ 9, 545 }, -- Warrior
-				{ 24, 544 }, -- Paladin
+				{ 1, 1774 }, --Lieutenant Commander's Threads (Warlock)
+				{ 3, 1768 }, --Lieutenant Commander's Raiment (Priest)
+				{ 4, 1769 }, --Lieutenant Commander's Investiture (Priest)
+				{ 6, 1767 }, --Lieutenant Commander's Regalia (Mage)
+				{ 8, 1770 }, --Lieutenant Commander's Vestments (Rogue)
+				{ 10, 1762 }, --Lieutenant Commander's Wildhide (Druid)
+				{ 11, 1763 }, --Lieutenant Commander's Refuge  (Druid)
+				{ 12, 1764 }, --Lieutenant Commander's Sanctuary (Druid)
+				{ 16, 1765 }, --Lieutenant Commander's Prowess (Hunter)
+				{ 17, 1766 }, --Lieutenant Commander's Pursuit (Hunter)
+				{ 19, 1775 }, --Lieutenant Commander's Battlegear (Warrior)
+				{ 21, 1776 }, --Lieutenant Commander's Redemption (Paladin)
+				{ 22, 1777 } --Lieutenant Commander's Vindication (Paladin)
 			},
 
 			[HORDE_DIFF] = {
-				{ 1, 541 }, -- Warlock
-				{ 3, 540 }, -- Priest
-				{ 16, 542 }, -- Mage
-				{ 5, 522 }, -- Rogue
-				{ 20, 539 }, -- Druid
-				{ 7, 543 }, -- Hunter
-				{ 9, 537 }, -- Warrior
-				{ 22, 538 }, -- Shaman
+				{ 1, 1760 }, --Champion's Threads (Warlock)
+				{ 3, 1754 }, --Champion's Raiment (Priest)
+				{ 4, 1755 }, --Champion's Investiture (Priest)
+				{ 6, 1753 }, --Champion's Regalia (Mage)
+				{ 8, 1756 }, --Champion's Vestments (Rogue)
+				{ 10, 1748 }, --Champion's Wildhide (Druid)
+				{ 11, 1749 }, --Champion's Refuge (Druid)
+				{ 12, 1750 }, --Champion's Sanctuary (Druid)
+				{ 16, 1751 }, --Champion's Prowess (Hunter)
+				{ 17, 1752 }, --Champion's Pursuit (Hunter)
+				{ 19, 1761 }, --Champion's Battlegear (Warrior)
+				{ 21, 1757 }, --Champion's Thunderfist (Shaman)
+				{ 22, 1758 }, --Champion's Wartide (Shaman)
+				{ 23, 1759 }, --Champion's Earthshaker (Shaman)
 			},
 		},
 		PVP_RANKS,
@@ -772,62 +783,46 @@ data["Armor"] = {
 		{ -- PVPWeapons
 			name = AL["Armor"],
 			[ALLIANCE_DIFF] = {
-				{ 1,  18664 }, -- A Treatise on Military Ranks
-
-				{ 3, 18443 }, -- Master Sergeant's Insignia
-				{ 4, 18444 }, -- Master Sergeant's Insignia
-				{ 5, 18442 }, -- Master Sergeant's Insignia
-
-				{ 7, 18456 }, -- Sergeant Major's Silk Cuffs
-				{ 8, 18457 }, -- Sergeant Major's Silk Cuffs
-
-				{ 10, 18452 }, -- Sergeant Major's Leather Armsplints
-				{ 11, 18453 }, -- Sergeant Major's Leather Armsplints
-
-				{ 13, 18448 }, -- Sergeant Major's Chain Armguards
-				{ 14, 18449 }, -- Sergeant Major's Chain Armguards
-
-				{ 16,  15196 }, -- Private's Tabard
-
-				{ 18, 16342 }, -- Sergeant's Cape
-				{ 19, 18441 }, -- Sergeant's Cape
-				{ 20, 18440 }, -- Sergeant's Cape
-
-				{ 22, 18445 }, -- Sergeant Major's Plate Wristguards
-				{ 23, 18447 }, -- Sergeant Major's Plate Wristguards
-
-				{ 25, 18454 }, -- Sergeant Major's Dragonhide Armsplints
-				{ 26, 18455 }, -- Sergeant Major's Dragonhide Armsplints
-
+				{ 1, 18456 }, -- Sergeant Major's Silk Cuffs
+				{ 2, 18457 }, -- Sergeant Major's Silk Cuffs
+				{ 4, 18452 }, -- Sergeant Major's Leather Armsplints
+				{ 5, 18453 }, -- Sergeant Major's Leather Armsplints
+				{ 7, 18448 }, -- Sergeant Major's Chain Armguards
+				{ 8, 18449 }, -- Sergeant Major's Chain Armguards
+				{ 10, 18445 }, -- Sergeant Major's Plate Wristguards
+				{ 11, 18447 }, -- Sergeant Major's Plate Wristguards
+				{ 13, 18454 }, -- Sergeant Major's Dragonhide Armsplints
+				{ 14, 18455 }, -- Sergeant Major's Dragonhide Armsplints
+				{ 16,  18664 }, -- A Treatise on Military Ranks
+				{ 18, 18443 }, -- Master Sergeant's Insignia (58)
+				{ 19, 18444 }, -- Master Sergeant's Insignia (45)
+				{ 20, 18442 }, -- Master Sergeant's Insignia (30)
+				{ 22,  15196 }, -- Private's Tabard
+				{ 24, 16342 }, -- Sergeant's Cape (58)
+				{ 25, 18441 }, -- Sergeant's Cape (45)
+				{ 26, 18440 }, -- Sergeant's Cape (3)
+				{ 27, 213087}, -- Sergeant's Cloak (25)
 			},
 			[HORDE_DIFF] = {
-				{ 1, 18675 }, -- Military Ranks of the Horde & Alliance
-
-				{ 3, 16335 }, -- Senior Sergeant's Insignia
-				{ 4, 18428 }, -- Senior Sergeant's Insignia
-				{ 5, 15200 }, -- Senior Sergeant's Insignia
-
-				{ 7, 16486 }, -- First Sergeant's Silk Cuffs
-				{ 8, 18437 }, -- First Sergeant's Silk Cuffs
-
-				{ 10, 16497 }, -- First Sergeant's Leather Armguards
-				{ 11, 18435 }, -- First Sergeant's Leather Armguards
-
-				{ 13, 18429 }, -- First Sergeant's Plate Bracers
-				{ 14, 18430 }, -- First Sergeant's Plate Bracers
-
-				{ 16,  15197 }, -- Scout's Tabard
-
-				{ 18, 18461 }, -- Sergeant's Cloak
-				{ 19, 16341 }, -- Sergeant's Cloak
-				{ 20, 18427 }, -- Sergeant's Cloak
-
-				{ 22, 16532 }, -- First Sergeant's Mail Wristguards
-				{ 23, 18432 }, -- First Sergeant's Mail Wristguards
-
-				{ 25, 18434 }, -- First Sergeant's Dragonhide Armguards
-				{ 26, 18436 }, -- First Sergeant's Dragonhide Armguards
-
+				{ 1, 16486 }, -- First Sergeant's Silk Cuffs
+				{ 2, 18437 }, -- First Sergeant's Silk Cuffs
+				{ 4, 16497 }, -- First Sergeant's Leather Armguards
+				{ 5, 18435 }, -- First Sergeant's Leather Armguards
+				{ 7, 18429 }, -- First Sergeant's Plate Bracers
+				{ 8, 18430 }, -- First Sergeant's Plate Bracers
+				{ 10, 16532 }, -- First Sergeant's Mail Wristguards
+				{ 11, 18432 }, -- First Sergeant's Mail Wristguards
+				{ 13, 18434 }, -- First Sergeant's Dragonhide Armguards
+				{ 14, 18436 }, -- First Sergeant's Dragonhide Armguards
+				{ 16, 18675 }, -- Military Ranks of the Horde & Alliance
+				{ 18, 16335 }, -- Senior Sergeant's Insignia (58)
+				{ 19, 18428 }, -- Senior Sergeant's Insignia (45)
+				{ 20, 15200 }, -- Senior Sergeant's Insignia (30)
+				{ 22, 15197 }, -- Scout's Tabard
+				{ 24, 18461 }, -- Sergeant's Cloak (58)
+				{ 25, 16341 }, -- Sergeant's Cloak (45)
+				{ 26, 18427 }, -- Sergeant's Cloak (30)
+				{ 27, 213088}, -- Sergeant's Cloak (25)
 			},
 		},
 		PVP_RANKS,
@@ -930,25 +925,27 @@ data["Insignia"] = {
 		{
 			name = AL["Insignia"],
 			[ALLIANCE_DIFF] = {
-				{ 1,  18854 }, -- Warrior
-				{ 2,  18856 }, -- Hunter
-				{ 3,  18857 }, -- Rogue
-				{ 4,  18858 }, -- Warlock
-				{ 5,  18862 }, -- Priest
-				{ 6,  18863 }, -- Druid
-				{ 7,  18864 }, -- Paladin
-				{ 8,  18859 }, -- Mage
+				{ 1, 216938}, --Greater Insignia of the Alliance
+				{ 3,  18854 }, -- Warrior
+				{ 4,  18856 }, -- Hunter
+				{ 5,  18857 }, -- Rogue
+				{ 6,  18858 }, -- Warlock
+				{ 7,  18862 }, -- Priest
+				{ 8,  18863 }, -- Druid
+				{ 9,  18864 }, -- Paladin
+				{ 10,  18859 }, -- Mage
 
 			},
 			[HORDE_DIFF] = {
-				{ 1,  18834 }, -- Warrior
-				{ 2,  18846 }, -- Hunter
-				{ 3,  18849 }, -- Rogue
-				{ 4,  18852 }, -- Warlock
-				{ 5,  18851 }, -- Priest
-				{ 6,  18853 }, -- Druid
-				{ 7,  18845 }, -- Shaman
-				{ 8,  18850 }, -- Mage
+				{ 1, 216939}, --Greater Insignia of the Horde
+				{ 3,  18834 }, -- Warrior
+				{ 4,  18846 }, -- Hunter
+				{ 5,  18849 }, -- Rogue
+				{ 6,  18852 }, -- Warlock
+				{ 7,  18851 }, -- Priest
+				{ 8,  18853 }, -- Druid
+				{ 9,  18845 }, -- Shaman
+				{ 10,  18850 }, -- Mage
 			},
 		},
 		PVP_RANKS,
@@ -998,7 +995,7 @@ data["SoD_Phase2"] = {
 	name = format(AL["Phase %s"], "2"),
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 1,
+	ContentPhase = 2,
 	items = {
 		{
 		name = AL["STV Blood Moon Rares"],
@@ -1063,7 +1060,7 @@ data["SoD_Phase3"] = {
 	name = format(AL["Phase %s"], "3"),
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 1,
+	ContentPhase = 3,
 	items = {
 		{
 		name = AL["STV Blood Moon Epics"],
@@ -1130,6 +1127,51 @@ data["SoD_Phase3"] = {
 				{ 26, 1632 },
 				{ 28, 1634 },
 				{ 29, 1636 },
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["SoD_Phase4"] = {
+	name = format(AL["Phase %s"], "4"),
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 4,
+	items = {
+		{
+		name = AL["Blackrock Eruption"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{  1, 227831 }, -- Fine Flarecore Robe
+				{  2, 228927 }, -- Tempered Dark Iron Boots
+				{  3, 228928 }, -- Tempered Dark Iron Boots
+				{  4, 228929 }, -- Tempered Dark Iron Boots
+				{  5, 227841 }, -- Tempered Dark Iron Boots
+				{  6, 228924 }, -- Tempered Dark Iron Boots
+				{  7, 227822 }, -- Thick Corehound Boots
+				{  8, 228925 }, -- Tempered Dark Iron Boots
+				{  9, 227829 }, -- Hardened Black Dragonscale Boots
+				{  10, 228926 }, -- Tempered Dark Iron Boots
+				{  11, 227823 }, -- Fine Flarecore Gloves
+				{  12, 227835 }, -- Tempered Dark Iron Gauntlets
+				{  13, 227838 }, -- Shining Chromatic Gauntlets
+				{  14, 227824 }, -- Tempered Dark Iron Helm
+				{  15, 227821 }, -- Flamekissed Molten Helm
+				{  16, 227839 }, -- Fine Flarecore Leggings
+				{  17, 227836 }, -- Tempered Dark Iron Leggings
+				{  18, 227826 }, -- Dark Iron Flame Reaver
+				{  19, 227825 }, -- Molten Dark Iron Destroyer
+				{  20, 227832 }, -- Tempered Black Amnesty
+				{  21, 227842 }, -- Ebon Fist
+				{  22, 227840 }, -- Implacable Blackguard
+				{  23, 227834 }, -- Molten Chain Shoulders
+				{  24, 227830 }, -- Fine Flarecore Mantle
+				{  25, 227833 }, -- Glaive of Obsidian Fury
+				{  26, 227828 }, -- Lavawalker Belt
+				{  27, 227827 }, -- Molten Chain Girdle
+				{  28, 227837 }, -- Thick Corehound Belt
+				{  29, 227820 }, -- Tempered Dark Iron Bracers
 			},
 		},
 		PVP_RANKS,

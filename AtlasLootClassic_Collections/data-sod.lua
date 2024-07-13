@@ -2110,6 +2110,53 @@ data["Wild Offerings"] = {
 	},
 }
 
+data["Tarnished Undermine Real"] = {
+	name = AL["Tarnished Undermine Real"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	ContentPhase = 4,
+	items = {
+		{
+			name = AL["Tarnished Undermine Real Rewards"],
+			[NORMAL_DIFF] = {
+				{ 1, 228173 }, -- Libram of the Consecrated 
+				{ 2, 228174 }, -- Libram of the Devoted 
+				{ 3, 228175 }, -- Libram of Holy Alacrity 
+				{ 4, 228176 }, -- Totem of Thunder 
+				{ 5, 228177 }, -- Totem of Raging Fire 
+				{ 6, 228178 }, -- Totem of Earthen Vitality 
+				{ 7, 228179 }, -- Totem of the Plains 
+				{ 8, 228183 }, -- Idol of the Grove 
+				{ 9, 228180 }, -- Idol of the Swarm 
+				{ 10, 228181 }, -- Idol of Exsanguination (Cat) 
+				{ 11, 228182 }, -- Idol of Exsanguination (Bear) 
+				{ 12, 228187 }, -- Stick of the South Sea
+				{ 13, 228186 }, -- Abandoned Wedding Band 
+				{ 14, 228184 }, -- Goblin Clothesline 
+				{ 15, 228170 }, -- Makeshift South Sea Oar 
+				{ 16, 228169 }, -- The Attitude Adjustor 
+				{ 17, 228168 }, -- Goblin Gear Grinder 
+				{ 18, 228185 }, -- Broken Bottle of Goblino Noir 
+				{ 19, 227280 }, -- Craft of the Shadows 
+				{ 20, 227279 }, -- Loop of the Magister 
+				{ 21, 227282 }, -- Ring of the Dreaded Mist 
+				{ 22, 228171 }, -- Kezan Cash Carrier 
+				{ 23, 228189 }, -- Gift of Gob 
+				{ 24, 226405 }, -- Damaged Undermine Supply Crate 
+				{ 25, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 
+				{ 26, 13522 }, -- Recipe: Flask of Chromatic Resistance 
+				{ 27, 13518 }, -- Recipe: Flask of Petrification 
+				{ 28, 13519 }, -- Recipe: Flask of the Titans 
+				{ 29, 13520 }, -- Recipe: Flask of Distilled Wisdom 
+				{ 30, 13521 }, -- Recipe: Flask of Supreme Power				
+			},
+		},
+	},
+}
+
+
 data["Phase_4"] = {
 	name = format(AL["Phase %s"], "4"),
 	ContentType = SOD_CONTENT,
