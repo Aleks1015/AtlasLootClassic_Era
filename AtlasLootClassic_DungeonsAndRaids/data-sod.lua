@@ -3174,6 +3174,122 @@ data["UpperBlackrockSpire"] = {
 	},
 }
 
+data["DemonFallCanyon"] = {
+	name = AL["Demon Fall Canyon"],
+	MapID = 15475,
+	InstanceID = 15540,
+	ContentType = DUNGEON_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	ContentPhase = 4,
+	LevelRange = {55, 57, 60},
+	items = {
+		{ -- Grimroot
+			name = AL["Grimroot"],
+			npcID = 226923,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121733}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228083 }, -- Gloaming Treeheart
+				{ 2,  228081 }, -- Germinating Poisonseed
+				{ 3,  228080 }, -- Resin Loop
+				{ 4,  228082 }, -- Warsong Axe
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Diathorus the Seeker
+			name = AL["Diathorus the Seeker"],
+			npcID = 227019,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{10691}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228104 }, -- Robes of Elune
+				{ 2,  228094 }, -- Dreadlord's Blade
+				{ 3,  228107 }, -- Fallen Huntress' Longbow
+				{ 4,  228106 }, -- Shield of Life and Death
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --The Destructor's Wraith
+			name = AL["The Destructor's Wraith"],
+			npcID = 228022,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121410}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228074 }, -- Hands of Temptation
+				{ 2,  228075 }, -- Spear of Destiny
+				{ 3,  228076 }, -- Burning Ring of Fire
+				{ 4,  228077 }, -- Dreambough
+				{ 5,  228078 }, -- Accursed Chalice
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Zilbagob
+			name = AL["Zilbagob"],
+			npcID = 226922,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121881}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228085 }, -- Phaseshifted Legion Band
+				{ 2,  228086 }, -- Repurposed Shredderblade
+				{ 3,  228088 }, -- Shredder Operator's Dogtags
+				{ 4,  228087 }, -- Supercharged Silver Moebius
+				{ 5,  228084 }, -- Miniaturized Fire Extinguisher
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Pyranis
+			name = AL["Pyranis"],
+			npcID = 227140,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{227140}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228093 }, -- Dark Heart of Darkness
+				{ 2,  228090 }, -- Cenarion Ritual Dagger
+				{ 3,  228092 }, -- Druidic Mantle
+				{ 4,  228091 }, -- Thorned Boots
+				{ 5,  228089 }, -- Woodcarved Moonstalker
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Hellscream's Phantom
+			name = AL["Hellscream's Phantom"],
+			npcID = 227028,
+			Level = 58,
+			--SubAreaID = 0,
+			DisplayIDs = {{121966}},
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228410 }, -- Dreadblade of the Destructor
+				{ 3,  228111 }, -- Mask of the Godslayer
+				{ 4,  228112 }, -- Nightmare Gown
+				{ 5,  228109 }, -- Legguards of Sacrifice
+				{ 6,  228113 }, -- Cold Embraces
+				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ -- Other / Unknown drops
+		name = AL["Other"],
+		ExtraList = true,
+		ContentPhase = 4,
+		[NORMAL_DIFF] = {
+			{ 1,  228079 }, -- Cloak of Leaves
+			{ 2,  228103 }, -- Nathrezim's Greaves
+			{ 3,  228108 }, -- Shadow of Gorehowl
+		},
+	},
+	}
+}
+
 data["DireMaulEast"] = {
 	name = AL["Dire Maul East"],
 	MapID = 2557,
@@ -5218,16 +5334,16 @@ data["Onyxia"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 228688 }, -- Head of Onyxia (Alliance)
 				--{ 2, 228689 }, -- Head of Onyxia (Horde)
-				{ 2, 15410 }, -- Scale of Onyxia
-				{ 4, 18705 }, -- Mature Black Dragon Sinew
-				{ 5, 228759 }, -- Eskhandar's Collar
-				{ 6, 17078 }, -- Sapphiron Drape
-				{ 7, 18813 }, -- Ring of Binding
-				{ 8, 228298 }, -- Shard of the Scale
-				{ 9, 17067 }, -- Ancient Cornerstone Grimoire
-				{ 10, 17068 }, -- Deathbringer
-				{ 11, 17075 }, -- Vis'kag the Bloodletter
-				{ 24, 17966 }, -- Onyxia Hide Backpack
+				{ 3, 15410 }, -- Scale of Onyxia
+				{ 5, 18705 }, -- Mature Black Dragon Sinew
+				{ 6, 228759 }, -- Eskhandar's Collar
+				{ 7, 17078 }, -- Sapphiron Drape
+				{ 8, 18813 }, -- Ring of Binding
+				{ 9, 228298 }, -- Shard of the Scale
+				{ 10, 228955 }, -- Ancient Cornerstone Grimoire
+				{ 11, 17068 }, -- Deathbringer
+				{ 12, 17075 }, -- Vis'kag the Bloodletter
+				{ 24, 228992 }, -- Onyxia Hide Backpack
 				{ 25, 11938 }, -- Sack of Gems
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems

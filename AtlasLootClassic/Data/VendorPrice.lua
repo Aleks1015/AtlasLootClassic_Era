@@ -229,6 +229,14 @@ else
      [227827] = "16989:1:firelandsember:15:17010:1",
      [227837] = "19162:1:firelandsember:15:17010:1",
      [227820] = "17014:1:firelandsember:10:17010:1",
+     -- Argent Dawn Upgrades
+     [227859] = "12843:4:12735:3", -- Shimmering Dawnbringer Shoulders
+     [227888] = "12843:4:12753:3", -- Argent Elite Shoulders
+     [227818] = "12843:4:12753:3", -- Glowing Mantle of the Dawn
+     [227817] = "12843:3:12735:2", -- Radiant Gloves of the Dawn
+     [227816] = "12843:3:12753:2", -- Argent Elite Boots
+     [227815] = "12843:3:12753:2", -- Fine Dawn Treaders
+     [227814] = "12843:2:12735:2", -- Radiant Girdle of the Dawn
     }
 end
 
