@@ -736,7 +736,7 @@ data["ClassSets"] = {
 		},
 		{ -- Rare
 			name = ALIL["Rare"],
-			ContentPhase = 2,
+			ContentPhase = 4,
 			[ALLIANCE_DIFF] = {
 				{ 1, 1774 }, --Lieutenant Commander's Threads (Warlock)
 				{ 3, 1768 }, --Lieutenant Commander's Raiment (Priest)
@@ -752,7 +752,6 @@ data["ClassSets"] = {
 				{ 21, 1776 }, --Lieutenant Commander's Redemption (Paladin)
 				{ 22, 1777 } --Lieutenant Commander's Vindication (Paladin)
 			},
-
 			[HORDE_DIFF] = {
 				{ 1, 1760 }, --Champion's Threads (Warlock)
 				{ 3, 1754 }, --Champion's Raiment (Priest)
