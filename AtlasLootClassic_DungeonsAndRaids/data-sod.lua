@@ -2108,8 +2108,6 @@ data["BlackrockDepths"] = {
 				{ 4,  223539 }, -- Enthralled Sphere
 				{ 5,  11623 }, -- Spritecaster Cape
 				{ 7,  11140 }, -- Prison Cell Key
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223539 }, -- Enthralled Sphere
 			},
 		},
 		{ -- BRDHoundmaster
@@ -2125,9 +2123,6 @@ data["BlackrockDepths"] = {
 				{ 3,  223540 }, -- Houndmaster's Bow
 				{ 4,  223982 }, -- Houndmaster's Rifle
 				{ 5,  11626 }, -- Blackveil Cape
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223540 }, -- Houndmaster's Bow
-				{ 18, 223982 }, -- Houndmaster's Rifle
 			},
 		},
 		-- ## RING START
@@ -2160,8 +2155,6 @@ data["BlackrockDepths"] = {
 				{ 4,  11702 }, -- Grizzle's Skinner
 				{ 6,  11610 }, -- Plans: Dark Iron Pulverizer
 				--{ 2,  11608 }, -- Dark Iron Pulverizer
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223544 }, -- Dregmetal Spaulders
 			},
 		},
 		{ -- BRDEviscerator
@@ -2176,8 +2169,6 @@ data["BlackrockDepths"] = {
 				{ 2,  11679 }, -- Rubicund Armguards
 				{ 4,  11686 }, -- Girdle of Beastial Fury
 				{ 5,  227961 }, -- Savage Gladiator Grips
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223987 }, -- Splinthide Shoulders
 			},
 		},
 		{ -- BRDOkthor
@@ -2192,8 +2183,6 @@ data["BlackrockDepths"] = {
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
 				{ 4,  223985 }, -- Cyclopean Band
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223985 }, -- Cyclopean Band
 			},
 		},
 		{ -- BRDAnubshiah
@@ -2208,8 +2197,6 @@ data["BlackrockDepths"] = {
 				{ 2,  223986 }, -- Graverot Cape
 				{ 3,  11675 }, -- Shadefiend Boots
 				{ 4,  227957 }, -- Savage Gladiator Greaves
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223986 }, -- Graverot Cape
 			},
 		},
 		{ -- BRDHedrum
@@ -2224,9 +2211,6 @@ data["BlackrockDepths"] = {
 				{ 2,  223984 }, -- Silkweb Gloves
 				{ 3,  11635 }, -- Hookfang Shanker
 				{ 4,  227955 }, -- Savage Gladiator Helm
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223984 }, -- Silkweb Gloves
-
 			},
 		},
 		-- ## RING END
@@ -2244,10 +2228,6 @@ data["BlackrockDepths"] = {
 				{ 3,  11748 }, -- Pyric Caduceus
 				{ 4,  223538 }, -- Kindling Stave
 				{ 6,  11207 }, -- Formula: Enchant Weapon - Fiery Weapon
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223981 }, -- Flamestrider Robes
-				{ 18, 223538 }, -- Kindling Stave
-				{ 19, 223980 }, -- Searingscale Leggings
 			},
 		},
 		{ -- BRDTheVault
@@ -2285,10 +2265,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11782 }, -- Boreal Mantle
 				{ 2,  22241 }, -- Dark Warder's Pauldrons
 				{ 3,  11783 }, -- Chillsteel Girdle
-				{ 4,  223983 }, -- Arbiter's Blade
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223983 }, -- Arbiter's Blade
-				
+				{ 4,  223983 }, -- Arbiter's Blade		
 			},
 		},
 		{ -- BRDVerek
@@ -2412,7 +2389,7 @@ data["BlackrockDepths"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  11820 }, -- Royal Decorated Armor
 				{ 2,  11821 }, -- Warstrife Leggings
-				{ 3, 11810 }, -- Force of Will
+				{ 3,  11810 }, -- Force of Will
 				{ 4,  227940 }, -- Lord General's Sword
 				{ 5,  227948 }, -- Angerforge's Battle Axe
 				{ 6,  11841 }, -- Senior Designer's Pantaloons
@@ -2585,7 +2562,8 @@ data["BlackrockDepths"] = {
 				{ 10, 227984 }, -- Thaurissan's Royal Scepter
 				{ 11, 227981 }, -- Dreadforge Retaliator
 				{ 12, 227982 }, -- Guiding Stave of Wisdom
-				{ 16, 12033 }, -- Thaurissan Family Jewels
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 12033 }, -- Thaurissan Family Jewels
 			},
 		},
 		{ -- BRDTrash
@@ -3363,6 +3341,7 @@ data["DireMaulEast"] = {
 				{ 5,  19268 }, -- Ace of Elementals
 				{ 7,  18305 }, -- Breakwater Legguards
 				{ 8,  18307 }, -- Riptide Shoes
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMELethtendris
@@ -4083,20 +4062,21 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226758 }, -- Dreadmist Wraps
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 2,  18681 }, -- Burial Shawl
+				{ 3,  228010 }, -- Necropile Mantle
+				{ 4,  228013 }, -- Necropile Robe
+				{ 5,  14637 }, -- Cadaverous Armor
+				{ 6,  228012 }, -- Bloodmail Hauberk
+				{ 7,  228000 }, -- Deathbone Chestplate
+				{ 8, 228011 }, -- Necropile Cuffs
+				{ 9, 14640 }, -- Cadaverous Gloves
+				{ 10, 228020 }, -- Bloodmail Gauntlets
+				{ 11, 228006 }, -- Deathbone Gauntlets
+				{ 12, 14636 }, -- Cadaverous Belt
+				{ 13, 228014 }, -- Bloodmail Belt
+				{ 14, 228002 }, -- Deathbone Girdle
+				{ 15, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
