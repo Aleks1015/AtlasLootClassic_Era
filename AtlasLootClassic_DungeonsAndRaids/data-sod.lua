@@ -2108,8 +2108,6 @@ data["BlackrockDepths"] = {
 				{ 4,  223539 }, -- Enthralled Sphere
 				{ 5,  11623 }, -- Spritecaster Cape
 				{ 7,  11140 }, -- Prison Cell Key
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223539 }, -- Enthralled Sphere
 			},
 		},
 		{ -- BRDHoundmaster
@@ -2125,9 +2123,6 @@ data["BlackrockDepths"] = {
 				{ 3,  223540 }, -- Houndmaster's Bow
 				{ 4,  223982 }, -- Houndmaster's Rifle
 				{ 5,  11626 }, -- Blackveil Cape
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223540 }, -- Houndmaster's Bow
-				{ 18, 223982 }, -- Houndmaster's Rifle
 			},
 		},
 		-- ## RING START
@@ -2160,8 +2155,6 @@ data["BlackrockDepths"] = {
 				{ 4,  11702 }, -- Grizzle's Skinner
 				{ 6,  11610 }, -- Plans: Dark Iron Pulverizer
 				--{ 2,  11608 }, -- Dark Iron Pulverizer
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223544 }, -- Dregmetal Spaulders
 			},
 		},
 		{ -- BRDEviscerator
@@ -2176,8 +2169,6 @@ data["BlackrockDepths"] = {
 				{ 2,  11679 }, -- Rubicund Armguards
 				{ 4,  11686 }, -- Girdle of Beastial Fury
 				{ 5,  227961 }, -- Savage Gladiator Grips
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223987 }, -- Splinthide Shoulders
 			},
 		},
 		{ -- BRDOkthor
@@ -2192,8 +2183,6 @@ data["BlackrockDepths"] = {
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
 				{ 4,  223985 }, -- Cyclopean Band
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223985 }, -- Cyclopean Band
 			},
 		},
 		{ -- BRDAnubshiah
@@ -2208,8 +2197,6 @@ data["BlackrockDepths"] = {
 				{ 2,  223986 }, -- Graverot Cape
 				{ 3,  11675 }, -- Shadefiend Boots
 				{ 4,  227957 }, -- Savage Gladiator Greaves
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223986 }, -- Graverot Cape
 			},
 		},
 		{ -- BRDHedrum
@@ -2224,9 +2211,6 @@ data["BlackrockDepths"] = {
 				{ 2,  223984 }, -- Silkweb Gloves
 				{ 3,  11635 }, -- Hookfang Shanker
 				{ 4,  227955 }, -- Savage Gladiator Helm
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223984 }, -- Silkweb Gloves
-
 			},
 		},
 		-- ## RING END
@@ -2244,10 +2228,6 @@ data["BlackrockDepths"] = {
 				{ 3,  11748 }, -- Pyric Caduceus
 				{ 4,  223538 }, -- Kindling Stave
 				{ 6,  11207 }, -- Formula: Enchant Weapon - Fiery Weapon
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223981 }, -- Flamestrider Robes
-				{ 18, 223538 }, -- Kindling Stave
-				{ 19, 223980 }, -- Searingscale Leggings
 			},
 		},
 		{ -- BRDTheVault
@@ -2285,10 +2265,7 @@ data["BlackrockDepths"] = {
 				{ 1,  11782 }, -- Boreal Mantle
 				{ 2,  22241 }, -- Dark Warder's Pauldrons
 				{ 3,  11783 }, -- Chillsteel Girdle
-				{ 4,  223983 }, -- Arbiter's Blade
-				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223983 }, -- Arbiter's Blade
-				
+				{ 4,  223983 }, -- Arbiter's Blade		
 			},
 		},
 		{ -- BRDVerek
@@ -2301,6 +2278,7 @@ data["BlackrockDepths"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  11755 }, -- Verek's Collar
 				{ 2,  22242 }, -- Verek's Leash
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDWatchmanDoomgrip
@@ -2330,6 +2308,7 @@ data["BlackrockDepths"] = {
 				{ 3,  11842 }, -- Lead Surveyor's Mantle
 				{ 4,  11841 }, -- Senior Designer's Pantaloons
 				{ 6,  11840 }, -- Master Builder's Shirt
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDLordIncendius
@@ -2347,6 +2326,7 @@ data["BlackrockDepths"] = {
 				{ 4,  11767 }, -- Emberplate Armguards
 				{ 6,  19268 }, -- Ace of Elementals
 				{ 8,  11768 }, -- Incendic Bracers
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDGuzzler_Ribbly Screwspigot
@@ -2395,6 +2375,7 @@ data["BlackrockDepths"] = {
 				{ 2,  11802 }, -- Lavacrest Leggings
 				{ 3,  11805 }, -- Rubidium Hammer
 				{ 4,  11803 }, -- Force of Magma
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDGeneralAngerforge
@@ -2408,10 +2389,11 @@ data["BlackrockDepths"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  11820 }, -- Royal Decorated Armor
 				{ 2,  11821 }, -- Warstrife Leggings
-				{ 3, 11810 }, -- Force of Will
+				{ 3,  11810 }, -- Force of Will
 				{ 4,  227940 }, -- Lord General's Sword
 				{ 5,  227948 }, -- Angerforge's Battle Axe
 				{ 6,  11841 }, -- Senior Designer's Pantaloons
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDGolemLordArgelmach
@@ -2427,6 +2409,7 @@ data["BlackrockDepths"] = {
 				{ 2,  227965 }, -- Omnicast Boots
 				{ 3,  11669 }, -- Naglering
 				{ 4,  227967 }, -- Second Wind
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDGuzzler_
@@ -2442,6 +2425,7 @@ data["BlackrockDepths"] = {
 			{ 2,  18043 }, -- Coal Miner Boots
 			{ 3,  22275 }, -- Firemoss Boots
 			{ 4,  18044 }, -- Hurley's Tankard
+			{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDGuzzler_
@@ -2469,6 +2453,7 @@ data["BlackrockDepths"] = {
 				{ 2,  11745 }, -- Fists of Phalanx
 				{ 3, 11744 }, -- Bloodfist
 				{ 4, 11743 }, -- Rockfist
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDFlamelash
@@ -2486,6 +2471,7 @@ data["BlackrockDepths"] = {
 				{ 5,  227972 }, -- Burst of Knowledge
 				{ 6,  227934 }, -- Flame Wrath
 				{ 8,  23320 }, -- Tablet of Flame Shock VI
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDPanzor
@@ -2538,6 +2524,7 @@ data["BlackrockDepths"] = {
 				{ 3,  22395 }, -- Totem of Rage
 				{ 4,  22400 }, -- Libram of Truth
 				{ 5,  227974 }, -- Lavastone Hammer
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- BRDPrincess
@@ -2575,7 +2562,8 @@ data["BlackrockDepths"] = {
 				{ 10, 227984 }, -- Thaurissan's Royal Scepter
 				{ 11, 227981 }, -- Dreadforge Retaliator
 				{ 12, 227982 }, -- Guiding Stave of Wisdom
-				{ 16, 12033 }, -- Thaurissan Family Jewels
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 12033 }, -- Thaurissan Family Jewels
 			},
 		},
 		{ -- BRDTrash
@@ -2690,7 +2678,8 @@ data["LowerBlackrockSpire"] = {
 				{ 6,  13169 }, -- Tressermane Leggings
 				{ 7,  228570 }, -- Fist of Omokk
 				{ 8,  12336 }, -- Gemstone of Spirestone
-				{ 16, 12534 }, -- Omokk's Head
+				{ 18, 12534 }, -- Omokk's Head
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSSpirestoneBattleLord
@@ -2736,6 +2725,7 @@ data["LowerBlackrockSpire"] = {
 				{ 6,  12653 }, -- Riphook
 				{ 7,  228559 }, -- Blackcrow
 				{ 8,  12654 }, -- Doomshot
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSVoone
@@ -2754,6 +2744,7 @@ data["LowerBlackrockSpire"] = {
 				{ 6,  13173 }, -- Flightblade Throwing Axe
 				{ 7,  12582 }, -- Keris of Zul'Serak
 				{ 9,  12335 }, -- Gemstone of Smolderthorn
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSGrimaxe
@@ -2785,6 +2776,7 @@ data["LowerBlackrockSpire"] = {
 				{ 3,  228577 }, -- Gilded Gauntlets
 				{ 4,  228576 }, -- Smolderweb's Eye
 				{ 5,  228573 }, -- Venomspitter
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSCrystalFang
@@ -2814,7 +2806,8 @@ data["LowerBlackrockSpire"] = {
 				{ 2,  228595 }, -- Marksman's Girdle
 				{ 3,  13259 }, -- Ribsteel Footguards
 				{ 4,  13178 }, -- Rosewine Circle
-				{ 16,  18784 }, -- Top Half of Advanced Armorsmithing: Volume III
+				{ 18,  18784 }, -- Top Half of Advanced Armorsmithing: Volume III
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSZigris
@@ -2846,6 +2839,7 @@ data["LowerBlackrockSpire"] = {
 				{ 2,  228598 }, -- Ironweave Bracers
 				{ 3,  228575 }, -- Slashclaw Bracers
 				{ 4,  13210 }, -- Pads of the Dread Wolf
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSSlavener
@@ -2861,6 +2855,7 @@ data["LowerBlackrockSpire"] = {
 				{ 3,  13208 }, -- Bleak Howler Armguards
 				{ 4,  13206 }, -- Wolfshear Leggings
 				{ 5,  228591 }, -- Rhombeard Protector
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- LBRSBashguud
@@ -2895,7 +2890,8 @@ data["LowerBlackrockSpire"] = {
 				{ 9,  228586 }, -- Chillpike
 				{ 10, 228587 }, -- Trindlehaven Staff
 				{ 12, 12337 }, -- Gemstone of Bloodaxe
-				{ 16, 12780 }, -- General Drakkisath's Command
+				{ 18, 12780 }, -- General Drakkisath's Command
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 
@@ -2973,6 +2969,7 @@ data["UpperBlackrockSpire"] = {
 				{ 5,  12905 }, -- Wildfire Cape
 				{ 6,  12926 }, -- Flaming Band
 				{ 8,  23320 }, -- Tablet of Flame Shock VI
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- UBRSSolakar
@@ -3068,6 +3065,7 @@ data["UpperBlackrockSpire"] = {
 				{ 13, 228653 }, -- Dal'Rend's Sacred Charge
 				{ 14, 228652 }, -- Dal'Rend's Tribal Guardian
 				{ 15, 228603 }, -- Blackhand Doomsaw
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- UBRSBeast
@@ -3091,7 +3089,8 @@ data["UpperBlackrockSpire"] = {
 				{ 12, 12709 }, -- Finkle's Skinner
 				{ 13, 228666 }, -- Seeping Willow
 				{ 15, 24101 }, -- Book of Ferocious Bite V
-				{ 16, 19227 }, -- Ace of Beasts
+				{ 18, 19227 }, -- Ace of Beasts
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- UBRSDrakkisath
@@ -3114,15 +3113,16 @@ data["UpperBlackrockSpire"] = {
 				{ 10, 12602 }, -- Draconian Deflector
 				{ 12, 15730 }, -- Pattern: Red Dragonscale Breastplate
 				{ 14, 13519 }, -- Recipe: Flask of the Titans
-				{ 16, 226745 }, -- Devout Robe
-				{ 17, 226729 }, -- Magister's Robes
-				{ 18, 226757 }, -- Dreadmist Robe
-				{ 19, 226700 }, -- Shadowcraft Tunic
-				{ 20, 226715 }, -- Wildheart Vest
-				{ 21, 226723 }, -- Beaststalker's Tunic
-				{ 22, 226749 }, -- Vest of Elements
-				{ 23, 226734 }, -- Lightforge Breastplate
-				{ 24, 226770 }, -- Breastplate of Valor
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 226745 }, -- Devout Robe
+				{ 19, 226729 }, -- Magister's Robes
+				{ 20, 226757 }, -- Dreadmist Robe
+				{ 21, 226700 }, -- Shadowcraft Tunic
+				{ 22, 226715 }, -- Wildheart Vest
+				{ 23, 226723 }, -- Beaststalker's Tunic
+				{ 24, 226749 }, -- Vest of Elements
+				{ 25, 226734 }, -- Lightforge Breastplate
+				{ 26, 226770 }, -- Breastplate of Valor
 			},
 		},
 		{ -- UBRSTrash
@@ -3195,6 +3195,7 @@ data["DemonFallCanyon"] = {
 				{ 2,  228081 }, -- Germinating Poisonseed
 				{ 3,  228080 }, -- Resin Loop
 				{ 4,  228082 }, -- Warsong Axe
+				{ 5,  228079 }, -- Cloak of Leaves
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3210,6 +3211,7 @@ data["DemonFallCanyon"] = {
 				{ 2,  228094 }, -- Dreadlord's Blade
 				{ 3,  228107 }, -- Fallen Huntress' Longbow
 				{ 4,  228106 }, -- Shield of Life and Death
+				{ 5,  228103 }, -- Nathrezim's Greaves
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -3227,6 +3229,7 @@ data["DemonFallCanyon"] = {
 				{ 4,  228077 }, -- Dreambough
 				{ 5,  228078 }, -- Accursed Chalice
 				{ 16,  226404 }, -- Tarnished Undermine Real
+				{ 18, 18665 }, -- The Eye of Shadow
 			},
 		},
 		{ --Zilbagob
@@ -3274,19 +3277,11 @@ data["DemonFallCanyon"] = {
 				{ 4,  228112 }, -- Nightmare Gown
 				{ 5,  228109 }, -- Legguards of Sacrifice
 				{ 6,  228113 }, -- Cold Embraces
+				{ 7,  228108 }, -- Shadow of Gorehowl
+				{ 9,  228126 }, -- Aperitive Epiphany
 				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
-		{ -- Other / Unknown drops
-		name = AL["Other"],
-		ExtraList = true,
-		ContentPhase = 4,
-		[NORMAL_DIFF] = {
-			{ 1,  228079 }, -- Cloak of Leaves
-			{ 2,  228103 }, -- Nathrezim's Greaves
-			{ 3,  228108 }, -- Shadow of Gorehowl
-		},
-	},
 	}
 }
 
@@ -3313,6 +3308,7 @@ data["DireMaulEast"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  18267 }, -- Recipe: Runn Tum Tuber Surprise
 				{ 3,  18249 }, -- Crescent Key
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMEZevrimThornhoof
@@ -3328,6 +3324,7 @@ data["DireMaulEast"] = {
 				{ 3,  228050 }, -- Satyr's Bow
 				{ 5,  18308 }, -- Clever Hat
 				{ 6,  18306 }, -- Gloves of Shadowy Mist
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMEHydro
@@ -3344,6 +3341,7 @@ data["DireMaulEast"] = {
 				{ 5,  19268 }, -- Ace of Elementals
 				{ 7,  18305 }, -- Breakwater Legguards
 				{ 8,  18307 }, -- Riptide Shoes
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMELethtendris
@@ -3358,6 +3356,7 @@ data["DireMaulEast"] = {
 				{ 2,  228051 }, -- Quel'dorai Channeling Rod
 				{ 4,  18301 }, -- Lethtendris's Wand
 				{ 5,  18302 }, -- Band of Vigor
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMEAlzzin
@@ -3379,6 +3378,7 @@ data["DireMaulEast"] = {
 				{ 8,  228056 }, -- Fiendish Machete
 				{ 9,  228699 }, -- Ring of Demonic Guile
 				{ 10, 228057 }, -- Ring of Demonic Potency
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMETrash
@@ -3444,6 +3444,7 @@ data["DireMaulWest"] = {
 				{ 2,  228468 }, -- Tanglemoss Leggings
 				{ 4,  18352 }, -- Petrified Bark Shield
 				{ 5,  18353 }, -- Stoneflower Staff
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMWIllyannaRavenoak
@@ -3459,6 +3460,7 @@ data["DireMaulWest"] = {
 				{ 2,  18386 }, -- Padre's Trousers
 				{ 4,  18349 }, -- Gauntlets of Accuracy
 				{ 5,  18347 }, -- Well Balanced Axe
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMWMagisterKalendris
@@ -3476,6 +3478,7 @@ data["DireMaulWest"] = {
 				{ 5,  18350 }, -- Amplifying Cloak
 				{ 6,  18351 }, -- Magically Sealed Bracers
 				{ 8,  22309 }, -- Pattern: Big Bag of Enchantment
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				--{ 9,  22249 }, -- Big Bag of Enchantment
 			},
 		},
@@ -3513,6 +3516,7 @@ data["DireMaulWest"] = {
 				{ 8,  18379 }, -- Odious Greaves
 				{ 9,  18370 }, -- Vigilance Charm
 				{ 10, 18372 }, -- Blade of the New Moon
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMWPrinceTortheldrin
@@ -3533,6 +3537,7 @@ data["DireMaulWest"] = {
 				{ 8,  18396 }, -- Mind Carver
 				{ 9,  18376 }, -- Timeworn Mace
 				{ 10, 228472 }, -- Distracting Dagger
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- DMWTrash
@@ -3759,8 +3764,9 @@ data["DireMaulNorth"] = {
 				{ 6,  18522 }, -- Band of the Ogre King
 				{ 7,  18523 }, -- Brightly Glowing Stone
 				{ 8,  228478 }, -- Barbarous Blade
-				{ 16, 19258 }, -- Ace of Warlords
-				{ 18, 18780 }, -- Top Half of Advanced Armorsmithing: Volume I
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 19258 }, -- Ace of Warlords
+				{ 20, 18780 }, -- Top Half of Advanced Armorsmithing: Volume I
 			},
 		},
 		{ -- DMNTRIBUTERUN
@@ -3853,6 +3859,7 @@ data["Scholomance"] = {
 				{ 8,  228004 }, -- Windreaver Greaves
 				{ 9,  228015 }, -- Frightalon
 				{ 10, 228029 }, -- Gravestone War Axe
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- SCHOLOJandiceBarov
@@ -3872,6 +3879,7 @@ data["Scholomance"] = {
 				{ 8,  227997 }, -- Barovian Family Sword
 				{ 9,  22394 }, -- Staff of Metanoia
 				{ 12, 13523 }, -- Blood of Innocents
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- SCHOLORattlegore
@@ -3892,6 +3900,7 @@ data["Scholomance"] = {
 				{ 8,  227994 }, -- Frightskull Shaft
 				{ 10, 18782 }, -- Top Half of Advanced Armorsmithing: Volume II
 				{ 12, 13873 }, -- Viewing Room Key
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- SCHOLODeathKnight
@@ -3933,6 +3942,7 @@ data["Scholomance"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  18691 }, -- Dark Advisor's Pendant
 				{ 2,  228017 }, -- Skullsmoke Pants
+				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- SCHOLORasFrostwhisper
@@ -3957,7 +3967,8 @@ data["Scholomance"] = {
 				{ 13, 18696 }, -- Intricately Runed Shield
 				{ 14, 228027 }, -- Iceblade Hacker
 				{ 15, 14487 }, -- Bonechill Hammer
-				{ 16, 13521 }, -- Recipe: Flask of Supreme Power
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 13521 }, -- Recipe: Flask of Supreme Power
 			},
 		},
 		{ -- SCHOLOInstructorMalicia
@@ -3970,20 +3981,21 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226704 }, -- Shadowcraft Bracers
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 2,  18681 }, -- Burial Shawl
+				{ 3,  228010 }, -- Necropile Mantle
+				{ 4,  228013 }, -- Necropile Robe
+				{ 5,  14637 }, -- Cadaverous Armor
+				{ 6,  228012 }, -- Bloodmail Hauberk
+				{ 7,  228000 }, -- Deathbone Chestplate
+				{ 8, 228011 }, -- Necropile Cuffs
+				{ 9, 14640 }, -- Cadaverous Gloves
+				{ 10, 228020 }, -- Bloodmail Gauntlets
+				{ 11, 228006 }, -- Deathbone Gauntlets
+				{ 12, 14636 }, -- Cadaverous Belt
+				{ 13, 228014 }, -- Bloodmail Belt
+				{ 14, 228002 }, -- Deathbone Girdle
+				{ 15, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
@@ -4010,19 +4022,20 @@ data["Scholomance"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  226731 }, -- Magister's Gloves
 				{ 2,  14617 }, -- Sawbones Shirt
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
+				{ 3,  18681 }, -- Burial Shawl
+				{ 4,  228010 }, -- Necropile Mantle
+				{ 5,  228013 }, -- Necropile Robe
+				{ 6,  14637 }, -- Cadaverous Armor
+				{ 7,  228012 }, -- Bloodmail Hauberk
+				{ 8,  228000 }, -- Deathbone Chestplate
+				{ 9, 228011 }, -- Necropile Cuffs
+				{ 10, 14640 }, -- Cadaverous Gloves
+				{ 11, 228020 }, -- Bloodmail Gauntlets
+				{ 12, 228006 }, -- Deathbone Gauntlets
+				{ 13, 14636 }, -- Cadaverous Belt
+				{ 14, 228014 }, -- Bloodmail Belt
+				{ 15, 228002 }, -- Deathbone Girdle
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 17, 228018 }, -- Necropile Leggings
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
@@ -4049,20 +4062,21 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226758 }, -- Dreadmist Wraps
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 2,  18681 }, -- Burial Shawl
+				{ 3,  228010 }, -- Necropile Mantle
+				{ 4,  228013 }, -- Necropile Robe
+				{ 5,  14637 }, -- Cadaverous Armor
+				{ 6,  228012 }, -- Bloodmail Hauberk
+				{ 7,  228000 }, -- Deathbone Chestplate
+				{ 8, 228011 }, -- Necropile Cuffs
+				{ 9, 14640 }, -- Cadaverous Gloves
+				{ 10, 228020 }, -- Bloodmail Gauntlets
+				{ 11, 228006 }, -- Deathbone Gauntlets
+				{ 12, 14636 }, -- Cadaverous Belt
+				{ 13, 228014 }, -- Bloodmail Belt
+				{ 14, 228002 }, -- Deathbone Girdle
+				{ 15, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
@@ -4088,20 +4102,21 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226712 }, -- Wildheart Belt
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 2,  18681 }, -- Burial Shawl
+				{ 3,  228010 }, -- Necropile Mantle
+				{ 4,  228013 }, -- Necropile Robe
+				{ 5,  14637 }, -- Cadaverous Armor
+				{ 6,  228012 }, -- Bloodmail Hauberk
+				{ 7,  228000 }, -- Deathbone Chestplate
+				{ 8, 228011 }, -- Necropile Cuffs
+				{ 9, 14640 }, -- Cadaverous Gloves
+				{ 10, 228020 }, -- Bloodmail Gauntlets
+				{ 11, 228006 }, -- Deathbone Gauntlets
+				{ 12, 14636 }, -- Cadaverous Belt
+				{ 13, 228014 }, -- Bloodmail Belt
+				{ 14, 228002 }, -- Deathbone Girdle
+				{ 15, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
@@ -4127,20 +4142,21 @@ data["Scholomance"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  226739 }, -- Lightforge Bracers
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 2,  18681 }, -- Burial Shawl
+				{ 3,  228010 }, -- Necropile Mantle
+				{ 4,  228013 }, -- Necropile Robe
+				{ 5,  14637 }, -- Cadaverous Armor
+				{ 6,  228012 }, -- Bloodmail Hauberk
+				{ 7,  228000 }, -- Deathbone Chestplate
+				{ 8, 228011 }, -- Necropile Cuffs
+				{ 9, 14640 }, -- Cadaverous Gloves
+				{ 10, 228020 }, -- Bloodmail Gauntlets
+				{ 11, 228006 }, -- Deathbone Gauntlets
+				{ 12, 14636 }, -- Cadaverous Belt
+				{ 13, 228014 }, -- Bloodmail Belt
+				{ 14, 228002 }, -- Deathbone Girdle
+				{ 15, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
@@ -4165,20 +4181,21 @@ data["Scholomance"] = {
 			AtlasMapBossID = 13,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 4,  18681 }, -- Burial Shawl
-				{ 5,  228010 }, -- Necropile Mantle
-				{ 6,  228013 }, -- Necropile Robe
-				{ 7,  14637 }, -- Cadaverous Armor
-				{ 8,  228012 }, -- Bloodmail Hauberk
-				{ 9,  228000 }, -- Deathbone Chestplate
-				{ 10, 228011 }, -- Necropile Cuffs
-				{ 11, 14640 }, -- Cadaverous Gloves
-				{ 12, 228020 }, -- Bloodmail Gauntlets
-				{ 13, 228006 }, -- Deathbone Gauntlets
-				{ 14, 14636 }, -- Cadaverous Belt
-				{ 15, 228014 }, -- Bloodmail Belt
-				{ 16, 228002 }, -- Deathbone Girdle
-				{ 17, 228018 }, -- Necropile Leggings
+				{ 1,  18681 }, -- Burial Shawl
+				{ 2,  228010 }, -- Necropile Mantle
+				{ 3,  228013 }, -- Necropile Robe
+				{ 4,  14637 }, -- Cadaverous Armor
+				{ 5,  228012 }, -- Bloodmail Hauberk
+				{ 6,  228000 }, -- Deathbone Chestplate
+				{ 7, 228011 }, -- Necropile Cuffs
+				{ 8, 14640 }, -- Cadaverous Gloves
+				{ 9, 228020 }, -- Bloodmail Gauntlets
+				{ 10, 228006 }, -- Deathbone Gauntlets
+				{ 11, 14636 }, -- Cadaverous Belt
+				{ 12, 228014 }, -- Bloodmail Belt
+				{ 13, 228002 }, -- Deathbone Girdle
+				{ 14, 228018 }, -- Necropile Leggings
+				{ 16, 226404 }, -- Tarnished Undermine Real
 				{ 18, 14638 }, -- Cadaverous Leggings
 				{ 19, 18682 }, -- Ghoul Skin Leggings
 				{ 20, 228003 }, -- Bloodmail Legguards
@@ -4214,16 +4231,17 @@ data["Scholomance"] = {
 				{ 10, 226755 }, -- Coif of Elements
 				{ 11, 226733 }, -- Lightforge Helm
 				{ 12, 226769 }, -- Helm of Valor
-				{ 16, 228025 }, -- Tombstone Breastplate
-				{ 17, 13951 }, -- Vigorsteel Vambraces
-				{ 18, 228042 }, -- Detention Strap
-				{ 19, 13398 }, -- Boots of the Shrieker
-				{ 20, 228046 }, -- Don Mauricio's Band of Domination
-				{ 21, 13938 }, -- Bonecreeper Stylus
-				{ 22, 228024 }, -- Silent Fang
-				{ 23, 228021 }, -- Witchblade
-				{ 25, 19276 }, -- Ace of Portals
-				{ 27, 13501 }, -- Recipe: Major Mana Potion
+				{ 13, 228025 }, -- Tombstone Breastplate
+				{ 14, 13951 }, -- Vigorsteel Vambraces
+				{ 15, 228042 }, -- Detention Strap
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 13398 }, -- Boots of the Shrieker
+				{ 19, 228046 }, -- Don Mauricio's Band of Domination
+				{ 20, 13938 }, -- Bonecreeper Stylus
+				{ 21, 228024 }, -- Silent Fang
+				{ 22, 228021 }, -- Witchblade
+				{ 23, 19276 }, -- Ace of Portals
+				{ 25, 13501 }, -- Recipe: Major Mana Potion
 			},
 		},
 		{ -- SCHOLOTrash
@@ -4325,6 +4343,19 @@ data["Stratholme"] = {
 				{ 3,  13396 }, -- Skul's Ghastly Touch
 			},
 		},
+		{ -- STRATEzraGrimm
+			name = AL["Ezra Grimm"],
+			NameColor = GREEN,
+			npcID = 11058,
+			Level = 61,
+			DisplayIDs = {{10475}},
+			AtlasMapBossID = 1,
+			specialType = "rare",
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1, 226404 }, -- Tarnished Undermine Real
+			},
+		},
 		{ -- STRATStratholmeCourier
 			name = AL["Stratholme Courier"],
 			NameColor = GREEN,
@@ -4375,6 +4406,7 @@ data["Stratholme"] = {
 				{ 4,  13405 }, -- Wailing Nightbane Pauldrons
 				{ 5,  13409 }, -- Tearfall Bracers
 				{ 6,  13408 }, -- Soul Breaker
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATPostmaster
@@ -4392,6 +4424,7 @@ data["Stratholme"] = {
 				{ 4,  228529 }, -- The Postmaster's Treads
 				{ 5,  228524 }, -- The Postmaster's Seal
 				{ 6,  13393 }, -- Malown's Slam
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATTimmytheCruel
@@ -4409,6 +4442,7 @@ data["Stratholme"] = {
 				{ 4,  228515 }, -- Grimgore Noose
 				{ 5,  228514 }, -- Timmy's Galoshes
 				{ 6,  13401 }, -- The Cruel Hand of Timmy
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATMalorsStrongbox
@@ -4424,6 +4458,7 @@ data["Stratholme"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Malors Strongbox"], nil },
 				{ 2,  12845 }, -- Medallion of Faith
+				{ 16,  226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATCrimsonHammersmith
@@ -4461,7 +4496,8 @@ data["Stratholme"] = {
 				{ 10, 13377 }, -- Miniature Cannon Balls
 				{ 11, 22404 }, -- Willey's Back Scratcher
 				{ 12, 22406 }, -- Redemption
-				{ 16, 12839 }, -- Plans: Heartseeker
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 12839 }, -- Plans: Heartseeker
 			},
 		},
 		{ -- STRATArchivistGalford
@@ -4481,6 +4517,7 @@ data["Stratholme"] = {
 				{ 6,  13385 }, -- Tome of Knowledge
 				{ 8,  12811 }, -- Righteous Orb
 				{ 10, 22897 }, -- Tome of Conjure Food VII
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATBalnazzar
@@ -4506,8 +4543,9 @@ data["Stratholme"] = {
 				{ 13, 228544 }, -- Hammer of the Grand Crusader
 				{ 14,  22334 }, -- Band of Mending
 				{ 15, 13348 }, -- Demonshear
-				{ 16, 13520 }, -- Recipe: Flask of Distilled Wisdom
-				{ 18, 13250 }, -- Head of Balnazzar
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 13520 }, -- Recipe: Flask of Distilled Wisdom
+				{ 20, 13250 }, -- Head of Balnazzar
 			},
 		},
 		{ -- STRATMagistrateBarthilas
@@ -4527,6 +4565,7 @@ data["Stratholme"] = {
 				{ 5,  23198 }, -- Idol of Brutality
 				{ 6,  228516 }, -- Peacemaker
 				{ 8,  228166 }, -- Key to the City
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATStonespine
@@ -4565,6 +4604,7 @@ data["Stratholme"] = {
 				{ 10, 13537 }, -- Chillhide Bracers
 				{ 11, 13539 }, -- Banshee's Touch
 				{ 12, 13514 }, -- Wail of the Banshee
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATBlackGuardSwordsmith
@@ -4604,6 +4644,7 @@ data["Stratholme"] = {
 				{ 10, 13531 }, -- Crypt Stalker Leggings
 				{ 11, 13530 }, -- Fangdrip Runners
 				{ 12, 13508 }, -- Eye of Arachnida
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATMalekithePallid
@@ -4626,7 +4667,8 @@ data["Stratholme"] = {
 				{ 10, 13526 }, -- Flamescarred Girdle
 				{ 11, 13527 }, -- Lavawalker Greaves
 				{ 12, 13509 }, -- Clutch of Foresight
-				{ 16, 12833 }, -- Plans: Hammer of the Titans
+				{ 18, 12833 }, -- Plans: Hammer of the Titans
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATRamsteintheGorger
@@ -4646,6 +4688,7 @@ data["Stratholme"] = {
 				{ 6,  13515 }, -- Ramstein's Lightning Bolts
 				{ 7,  13375 }, -- Crest of Retribution
 				{ 8,  13372 }, -- Slavedriver's Cane
+				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATBaronRivendare
@@ -4672,15 +4715,16 @@ data["Stratholme"] = {
 				{ 13, 13349 }, -- Scepter of the Unholy
 				{ 14, 13368 }, -- Bonescraper
 				{ 15, 228542 }, -- Skullforge Reaver
-				{ 16, 226747 }, -- Devout Skirt
-				{ 17, 226727 }, -- Magister's Leggings
-				{ 18, 226760 }, -- Dreadmist Leggings
-				{ 19, 226705 }, -- Shadowcraft Pants
-				{ 20, 226709 }, -- Wildheart Kilt
-				{ 21, 226719 }, -- Beaststalker's Pants
-				{ 22, 226750 }, -- Kilt of Elements
-				{ 23, 226736 }, -- Lightforge Legplates
-				{ 24, 226767 }, -- Legplates of Valor
+				{ 16, 226404 }, -- Tarnished Undermine Real
+				{ 18, 226747 }, -- Devout Skirt
+				{ 19, 226727 }, -- Magister's Leggings
+				{ 20, 226760 }, -- Dreadmist Leggings
+				{ 21, 226705 }, -- Shadowcraft Pants
+				{ 22, 226709 }, -- Wildheart Kilt
+				{ 23, 226719 }, -- Beaststalker's Pants
+				{ 24, 226750 }, -- Kilt of Elements
+				{ 25, 226736 }, -- Lightforge Legplates
+				{ 26, 226767 }, -- Legplates of Valor
 			},
 		},
 		{ -- STRATTrash
