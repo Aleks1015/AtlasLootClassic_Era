@@ -1897,6 +1897,7 @@ else
 		[23684] = {1,225,30020}, -- Crystal Infused Bandage
 		[23689] = {1,300,30021}, -- Manual: Crystal Infused Bandage
 		[23690] = {6,300,30047}, -- Recipe: Crystal Flake Throat Lozenge
+		--SoD		
 		[210709] = {4,90,426607}, -- Recipe: Elixir of Coalesced Regret
 		[211846] = {2,100,430397}, -- Plans: Blackfathom Sharpening Stone
 		[210779] = {2,150,427063}, -- Plans: Mantle of the Second War
@@ -1943,6 +1944,7 @@ else
 		[223163] = {10,190,448624}, -- Formula: Scroll of Spatial Mending
 		[227727] = {2,300,460460}, -- Plans: Sulfuron Hammer
 		--Phase 4
+		--[226406] = {200,50,453635}, -- Rune of Sword Specialization
 		[227905] = {2,300,461647}, -- Plans: Skyrider's Masterwork Stormhammer
 		[227909] = {2,290,461651}, -- Plans: Fiery Plate Gauntlets of the Hidden Technique
 		[227901] = {2,285,461667}, -- Plans: Tempered Dark Iron Plate
