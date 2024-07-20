@@ -3213,6 +3213,7 @@ data["DemonFallCanyon"] = {
 				{ 4,  228106 }, -- Shield of Life and Death
 				{ 5,  228103 }, -- Nathrezim's Greaves
 				{ 16,  226404 }, -- Tarnished Undermine Real
+				{ 18, 18665 }, -- The Eye of Shadow
 			},
 		},
 		{ --The Destructor's Wraith

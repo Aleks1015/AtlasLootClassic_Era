@@ -1848,7 +1848,37 @@ data["ScourgeInvasion"] = {
 		},
 	},
 }
-data["Sod Exclusives"] = {
+
+data["SoD_Runes"] = {
+	name = AL["Runes"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Ring"],
+			[NORMAL_DIFF] = {
+				{ 1, 226414 }, -- Rune of Fire Specialization
+				{ 2, 226415 }, -- Rune of Frost Specialization
+				{ 3, 226413 }, -- Rune of Arcane Specialization
+				{ 4, 226416 }, -- Rune of Nature Specialization
+				{ 5, 226418 }, -- Rune of Holy Specialization
+				{ 6, 226417 }, -- Rune of Shadow Specialization
+				{ 8, 226694 }, -- Rune of Defense Specialization
+				{ 16, 226419 }, -- Rune of Feral Combat Specialization
+				{ 17, 226406 }, -- Rune of Sword Specialization
+				{ 18, 226408 }, -- Rune of Mace Specialization
+				{ 19, 226411 }, -- Rune of Fist Weapon Specialization
+				{ 20, 226407 }, -- Rune of Axe Specialization
+				{ 21, 226409 }, -- Rune of Dagger Specialization
+				{ 22, 226412 }, -- Rune of Pole Weapon Specialization
+				{ 23, 226410 }, -- Rune of Ranged Weapon Specialization
+			},
+		},
+	},
+}
+data["Sod_Waylaid"] = {
 	name = AL["Waylaid Supplies"],
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
@@ -2621,38 +2651,158 @@ data["Tarnished Undermine Real"] = {
 	ContentPhase = 4,
 	items = {
 		{
-			name = AL["Tarnished Undermine Real Rewards"],
+			name = AL["Items"],
 			[NORMAL_DIFF] = {
-				{ 1, 228173 }, -- Libram of the Consecrated 
-				{ 2, 228174 }, -- Libram of the Devoted 
-				{ 3, 228175 }, -- Libram of Holy Alacrity 
-				{ 4, 228176 }, -- Totem of Thunder 
-				{ 5, 228177 }, -- Totem of Raging Fire 
-				{ 6, 228178 }, -- Totem of Earthen Vitality 
-				{ 7, 228179 }, -- Totem of the Plains 
-				{ 8, 228183 }, -- Idol of the Grove 
-				{ 9, 228180 }, -- Idol of the Swarm 
-				{ 10, 228181 }, -- Idol of Exsanguination (Cat) 
-				{ 11, 228182 }, -- Idol of Exsanguination (Bear) 
-				{ 12, 228187 }, -- Stick of the South Sea
-				{ 13, 228186 }, -- Abandoned Wedding Band 
-				{ 14, 228184 }, -- Goblin Clothesline 
-				{ 15, 228170 }, -- Makeshift South Sea Oar 
-				{ 16, 228169 }, -- The Attitude Adjustor 
-				{ 17, 228168 }, -- Goblin Gear Grinder 
-				{ 18, 228185 }, -- Broken Bottle of Goblino Noir 
-				{ 19, 227280 }, -- Craft of the Shadows 
-				{ 20, 227279 }, -- Loop of the Magister 
-				{ 21, 227282 }, -- Ring of the Dreaded Mist 
-				{ 22, 228171 }, -- Kezan Cash Carrier 
-				{ 23, 228189 }, -- Gift of Gob 
-				{ 24, 226405 }, -- Damaged Undermine Supply Crate 
-				{ 25, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 
-				{ 26, 13522 }, -- Recipe: Flask of Chromatic Resistance 
-				{ 27, 13518 }, -- Recipe: Flask of Petrification 
-				{ 28, 13519 }, -- Recipe: Flask of the Titans 
-				{ 29, 13520 }, -- Recipe: Flask of Distilled Wisdom 
-				{ 30, 13521 }, -- Recipe: Flask of Supreme Power				
+				{1, 226405 }, -- Damaged Undermine Supply Crate
+				{2, 228171 }, -- Kezan Cash Carrier (Bag)
+				{4, 228170 }, -- Makeshift South Sea Oar
+				{5, 228185 }, -- Broken Bottle of Goblino Noir  
+				{6, 228168 }, -- Goblin Gear Grinder 
+				{7, 228169 }, -- The Attitude Adjustor 
+				{9, 228184 }, -- Goblin Clothesline 
+				{11, 227284 }, -- Band of the Beast
+				{12, 227279 }, -- Loop of the Magister 
+				{13, 227280 }, -- Craft of the Shadows 
+				{14, 227282 }, -- Ring of the Dreaded Mist
+				{15, 228186 }, -- Abandoned Wedding Band 
+				{16, 228187 }, -- Stick of the South Sea
+				{18, 228432 }, -- Whistle of the Beast
+				{19, 227990 }, -- Hand of Injustice
+				{21, 228189 }, -- Gift of Gob 			
+			},
+		},
+		{
+			name = AL["Recipes"],
+			[NORMAL_DIFF] = {
+				{ 1, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 
+				{ 3, 13522 }, -- Recipe: Flask of Chromatic Resistance 
+				{ 4, 13518 }, -- Recipe: Flask of Petrification 
+				{ 5, 13519 }, -- Recipe: Flask of the Titans 
+				{ 6, 13520 }, -- Recipe: Flask of Distilled Wisdom 
+				{ 7, 13521 }, -- Recipe: Flask of Supreme Power				
+			},
+		},
+		{
+			name = AL["Warrior"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226769}, --Helm of Valor
+				{3, 226768}, --Spaulders of Valor
+				{4, 226770}, --Breastplate of Valor
+				{5, 226765}, --Belt of Valor
+				{6, 226767}, --Legplates of Valor
+				{7, 226764}, --Boots of Valor
+				{8, 226766}, --Bracers of Valor
+				{9, 226771}, --Gauntlets of Valor		
+			},
+		},
+		{
+			name = AL["Rogue"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226707}, --Shadowcraft Cap
+				{3, 226706}, --Shadowcraft Spaulders
+				{4, 226700}, --Shadowcraft Tunic
+				{5, 226701}, --Shadowcraft Belt
+				{6, 226705}, --Shadowcraft Pants
+				{7, 226703}, --Shadowcraft Boots
+				{8, 226704}, --Shadowcraft Bracers
+				{9, 226702}, --Shadowcraft Gloves	
+			},
+		},
+		{
+			name = AL["Druid"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226708}, --Wildheart Cowl
+				{3, 226710}, --Wildheart Spaulders
+				{4, 226715}, --Wildheart Vest
+				{5, 226712}, --Wildheart Belt
+				{6, 226709}, --Wildheart Kilt
+				{7, 226713}, --Wildheart Boots
+				{8, 226714}, --Wildheart Bracers
+				{9, 226711}, --Wildheart Gloves
+				{17, 228183 }, -- Idol of the Grove 
+				{18, 228180 }, -- Idol of the Swarm 
+				{19, 228181 }, -- Idol of Exsanguination (Cat) 
+				{20, 228182 }, -- Idol of Exsanguination (Bear) 
+			},
+		},
+		{
+			name = AL["Warlock"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226762}, --Dreadmist Mask
+				{3, 226756}, --Dreadmist Mantle
+				{4, 226761}, --Dreadmist Belt
+				{5, 226760}, --Dreadmist Leggings
+				{6, 226763}, --Dreadmist Sandals
+				{7, 226759}, --Dreadmist Bracers
+				{8, 226758}, --Dreadmist Wraps
+				{9, 226757}, --Dreadmist Robe	
+			},
+		},
+		{
+			name = AL["Hunter"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226720}, --Beaststalker's Cap
+				{3, 226716}, --Beaststalker's Mantle
+				{4, 226723}, --Beaststalker's Tunic
+				{5, 226718}, --Beaststalker's Belt
+				{6, 226719}, --Beaststalker's Pants
+				{7, 226722}, --Beaststalker's Boots
+				{8, 226717}, --Beaststalker's Bindings
+				{9, 226721}, --Beaststalker's Gloves	
+			},
+		},
+		{
+			name = AL["Mage"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226728}, --Magister's Crown
+				{3, 226726}, --Magister's Mantle
+				{4, 226724}, --Magister's Belt
+				{5, 226727}, --Magister's Leggings
+				{6, 226730}, --Magister's Boots
+				{7, 226725}, --Magister's Bindings
+				{8, 226731}, --Magister's Gloves
+				{9, 226729}, --Magister's Robes		
+			},
+		},
+		{
+			name = AL["Paladin"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226733}, --Lightforge Helm
+				{3, 226735}, --Lightforge Spaulders
+				{4, 226734}, --Lightforge Breastplate
+				{5, 226732}, --Lightforge Belt
+				{6, 226736}, --Lightforge Legplates
+				{7, 226738}, --Lightforge Boots
+				{8, 226739}, --Lightforge Bracers
+				{9, 226737}, --Lightforge Gauntlets	
+				{17, 228173 }, -- Libram of the Consecrated 
+				{18, 228174 }, -- Libram of the Devoted 
+				{19, 228175 }, -- Libram of Holy Alacrity 
+			},
+		},
+		{
+			name = AL["Shaman"],
+			[NORMAL_DIFF] = {
+				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
+				{2, 226755}, --Coif of Elements
+				{3, 226753}, --Pauldrons of Elements
+				{4, 226749}, --Vest of Elements
+				{5, 226754}, --Cord of Elements
+				{6, 226750}, --Kilt of Elements
+				{7, 226752}, --Boots of Elements
+				{8, 226751}, --Bindings of Elements
+				{9, 226748}, --Gauntlets of Elements
+				{17, 228176 }, -- Totem of Thunder 
+				{18, 228177 }, -- Totem of Raging Fire 
+				{19, 228178 }, -- Totem of Earthen Vitality 
+				{20, 228179 }, -- Totem of the Plains 
 			},
 		},
 	},
