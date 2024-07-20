@@ -155,8 +155,10 @@ data["Timbermaw"] = {
 				{ 3, 19327 }, -- Pattern: Timbermaw Brawlers
 				{ 4, 19204 }, -- Plans: Heavy Timbermaw Boots
 				{ 6, 227808 }, -- Rugged Mantle of the Timbermaw
-				{ 7, 227809 }, -- Studded Timbermaw Brawlers
-				{ 8, 227810 }, -- Dense Timbermaw Boots
+				{ 17, "INV_Box_02", nil, AL["Upgrades"], nil },
+				{ 18, 227809 }, -- Studded Timbermaw Brawlers
+				{ 19, 227810 }, -- Dense Timbermaw Boots
+				{ 20, 227808 }, -- Rugged Mantle of the Timbermaw
 			},
 		},
 		{ -- Honored
@@ -169,9 +171,10 @@ data["Timbermaw"] = {
 				{ 5, 19326 }, -- Pattern: Might of the Timbermaw
 				{ 6, 19215 }, -- Pattern: Wisdom of the Timbermaw
 				{ 7, 19445 }, -- Formula: Enchant Weapon - Agility
-				{ 9, 227807 }, -- Dense Timbermaw Belt
-				{ 10, 227805 }, -- Ferocity of the Timbermaw
-				{ 11, 228190 }, -- Knowledge of the Timbermaw
+				{ 18, "INV_Box_02", nil, AL["Upgrades"], nil },
+				{ 19, 227807 }, -- Dense Timbermaw Belt
+				{ 20, 227805 }, -- Ferocity of the Timbermaw
+				{ 21, 228190 }, -- Knowledge of the Timbermaw
 			},
 		},
 		{ -- Friendly
@@ -182,8 +185,10 @@ data["Timbermaw"] = {
 				{ 3,  15754 }, -- Pattern: Warbear Woolies
 				{ 4,  15742 }, -- Pattern: Warbear Harness
 				{ 5,  22392 }, -- Formula: Enchant 2H Weapon - Agility
-				{ 7,  227804 }, -- Dire Warbear Woolies
-				{ 8,  227803 }, -- Dire Warbear Harness
+				{ 17, "INV_Box_02", nil, AL["Upgrades"], nil },
+				{ 18,  227804 }, -- Dire Warbear Woolies
+				{ 19,  227803 }, -- Dire Warbear Harness
+				{ 20,  227862 }, -- Incandescent Mooncloth Boots
 			},
 		},
 	},

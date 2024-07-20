@@ -11,6 +11,7 @@ local format = string.format
 
 local LOC_STRING_DESC = "|cff00ff00"..AL["L-Click"]..":|r %s"
 local LOC_STRING_DESC2 = AL["|cff00ff00Left-Click:|r Show reagents."]
+local LOC_STRING_DESC3 = AL["|cff00ff00Left-Click:|r Show effect."]
 local FORMAT_STRING_SKILL = "|cffff8040%d|r |cffffff00%d|r |cff40bf40%d|r |cff808080%d|r"
 local FORMAT_STRING_SKILL2 = "|cffffff00%d|r |cff40bf40%d|r |cff808080%d|r"
 
@@ -32,14 +33,17 @@ local PROFESSION_NAME = {
     [13] = ALIL["Poisons"],        -- Poisons
     [14] = ALIL["Jewelcrafting"],  -- Jewelcrafting
 	[15] = ALIL["Inscription"],    -- Inscription
+	[200] = AL["Rune"]           -- Runes
 }
 
 local PROFESSION_TEXT_MAX_LENGTH = 15
 local PROFESSION_TEXT = {
 	[0]  = LOC_STRING_DESC2,	                            -- UNKNOWN
+	[200] = LOC_STRING_DESC3,                               -- RUNE
 }
 local PROFESSION_TEXT_SHORT = {
 	[0]  = LOC_STRING_DESC2,
+	[200] = LOC_STRING_DESC3,
 }
 for i = 1, #PROFESSION_NAME do
 	PROFESSION_TEXT[i] = format(LOC_STRING_DESC, PROFESSION_NAME[i])
@@ -69,6 +73,7 @@ local PROFESSION_ICON = {
     [13] = GetSpellTexture(2842), -- Rogue: Poisons
     [14] = 134071,                -- Jewelcrafting
 	[15] = 237171,     			  -- Inscription
+	[200] = 134419,               -- Rune
 }
 
 local PROFESSION, PROFESSION_DATA = AtlasLoot:GetGameVersionDataTable()
@@ -2671,8 +2676,8 @@ else
 		[28482] = {22758,8,300,315,345,{14048,12803,14227},{2,4,2}},
 		[30021] = {23684,1,300,300,360,{23567,14047},{1,10},4},
 		[30047] = {23683,6,300,325,365,{23567,8150},{1,1},2},
-
 		--Season of Discovery additions
+		--[453635] = {nil,200,50,60,60,{},{}}, -- Rune of Sword Specialization
 		[426607] = {210708,4,90,120,160,{3820,3369,11083,3372},{5,5,1,1},1},
 		[429348] = {210794,2,100,140,160,{2870,211422},{1,1}},
 		[427063] = {210773,2,150,180,210,{2841,1206,1705,5500,2842},{20,2,2,2,4}},
