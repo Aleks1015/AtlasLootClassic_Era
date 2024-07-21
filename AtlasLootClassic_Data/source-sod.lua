@@ -51,9 +51,10 @@ local SOURCE_DATA = {
 "TheRuinsofAhnQiraj",
 "TheTempleofAhnQiraj",
 "Naxxramas",
-"BlackfathomDeeps2",
-"Gnomeregan2",
-"TheTempleOfAtal'Hakkar2"
+"BlackfathomDeeps2", --34
+"Gnomeregan2", --35
+"TheTempleOfAtal'Hakkar2", --36
+"DemonFallCanyon" --37
 },
 ["ItemData"] = {
 [118] = {[3] = 7,[4] = 2330},
