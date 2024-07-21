@@ -2392,7 +2392,6 @@ data["BlackrockDepths"] = {
 				{ 3,  11810 }, -- Force of Will
 				{ 4,  227940 }, -- Lord General's Sword
 				{ 5,  227948 }, -- Angerforge's Battle Axe
-				{ 6,  11841 }, -- Senior Designer's Pantaloons
 				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
