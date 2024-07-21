@@ -4330,7 +4330,7 @@ data["Stratholme"] = {
 	LevelRange = GetForVersion({37, 58, 60}, {45, 58, 60}),
 	items = {
 		{ -- STRATSkull
-			name = AL["Skul"],
+			name = AL["Skul"].." / "..AL["Ezra Grimm"],
 			NameColor = GREEN,
 			npcID = 10393,
 			Level = 58,
@@ -4339,22 +4339,13 @@ data["Stratholme"] = {
 			specialType = "rare",
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  13395 }, -- Skul's Fingerbone Claws
-				{ 2,  13394 }, -- Skul's Cold Embrace
-				{ 3,  13396 }, -- Skul's Ghastly Touch
-			},
-		},
-		{ -- STRATEzraGrimm
-			name = AL["Ezra Grimm"],
-			NameColor = GREEN,
-			npcID = 11058,
-			Level = 61,
-			DisplayIDs = {{10475}},
-			AtlasMapBossID = 1,
-			specialType = "rare",
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1, 226404 }, -- Tarnished Undermine Real
+				--AL["Armor"].." - "..ALIL["Waist"]
+				{ 1, "INV_Box_01", nil, AL["Skul"], nil },
+				{ 2,  13395 }, -- Skul's Fingerbone Claws
+				{ 3,  13394 }, -- Skul's Cold Embrace
+				{ 4,  13396 }, -- Skul's Ghastly Touch
+				{ 16, "INV_Box_01", nil, AL["Ezra Grimm"], nil },
+				{ 17, 226404 }, -- Tarnished Undermine Real
 			},
 		},
 		{ -- STRATStratholmeCourier
