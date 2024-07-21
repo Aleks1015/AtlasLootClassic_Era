@@ -1984,6 +1984,7 @@ else
 		[228316] = {8,300,461747}, -- Pattern: Incandescent Mooncloth Vest
 		[228317] = {8,300,461750}, -- Pattern: Incandescent Mooncloth Circlet
 		[228318] = {8,290,461752}, -- Pattern: Incandescent Mooncloth Leggings
+		[228994] = {8,300,463972}, -- Pattern: Bottomless Bag
 	}
 end
 

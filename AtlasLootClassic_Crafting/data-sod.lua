@@ -1198,7 +1198,8 @@ data["Tailoring"] = {
 				{ 3, 461747 }, --Incandescent Mooncloth Vest
 				{ 4, 461750 }, --Incandescent Mooncloth Circlet
 				{ 5, 461752 }, --Incandescent Mooncloth Leggings
-				{ 6, 462282 }, --Embroidered Belt of the Archmage	
+				{ 6, 462282 }, --Embroidered Belt of the Archmage
+				{ 7, 463972 }, --Bottomless Bag
 			},
 		},
 		{
@@ -1227,20 +1228,21 @@ data["Tailoring"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 28481 }, --Sylvan Crown / 70
 				{ 2, 18452 }, --Mooncloth Circlet / 62
-				{ 3, 18450 }, --Wizardweave Turban / 61
-				{ 4, 18444 }, --Runecloth Headband / 59
-				{ 5, 18442 }, --Felcloth Hood / 58
-				{ 6, 12092 }, --Dreamweave Circlet / 50
-				{ 7, 12086 }, --Shadoweave Mask / 49
-				{ 8, 12084 }, --Red Mageweave Headband / 48
-				{ 9, 12081 }, --Admiral's Hat / 48
-				{ 10, 12072 }, --Black Mageweave Headband / 46
-				{ 11, 12059 }, --White Bandit Mask / 43
-				{ 12, 3858 }, --Shadow Hood / 34
-				{ 13, 439102 }, --Enchanter's Cowl / 33
-				{ 14, 8762 }, --Silk Headband / 32
-				{ 15, 8760 }, --Azure Silk Hood / 29
-				{ 16, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
+				{ 3, 461750 }, --Incandescent Mooncloth Circlet
+				{ 4, 18450 }, --Wizardweave Turban / 61
+				{ 5, 18444 }, --Runecloth Headband / 59
+				{ 6, 18442 }, --Felcloth Hood / 58
+				{ 7, 12092 }, --Dreamweave Circlet / 50
+				{ 8, 12086 }, --Shadoweave Mask / 49
+				{ 9, 12084 }, --Red Mageweave Headband / 48
+				{ 10, 12081 }, --Admiral's Hat / 48
+				{ 11, 12072 }, --Black Mageweave Headband / 46
+				{ 12, 12059 }, --White Bandit Mask / 43
+				{ 13, 3858 }, --Shadow Hood / 34
+				{ 14, 439102 }, --Enchanter's Cowl / 33
+				{ 15, 8762 }, --Silk Headband / 32
+				{ 16, 8760 }, --Azure Silk Hood / 29
+				{ 17, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
 			}
 		},
 		{
@@ -1281,47 +1283,49 @@ data["Tailoring"] = {
 				{ 9, 18451 }, --Felcloth Robe / 61
 				{ 10, 18446 }, --Wizardweave Robe / 60
 				{ 11, 18447 }, --Mooncloth Vest / 60
-				{ 12, 18436 }, --Robe of Winter Night / 57
-				{ 13, 18416 }, --Ghostweave Vest / 55
-				{ 14, 18414 }, --Brightcloth Robe / 54
-				{ 15, 18408 }, --Cindercloth Vest / 52
-				{ 16, 18407 }, --Runecloth Tunic / 52
-				{ 17, 18406 }, --Runecloth Robe / 52
-				{ 18, 18404 }, --Frostweave Robe / 51
-				{ 19, 18403 }, --Frostweave Tunic / 51
-				{ 20, 12077 }, --Simple Black Dress / 47
-				{ 21, 12070 }, --Dreamweave Vest / 45
-				{ 22, 12069 }, --Cindercloth Robe / 45
-				{ 23, 12056 }, --Red Mageweave Vest / 43
-				{ 24, 12055 }, --Shadoweave Robe / 43
-				{ 25, 12050 }, --Black Mageweave Robe / 42
-				{ 26, 439086 }, --Black Mageweave Vest / 41
-				{ 27, 439085 }, --Crimson Silk Robe / 41
-				{ 28, 8770 }, --Robe of Power / 38
-				{ 29, 8791 }, --Crimson Silk Vest / 37
-				{ 30, 12091 }, --White Wedding Dress / 35
-				{ 101, 12093 }, --Tuxedo Jacket / 35
-				{ 102, 439100 }, --Earthen Vest / 34
-				{ 103, 8784 }, --Green Silk Armor / 33
-				{ 104, 6692 }, --Robes of Arcana / 30
-				{ 105, 3859 }, --Azure Silk Vest / 30
-				{ 106, 6690 }, --Lesser Wizard's Robe / 27
-				{ 107, 7643 }, --Greater Adept's Robe / 23
-				{ 108, 8467 }, --White Woolen Dress / 22
-				{ 109, 2403 }, --Gray Woolen Robe / 21
-				{ 110, 7639 }, --Blue Overalls / 20
-				{ 111, 2399 }, --Green Woolen Vest / 17
-				{ 112, 2395 }, --Barbaric Linen Vest / 14
-				{ 113, 7633 }, --Blue Linen Robe / 14
-				{ 114, 7629 }, --Red Linen Vest / 12
-				{ 115, 7630 }, --Blue Linen Vest / 12
-				{ 116, 8465 }, --Simple Dress / 10
-				{ 117, 7624 }, --White Linen Robe / 10
-				{ 118, 2389 }, --Red Linen Robe / 10
-				{ 119, 7623 }, --Brown Linen Robe / 10
-				{ 120, 2385 }, --Brown Linen Vest / 8
-				{ 121, 26407 }, --Festival Suit / 1
-				{ 122, 26403 }, --Festival Dress / 1
+				{ 12, 461708 }, --Incandescent Mooncloth Robe
+				{ 13, 461747 }, --Incandescent Mooncloth Vest
+				{ 14, 18436 }, --Robe of Winter Night / 57
+				{ 15, 18416 }, --Ghostweave Vest / 55
+				{ 16, 18414 }, --Brightcloth Robe / 54
+				{ 17, 18408 }, --Cindercloth Vest / 52
+				{ 18, 18407 }, --Runecloth Tunic / 52
+				{ 19, 18406 }, --Runecloth Robe / 52
+				{ 20, 18404 }, --Frostweave Robe / 51
+				{ 21, 18403 }, --Frostweave Tunic / 51
+				{ 22, 12077 }, --Simple Black Dress / 47
+				{ 23, 12070 }, --Dreamweave Vest / 45
+				{ 24, 12069 }, --Cindercloth Robe / 45
+				{ 25, 12056 }, --Red Mageweave Vest / 43
+				{ 26, 12055 }, --Shadoweave Robe / 43
+				{ 27, 12050 }, --Black Mageweave Robe / 42
+				{ 28, 439086 }, --Black Mageweave Vest / 41
+				{ 29, 439085 }, --Crimson Silk Robe / 41
+				{ 30, 8770 }, --Robe of Power / 38
+				{ 101, 8791 }, --Crimson Silk Vest / 37
+				{ 102, 12091 }, --White Wedding Dress / 35
+				{ 103, 12093 }, --Tuxedo Jacket / 35
+				{ 104, 439100 }, --Earthen Vest / 34
+				{ 105, 8784 }, --Green Silk Armor / 33
+				{ 106, 6692 }, --Robes of Arcana / 30
+				{ 107, 3859 }, --Azure Silk Vest / 30
+				{ 108, 6690 }, --Lesser Wizard's Robe / 27
+				{ 109, 7643 }, --Greater Adept's Robe / 23
+				{ 110, 8467 }, --White Woolen Dress / 22
+				{ 111, 2403 }, --Gray Woolen Robe / 21
+				{ 112, 7639 }, --Blue Overalls / 20
+				{ 113, 2399 }, --Green Woolen Vest / 17
+				{ 114, 2395 }, --Barbaric Linen Vest / 14
+				{ 115, 7633 }, --Blue Linen Robe / 14
+				{ 116, 7629 }, --Red Linen Vest / 12
+				{ 117, 7630 }, --Blue Linen Vest / 12
+				{ 118, 8465 }, --Simple Dress / 10
+				{ 119, 7624 }, --White Linen Robe / 10
+				{ 120, 2389 }, --Red Linen Robe / 10
+				{ 121, 7623 }, --Brown Linen Robe / 10
+				{ 122, 2385 }, --Brown Linen Vest / 8
+				{ 123, 26407 }, --Festival Suit / 1
+				{ 124, 26403 }, --Festival Dress / 1
 			},
 		},
 		{
@@ -1382,26 +1386,27 @@ data["Tailoring"] = {
 				{ 2, 24092 }, --Bloodvine Leggings / 65
 				{ 3, 24901 }, --Runed Stygian Leggings / 63
 				{ 4, 18440 }, --Mooncloth Leggings / 58
-				{ 5, 18439 }, --Brightcloth Pants / 58
-				{ 6, 18441 }, --Ghostweave Pants / 58
-				{ 7, 18438 }, --Runecloth Pants / 57
-				{ 8, 18424 }, --Frostweave Pants / 56
-				{ 9, 18434 }, --Cindercloth Pants / 56
-				{ 10, 18419 }, --Felcloth Pants / 55
-				{ 11, 18421 }, --Wizardweave Leggings / 55
-				{ 12, 12060 }, --Red Mageweave Pants / 43
-				{ 13, 12052 }, --Shadoweave Pants / 42
-				{ 14, 439088 }, --Black Mageweave Leggings / 41
-				{ 15, 8799 }, --Crimson Silk Pantaloons / 39
-				{ 16, 12089 }, --Tuxedo Pants / 35
-				{ 17, 8758 }, --Azure Silk Pants / 28
-				{ 18, 3851 }, --Phoenix Pants / 25
-				{ 19, 12047 }, --Colorful Kilt / 24
-				{ 20, 3850 }, --Heavy Woolen Pants / 22
-				{ 21, 12046 }, --Simple Kilt / 15
-				{ 22, 3842 }, --Handstitched Linen Britches / 14
-				{ 23, 3914 }, --Brown Linen Pants / 10
-				{ 24, 12044 }, --Simple Linen Pants / 7
+				{ 5, 461752 }, --Incandescent Mooncloth Leggings
+				{ 6, 18439 }, --Brightcloth Pants / 58
+				{ 7, 18441 }, --Ghostweave Pants / 58
+				{ 8, 18438 }, --Runecloth Pants / 57
+				{ 9, 18424 }, --Frostweave Pants / 56
+				{ 10, 18434 }, --Cindercloth Pants / 56
+				{ 11, 18419 }, --Felcloth Pants / 55
+				{ 12, 18421 }, --Wizardweave Leggings / 55
+				{ 13, 12060 }, --Red Mageweave Pants / 43
+				{ 14, 12052 }, --Shadoweave Pants / 42
+				{ 15, 439088 }, --Black Mageweave Leggings / 41
+				{ 16, 8799 }, --Crimson Silk Pantaloons / 39
+				{ 17, 12089 }, --Tuxedo Pants / 35
+				{ 18, 8758 }, --Azure Silk Pants / 28
+				{ 19, 3851 }, --Phoenix Pants / 25
+				{ 20, 12047 }, --Colorful Kilt / 24
+				{ 21, 3850 }, --Heavy Woolen Pants / 22
+				{ 22, 12046 }, --Simple Kilt / 15
+				{ 23, 3842 }, --Handstitched Linen Britches / 14
+				{ 24, 3914 }, --Brown Linen Pants / 10
+				{ 25, 12044 }, --Simple Linen Pants / 7
 			}
 		},
 		{
@@ -1436,15 +1441,16 @@ data["Tailoring"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 24902 }, --Runed Stygian Belt / 63 / 315
 				{ 2, 22866 }, --Belt of the Archmage / 62 / 315
-				{ 3, 23662 }, --Wisdom of the Timbermaw / 58 / 305
-				{ 4, 18410 }, --Ghostweave Belt / 53 / 280
-				{ 5, 18402 }, --Runecloth Belt / 51 / 270
-				{ 6, 3864 }, --Star Belt / 40 / 220
-				{ 7, 439091 }, --Earthen Silk Belt / 39 / 215
-				{ 8, 3863 }, --Spider Belt / 36 / 200
-				{ 9, 439098 }, --Crimson Silk Belt / 35 / 195
-				{ 10, 8766 }, --Azure Silk Belt / 35 / 195
-				{ 11, 8776 }, --Linen Belt / 9 / 50
+				{ 3, 462282 }, --Embroidered Belt of the Archmage
+				{ 4, 23662 }, --Wisdom of the Timbermaw / 58 / 305
+				{ 5, 18410 }, --Ghostweave Belt / 53 / 280
+				{ 6, 18402 }, --Runecloth Belt / 51 / 270
+				{ 7, 3864 }, --Star Belt / 40 / 220
+				{ 8, 439091 }, --Earthen Silk Belt / 39 / 215
+				{ 9, 3863 }, --Spider Belt / 36 / 200
+				{ 10, 439098 }, --Crimson Silk Belt / 35 / 195
+				{ 11, 8766 }, --Azure Silk Belt / 35 / 195
+				{ 12, 8776 }, --Linen Belt / 9 / 50
 				{ 16, 435841 }, --Invoker's Cord
 			}
 		},
@@ -1460,19 +1466,20 @@ data["Tailoring"] = {
 		{
 			name = ALIL["Bag"],
 			[NORMAL_DIFF] = {
-				{ 1, 18455 }, --Bottomless Bag / 62 / 315
-				{ 2, 18445 }, --Mooncloth Bag / 60 / 315
-				{ 3, 18405 }, --Runecloth Bag / 52 / 275
-				{ 4, 12079 }, --Red Mageweave Bag / 35 / 250
-				{ 5, 12065 }, --Mageweave Bag / 35 / 240
-				{ 6, 6695 }, --Black Silk Pack / 25 / 205
-				{ 7, 6693 }, --Green Silk Pack / 25 / 195
-				{ 8, 3813 }, --Small Silk Pack / 25 / 170
-				{ 9, 6688 }, --Red Woolen Bag / 15 / 140
-				{ 10, 3758 }, --Green Woolen Bag / 15 / 120
-				{ 11, 3757 }, --Woolen Bag / 15 / 105
-				{ 12, 6686 }, --Red Linen Bag / 5 / 95
-				{ 13, 3755 }, --Linen Bag / 5 / 70
+				{ 1, 463972 }, --Bottomless Bag / 62 / 315
+				{ 2, 461727 }, --Leather-Reinforced Runecloth Bag
+				{ 3, 18445 }, --Mooncloth Bag / 60 / 315
+				{ 4, 18405 }, --Runecloth Bag / 52 / 275
+				{ 5, 12079 }, --Red Mageweave Bag / 35 / 250
+				{ 6, 12065 }, --Mageweave Bag / 35 / 240
+				{ 7, 6695 }, --Black Silk Pack / 25 / 205
+				{ 8, 6693 }, --Green Silk Pack / 25 / 195
+				{ 9, 3813 }, --Small Silk Pack / 25 / 170
+				{ 10, 6688 }, --Red Woolen Bag / 15 / 140
+				{ 11, 3758 }, --Green Woolen Bag / 15 / 120
+				{ 12, 3757 }, --Woolen Bag / 15 / 105
+				{ 13, 6686 }, --Red Linen Bag / 5 / 95
+				{ 14, 3755 }, --Linen Bag / 5 / 70
 				{ 16, 27725 }, --Satchel of Cenarius / 65 / 315
 				{ 17, 27724 }, --Cenarion Herb Bag / 55 / 290
 				{ 19, 27660 }, --Big Bag of Enchantment / 65 / 315

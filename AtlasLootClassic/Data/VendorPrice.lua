@@ -322,6 +322,11 @@ else
      [227810] = "19048:1:12360:1:21383:25", --Dense Timbermaw Boots
      [227862] = "15802:1:14342:1:21383:25", --Incandescent Mooncloth Boots
      [227808] = "19050:1:14342:1:21383:25", --Rugged Mantle of the Timbermaw
+     -- Lost Goods Vendor
+     [220589] = "224409:1", -- Serpent's Striker (Slow)
+     [224409] = "220589:1", -- Serpent's Striker (Fast)
+     -- Fluorescent Green Mechanostrider
+     [228746] = "money:8000000:1:13325", --Fluorescent Green Mechanostrider (100% Riding Speed)
     }
 end
 

@@ -862,6 +862,14 @@ data["Mounts"] = {
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	CorrespondingFields = private.MOUNTS,
 	items = {
+		--[228746] = "money:8000000:1:13325", --Fluorescent Green Mechanostrider (100% Riding Speed)
+		{ -- Drops
+			name = AL["Seasonal"],
+			[NORMAL_DIFF] = {
+				{ 1, 13325 }, -- Fluorescent Green Mechanostrider
+				{ 2, 228746 }, -- Fluorescent Green Mechanostrider (100% Riding Speed)
+			},
+		},
 		{
 			name = AL["Faction Mounts"],
 			[ALLIANCE_DIFF] = {
@@ -940,6 +948,8 @@ data["Mounts"] = {
 				{ 1, 13335 }, -- Deathcharger's Reins
 				{ 3, 19872 }, -- Swift Razzashi Raptor
 				{ 5, 19902 }, -- Swift Zulian Tiger
+				{ 7, 13325 }, -- Fluorescent Green Mechanostrider
+				{ 8, 228746 }, -- Fluorescent Green Mechanostrider (100% Riding Speed)
 			},
 		},
 		{ -- Reputation
@@ -2637,6 +2647,24 @@ data["Wild Offerings"] = {
 				{ 5, 223193 }, -- Crown of the Dreamweaver
 				{ 6, 223196 }, -- Godslayer's Greaves
 				{ 7, 221491 }, -- Shadowtooth Bag
+			},
+		},
+	},
+}
+
+data["Purveyor of Lost Goods"] = {
+	name = AL["Purveyor of Lost Goods"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	ContentPhase = 3,
+	items = {
+		{
+			name = AL["Replacements"],
+			[NORMAL_DIFF] = {
+				{ 1, 224409 }, -- Serpent's Striker (Slow)
+				{ 2, 220589 }, -- Serpent's Striker (Fast/Original)
 			},
 		},
 	},
