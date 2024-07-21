@@ -326,7 +326,7 @@ else
      [220589] = "224409:1", -- Serpent's Striker (Slow)
      [224409] = "220589:1", -- Serpent's Striker (Fast)
      -- Fluorescent Green Mechanostrider
-     [228746] = "money:8000000:1:13325", --Fluorescent Green Mechanostrider (100% Riding Speed)
+     [228746] = "money:8000000:13325:1", --Fluorescent Green Mechanostrider (100% Riding Speed)
     }
 end
 
