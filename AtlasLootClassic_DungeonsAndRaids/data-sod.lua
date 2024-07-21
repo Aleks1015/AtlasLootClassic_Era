@@ -3052,7 +3052,7 @@ data["UpperBlackrockSpire"] = {
 			AtlasMapBossID = 6,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  12590 }, -- Felstriker
+				{ 1,  228757 }, -- Felstriker
 				{ 3,  226768 }, -- Spaulders of Valor
 				{ 5,  228604 }, -- Eye of Rend
 				{ 6,  228605 }, -- Bonespike Shoulder
