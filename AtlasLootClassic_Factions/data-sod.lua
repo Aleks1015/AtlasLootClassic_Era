@@ -115,6 +115,7 @@ data["ArgentDawn"] = {
 				{ 5,  19442 }, -- Formula: Powerful Anti-Venom
 				{ 6,  19446 }, -- Formula: Enchant Bracer - Mana Regeneration
 				{ 7, 13482 }, -- Recipe: Transmute Air to Fire
+				{ 9, 227813 }, -- Recipe: Transmute Air to Fire
 				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 75), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 75) }, -- Insignia of the Dawn / Crusade
 				{ 18,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 20), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 20) }, -- Insignia of the Dawn / Crusade
 				{ 20, "INV_Box_02", nil, AL["Upgrades"], nil },
