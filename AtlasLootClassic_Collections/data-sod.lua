@@ -2835,3 +2835,50 @@ data["Tarnished Undermine Real"] = {
 		},
 	},
 }
+
+data["Firelands Ember"] = {
+	name = AL["Tarnished Undermine Real"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	ContentPhase = 4,
+	items = {
+		{
+		name = AL["Rewards"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{  1, 227831 }, -- Fine Flarecore Robe
+				{  2, 228927 }, -- Tempered Dark Iron Boots
+				{  3, 228928 }, -- Tempered Dark Iron Boots
+				{  4, 228929 }, -- Tempered Dark Iron Boots
+				{  5, 227841 }, -- Tempered Dark Iron Boots
+				{  6, 228924 }, -- Tempered Dark Iron Boots
+				{  7, 227822 }, -- Thick Corehound Boots
+				{  8, 228925 }, -- Tempered Dark Iron Boots
+				{  9, 227829 }, -- Hardened Black Dragonscale Boots
+				{  10, 228926 }, -- Tempered Dark Iron Boots
+				{  11, 227823 }, -- Fine Flarecore Gloves
+				{  12, 227835 }, -- Tempered Dark Iron Gauntlets
+				{  13, 227838 }, -- Shining Chromatic Gauntlets
+				{  14, 227824 }, -- Tempered Dark Iron Helm
+				{  15, 227821 }, -- Flamekissed Molten Helm
+				{  16, 227839 }, -- Fine Flarecore Leggings
+				{  17, 227836 }, -- Tempered Dark Iron Leggings
+				{  18, 227826 }, -- Dark Iron Flame Reaver
+				{  19, 227825 }, -- Molten Dark Iron Destroyer
+				{  20, 227832 }, -- Tempered Black Amnesty
+				{  21, 227842 }, -- Ebon Fist
+				{  22, 227840 }, -- Implacable Blackguard
+				{  23, 227834 }, -- Molten Chain Shoulders
+				{  24, 227830 }, -- Fine Flarecore Mantle
+				{  25, 227833 }, -- Glaive of Obsidian Fury
+				{  26, 227828 }, -- Lavawalker Belt
+				{  27, 227827 }, -- Molten Chain Girdle
+				{  28, 227837 }, -- Thick Corehound Belt
+				{  29, 227820 }, -- Tempered Dark Iron Bracers
+			},
+		},
+		PVP_RANKS,
+	},
+}
