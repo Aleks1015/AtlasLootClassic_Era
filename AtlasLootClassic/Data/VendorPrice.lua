@@ -274,6 +274,9 @@ else
      [226769] = "tarnishedunderminereal:50",
      [226770] = "tarnishedunderminereal:50",
      [226771] = "tarnishedunderminereal:25",
+     [220599] = "tarnishedunderminereal:50",
+     [220597] = "tarnishedunderminereal:50",
+     [220598] = "tarnishedunderminereal:50",
      --Blackrock Eruption / Firelands Ember
      [227831] = "19156:1:firelandsember:20:17011:1",
      [228927] = "20039:1:firelandsember:15:17010:1",
@@ -304,7 +307,7 @@ else
      [227827] = "16989:1:firelandsember:15:17010:1",
      [227837] = "19162:1:firelandsember:15:17010:1",
      [227820] = "17014:1:firelandsember:10:17010:1",
-     -- Argent Dawn Upgrades
+     -- Argent Dawn Upgrades / New Items
      [227859] = "12843:4:12735:3", -- Shimmering Dawnbringer Shoulders
      [227888] = "12843:4:12753:3", -- Argent Elite Shoulders
      [227818] = "12843:4:12753:3", -- Glowing Mantle of the Dawn
@@ -312,6 +315,7 @@ else
      [227816] = "12843:3:12753:2", -- Argent Elite Boots
      [227815] = "12843:3:12753:2", -- Fine Dawn Treaders
      [227814] = "12843:2:12735:2", -- Radiant Girdle of the Dawn
+     [227813] = "13180:1", --Drinkable Stratholme Holy Water
      -- Timbermaw Upgrades
      [227804] = "15065:1:15407:2:21383:30", --Dire Warbear Woolies
      [227803] = "15064:1:15407:2:21383:30", --Dire Warbear Harnessing
@@ -326,7 +330,7 @@ else
      [220589] = "224409:1", -- Serpent's Striker (Slow)
      [224409] = "220589:1", -- Serpent's Striker (Fast)
      -- Fluorescent Green Mechanostrider
-     [228746] = "money:8000000:1:13325", --Fluorescent Green Mechanostrider (100% Riding Speed)
+     [228746] = "money:8000000:13325:1", --Fluorescent Green Mechanostrider (100% Riding Speed)
     }
 end
 

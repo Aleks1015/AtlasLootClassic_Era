@@ -115,6 +115,7 @@ data["ArgentDawn"] = {
 				{ 5,  19442 }, -- Formula: Powerful Anti-Venom
 				{ 6,  19446 }, -- Formula: Enchant Bracer - Mana Regeneration
 				{ 7, 13482 }, -- Recipe: Transmute Air to Fire
+				{ 9, 227813 }, -- Recipe: Transmute Air to Fire
 				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 75), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 75) }, -- Insignia of the Dawn / Crusade
 				{ 18,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 20), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 20) }, -- Insignia of the Dawn / Crusade
 				{ 20, "INV_Box_02", nil, AL["Upgrades"], nil },
@@ -492,6 +493,7 @@ data["HydraxianWaterlords"] = {
 				{ 3, 22698 }, -- Pattern: Icy Scale Bracers
 				{ 4, 22705 }, -- Plans: Icebane Bracers
 				{ 5, 22695 }, -- Pattern: Polar Bracers
+				{ 7, 227925 }, -- Beacon of Hydraxis
 				{ 17, 22754 }, -- Eternal Quintessence
 			},
 		},
@@ -748,9 +750,8 @@ data["Emerald Wardens"] = {
 			name = ALIL["Honored"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep6" },
-				{ 2, 213407 }, -- Catnip
-				{ 3, 221193 }, --Emerald Ring
-				{ 4, 224006 }, --Emerald Ring
+				{ 2, 221193 }, --Emerald Ring
+				{ 3, 224006 }, --Emerald Ring
 			},
 		},
 		{ -- Friendly2
@@ -825,11 +826,10 @@ data["Emerald Wardens"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep4" },
 				{ 2, 212568 }, -- Wolfshead Trophy
-				{ 3, 223912 }, -- Purification Potion
-				{ 4, 223913 }, -- Major Healing Potion
-				{ 5, 223914 }, -- Greater Healing Potion
-
-
+				{ 3, 213407 }, -- Catnip
+				{ 5, 223912 }, -- Purification Potion
+				{ 6, 223913 }, -- Major Healing Potion
+				{ 7, 223914 }, -- Greater Healing Potion
 			},
 		},
 	},

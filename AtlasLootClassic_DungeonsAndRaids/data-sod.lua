@@ -2392,7 +2392,6 @@ data["BlackrockDepths"] = {
 				{ 3,  11810 }, -- Force of Will
 				{ 4,  227940 }, -- Lord General's Sword
 				{ 5,  227948 }, -- Angerforge's Battle Axe
-				{ 6,  11841 }, -- Senior Designer's Pantaloons
 				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
@@ -5020,8 +5019,8 @@ data["MoltenCore"] = {
 	AtlasMapID = "MoltenCore",
 	AtlasMapFile = "CL_MoltenCore",
 	AtlasMapFile_AL = "MoltenCore",
-	ContentType = RAID30_CONTENT,
-	LoadDifficulty = RAID40_DIFF,
+	ContentType = RAID20_CONTENT,
+	LoadDifficulty = RAID20_DIFF,
 	ContentPhase = 4,
 	items = {
 		{	--MCLucifron
