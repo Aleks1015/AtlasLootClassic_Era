@@ -3175,8 +3175,9 @@ data["UpperBlackrockSpire"] = {
 
 data["DemonFallCanyon"] = {
 	name = AL["Demon Fall Canyon"],
-	MapID = 1440,
+	MapID = 15475,
 	InstanceID = 2784,
+	SubAreaIDs = { 15540 },
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	ContentPhase = 4,
