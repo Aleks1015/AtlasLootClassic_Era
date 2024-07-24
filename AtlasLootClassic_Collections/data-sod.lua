@@ -2696,7 +2696,10 @@ data["Tarnished Undermine Real"] = {
 				{16, 228187 }, -- Stick of the South Sea
 				{18, 228432 }, -- Whistle of the Beast
 				{19, 227990 }, -- Hand of Injustice
-				{21, 228189 }, -- Gift of Gob 			
+				{21, 228189 }, -- Gift of Gob
+				{23, 220599 }, -- Drakestone of the Blood Prophet
+				{24, 220597 }, -- Drakestone of the Dream Harbinger
+				{25, 220598 }, -- Drakestone of the Nightmare Harbinger
 			},
 		},
 		{

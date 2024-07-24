@@ -274,6 +274,9 @@ else
      [226769] = "tarnishedunderminereal:50",
      [226770] = "tarnishedunderminereal:50",
      [226771] = "tarnishedunderminereal:25",
+     [220599] = "tarnishedunderminereal:50",
+     [220597] = "tarnishedunderminereal:50",
+     [220598] = "tarnishedunderminereal:50",
      --Blackrock Eruption / Firelands Ember
      [227831] = "19156:1:firelandsember:20:17011:1",
      [228927] = "20039:1:firelandsember:15:17010:1",
