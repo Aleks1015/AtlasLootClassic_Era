@@ -2840,7 +2840,7 @@ data["Tarnished Undermine Real"] = {
 }
 
 data["Firelands Ember"] = {
-	name = AL["Tarnished Undermine Real"],
+	name = AL["Firelands Ember"],
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
