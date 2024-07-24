@@ -750,9 +750,8 @@ data["Emerald Wardens"] = {
 			name = ALIL["Honored"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep6" },
-				{ 2, 213407 }, -- Catnip
-				{ 3, 221193 }, --Emerald Ring
-				{ 4, 224006 }, --Emerald Ring
+				{ 2, 221193 }, --Emerald Ring
+				{ 3, 224006 }, --Emerald Ring
 			},
 		},
 		{ -- Friendly2
@@ -827,11 +826,10 @@ data["Emerald Wardens"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep4" },
 				{ 2, 212568 }, -- Wolfshead Trophy
-				{ 3, 223912 }, -- Purification Potion
-				{ 4, 223913 }, -- Major Healing Potion
-				{ 5, 223914 }, -- Greater Healing Potion
-
-
+				{ 3, 213407 }, -- Catnip
+				{ 5, 223912 }, -- Purification Potion
+				{ 6, 223913 }, -- Major Healing Potion
+				{ 7, 223914 }, -- Greater Healing Potion
 			},
 		},
 	},
