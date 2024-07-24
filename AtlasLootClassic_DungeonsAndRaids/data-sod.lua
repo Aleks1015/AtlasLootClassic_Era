@@ -5019,8 +5019,8 @@ data["MoltenCore"] = {
 	AtlasMapID = "MoltenCore",
 	AtlasMapFile = "CL_MoltenCore",
 	AtlasMapFile_AL = "MoltenCore",
-	ContentType = RAID30_CONTENT,
-	LoadDifficulty = RAID40_DIFF,
+	ContentType = RAID20_CONTENT,
+	LoadDifficulty = RAID20_DIFF,
 	ContentPhase = 4,
 	items = {
 		{	--MCLucifron
