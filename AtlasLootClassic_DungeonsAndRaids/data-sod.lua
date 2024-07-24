@@ -3175,8 +3175,8 @@ data["UpperBlackrockSpire"] = {
 
 data["DemonFallCanyon"] = {
 	name = AL["Demon Fall Canyon"],
-	MapID = 15475,
-	InstanceID = 15540,
+	MapID = 1440,
+	InstanceID = 2784,
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	ContentPhase = 4,
@@ -3185,8 +3185,7 @@ data["DemonFallCanyon"] = {
 		{ -- Grimroot
 			name = AL["Grimroot"],
 			npcID = 226923,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{121733}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -3201,8 +3200,7 @@ data["DemonFallCanyon"] = {
 		{ --Diathorus the Seeker
 			name = AL["Diathorus the Seeker"],
 			npcID = 227019,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{10691}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -3218,8 +3216,7 @@ data["DemonFallCanyon"] = {
 		{ --The Destructor's Wraith
 			name = AL["The Destructor's Wraith"],
 			npcID = 228022,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{121410}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -3235,8 +3232,7 @@ data["DemonFallCanyon"] = {
 		{ --Zilbagob
 			name = AL["Zilbagob"],
 			npcID = 226922,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{121881}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -3251,8 +3247,7 @@ data["DemonFallCanyon"] = {
 		{ --Pyranis
 			name = AL["Pyranis"],
 			npcID = 227140,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{227140}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -3267,8 +3262,7 @@ data["DemonFallCanyon"] = {
 		{ --Hellscream's Phantom
 			name = AL["Hellscream's Phantom"],
 			npcID = 227028,
-			Level = 58,
-			--SubAreaID = 0,
+			Level = 62,
 			DisplayIDs = {{121966}},
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
