@@ -5337,6 +5337,7 @@ data["MoltenCore"] = {
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 228128 }, -- Hammer of The Black Anvil
+				{ 2, 228166 }, -- Key to the City
 				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
 				{ 17, 228508 }, -- Hammer of The Black Anvil
 			},
