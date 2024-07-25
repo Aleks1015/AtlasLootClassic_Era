@@ -1699,7 +1699,6 @@ else
 		[18518] = {3,300,22927}, -- Pattern: Hide of the Wild
 		[18519] = {3,300,22928}, -- Pattern: Shifting Cloak
 		[18587] = {9,265,22999}, -- Goblin Jumper Cables XL
-		[18592] = {2,300,21161}, -- Plans: Sulfuron Hammer
 		[18594] = {9,275,23008}, -- Powerful Seaforium Charge
 		[18634] = {9,260,23131}, -- Gyrofreeze Ice Reflector
 		[18637] = {9,275,23064}, -- Major Recombobulator
