@@ -3177,7 +3177,7 @@ data["DemonFallCanyon"] = {
 	name = AL["Demon Fall Canyon"],
 	MapID = 15475,
 	InstanceID = 2784,
-	SubAreaIDs = { 15540 },
+	SubAreaIDs = { 125548 },
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	ContentPhase = 4,
@@ -3196,22 +3196,6 @@ data["DemonFallCanyon"] = {
 				{ 4,  228082 }, -- Warsong Axe
 				{ 5,  228079 }, -- Cloak of Leaves
 				{ 16,  226404 }, -- Tarnished Undermine Real
-			},
-		},
-		{ --Diathorus the Seeker
-			name = AL["Diathorus the Seeker"],
-			npcID = 227019,
-			Level = 62,
-			DisplayIDs = {{10691}},
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1,  228104 }, -- Robes of Elune
-				{ 2,  228094 }, -- Dreadlord's Blade
-				{ 3,  228107 }, -- Fallen Huntress' Longbow
-				{ 4,  228106 }, -- Shield of Life and Death
-				{ 5,  228103 }, -- Nathrezim's Greaves
-				{ 16,  226404 }, -- Tarnished Undermine Real
-				{ 18, 18665 }, -- The Eye of Shadow
 			},
 		},
 		{ --The Destructor's Wraith
@@ -3250,6 +3234,7 @@ data["DemonFallCanyon"] = {
 			npcID = 227140,
 			Level = 62,
 			DisplayIDs = {{227140}},
+			SubAreaID = 125548,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1,  228093 }, -- Dark Heart of Darkness
@@ -3258,6 +3243,23 @@ data["DemonFallCanyon"] = {
 				{ 4,  228091 }, -- Thorned Boots
 				{ 5,  228089 }, -- Woodcarved Moonstalker
 				{ 16,  226404 }, -- Tarnished Undermine Real
+			},
+		},
+		{ --Diathorus the Seeker
+			name = AL["Diathorus the Seeker"],
+			npcID = 227019,
+			Level = 62,
+			DisplayIDs = {{10691}},
+			SubAreaID = 125548,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  228104 }, -- Robes of Elune
+				{ 2,  228094 }, -- Dreadlord's Blade
+				{ 3,  228107 }, -- Fallen Huntress' Longbow
+				{ 4,  228106 }, -- Shield of Life and Death
+				{ 5,  228103 }, -- Nathrezim's Greaves
+				{ 16,  226404 }, -- Tarnished Undermine Real
+				{ 18, 18665 }, -- The Eye of Shadow
 			},
 		},
 		{ --Hellscream's Phantom
@@ -3283,7 +3285,7 @@ data["DemonFallCanyon"] = {
 data["DireMaulEast"] = {
 	name = AL["Dire Maul East"],
 	MapID = 2557,
-	--InstanceID = 429,
+	InstanceID = 429,
 	SubAreaIDs = { 34776, 33730 },
 	AtlasModule = ATLAS_MODULE_NAME,
 	AtlasMapID = "DireMaul",
@@ -3416,7 +3418,7 @@ data["DireMaulEast"] = {
 data["DireMaulWest"] = {
 	name = AL["Dire Maul West"],
 	MapID = 2557,
-	--InstanceID = 429,
+	InstanceID = 429,
 	SubAreaIDs = { 33748, 33749, 33750, 33710 },
 	AtlasModule = ATLAS_MODULE_NAME,
 	AtlasMapID = "DireMaul",
@@ -3596,7 +3598,7 @@ data["DireMaulWest"] = {
 data["DireMaulNorth"] = {
 	name = AL["Dire Maul North"],
 	MapID = 2557,
-	--InstanceID = 429,
+	InstanceID = 429,
 	SubAreaIDs = { 33774, 33775 },
 	AtlasModule = ATLAS_MODULE_NAME,
 	AtlasMapID = "DireMaulNorth",
@@ -4814,6 +4816,8 @@ data["WorldBosses"] = {
 		{ -- AAzuregos
 			name = AL["Azuregos"],
 			AtlasMapFile = "Azuregos",
+			--MapID 15532 (StormCliffs)
+			--InstanceID 2791 (Storm Cliffs)
 			npcID = 6109,
 			Level = 999,
 			ContentPhase = 4,
@@ -4843,6 +4847,8 @@ data["WorldBosses"] = {
 		{ -- KKazzak
 			name = AL["Lord Kazzak"],
 			AtlasMapFile = "LordKazzak",
+			--MapID 15531 (TheTaintedScar)
+			--InstanceID 2789 (The Tainted Scar)
 			npcID = 12397,
 			Level = 999,
 			ContentPhase = 4,
