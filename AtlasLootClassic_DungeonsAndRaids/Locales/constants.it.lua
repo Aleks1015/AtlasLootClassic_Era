@@ -270,6 +270,13 @@ AL["Wolf Master Nandos"] = "Signore dei Lupi Nandos"
 AL["Wushoolay"] = "Wushoolay"
 AL["Zerillis"] = "Zerillis"
 AL["Zevrim Thornhoof"] = "Zevrim Zamparossa"
+AL["Demon Fall Canyon"] = "Demon Fall Canyon"
+AL["Grimroot"] = "Grimroot"
+AL["The Destructor's Wraith"] = "Destructor's Wraith"
+AL["Zilbagob"] = "Zilbagob"
+AL["Pyranis"] = "Pyranis"
+AL["Diathorus the Seeker"] = "Diathorus the Seeker"
+AL["Hellscream's Phantom"] = "Hellscream's Phantom"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC

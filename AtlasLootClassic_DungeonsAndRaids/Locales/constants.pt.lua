@@ -342,6 +342,13 @@ AL["Wushoolay"] = "Vuxulai"
 AL["Ysondre"] = "Ysondra"
 AL["Zerillis"] = "Zerillis"
 AL["Zevrim Thornhoof"] = "Zevrim Cascardo"
+AL["Demon Fall Canyon"] = "Cânion do Demônio Caído"
+AL["Grimroot"] = "Broterror"
+AL["The Destructor's Wraith"] = "Aparição do Destruidor"
+AL["Zilbagob"] = "Zilbagob"
+AL["Pyranis"] = "Pyranis"
+AL["Diathorus the Seeker"] = "Diathorus, o Inquisidor"
+AL["Hellscream's Phantom"] = "Fantasma de Grito Infernal"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC

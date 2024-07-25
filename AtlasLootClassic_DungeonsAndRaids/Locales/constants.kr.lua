@@ -343,6 +343,13 @@ AL["Wushoolay"] = "우슬레이"
 AL["Ysondre"] = "이손드레"
 AL["Zerillis"] = "제릴리스"
 AL["Zevrim Thornhoof"] = "제브림 쏜후프"
+AL["Demon Fall Canyon"] = "악마벼락 협곡"
+AL["Grimroot"] = "암울뿌리"
+AL["The Destructor's Wraith"] = "파괴자의 망령"
+AL["Zilbagob"] = "질바고브"
+AL["Pyranis"] = "피라니스"
+AL["Diathorus the Seeker"] = "수색자 디아토루스"
+AL["Hellscream's Phantom"] = "헬스크림의 악령"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC
