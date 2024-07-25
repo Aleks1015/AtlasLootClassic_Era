@@ -3181,7 +3181,7 @@ data["DemonFallCanyon"] = {
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	ContentPhase = 4,
-	LevelRange = {55, 57, 60},
+	LevelRange = {58, 59, 60},
 	items = {
 		{ -- Grimroot
 			name = AL["Grimroot"],
