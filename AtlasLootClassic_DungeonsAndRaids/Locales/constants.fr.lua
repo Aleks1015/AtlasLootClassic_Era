@@ -339,10 +339,18 @@ AL["Weaver"] = "Tisserand"
 AL["Witch Doctor Zum'rah"] = "Sorcier-docteur Zum'rah"
 AL["Wolf Master Nandos"] = "Maître-loup Nandos"
 AL["World Bosses"] = "Boss Mondiaux"
+AL["World Boss"] = "Boss Mondiaux"
 AL["Wushoolay"] = "Wushoolay"
 AL["Ysondre"] = "Ysondre"
 AL["Zerillis"] = "Zerillis"
 AL["Zevrim Thornhoof"] = "Zevrim Sabot-de-ronce"
+AL["Demon Fall Canyon"] = "Canyon de la Malechute"
+AL["Grimroot"] = "Tristeracine"
+AL["The Destructor's Wraith"] = "Âme en peine du Destructeur"
+AL["Zilbagob"] = "Zilbagob"
+AL["Pyranis"] = "Pyranis"
+AL["Diathorus the Seeker"] = "Diathorus le Chercheur"
+AL["Hellscream's Phantom"] = "Fantôme de Hurlenfer"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC

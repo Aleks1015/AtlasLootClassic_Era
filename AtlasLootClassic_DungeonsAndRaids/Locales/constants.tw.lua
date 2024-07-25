@@ -337,10 +337,18 @@ AL["Weaver"] = "德拉維沃爾"
 AL["Witch Doctor Zum'rah"] = "巫醫·祖穆拉恩"
 AL["Wolf Master Nandos"] = "狼王南杜斯"
 AL["World Bosses"] = "世界王"
+AL["World Boss"] = "世界王"
 AL["Wushoolay"] = "烏蘇雷"
 AL["Ysondre"] = "伊索德雷"
 AL["Zerillis"] = "澤雷利斯"
 AL["Zevrim Thornhoof"] = "瑟雷姆·刺蹄"
+AL["Demon Fall Canyon"] = "屠魔峽谷"
+AL["Grimroot"] = "獰根"
+AL["The Destructor's Wraith"] = "毀滅者的怨靈"
+AL["Zilbagob"] = "毀滅者的怨靈"
+AL["Pyranis"] = "毀滅者的怨靈"
+AL["Diathorus the Seeker"] = "『追尋者』迪亞索魯斯"
+AL["Hellscream's Phantom"] = "地獄吼的幻影"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC
