@@ -4806,53 +4806,23 @@ data["Stratholme"] = {
 -- ########################
 -- Raids
 -- ########################
-data["WorldBosses"] = {
-	name = AL["World Bosses"],
-	AtlasMapFile = "Azuregos",
+
+--Lord Kazzak (Instanced)
+data["TheTaintedScar"] = {
+	name = AL["World Boss"] .. " - " .. AL["Lord Kazzak"],
+	MapID = 15531,
+	InstanceID = 2789,
+	AtlasModule = ATLAS_MODULE_NAME,
+	AtlasMapFile = "LordKazzak",
 	ContentType = RAID30_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
+	LoadDifficulty = RAID40_DIFF,
 	ContentPhase = 4,
 	items = {
-		{ -- AAzuregos
-			name = AL["Azuregos"],
-			AtlasMapFile = "Azuregos",
-			--MapID 15532 (StormCliffs)
-			--InstanceID 2791 (Storm Cliffs)
-			npcID = 6109,
-			Level = 999,
-			ContentPhase = 4,
-			DisplayIDs = {{11460}},
-			AtlasMapBossID = 1,
-			[NORMAL_DIFF] = {
-				{ 1,  228385 }, -- Crystal Adorned Crown
-				{ 2,  228389 }, -- Drape of Benediction
-				{ 3,  228383 }, -- Puissant Cape
-				{ 4,  228340 }, -- Unmelting Ice Girdle
-				{ 5,  228345 }, -- Leggings of Arcane Supremacy
-				{ 6,  228384 }, -- Snowblind Shoes
-				{ 7,  228381 }, -- Cold Snap
-				{ 8,  228382 }, -- Fang of the Mystics
-				{ 9,  228349 }, -- Eskhandar's Left Claw
-				{ 10, 228347 }, -- Typhoon
-				{ 16, 18704 }, -- Mature Blue Dragon Sinew
-				{ 18, 11938 }, -- Sack of Gems
-				-- Hidden items
-				{ 0, 17962 }, -- Blue Sack of Gems
-				{ 0, 17963 }, -- Green Sack of Gems
-				{ 0, 17964 }, -- Gray Sack of Gems
-				{ 0, 17965 }, -- Yellow Sack of Gems
-				{ 0, 17969 }, -- Red Sack of Gems
-			},
-		},
 		{ -- KKazzak
 			name = AL["Lord Kazzak"],
-			AtlasMapFile = "LordKazzak",
-			--MapID 15531 (TheTaintedScar)
-			--InstanceID 2789 (The Tainted Scar)
-			npcID = 12397,
+			npcID = 230302,
 			Level = 999,
-			ContentPhase = 4,
-			DisplayIDs = {{12449}},
+			DisplayIDs = {{122332}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  228353 }, -- Infernal Headcage
@@ -4875,12 +4845,75 @@ data["WorldBosses"] = {
 				{ 0, 17969 }, -- Red Sack of Gems
 			},
 		},
+	}
+}
+
+--Azuregos (Instanced)
+data["StormCliffs"] = {
+	name = AL["World Boss"] .. " - " .. AL["Azuregos"],
+	MapID = 15532,
+	InstanceID = 2791,
+	AtlasModule = ATLAS_MODULE_NAME,
+	AtlasMapFile = "Azuregos",
+	ContentType = RAID30_CONTENT,
+	LoadDifficulty = RAID40_DIFF,
+	ContentPhase = 4,
+	items = {
+		{ -- AAzuregos
+			name = AL["Azuregos"],
+			npcID = 6109,
+			Level = 999,
+			DisplayIDs = {{11460}},
+			AtlasMapBossID = 1,
+			[NORMAL_DIFF] = {
+				{ 1,  228385 }, -- Crystal Adorned Crown
+				{ 2,  228389 }, -- Drape of Benediction
+				{ 3,  228383 }, -- Puissant Cape
+				{ 4,  228340 }, -- Unmelting Ice Girdle
+				{ 5,  228345 }, -- Leggings of Arcane Supremacy
+				{ 6,  228384 }, -- Snowblind Shoes
+				{ 7,  228381 }, -- Cold Snap
+				{ 8,  228382 }, -- Fang of the Mystics
+				{ 9,  228349 }, -- Eskhandar's Left Claw
+				{ 10, 228347 }, -- Typhoon
+				{ 11, 18704 }, -- Mature Blue Dragon Sinew
+				{ 13, 11938 }, -- Sack of Gems
+				{ 16, 228318 }, -- Pattern: Incandescent Mooncloth Leggings
+				{ 17, 228316 }, -- Pattern: Incandescent Mooncloth Vest
+				{ 18, 228993 }, -- Pattern: Bottomless Bag
+				{ 19, 228317 }, -- Pattern: Incandescent Mooncloth Circlet
+				{ 21, 228313 }, -- Plans: Tempest Gauntlets
+				{ 22, 228250 }, -- Plans: Stronger-hold Gauntlets
+				{ 23, 228314 }, -- Plans: Warcrest of the Great Chief
+				{ 24, 228315 }, -- Plans: Sageblade of the Archmagus
+				{ 25, 228310 }, -- Plans: Hardened Frostguard
+				{ 26, 228117 }, -- Plans: Refined Arcanite Champion
+				{ 27, 227905 }, -- Plans: Skyrider's Masterwork Stormhammer
+				{ 28, 228305 }, -- Plans: Refined Hammer of the Titans
+				{ 29, 228114 }, -- Plans: Refined Arcanite Reaper
+				-- Hidden items
+				{ 0, 17962 }, -- Blue Sack of Gems
+				{ 0, 17963 }, -- Green Sack of Gems
+				{ 0, 17964 }, -- Gray Sack of Gems
+				{ 0, 17965 }, -- Yellow Sack of Gems
+				{ 0, 17969 }, -- Red Sack of Gems
+			},
+		},
+	}
+}
+
+--Four Dragons (Instanced? Phase 6)
+data["WorldBosses"] = {
+	name = AL["World Bosses"],
+	AtlasMapFile = "FourDragons",
+	ContentType = RAID30_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 6,
+	items = {
 		{ -- DLethon
 			name = AL["Lethon"],
-			AtlasMapFile = "FourDragons",
 			npcID = 14888,
 			Level = 999,
-			ContentPhase = 6,
 			DisplayIDs = {{15365}},
 			[NORMAL_DIFF] = {
 				{ 1,  20628 }, -- Deviate Growth Cap
@@ -4912,10 +4945,8 @@ data["WorldBosses"] = {
 		},
 		{ -- DEmeriss
 			name = AL["Emeriss"],
-			AtlasMapFile = "FourDragons",
 			npcID = 14889,
 			Level = 999,
-			ContentPhase = 6,
 			DisplayIDs = {{15366}},
 			[NORMAL_DIFF] = {
 				{ 1,  20623 }, -- Circlet of Restless Dreams
@@ -4945,10 +4976,8 @@ data["WorldBosses"] = {
 		},
 		{ -- DTaerar
 			name = AL["Taerar"],
-			AtlasMapFile = "FourDragons",
 			npcID = 14890,
 			Level = 999,
-			ContentPhase = 6,
 			DisplayIDs = {{15363}, {15367}},
 			[NORMAL_DIFF] = {
 				{ 1,  20633 }, -- Unnatural Leather Spaulders
@@ -4978,10 +5007,8 @@ data["WorldBosses"] = {
 		},
 		{ -- DYsondre
 			name = AL["Ysondre"],
-			AtlasMapFile = "FourDragons",
 			npcID = 14887,
 			Level = 999,
-			ContentPhase = 6,
 			DisplayIDs = {{15364}},
 			[NORMAL_DIFF] = {
 				{ 1,  20637 }, -- Acid Inscribed Pauldrons
