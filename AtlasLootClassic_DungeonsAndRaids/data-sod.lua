@@ -4552,7 +4552,7 @@ data["Stratholme"] = {
 				{ 4,  18722 }, -- Death Grips
 				{ 5,  23198 }, -- Idol of Brutality
 				{ 6,  228516 }, -- Peacemaker
-				{ 8,  228166 }, -- Key to the City
+				{ 8,  12382 }, -- Key to the City
 				{ 16, 226404 }, -- Tarnished Undermine Real
 			},
 		},
