@@ -481,8 +481,7 @@ data["HydraxianWaterlords"] = {
 			name = ALIL["Exalted"],
 			[NORMAL_DIFF] = {
 				{ 1, "f749rep8" },
-				{ 2, 227926}, -- Hydraxian Coronation
-				{ 4, 227915}, -- Duke's Domain
+				{ 2, 227915 }, -- Duke's Domain
 			},
 		},
 		{ -- Revered
@@ -502,7 +501,8 @@ data["HydraxianWaterlords"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f749rep6" },
 				{ 2, 17333  }, -- Aqual Quintessence
-				{ 4, 227923 }, -- Water Treads
+				{ 4, 227926 }, -- Hydraxian Coronation
+				{ 5, 227923 }, -- Water Treads
 			},
 		},
 	},
