@@ -2212,7 +2212,7 @@ data["SoD Dungeon Set Items"] = {
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{
-			name = AL["Warrior"],
+			name = ALIL["WARRIOR"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226769}, --Helm of Valor
@@ -2253,7 +2253,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},
 		{
-			name = AL["Rogue"],
+			name = ALIL["ROGUE"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226707}, --Shadowcraft Cap
@@ -2294,7 +2294,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},
 		{
-			name = AL["Druid"],
+			name = ALIL["DRUID"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226708}, --Wildheart Cowl
@@ -2344,7 +2344,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},	
 		{
-			name = AL["Warlock"],
+			name = ALIL["WARLOCK"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226762}, --Dreadmist Mask
@@ -2385,7 +2385,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},			
 		{
-			name = AL["Hunter"],
+			name = ALIL["HUNTER"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226720}, --Beaststalker's Cap
@@ -2426,7 +2426,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},	
 		{
-			name = AL["Mage"],
+			name = ALIL["MAGE"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226728}, --Magister's Crown
@@ -2458,7 +2458,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},
 		{
-			name = AL["Paladin"],
+			name = ALIL["PALADIN"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226733}, --Lightforge Helm
@@ -2508,7 +2508,7 @@ data["SoD Dungeon Set Items"] = {
 			},
 		},
 		{
-			name = AL["Shaman"],
+			name = ALIL["SHAMAN"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226755}, --Coif of Elements
@@ -2703,7 +2703,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Recipes"],
+			name = AL["Recipe"],
 			[NORMAL_DIFF] = {
 				{ 1, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 
 				{ 3, 13522 }, -- Recipe: Flask of Chromatic Resistance 
@@ -2714,7 +2714,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Warrior"],
+			name = ALIL["WARRIOR"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226769}, --Helm of Valor
@@ -2728,7 +2728,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Rogue"],
+			name = ALIL["ROGUE"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226707}, --Shadowcraft Cap
@@ -2742,7 +2742,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Druid"],
+			name = ALIL["DRUID"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226708}, --Wildheart Cowl
@@ -2760,7 +2760,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Warlock"],
+			name = ALIL["WARLOCK"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226762}, --Dreadmist Mask
@@ -2774,7 +2774,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Hunter"],
+			name = ALIL["HUNTER"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226720}, --Beaststalker's Cap
@@ -2788,7 +2788,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Mage"],
+			name = ALIL["MAGE"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226728}, --Magister's Crown
@@ -2802,7 +2802,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Paladin"],
+			name = ALIL["PALADIN"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226733}, --Lightforge Helm
@@ -2819,7 +2819,7 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
-			name = AL["Shaman"],
+			name = ALIL["SHAMAN"],
 			[NORMAL_DIFF] = {
 				{1, "INV_Box_02", nil, format(AL["Tier %s Set"], "0"), nil },
 				{2, 226755}, --Coif of Elements
