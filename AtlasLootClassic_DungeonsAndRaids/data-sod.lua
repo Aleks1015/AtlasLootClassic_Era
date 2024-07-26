@@ -5053,7 +5053,7 @@ data["MoltenCore"] = {
 	items = {
 		{	--MCLucifron
 			name = AL["Lucifron"],
-			npcID = 12118,
+			npcID = 228429,
 			Level = 999,
 			DisplayIDs = {{13031},{12030}},
 			AtlasMapBossID = 1,
@@ -5063,6 +5063,7 @@ data["MoltenCore"] = {
 				{ 2, 228247 },	-- Choker of Enlightenment
 				{ 3, 228239 },	-- Robe of Volatile Power
 				{ 4, 228246 },	-- Wristguards of Stability
+				{ 5, 228127 },	-- Wristguards of Instability
 				{ 5, 228244 },	-- Manastorm Leggings
 				{ 6, 228245 },	-- Salamander Scale Pants
 				{ 7, 228240 },	-- Flamewaker Legplates
@@ -5071,142 +5072,82 @@ data["MoltenCore"] = {
 				{ 10, 228262 },	-- Crimson Shocker
 				{ 11, 228263 },	-- Sorcerous Dagger
 				{ 12, 16665 },	-- Tome of Tranquilizing Shot
+				{ 16, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 17, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 18, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 21, 229376 },	-- Sorcerous Dagger (Molten)
 			},
 		},
 		{	--MCMagmadar
 			name = AL["Magmadar"],
-			npcID = 11982,
+			npcID = 228430,
 			Level = 999,
 			DisplayIDs = {{10193}},
 			AtlasMapBossID = 2,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 228350 },	-- Eskhandar's Right Claw
-				{ 2, 228249 },	-- Medallion of Steadfast Might
-				{ 3, 228258 },	-- Deep Earth Spaulders
-				{ 4, 228257 },	-- Aged Core Leather Gloves
-				{ 5, 228260 },	-- Flameguard Gauntlets
-				{ 6, 228256 },	-- Mana Igniting Cord
-				{ 7, 228240 },	-- Flamewaker Legplates
-				{ 8, 228253 },	-- Sabatons of the Flamewalker
-				{ 9, 228254 },	-- Magma Tempered Boots
-				{ 10, 228261 },	-- Quick Strike Ring
-				{ 11, 228255 },	-- Talisman of Ephemeral Power
-				{ 12, 228259 },	-- Fire Runed Grimoire
-				{ 13, 228252 },	-- Striker's Mark
-				{ 14, 228248 },	-- Earthshaker
-				{ 15, 228229 },	-- Obsidian Edged Blade
-				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 17, 228519 },	-- Striker's Mark (Molten)
-				{ 18, 228463 },	-- Earthshaker (Molten)
-				{ 19, 228459 },	-- Obsidian Edged Blade (Molten)
+				{ 2, 228146 },	-- Magmadar's Left Claw
+				{ 3, 228249 },	-- Medallion of Steadfast Might
+				{ 4, 228258 },	-- Deep Earth Spaulders
+				{ 5, 228101 },	-- Hide of the Behemoth
+				{ 6, 228257 },	-- Aged Core Leather Gloves
+				{ 7, 228260 },	-- Flameguard Gauntlets
+				{ 8, 228256 },	-- Mana Igniting Cord
+				{ 9, 228240 },	-- Flamewaker Legplates
+				{ 10, 228253 },	-- Sabatons of the Flamewalker
+				{ 11, 228254 },	-- Magma Tempered Boots
+				{ 12, 228261 },	-- Quick Strike Ring
+				{ 13, 228255 },	-- Talisman of Ephemeral Power
+				{ 14, 228259 },	-- Fire Runed Grimoire
+				{ 15, 228252 },	-- Striker's Mark
+				{ 16, 228248 },	-- Earthshaker
+				{ 17, 228229 },	-- Obsidian Edged Blade
+				{ 19, 227534 }, --Incandescent Leggings (Priest, Mage, Warlock)
+				{ 20, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+				{ 21, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+				{ 23, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 24, 229377 },	-- Magmadar's Left Claw (Molten)
+				{ 25, 228459 },	-- Obsidian Edged Blade (Molten)
 			},
 		},
 		{	--MCGehennas
 			name = AL["Gehennas"],
-			npcID = 12259,
+			npcID = 228431,
 			Level = 999,
 			DisplayIDs = {{13030},{12002}},
 			AtlasMapBossID = 3,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 228285 },	-- Helm of the Lifegiver
-				{ 2, 228239 },	-- Robe of Volatile Power
-				{ 3, 228246 },	-- Wristguards of Stability
-				{ 4, 228244 },	-- Manastorm Leggings
-				{ 5, 228245 },	-- Salamander Scale Pants
-				{ 6, 228240 },	-- Flamewaker Legplates
-				{ 7, 228242 },	-- Heavy Dark Iron Ring
-				{ 8, 228243 },	-- Ring of Spell Power
-				{ 9, 228262 },	-- Crimson Shocker
-				{ 10, 228263 },	-- Sorcerous Dagger
+				{ 1, 228350 },  -- Eskhandar's Right Claw
+				{ 2, 228285 },	-- Helm of the Lifegiver
+				{ 3, 228239 },	-- Robe of Volatile Power
+				{ 4, 228246 },	-- Wristguards of Stability
+				{ 5, 228127 },	-- Wristguards of Instability
+				{ 6, 228244 },	-- Manastorm Leggings
+				{ 7, 228245 },	-- Salamander Scale Pants
+				{ 8, 228240 },	-- Flamewaker Legplates
+				{ 9, 228242 },	-- Heavy Dark Iron Ring
+				{ 10, 228243 },	-- Ring of Spell Power
+				{ 11, 228262 },	-- Crimson Shocker
+				{ 12, 228263 },	-- Sorcerous Dagger
+				{ 16, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+				{ 17, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+				{ 18, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 21, 229379 },	-- Eskhandar's Right Claw (Molten)
 			},
 		},
 		{	--MCGarr
 			name = AL["Garr"],
-			npcID = 12057,
+			npcID = 228432,
 			Level = 999,
 			DisplayIDs = {{12110}, {5781}},
 			AtlasMapBossID = 4,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
 				{ 1, 18564 },	-- Bindings of the Windseeker
-				{ 3, 228258 },	-- Deep Earth Spaulders
-				{ 4, 228257 },	-- Aged Core Leather Gloves
-				{ 5, 228260 },	-- Flameguard Gauntlets
-				{ 6, 228256 },	-- Mana Igniting Cord
-				{ 7, 228240 },	-- Flamewaker Legplates
-				{ 8, 228253 },	-- Sabatons of the Flamewalker
-				{ 9, 228254 },	-- Magma Tempered Boots
-				{ 10, 228261 },	-- Quick Strike Ring
-				{ 11, 228255 },	-- Talisman of Ephemeral Power
-				{ 12, 228259 },	-- Fire Runed Grimoire
-				{ 13, 228266 },	-- Drillborer Disk
-				{ 14, 228267 },	-- Gutgore Ripper
-				{ 15, 228264 },	-- Aurastone Hammer
-				{ 16, 228265 },	-- Brutality Blade
-				{ 17, 228229 },	-- Obsidian Edged Blade
-				{ 19, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 20, 228702 },	-- Drillborer Disk (Molten)
-				{ 21, 228462 },	-- Aurastone Hammer (Molten)
-				{ 22, 228506 },	-- Brutality Blade (Molten)
-				{ 23, 228459 },	-- Obsidian Edged Blade (Molten)
-			},
-		},
-		{	--MCShazzrah
-			name = AL["Shazzrah"],
-			npcID = 12264,
-			Level = 999,
-			DisplayIDs = {{13032}},
-			AtlasMapBossID = 5,
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1, 228285 },	-- Helm of the Lifegiver
-				{ 2, 228239 },	-- Robe of Volatile Power
-				{ 3, 228246 },	-- Wristguards of Stability
-				{ 4, 228244 },	-- Manastorm Leggings
-				{ 5, 228245 },	-- Salamander Scale Pants
-				{ 6, 228240 },	-- Flamewaker Legplates
-				{ 7, 228242 },	-- Heavy Dark Iron Ring
-				{ 8, 228243 },	-- Ring of Spell Power
-				{ 9, 228262 },	-- Crimson Shocker
-				{ 10, 228263 },	-- Sorcerous Dagger
-			},
-		},
-		{	--MCGeddon
-			name = AL["Baron Geddon"],
-			npcID = 12056,
-			Level = 999,
-			DisplayIDs = {{12129}},
-			AtlasMapBossID = 6,
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1,  18563 },	-- Bindings of the Windseeker
-				{ 3, 228258 },	-- Deep Earth Spaulders
-				{ 4, 228257 },	-- Aged Core Leather Gloves
-				{ 5, 228260 },	-- Flameguard Gauntlets
-				{ 6, 228256 },	-- Mana Igniting Cord
-				{ 7, 228240 },	-- Flamewaker Legplates
-				{ 8, 228253 },	-- Sabatons of the Flamewalker
-				{ 9, 228254 },	-- Magma Tempered Boots
-				{ 10, 228261 },	-- Quick Strike Ring
-				{ 11, 228268 },	-- Seal of the Archmagus
-				{ 12, 228255 },	-- Talisman of Ephemeral Power
-				{ 13, 228259 },	-- Fire Runed Grimoire
-				{ 14, 228229 },	-- Obsidian Edged Blade
-				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 17, 228459 },	-- Obsidian Edged Blade (Molten)
-			},
-		},
-		{	--MCGolemagg
-			name = AL["Golemagg the Incinerator"],
-			npcID = 11988,
-			Level = 999,
-			DisplayIDs = {{11986}},
-			AtlasMapBossID = 7,
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1, 17203 },	-- Sulfuron Ingot
 				{ 2, 228258 },	-- Deep Earth Spaulders
 				{ 3, 228257 },	-- Aged Core Leather Gloves
 				{ 4, 228260 },	-- Flameguard Gauntlets
@@ -5217,91 +5158,224 @@ data["MoltenCore"] = {
 				{ 9, 228261 },	-- Quick Strike Ring
 				{ 10, 228255 },	-- Talisman of Ephemeral Power
 				{ 11, 228259 },	-- Fire Runed Grimoire
-				{ 12, 228270 },	-- Blastershot Launcher
-				{ 13, 228269 },	-- Azuresong Mageblade
-				{ 14, 228229 },	-- Obsidian Edged Blade
-				{ 15, 228271 },	-- Staff of Dominance
-				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 17, 228517 },	-- Azuresong Mageblade
-				{ 18, 228459 },	-- Obsidian Edged Blade
-				
+				{ 12, 228266 },	-- Drillborer Disk
+				{ 13, 228267 },	-- Gutgore Ripper
+				{ 14, 228264 },	-- Aurastone Hammer
+				{ 15, 228265 },	-- Brutality Blade
+				{ 16, 228229 },	-- Obsidian Edged Blade
+				{ 17, 228139 },	-- Fist of the Firesworn
+				{ 18, 228142 },	-- Earth and Fire
+				{ 19, 228160 },	-- Faithbringer
+				{ 21, 227532 }, --Incandescent Hood (Priest, Mage, Warlock)
+				{ 22, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
+				{ 23, 227755 }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
+				{ 25, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 26, 229372 },	-- Gutgore Ripper (Molten)
+			},
+		},
+		{	--MCShazzrah
+			name = AL["Shazzrah"],
+			npcID = 228434,
+			Level = 999,
+			DisplayIDs = {{13032}},
+			AtlasMapBossID = 5,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1, 228285 },	-- Helm of the Lifegiver
+				{ 2, 228239 },	-- Robe of Volatile Power
+				{ 3, 228246 },	-- Wristguards of Stability
+				{ 4, 228127 },	-- Wristguards of Instability
+				{ 5, 228244 },	-- Manastorm Leggings
+				{ 6, 228245 },	-- Salamander Scale Pants
+				{ 7, 228253 },	-- Sabatons of the Flamewalker
+				{ 8, 228240 },	-- Flamewaker Legplates
+				{ 9, 228242 },	-- Heavy Dark Iron Ring
+				{ 10, 228243 },	-- Ring of Spell Power
+				{ 11, 228262 },	-- Crimson Shocker
+				{ 12, 228263 },	-- Sorcerous Dagger
+				{ 16, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 17, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 18, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+			},
+		},
+		{	--MCGeddon
+			name = AL["Baron Geddon"],
+			npcID = 228433,
+			Level = 999,
+			DisplayIDs = {{12129}},
+			AtlasMapBossID = 6,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				{ 1,  18563 },	-- Bindings of the Windseeker
+				{ 2, 228258 },	-- Deep Earth Spaulders
+				{ 3, 228257 },	-- Aged Core Leather Gloves
+				{ 4, 228260 },	-- Flameguard Gauntlets
+				{ 5, 228256 },	-- Mana Igniting Cord
+				{ 6, 228240 },	-- Flamewaker Legplates
+				{ 7, 228253 },	-- Sabatons of the Flamewalker
+				{ 8, 228254 },	-- Magma Tempered Boots
+				{ 9, 228261 },	-- Quick Strike Ring
+				{ 10, 228268 },	-- Seal of the Archmagus
+				{ 11, 228255 },	-- Talisman of Ephemeral Power
+				{ 12, 228142 },	-- Earth and Fire
+				{ 13, 228160 },	-- Faithbringer
+				{ 14, 228259 },	-- Fire Runed Grimoire
+				{ 15, 228139 },	-- Fist of the Firesworn
+				{ 16, 228229 },	-- Obsidian Edged Blade
+				{ 18, 227530 }, -- Incandescent Belt (Priest, Mage, Warlock)
+				{ 19, 227761 }, -- Scorched Core Belt (Warrior, Rogue, Druid)
+				{ 20, 227751 }, -- Molten Scaled Belt (Paladin, Hunter, Shaman)
+			},
+		},
+		{	--MCGolemagg
+			name = AL["Golemagg the Incinerator"],
+			npcID = 228435,
+			Level = 999,
+			DisplayIDs = {{11986}},
+			AtlasMapBossID = 7,
+			ContentPhase = 4,
+			[NORMAL_DIFF] = {
+				--{ 0, 228258 },	-- Deep Earth Spaulders
+				--{ 0, 228257 },	-- Aged Core Leather Gloves
+				--{ 0, 228253 },	-- Sabatons of the Flamewalker
+				--{ 0, 228254 },	-- Magma Tempered Boots
+				{ 1, 17203 },	-- Sulfuron Ingot
+				{ 2, 228260 },	-- Flameguard Gauntlets
+				{ 3, 228256 },	-- Mana Igniting Cord
+				{ 4, 228240 },	-- Flamewaker Legplates
+				{ 5, 228261 },	-- Quick Strike Ring
+				{ 6, 228255 },	-- Talisman of Ephemeral Power
+				{ 7, 228259 },	-- Fire Runed Grimoire
+				{ 8, 228270 },	-- Blastershot Launcher
+				{ 9, 228269 },	-- Azuresong Mageblade
+				{ 10, 228229 },	-- Obsidian Edged Blade
+				{ 11, 228271 },	-- Staff of Dominance
+				{ 12, 228137 },	-- Heart of Golemagg
+				{ 13, 228147 },	-- Magmadar's Horn
+				{ 16, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 17, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+				{ 18, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+				{ 19, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 20, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 21, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
+				{ 22, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 23, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 24, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 25, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+				{ 26, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+				{ 27, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+				{ 28, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 29, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+				{ 30, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)	
 			},
 		},
 		{ -- MCSulfuron
 			name = AL["Sulfuron Harbinger"],
-			npcID = 12098,
+			npcID = 228436,
 			Level = 999,
 			DisplayIDs = {{13030},{12030}},
 			AtlasMapBossID = 8,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 228285 }, -- Helm of the Lifegiver
-				{ 2, 228239 }, -- Robe of Volatile Power
-				{ 3, 228246 }, -- Wristguards of Stability
-				{ 4, 228244 }, -- Manastorm Leggings
-				{ 5, 228245 }, -- Salamander Scale Pants
-				{ 6, 228240 }, -- Flamewaker Legplates
-				{ 7, 228242 }, -- Heavy Dark Iron Ring
-				{ 8, 228243 }, -- Ring of Spell Power
-				{ 9, 228262 }, -- Crimson Shocker
-				{ 10, 228263 }, -- Sorcerous Dagger
-				{ 11, 228272 }, -- Shadowstrike
+				--{ 0, 228240 }, -- Flamewaker Legplates
+				{ 1, 228295 }, -- Onslaught Girdle
+				{ 2, 228260 }, -- Flameguard Gauntlets
+				{ 3, 228128 }, -- Hammer of The Black Anvil
+				{ 4, 228285 }, -- Helm of the Lifegiver
+				{ 5, 228239 }, -- Robe of Volatile Power
+				{ 6, 228246 }, -- Wristguards of Stability
+				{ 7, 228127 },	-- Wristguards of Instability
+				{ 8, 228244 }, -- Manastorm Leggings
+				{ 9, 228245 }, -- Salamander Scale Pants
+				{ 10, 228242 }, -- Heavy Dark Iron Ring
+				{ 11, 228243 }, -- Ring of Spell Power
+				{ 12, 228262 }, -- Crimson Shocker
+				{ 13, 228263 }, -- Sorcerous Dagger
+				{ 14, 228272 }, -- Shadowstrike
+				{ 16, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+				{ 17, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 18, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+				{ 19, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 20, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 21, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 22, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+				{ 23, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 24, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 25, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
+				{ 26, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
+				{ 27, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
+				{ 28, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 29, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+				{ 101, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 102, 229380 },	-- Shadowstrike (Molten)
 			},
 		},
 		{ -- MCMajordomo
 			name = AL["Majordomo Executus"],
-			npcID = 12018,
+			npcID = 228437,
 			Level = 999,
 			ObjectID = 179703,
 			DisplayIDs = {{12029},{13029},{12002}},
 			AtlasMapBossID = 9,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  228279 }, -- Fireguard Shoulders
-				{ 2,  228283 }, -- Wild Growth Spaulders
-				{ 3,  228280 }, -- Fireproof Cloak
-				{ 4,  228281 }, -- Gloves of the Hypnotic Flame
-				{ 5,  228282 }, -- Sash of Whispered Secrets
-				{ 6,  228284 }, -- Wristguards of True Flight
-				{ 7,  228275 }, -- Core Forged Greaves
-				{ 8,  228274 }, -- Cauterizing Band
-				{ 9,  228277 }, -- Core Hound Tooth
+				{ 1, "INV_Box_02", nil, AL["Loot not updated"], nil },
+				{ 2,  228279 }, -- Fireguard Shoulders
+				{ 3,  228283 }, -- Wild Growth Spaulders
+				{ 4,  228280 }, -- Fireproof Cloak
+				{ 5,  228281 }, -- Gloves of the Hypnotic Flame
+				{ 6,  228282 }, -- Sash of Whispered Secrets
+				{ 7,  228284 }, -- Wristguards of True Flight
+				{ 8,  228275 }, -- Core Forged Greaves
+				{ 9,  228274 }, -- Cauterizing Band
+				{ 10,  228277 }, -- Core Hound Tooth
 				{ 10, 228278 }, -- Finkle's Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
 				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
 				{ 21,  228701 }, -- Core Hound Tooth (Molten)
-
 			},
 		},
 		{ -- MCRagnaros
 			name = AL["Ragnaros"],
-			npcID = 11503,
+			npcID = 228438,
 			Level = 999,
 			DisplayIDs = {{11121}},
 			AtlasMapBossID = 10,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 227728 }, -- Eye of Sulfuras
-				{ 2, 19017 }, -- Essence of the Firelord
-				{ 4, 228297 }, -- Shard of the Flame
-				{ 5, 228291 }, -- Crown of Destruction
-				{ 6, 228289 }, -- Choker of the Fire Lord
-				{ 7, 228290 }, -- Cloak of the Shrouded Mists
-				{ 8, 228292 }, -- Dragon's Blood Cape
-				{ 9, 228295 }, -- Onslaught Girdle
-				{ 10, 228286 }, -- Band of Accuria
-				{ 11, 228287 }, -- Band of Sulfuras
-				{ 12, 228293 }, -- Essence of the Pure Flame
-				{ 13, 228294 }, -- Malistar's Defender
-				{ 14, 228296 }, -- Perdition's Blade
-				{ 15, 228299 }, -- Spinal Reaper
-				{ 16, 228288 }, -- Bonereaver's Edge
-				{ 18, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 19, 228511 }, -- Perdition's Blade (Molten)
-				{ 20, 228460 }, -- Spinal Reaper (Molten)
-				{ 21, 228461 }, -- Bonereaver's Edge (Molten)
+				{ 1, "INV_Box_02", nil, AL["Loot not updated"], nil },
+				{ 2, 227728 }, -- Eye of Sulfuras
+				{ 3, 19017 }, -- Essence of the Firelord
+				{ 5, 228297 }, -- Shard of the Flame
+				{ 6, 228291 }, -- Crown of Destruction
+				{ 7, 228289 }, -- Choker of the Fire Lord
+				{ 8, 228290 }, -- Cloak of the Shrouded Mists
+				{ 9, 228292 }, -- Dragon's Blood Cape
+				{ 10, 228295 }, -- Onslaught Girdle
+				{ 11, 228286 }, -- Band of Accuria
+				{ 12, 228287 }, -- Band of Sulfuras
+				{ 13, 228293 }, -- Essence of the Pure Flame
+				{ 14, 228294 }, -- Malistar's Defender
+				{ 15, 228296 }, -- Perdition's Blade
+				{ 16, 228299 }, -- Spinal Reaper
+				{ 17, 228288 }, -- Bonereaver's Edge
+				{ 19, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 20, 228511 }, -- Perdition's Blade (Molten)
+				{ 21, 228460 }, -- Spinal Reaper (Molten)
+				{ 22, 228461 }, -- Bonereaver's Edge (Molten)
 			},
+		},
+		{ -- MCTheMoltenCore
+		name = AL["The Molten Core"],
+		npcID = 227939,
+		Level = 999,
+		DisplayIDs = {{121349}},
+		AtlasMapBossID = 11,
+		ContentPhase = 4,
+		[NORMAL_DIFF] = {
+			{ 1, "INV_Box_02", nil, AL["Loot not updated"], nil },
+		},
 		},
 		{ -- MCRANDOMBOSSDROPS
 			name = AL["All bosses"],
@@ -5336,7 +5410,6 @@ data["MoltenCore"] = {
 			ExtraList = true,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 228128 }, -- Hammer of The Black Anvil
 				{ 2, 228166 }, -- Key to the City
 				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
 				{ 17, 228508 }, -- Hammer of The Black Anvil
