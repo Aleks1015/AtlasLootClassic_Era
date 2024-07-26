@@ -2703,6 +2703,14 @@ data["Tarnished Undermine Real"] = {
 			},
 		},
 		{
+			name = AL["Materials"],
+			[NORMAL_DIFF] = {
+				{ 1, 17012 }, -- Core Leather
+				{ 2, 17011 }, -- Lava Core
+				{ 3, 17010 }, -- Fiery Core		
+			},
+		},
+		{
 			name = AL["Recipe"],
 			[NORMAL_DIFF] = {
 				{ 1, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 
