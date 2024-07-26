@@ -349,6 +349,9 @@ AL["Zilbagob"] = "毀滅者的怨靈"
 AL["Pyranis"] = "毀滅者的怨靈"
 AL["Diathorus the Seeker"] = "『追尋者』迪亞索魯斯"
 AL["Hellscream's Phantom"] = "地獄吼的幻影"
+AL["Loot not updated"] = "戰利品未更新"
+AL["Molten"] = "熔岩"
+AL["The Molten Core"] = "熔火之心"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC

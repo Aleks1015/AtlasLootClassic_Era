@@ -351,6 +351,9 @@ AL["Zilbagob"] = "Zilbagob"
 AL["Pyranis"] = "Pyranis"
 AL["Diathorus the Seeker"] = "Diathorus der Sucher"
 AL["Hellscream's Phantom"] = "Höllschreis Phantom"
+AL["Loot not updated"] = "Beute nicht aktualisiert"
+AL["Molten"] = "Geschmolzen"
+AL["The Molten Core"] = "Der geschmolzene Kern"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC

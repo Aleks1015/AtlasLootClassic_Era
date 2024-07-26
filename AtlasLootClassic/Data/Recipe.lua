@@ -1699,7 +1699,6 @@ else
 		[18518] = {3,300,22927}, -- Pattern: Hide of the Wild
 		[18519] = {3,300,22928}, -- Pattern: Shifting Cloak
 		[18587] = {9,265,22999}, -- Goblin Jumper Cables XL
-		[18592] = {2,300,21161}, -- Plans: Sulfuron Hammer
 		[18594] = {9,275,23008}, -- Powerful Seaforium Charge
 		[18634] = {9,260,23131}, -- Gyrofreeze Ice Reflector
 		[18637] = {9,275,23064}, -- Major Recombobulator
@@ -1984,7 +1983,8 @@ else
 		[228316] = {8,300,461747}, -- Pattern: Incandescent Mooncloth Vest
 		[228317] = {8,300,461750}, -- Pattern: Incandescent Mooncloth Circlet
 		[228318] = {8,290,461752}, -- Pattern: Incandescent Mooncloth Leggings
-		[228994] = {8,300,463972}, -- Pattern: Bottomless Bag
+		[228993] = {8,300,463972}, -- Pattern: Bottomless Bag
+		[228477] = {8,300,462282} -- Pattern: Embroidered Belt of the Archmage
 	}
 end
 

@@ -531,7 +531,7 @@ else
 		[12811] = { "prof20034", "prof22750", "prof25079", 0, "prof18456", "prof16990", "prof23632", "prof23633", type = 5 }, -- Righteous Orb
 		[20381] = { "prof24703", type = 5 }, -- Dreamscale Breastplate
 		[12753] = { "prof22928", "prof27830", type = 5 }, -- Dreamscale Breastplate
-		[17203] = { "prof21161", type = 5 }, -- Sulfuron Ingot
+		[17203] = { "prof460460", type = 5 }, -- Sulfuron Ingot
 		[15410] = { "prof19106", "prof19093", type = 5 }, -- Scale of Onyxia
 	
 		-- Atiesh
