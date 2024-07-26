@@ -5064,14 +5064,14 @@ data["MoltenCore"] = {
 				{ 3, 228239 },	-- Robe of Volatile Power
 				{ 4, 228246 },	-- Wristguards of Stability
 				{ 5, 228127 },	-- Wristguards of Instability
-				{ 5, 228244 },	-- Manastorm Leggings
-				{ 6, 228245 },	-- Salamander Scale Pants
-				{ 7, 228240 },	-- Flamewaker Legplates
-				{ 8, 228242 },	-- Heavy Dark Iron Ring
-				{ 9, 228243 },	-- Ring of Spell Power
-				{ 10, 228262 },	-- Crimson Shocker
-				{ 11, 228263 },	-- Sorcerous Dagger
-				{ 12, 16665 },	-- Tome of Tranquilizing Shot
+				{ 6, 228244 },	-- Manastorm Leggings
+				{ 7, 228245 },	-- Salamander Scale Pants
+				{ 8, 228240 },	-- Flamewaker Legplates
+				{ 9, 228242 },	-- Heavy Dark Iron Ring
+				{ 10, 228243 },	-- Ring of Spell Power
+				{ 11, 228262 },	-- Crimson Shocker
+				{ 12, 228263 },	-- Sorcerous Dagger
+				{ 13, 16665 },	-- Tome of Tranquilizing Shot
 				{ 16, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
 				{ 17, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
 				{ 18, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
@@ -5328,8 +5328,8 @@ data["MoltenCore"] = {
 				{ 7,  228284 }, -- Wristguards of True Flight
 				{ 8,  228275 }, -- Core Forged Greaves
 				{ 9,  228274 }, -- Cauterizing Band
-				{ 10,  228277 }, -- Core Hound Tooth
-				{ 10, 228278 }, -- Finkle's Lava Dredger
+				{ 10, 228277 }, -- Core Hound Tooth
+				{ 11, 228278 }, -- Hyperthermically Insulated Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
 				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
@@ -5405,18 +5405,8 @@ data["MoltenCore"] = {
 				{ 4, 17012 }, -- Core Leather
 			},
 		},
-		{ -- MC Phase 4 New Items - Unknown drop
-			name = AL["New"],
-			ExtraList = true,
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 2, 228166 }, -- Key to the City
-				{ 16, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 17, 228508 }, -- Hammer of The Black Anvil
-			},
-		},
 		{ -- MC Phase 4 Tier Tokens
-			name = AL["Tier Tokens"],
+			name = format(AL["Tier %s Tokens"], "1"),
 			ExtraList = true,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
@@ -5480,6 +5470,7 @@ data["Onyxia"] = {
 				{ 10, 228955 }, -- Ancient Cornerstone Grimoire
 				{ 11, 17068 }, -- Deathbringer
 				{ 12, 17075 }, -- Vis'kag the Bloodletter
+				{ 13, 228166 }, -- Key to the City
 				{ 24, 228992 }, -- Onyxia Hide Backpack
 				{ 25, 11938 }, -- Sack of Gems
 				-- Hidden items
