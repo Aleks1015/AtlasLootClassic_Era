@@ -237,7 +237,7 @@ data["Blacksmithing"] = {
 	CorrespondingFields = private.BLACKSMITHING_LINK,
 	items = {
 		{
-			name = AL["Seasonal"].." - "..ALIL["P1-P3"],
+			name = AL["Seasonal"].." - "..AL["P1-P3"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_02", nil, AL["Mail Armor"], nil },
 				{ 2, 429348 }, --Shifting Silver Breastplate (Phase 1)
@@ -263,7 +263,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = AL["Seasonal"].." - "..ALIL["P4"],
+			name = AL["Seasonal"].." - "..AL["P4"],
 			[NORMAL_DIFF] = {
 				{ 1, 460460 }, -- Sulfuron Hammer
 				{ 2, 461667 }, -- Tempered Dark Iron Plate
@@ -1189,7 +1189,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = AL["Seasonal"].." - "..ALIL["P4"],
+			name = AL["Seasonal"].." - "..AL["P4"],
 			[NORMAL_DIFF] = {
 				--{ 1, 227896 }, --Pattern: Argent Boots
 				--{ 2, 227897 }, --Pattern: Argent Shoulders
@@ -1546,7 +1546,7 @@ data["Leatherworking"] = {
 			}
 		},
 		{
-			name = AL["Seasonal"].." - "..ALIL["P4"],
+			name = AL["Seasonal"].." - "..AL["P4"],
 			[NORMAL_DIFF] = {
 				--{ 1, 227895 }, --Golden Mantle of the Dawn
 				{ 2, 461673 }, --Honed Blue Dragonscale Breastplate

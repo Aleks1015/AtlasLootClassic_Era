@@ -1010,20 +1010,20 @@ data["SoD_Phase2"] = {
 		{
 		name = AL["STV Blood Moon Epics"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 1, "INV_Box_01", nil, ALIL["DRUID"], nil },
 				{ 2, 216498 }, -- Enchanted Sanguine Grimoire 
 				{ 3, 216499 }, -- Bloodbark Crusher 
 				{ 4, 216500 }, -- Bloodbonded Grove Talisman
-				{ 6, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 6, "INV_Box_01", nil, ALIL["HUNTER"], nil },
 				{ 7, 216513 }, -- Tigerblood Talisman
 				{ 8, 216514 }, -- Sanguine Quiver
 				{ 9, 216515 }, -- Sanguine Ammo Pouch
 				{ 10, 216516 }, -- Bloodlash Bow
-				{ 12, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 12, "INV_Box_01", nil, ALIL["MAGE"], nil },
 				{ 13, 216510 }, -- Blood Resonance Circle 
 				{ 14, 216511 }, -- Emberblood Seal 
 				{ 15, 216512 }, -- Loop of Chilled Veins 
-				{ 16, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 16, "INV_Box_01", nil, ALIL["PALADIN"], nil },
 				{ 17, 216504 }, -- Eclipsed Bloodlight Saber 
 				{ 18, 216505 }, -- Bloodlight Crusader's Radiance 
 				{ 19, 216506 }, -- Bloodlight Avenger's Edge 
@@ -1032,20 +1032,20 @@ data["SoD_Phase2"] = {
 				{ 23, 216517 }, -- Sanguine Sanctuary 
 				{ 24, 216518 }, -- Blood Covenant Seal
 				{ 25, 216519 }, -- Sanguine Shadow Band
-				{ 101, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 101, "INV_Box_01", nil, ALIL["ROGUE"], nil },
 				{ 102, 216520 }, -- Bloodharvest Blade
 				{ 103, 216521 }, -- Swift Sanguine Strikers
 				{ 104, 216522 }, -- Blood Spattered Stiletto 
-				{ 106, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 106, "INV_Box_01", nil, ALIL["SHAMAN"], nil },
 				{ 107, 216501 }, -- Bloodstorm Barrier
 				{ 108, 216502 }, -- Bloodstorm War Totem 
 				{ 109, 216503 }, -- Bloodstorm Jewel 
 				{ 110, 216615 }, -- Ancestral Bloodstorm Beacon 
-				{ 112, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 112, "INV_Box_01", nil, ALIL["WARLOCK"], nil },
 				{ 113, 216507 }, -- Umbral Bloodseal
 				{ 114, 216508 }, -- Infernal Bloodcoil Band
 				{ 115, 216509 }, -- Infernal Pact Essence 
-				{ 116, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 116, "INV_Box_01", nil, ALIL["WARRIOR"], nil },
 				{ 117, 216495 }, -- Sanguine Crusher 
 				{ 118, 216496 }, -- Sanguine Skullcrusher 
 				{ 119, 216497 }, -- Exsanguinar 
@@ -1065,18 +1065,18 @@ data["SoD_Phase3"] = {
 		name = AL["STV Blood Moon Epics"],
 		TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 1, "INV_Box_01", nil, ALIL["DRUID"], nil },
 				{ 2, 221447 }, -- Ritualist's Bloodmoon Grimoire
 				{ 3, 221446 }, -- Ritualist's Hammer
 				{ 4, 221448 }, -- Talisman of the Corrupted Grove
-				{ 6, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 6, "INV_Box_01", nil, ALIL["HUNTER"], nil },
 				{ 7, 221451 }, -- Bloodthirst Crossbow
 				{ 8, 221450 }, -- Gurubashi Pit Fighter's Bow
-				{ 10, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 10, "INV_Box_01", nil, ALIL["MAGE"], nil },
 				{ 11, 221452 }, -- Bloodfocused Arcane Band
 				{ 12, 221453 }, -- Band of Boiling Blood 
 				{ 13, 221454 }, -- Glacial Blood Band
-				{ 16, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 16, "INV_Box_01", nil, ALIL["PALADIN"], nil },
 				{ 17, 221457 }, -- Libram of Draconic Destruction
 				{ 18, 221455 }, -- Bloodlight Reverence
 				{ 19, 221456 }, -- Eclipsed Sanguine Saber
@@ -1084,17 +1084,17 @@ data["SoD_Phase3"] = {
 				{ 22, "INV_Box_01", nil, AL["Priest"], nil },
 				{ 23, 221459 }, -- Seal of the Sacrificed
 				{ 24, 221458 }, -- Shadowy Band of Victory
-				{ 101, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 101, "INV_Box_01", nil, ALIL["ROGUE"], nil },
 				{ 102, 221460 }, -- Gurubashi Backstabber
 				{ 103, 221462 }, -- Bloodied Sword of Speed
-				{ 105, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 105, "INV_Box_01", nil, ALIL["SHAMAN"], nil },
 				{ 106, 221464 }, -- Totem of Fiery Precision
 				{ 107, 221463 }, -- Ancestral Voodoo Doll
 				{ 108, 221465 }, -- Corrupted Smashbringer
-				{ 110, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 110, "INV_Box_01", nil, ALIL["WARLOCK"], nil },
 				{ 111, 221466 }, -- Loop of Burning Blood
 				{ 112, 221467 }, -- Eye of the Bloodmoon
-				{ 116, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 116, "INV_Box_01", nil, ALIL["WARRIOR"], nil },
 				{ 117, 221469 }, -- Headhunter's Barbed Spear
 				{ 118, 221468 }, -- Wall of Whispers
 				{ 119, 220173 }, -- Parasomnia
