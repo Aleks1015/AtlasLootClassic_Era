@@ -280,5 +280,6 @@ AL["Vendor"] = "Vendedor"
 AL["Wand"] = "Varita"
 AL["Weapons"] = "Armas"
 AL["Wintersaber Trainers"] = "Entrenadores de Sableinvernales"
+AL["Tier %s Tokens"] = "Fichas de nivel %s"
 --[[Translation missing --]]
 --[[ AL["Wrathful %s"] = "Wrathful %s"--]] 
