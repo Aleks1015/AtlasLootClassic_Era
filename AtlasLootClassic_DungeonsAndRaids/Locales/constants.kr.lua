@@ -351,6 +351,9 @@ AL["Zilbagob"] = "질바고브"
 AL["Pyranis"] = "피라니스"
 AL["Diathorus the Seeker"] = "수색자 디아토루스"
 AL["Hellscream's Phantom"] = "헬스크림의 악령"
+AL["Loot not updated"] = "전리품이 업데이트되지 않았습니다."
+AL["Molten"] = "녹은"
+AL["The Molten Core"] = "화산 심장부"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC
