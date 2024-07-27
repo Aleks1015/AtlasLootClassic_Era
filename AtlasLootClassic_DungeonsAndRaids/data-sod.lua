@@ -139,6 +139,41 @@ local T1_SET = {
 	},
 }
 
+local T1_SET_TOKENS = {
+	name = format(AL["Tier %s Tokens"], "1"),
+	ExtraList = true,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	IgnoreAsSource = true,
+	ContentPhase = 4,
+	[NORMAL_DIFF] = {
+		{ 2, 227532 }, --Incandescent Hood (Priest, Mage, Warlock)
+		{ 3, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+		{ 4, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+		{ 5, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+		{ 6, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+		{ 7, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
+		{ 8, 227534 }, --Incandescent Leggings (Priest, Mage, Warlock)
+		{ 9, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+		{ 11, 227755 }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
+		{ 12, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+		{ 13, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+		{ 14, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+		{ 17, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+		{ 18, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
+		{ 19, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+		{ 20, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+		{ 22, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
+		{ 23, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+		{ 24, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+		{ 25, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+		{ 26, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+		{ 27, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
+		{ 28, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+		{ 29, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+	},
+}
+
 local T2_SET = {
 	name = format(AL["Tier %s Sets"], "2"),
 	ExtraList = true,
@@ -5059,19 +5094,19 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 1,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, 228285 },	-- Helm of the Lifegiver
-				{ 2, 228247 },	-- Choker of Enlightenment
-				{ 3, 228239 },	-- Robe of Volatile Power
-				{ 4, 228246 },	-- Wristguards of Stability
-				{ 5, 228127 },	-- Wristguards of Instability
-				{ 6, 228244 },	-- Manastorm Leggings
-				{ 7, 228245 },	-- Salamander Scale Pants
-				{ 8, 228240 },	-- Flamewaker Legplates
-				{ 9, 228242 },	-- Heavy Dark Iron Ring
-				{ 10, 228243 },	-- Ring of Spell Power
-				{ 11, 228262 },	-- Crimson Shocker
-				{ 12, 228263 },	-- Sorcerous Dagger
-				{ 13, 16665 },	-- Tome of Tranquilizing Shot
+				{ 1, 16665 },	-- Tome of Tranquilizing Shot
+				{ 3, 228285 },	-- Helm of the Lifegiver
+				{ 4, 228247 },	-- Choker of Enlightenment
+				{ 5, 228239 },	-- Robe of Volatile Power
+				{ 6, 228246 },	-- Wristguards of Stability
+				{ 7, 228127 },	-- Wristguards of Instability
+				{ 8, 228244 },	-- Manastorm Leggings
+				{ 9, 228245 },	-- Salamander Scale Pants
+				{ 10, 228240 },	-- Flamewaker Legplates
+				{ 11, 228242 },	-- Heavy Dark Iron Ring
+				{ 12, 228243 },	-- Ring of Spell Power
+				{ 13, 228262 },	-- Crimson Shocker
+				{ 14, 228263 },	-- Sorcerous Dagger
 				{ 16, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
 				{ 17, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
 				{ 18, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
@@ -5252,21 +5287,21 @@ data["MoltenCore"] = {
 				{ 11, 228271 },	-- Staff of Dominance
 				{ 12, 228137 },	-- Heart of Golemagg
 				{ 13, 228147 },	-- Magmadar's Horn
-				{ 16, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
-				{ 17, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
-				{ 18, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
-				{ 19, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
-				{ 20, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
-				{ 21, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
-				{ 22, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
-				{ 23, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
-				{ 24, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
-				{ 25, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
-				{ 26, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
-				{ 27, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
-				{ 28, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
-				{ 29, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
-				{ 30, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)	
+				{ 16, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+				{ 17, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 18, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+				{ 20, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 21, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+				{ 22, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+				{ 24, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 25, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 26, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+				{ 28, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 29, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 30, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 101, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+				{ 102, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+				{ 103, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
 			},
 		},
 		{ -- MCSulfuron
@@ -5295,19 +5330,20 @@ data["MoltenCore"] = {
 				{ 16, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
 				{ 17, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
 				{ 18, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
-				{ 19, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
-				{ 20, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
-				{ 21, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
-				{ 22, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
-				{ 23, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
-				{ 24, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
-				{ 25, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
-				{ 26, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
-				{ 27, 227764 }, --Scorched Core Helm (Warrior, Rogue, Druid)
-				{ 28, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
-				{ 29, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
-				{ 101, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 102, 229380 },	-- Shadowstrike (Molten)
+				{ 20, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 21, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+				{ 22, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
+				{ 24, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 25, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 26, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+				{ 28, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 29, 229380 },	-- Shadowstrike (Molten)
+				{ 101, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 102, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 103, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 105, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
+				{ 106, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
+				{ 107, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
 			},
 		},
 		{ -- MCMajordomo
@@ -5319,17 +5355,16 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 9,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_02", nil, AL["Loot not updated"], nil },
-				{ 2,  228279 }, -- Fireguard Shoulders
-				{ 3,  228283 }, -- Wild Growth Spaulders
-				{ 4,  228280 }, -- Fireproof Cloak
-				{ 5,  228281 }, -- Gloves of the Hypnotic Flame
-				{ 6,  228282 }, -- Sash of Whispered Secrets
-				{ 7,  228284 }, -- Wristguards of True Flight
-				{ 8,  228275 }, -- Core Forged Greaves
-				{ 9,  228274 }, -- Cauterizing Band
-				{ 10, 228277 }, -- Core Hound Tooth
-				{ 11, 228278 }, -- Hyperthermically Insulated Lava Dredger
+				{ 1,  228279 }, -- Fireguard Shoulders
+				{ 2,  228283 }, -- Wild Growth Spaulders
+				{ 3,  228280 }, -- Fireproof Cloak
+				{ 4,  228281 }, -- Gloves of the Hypnotic Flame
+				{ 5,  228282 }, -- Sash of Whispered Secrets
+				{ 6,  228284 }, -- Wristguards of True Flight
+				{ 7,  228275 }, -- Core Forged Greaves
+				{ 8,  228274 }, -- Cauterizing Band
+				{ 9, 228277 }, -- Core Hound Tooth
+				{ 10, 228278 }, -- Hyperthermically Insulated Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
 				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
@@ -5344,26 +5379,25 @@ data["MoltenCore"] = {
 			AtlasMapBossID = 10,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_02", nil, AL["Loot not updated"], nil },
-				{ 2, 227728 }, -- Eye of Sulfuras
-				{ 3, 19017 }, -- Essence of the Firelord
-				{ 5, 228297 }, -- Shard of the Flame
-				{ 6, 228291 }, -- Crown of Destruction
-				{ 7, 228289 }, -- Choker of the Fire Lord
-				{ 8, 228290 }, -- Cloak of the Shrouded Mists
-				{ 9, 228292 }, -- Dragon's Blood Cape
-				{ 10, 228295 }, -- Onslaught Girdle
-				{ 11, 228286 }, -- Band of Accuria
-				{ 12, 228287 }, -- Band of Sulfuras
-				{ 13, 228293 }, -- Essence of the Pure Flame
-				{ 14, 228294 }, -- Malistar's Defender
-				{ 15, 228296 }, -- Perdition's Blade
-				{ 16, 228299 }, -- Spinal Reaper
-				{ 17, 228288 }, -- Bonereaver's Edge
-				{ 19, "INV_Box_02", nil, AL["Molten"], nil },
-				{ 20, 228511 }, -- Perdition's Blade (Molten)
-				{ 21, 228460 }, -- Spinal Reaper (Molten)
-				{ 22, 228461 }, -- Bonereaver's Edge (Molten)
+				{ 1, 227728 }, -- Eye of Sulfuras
+				{ 2, 19017 }, -- Essence of the Firelord
+				{ 4, 228297 }, -- Shard of the Flame
+				{ 5, 228291 }, -- Crown of Destruction
+				{ 6, 228289 }, -- Choker of the Fire Lord
+				{ 7, 228290 }, -- Cloak of the Shrouded Mists
+				{ 8, 228292 }, -- Dragon's Blood Cape
+				{ 9, 228295 }, -- Onslaught Girdle
+				{ 10, 228286 }, -- Band of Accuria
+				{ 11, 228287 }, -- Band of Sulfuras
+				{ 12, 228293 }, -- Essence of the Pure Flame
+				{ 13, 228294 }, -- Malistar's Defender
+				{ 14, 228296 }, -- Perdition's Blade
+				{ 15, 228299 }, -- Spinal Reaper
+				{ 16, 228288 }, -- Bonereaver's Edge
+				{ 21, "INV_Box_02", nil, AL["Molten"], nil },
+				{ 22, 228511 }, -- Perdition's Blade (Molten)
+				{ 23, 228460 }, -- Spinal Reaper (Molten)
+				{ 24, 228461 }, -- Bonereaver's Edge (Molten)
 			},
 		},
 		{ -- MCTheMoltenCore
@@ -5405,38 +5439,8 @@ data["MoltenCore"] = {
 				{ 4, 17012 }, -- Core Leather
 			},
 		},
-		{ -- MC Phase 4 Tier Tokens
-			name = format(AL["Tier %s Tokens"], "1"),
-			ExtraList = true,
-			ContentPhase = 4,
-			[NORMAL_DIFF] = {
-				{ 1, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
-				{ 2, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
-				{ 3, 227532 }, --Incandescent Hood (Priest, Mage, Warlock)
-				{ 4, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
-				{ 5, 227534 }, --Incandescent Leggings (Priest, Mage, Warlock)
-				{ 6, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
-				{ 7, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
-				{ 8, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
-				{ 10, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
-				{ 11, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
-				{ 12, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
-				{ 13, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
-				{ 14, 227755 }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
-				{ 15, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
-				{ 16, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
-				{ 17, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
-				{ 19, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
-				{ 20, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
-				{ 21, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
-				{ 22, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
-				{ 23, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
-				{ 24, 227764 }, --Scorched Core  Helm (Warrior, Rogue, Druid)
-				{ 25, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
-				{ 26, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)				
-			},
-		},
-		T1_SET
+		T1_SET,
+		T1_SET_TOKENS
 	}
 }
 
@@ -5471,16 +5475,43 @@ data["Onyxia"] = {
 				{ 11, 17068 }, -- Deathbringer
 				{ 12, 17075 }, -- Vis'kag the Bloodletter
 				{ 13, 228166 }, -- Key to the City
-				{ 24, 228992 }, -- Onyxia Hide Backpack
-				{ 25, 11938 }, -- Sack of Gems
+				{ 15, 11938 }, -- Sack of Gems
+				{ 16, 228992 }, -- Onyxia Hide Backpack
+				{ 18, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 19, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 20, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
+				{ 21, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 22, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+				{ 23, 227764 }, --Scorched Core  Helm (Warrior, Rogue, Druid)
+				{ 24, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+				{ 25, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems
 				{ 0, 17963 }, -- Green Sack of Gems
 				{ 0, 17964 }, -- Gray Sack of Gems
 				{ 0, 17965 }, -- Yellow Sack of Gems
 				{ 0, 17969 }, -- Red Sack of Gems
+				{ 101, 227530 }, --Incandescent Belt (Priest, Mage, Warlock)
+				{ 102, 227531 }, --Incandescent Bindings (Priest, Mage, Warlock)
+				{ 103, 227532 }, --Incandescent Hood (Priest, Mage, Warlock)
+				{ 104, 227533 }, --Incandescent Gloves (Priest, Mage, Warlock)
+				{ 105, 227534 }, --Incandescent Leggings (Priest, Mage, Warlock)
+				{ 106, 227535 }, --Incandescent Robe (Priest, Mage, Warlock)
+				{ 107, 227536 }, --Incandescent Boots (Priest, Mage, Warlock)
+				{ 108, 227537 }, --Incandescent Shoulderpads (Priest, Mage, Warlock)
+				{ 116, 227750 }, --Molten Scaled Bindings (Paladin, Hunter, Shaman)
+				{ 117, 227751 }, --Molten Scaled Belt (Paladin, Hunter, Shaman)
+				{ 118, 227752 }, --Molten Scaled Shoulderpads (Paladin, Hunter, Shaman)
+				{ 119, 227754 }, --Molten Scaled Leggings (Paladin, Hunter, Shaman)
+				{ 120, 227755 }, --Molten Scaled Helm (Paladin, Hunter, Shaman)
+				{ 121, 227756 }, --Molten Scaled Gloves (Paladin, Hunter, Shaman)
+				{ 122, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
+				{ 123, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
 			},
+			
 		},
+		T1_SET,
+		T1_SET_TOKENS
 	},
 }
 
