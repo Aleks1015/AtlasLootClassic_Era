@@ -464,7 +464,7 @@ else
 		[18564] = { 19019, 0, 18563, 18564, 19017 }, -- Bindings of the Windseeker <right>
 		[18563] = 18564, -- Bindings of the Windseeker <left>
 		[19017] = 18564, -- Essence of the Firelord
-		[17204] = { 17182 }, -- Eye of Sulfuras
+		[227728] = { 227683 }, -- Eye of Sulfuras
 		[18703] = { 18714, 18713, 18715 }, -- Ancient Petrified Leaf
 		[18646] = { 18665, 18646, 0, 18608, 18609 }, -- The Eye of Divinity
 		[18665] = 18646, -- The Eye of Shadow
