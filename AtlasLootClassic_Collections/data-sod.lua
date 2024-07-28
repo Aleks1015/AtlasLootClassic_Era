@@ -2681,25 +2681,24 @@ data["Tarnished Undermine Real"] = {
 		{
 			name = AL["Items"],
 			[NORMAL_DIFF] = {
-				{1, 226405 }, -- Damaged Undermine Supply Crate
-				{2, 228171 }, -- Kezan Cash Carrier (Bag)
-				{4, 228170 }, -- Makeshift South Sea Oar
-				{5, 228185 }, -- Broken Bottle of Goblino Noir  
-				{6, 228168 }, -- Goblin Gear Grinder 
-				{7, 228169 }, -- The Attitude Adjustor 
-				{9, 228184 }, -- Goblin Clothesline 
-				{11, 227284 }, -- Band of the Beast
-				{12, 227279 }, -- Loop of the Magister 
-				{13, 227280 }, -- Craft of the Shadows 
-				{14, 227282 }, -- Ring of the Dreaded Mist
-				{15, 228186 }, -- Abandoned Wedding Band 
-				{16, 228187 }, -- Stick of the South Sea
-				{18, 228432 }, -- Whistle of the Beast
-				{19, 227990 }, -- Hand of Injustice
-				{21, 228189 }, -- Gift of Gob
-				{23, 220599 }, -- Drakestone of the Blood Prophet
-				{24, 220597 }, -- Drakestone of the Dream Harbinger
-				{25, 220598 }, -- Drakestone of the Nightmare Harbinger
+				{1, 228171 }, -- Kezan Cash Carrier (Bag)
+				{3, 228170 }, -- Makeshift South Sea Oar
+				{4, 228185 }, -- Broken Bottle of Goblino Noir  
+				{5, 228168 }, -- Goblin Gear Grinder 
+				{6, 228169 }, -- The Attitude Adjustor 
+				{8, 228184 }, -- Goblin Clothesline 
+				{10, 227284 }, -- Band of the Beast
+				{11, 227279 }, -- Loop of the Magister 
+				{12, 227280 }, -- Craft of the Shadows 
+				{13, 227282 }, -- Ring of the Dreaded Mist
+				{14, 228186 }, -- Abandoned Wedding Band 
+				{15, 228187 }, -- Stick of the South Sea
+				{17, 228432 }, -- Whistle of the Beast
+				{18, 227990 }, -- Hand of Injustice
+				{20, 228189 }, -- Gift of Gob
+				{22, 220599 }, -- Drakestone of the Blood Prophet
+				{23, 220597 }, -- Drakestone of the Dream Harbinger
+				{24, 220598 }, -- Drakestone of the Nightmare Harbinger
 			},
 		},
 		{
@@ -2708,6 +2707,34 @@ data["Tarnished Undermine Real"] = {
 				{ 1, 17012 }, -- Core Leather
 				{ 2, 17011 }, -- Lava Core
 				{ 3, 17010 }, -- Fiery Core		
+			},
+		},
+		{
+			name = AL["Supply Crate"],
+			[NORMAL_DIFF] = {
+				{1, 226405 }, -- Damaged Undermine Supply Crate	
+				{3, 12363 }, -- Arcane Crystal
+				{4, 12360 }, -- Arcanite Bar
+				{5, 13468 }, -- Black Lotus
+				{6, 11382 }, -- Blood of the Mountain
+				{7, 11370 }, -- Dark Iron Ore
+				{8, 20520 }, -- Dark Rune
+				{9, 15417 }, -- Devilsaur Leather
+				{10, 13463 }, -- Dreamfoil
+				{11, 7082 }, -- Essence of Air
+				{12, 7076 }, -- Essence of Earth
+				{13, 7078 }, -- Essence of Fire
+				{14, 7080 }, -- Essence of Water
+				{15, 16203 }, -- Greater Eternal Essence
+				{16, 8846 }, -- Gromsblood
+				{17, 13467 }, -- Icecap
+				{18, 14344 }, -- Large Brilliant Shard
+				{19, 13465 }, -- Mountain Silversage
+				{20, 13466 }, -- Plaguebloom
+				{21, 13422 }, -- Stonescale Eel
+				{22, 10620 }, -- Thorium Ore
+				{23, 13755 }, -- Winter Squid
+				{24, 12820 }, -- Winterfall Firewater
 			},
 		},
 		{
