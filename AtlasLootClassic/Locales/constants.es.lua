@@ -293,5 +293,6 @@ AL["Replacements"] = "Reemplazos"
 AL["Tarnished Undermine Real"] = "Empañado socava lo real"
 AL["Rewards"] = "Recompensas"
 AL["Firelands Ember"] = "Ascua de las Tierras de Fuego"
+AL["Supply Crate"] = "Caja de suministros"
 --[[Translation missing --]]
 --[[ AL["Wrathful %s"] = "Wrathful %s"--]] 

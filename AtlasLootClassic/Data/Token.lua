@@ -763,7 +763,7 @@ else
 		[220940] = { {10024, 5}, type = 9 },
 		[220941] = { {13856, 6}, type = 9 },
 		[220942] = { {10034, 4}, type = 9 },
-		[226405] = { "INV_Misc_Bag_10", nil,{12820,"6"},7082,0, "INV_Misc_Bag_10_Black",nil,{12820,"5"},12363,0, "INV_Misc_Bag_10_Blue",nil,{13422,"5"},0, "INV_Misc_Bag_10_Green",nil,{15417,"7"},0, "INV_Misc_Bag_10_Red",nil,{12820,"7"},0, "INV_Misc_Bag_12",nil,{16203,"4"},{8846,"10"}, type = 2}, --Damaged Undermine Supply Crate
+		--[226405] = { "INV_Misc_Bag_10", nil,{12820,"6"},7082,0, "INV_Misc_Bag_10_Black",nil,{12820,"5"},12363,0, "INV_Misc_Bag_10_Blue",nil,{13422,"5"},0, "INV_Misc_Bag_10_Green",nil,{15417,"7"},0, "INV_Misc_Bag_10_Red",nil,{12820,"7"},0, "INV_Misc_Bag_12",nil,{16203,"4"},{8846,"10"}, type = 2}, --Damaged Undermine Supply Crate
 	}
 end
 
