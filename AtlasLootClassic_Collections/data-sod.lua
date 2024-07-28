@@ -2715,26 +2715,26 @@ data["Tarnished Undermine Real"] = {
 				{1, 226405 }, -- Damaged Undermine Supply Crate	
 				{3, 12363 }, -- Arcane Crystal
 				{4, 12360 }, -- Arcanite Bar
-				{5, 13468 }, -- Black Lotus
-				{6, 11382 }, -- Blood of the Mountain
-				{7, 11370 }, -- Dark Iron Ore
-				{8, 20520 }, -- Dark Rune
-				{9, 15417 }, -- Devilsaur Leather
-				{10, 13463 }, -- Dreamfoil
-				{11, 7082 }, -- Essence of Air
-				{12, 7076 }, -- Essence of Earth
-				{13, 7078 }, -- Essence of Fire
-				{14, 7080 }, -- Essence of Water
-				{15, 16203 }, -- Greater Eternal Essence
-				{16, 8846 }, -- Gromsblood
-				{17, 13467 }, -- Icecap
-				{18, 14344 }, -- Large Brilliant Shard
-				{19, 13465 }, -- Mountain Silversage
-				{20, 13466 }, -- Plaguebloom
-				{21, 13422 }, -- Stonescale Eel
-				{22, 10620 }, -- Thorium Ore
-				{23, 13755 }, -- Winter Squid
-				{24, 12820 }, -- Winterfall Firewater
+				{5, 11370 }, -- Dark Iron Ore
+				{6, 10620 }, -- Thorium Ore
+				{8, 7082 }, -- Essence of Air
+				{9, 7076 }, -- Essence of Earth
+				{10, 7078 }, -- Essence of Fire
+				{11, 7080 }, -- Essence of Water
+				{13, 11382 }, -- Blood of the Mountain
+				{14, 13468 }, -- Black Lotus
+				{16, 13463 }, -- Dreamfoil
+				{17, 8846 }, -- Gromsblood
+				{18, 13465 }, -- Mountain Silversage
+				{19, 13466 }, -- Plaguebloom
+				{20, 13467 }, -- Icecap
+				{22, 14344 }, -- Large Brilliant Shard
+				{23, 16203 }, -- Greater Eternal Essence
+				{25, 15417 }, -- Devilsaur Leather
+				{26, 13422 }, -- Stonescale Eel
+				{27, 13755 }, -- Winter Squid
+				{29, 20520 }, -- Dark Rune
+				{30, 12820 }, -- Winterfall Firewater
 			},
 		},
 		{
