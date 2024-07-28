@@ -5394,6 +5394,7 @@ data["MoltenCore"] = {
 				{ 14, 228296 }, -- Perdition's Blade
 				{ 15, 228299 }, -- Spinal Reaper
 				{ 16, 228288 }, -- Bonereaver's Edge
+				{ 16, 228145 }, -- Magmadar's Right Claw
 				{ 21, "INV_Box_02", nil, AL["Molten"], nil },
 				{ 22, 228511 }, -- Perdition's Blade (Molten)
 				{ 23, 228460 }, -- Spinal Reaper (Molten)
