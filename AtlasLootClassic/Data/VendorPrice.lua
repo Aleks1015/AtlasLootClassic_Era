@@ -67,7 +67,57 @@ local PRICE_INFO_LIST = {
 	["goldblood"] = { itemID = 213170 }, -- Gold Blood Coin
 	["emeraldchip"] = { itemID = 219927 }, -- Emerald Chip
     ["tarnishedunderminereal"] = { itemID = 226404 }, -- Tarnished Undermine Real
+    
+    --Items for upgrading items requiring Firelands Ember
     ["firelandsember"] = { itemID = 227801 }, -- Firelands Ember
+    ["feitm1"] = { itemID = 16979 },
+    ["feitm2"] = { itemID = 16980 },
+    ["feitm3"] = { itemID = 16982 },
+    ["feitm4"] = { itemID = 16983 },
+    ["feitm5"] = { itemID = 16984 },
+    ["feitm6"] = { itemID = 16988 },
+    ["feitm7"] = { itemID = 16989 },
+    ["feitm8"] = { itemID = 17013 },
+    ["feitm9"] = { itemID = 17014 },
+    ["feitm10"] = { itemID = 17015 },
+    ["feitm11"] = { itemID = 17016 },
+    ["feitm12"] = { itemID = 19148 },
+    ["feitm13"] = { itemID = 19149 },
+    ["feitm14"] = { itemID = 19156 },
+    ["feitm15"] = { itemID = 19157 },
+    ["feitm16"] = { itemID = 19162 },
+    ["feitm17"] = { itemID = 19164 },
+    ["feitm18"] = { itemID = 19165 },
+    ["feitm19"] = { itemID = 19166 },
+    ["feitm20"] = { itemID = 19167 },
+    ["feitm21"] = { itemID = 19168 },
+    ["feitm22"] = { itemID = 19170 },
+    ["feitm23"] = { itemID = 20039 },
+    ["feitm24"] = { itemID = 17010 },
+    ["feitm25"] = { itemID = 17011 },
+    --Argent Dawn
+    ["aditm1"] = { itemID = 12843 },
+    ["aditm2"] = { itemID = 13180 },
+    ["aditm3"] = { itemID = 12753 },
+    ["aditm4"] = { itemID = 12735 },
+    --Timbermaw
+    ["tmitem1"] = { itemID = 15065 },
+    ["tmitem2"] = { itemID = 15064 },
+    ["tmitem3"] = { itemID = 19043 },
+    ["tmitem4"] = { itemID = 19044 },
+    ["tmitem5"] = { itemID = 19047 },
+    ["tmitem6"] = { itemID = 19049 },
+    ["tmitem7"] = { itemID = 19048 },
+    ["tmitem8"] = { itemID = 15802 },
+    ["tmitem9"] = { itemID = 19050 },
+    ["tmitem10"] = { itemID = 15407 },
+    ["tmitem11"] = { itemID = 12360 },
+    ["tmitem12"] = { itemID = 14342 },
+    ["tmitem13"] = { itemID = 21383 },
+    --Misc items
+    ["gnome1"] = { itemID = 13325 },
+    ["stxitm1"] = { itemID = 224409 },
+    ["stxitm2"] = { itemID = 220589 },
 }
 
 local VENDOR_PRICE_FORMAT = {}
@@ -281,59 +331,59 @@ else
      [17011] = "tarnishedunderminereal:15",
      [17010] = "tarnishedunderminereal:15",
      --Blackrock Eruption / Firelands Ember
-     [227831] = "19156:1:firelandsember:20:17011:1",
-     [228927] = "20039:1:firelandsember:15:17010:1",
-     [228928] = "20039:1:firelandsember:15:17010:1",
-     [228929] = "20039:1:firelandsember:15:17010:1",
-     [227841] = "20039:1:firelandsember:15:17010:1",
-     [228924] = "20039:1:firelandsember:15:17010:1",
-     [227822] = "16982:1:firelandsember:15:17011:1",
-     [228925] = "20039:1:firelandsember:15:17010:1",
-     [227829] = "16984:1:firelandsember:15:17011:1",
-     [228926] = "20039:1:firelandsember:15:17010:1",
-     [227823] = "16979:1:firelandsember:15:17010:1",
-     [227835] = "19164:1:firelandsember:15:17011:1",
-     [227838] = "19157:1:firelandsember:15:17010:1",
-     [227824] = "19148:1:firelandsember:15:17011:1",
-     [227821] = "16983:1:firelandsember:15:17011:1",
-     [227839] = "19165:1:firelandsember:15:17010:1",
-     [227836] = "17013:1:firelandsember:15:17010:1",
-     [227826] = "17015:1:firelandsember:25:17010:2",
-     [227825] = "17016:1:firelandsember:25:17010:2",
-     [227832] = "19166:1:firelandsember:25:17010:2",
-     [227842] = "19170:1:firelandsember:25:17010:2",
-     [227840] = "19168:1:firelandsember:25:17011:2",
-     [227834] = "16988:1:firelandsember:15:17010:1",
-     [227830] = "16980:1:firelandsember:15:17010:1",
-     [227833] = "19167:1:firelandsember:25:17011:2",
-     [227828] = "19149:1:firelandsember:15:17011:1",
-     [227827] = "16989:1:firelandsember:15:17010:1",
-     [227837] = "19162:1:firelandsember:15:17010:1",
-     [227820] = "17014:1:firelandsember:10:17010:1",
+     [227831] = "feitm14:1:firelandsember:20:feitm25:1",
+     [228927] = "feitm23:1:firelandsember:15:feitm24:1",
+     [228928] = "feitm23:1:firelandsember:15:feitm24:1",
+     [228929] = "feitm23:1:firelandsember:15:feitm24:1",
+     [227841] = "feitm23:1:firelandsember:15:feitm24:1",
+     [228924] = "feitm23:1:firelandsember:15:feitm24:1",
+     [227822] = "feitm3:1:firelandsember:15:feitm25:1",
+     [228925] = "feitm23:1:firelandsember:15:feitm24:1",
+     [227829] = "feitm5:1:firelandsember:15:feitm25:1",
+     [228926] = "feitm23:1:firelandsember:15:feitm24:1",
+     [227823] = "feitm1:1:firelandsember:15:feitm24:1",
+     [227835] = "feitm17:1:firelandsember:15:feitm25:1",
+     [227838] = "feitm15:1:firelandsember:15:feitm24:1",
+     [227824] = "feitm12:1:firelandsember:15:feitm25:1",
+     [227821] = "feitm4:1:firelandsember:15:feitm25:1",
+     [227839] = "feitm18:1:firelandsember:15:feitm24:1",
+     [227836] = "feitm8:1:firelandsember:15:feitm24:1",
+     [227826] = "feitm10:1:firelandsember:25:feitm24:2",
+     [227825] = "feitm11:1:firelandsember:25:feitm24:2",
+     [227832] = "feitm19:1:firelandsember:25:feitm24:2",
+     [227842] = "feitm22:1:firelandsember:25:feitm24:2",
+     [227840] = "feitm21:1:firelandsember:25:feitm25:2",
+     [227834] = "feitm6:1:firelandsember:15:feitm24:1",
+     [227830] = "feitm2:1:firelandsember:15:feitm24:1",
+     [227833] = "feitm20:1:firelandsember:25:feitm25:2",
+     [227828] = "feitm13:1:firelandsember:15:feitm25:1",
+     [227827] = "feitm7:1:firelandsember:15:feitm24:1",
+     [227837] = "feitm16:1:firelandsember:15:feitm24:1",
+     [227820] = "feitm9:1:firelandsember:10:feitm24:1",
      -- Argent Dawn Upgrades / New Items
-     [227859] = "12843:4:12735:3", -- Shimmering Dawnbringer Shoulders
-     [227888] = "12843:4:12753:3", -- Argent Elite Shoulders
-     [227818] = "12843:4:12753:3", -- Glowing Mantle of the Dawn
-     [227817] = "12843:3:12735:2", -- Radiant Gloves of the Dawn
-     [227816] = "12843:3:12753:2", -- Argent Elite Boots
-     [227815] = "12843:3:12753:2", -- Fine Dawn Treaders
-     [227814] = "12843:2:12735:2", -- Radiant Girdle of the Dawn
-     [227813] = "13180:1", --Drinkable Stratholme Holy Water
+     [227859] = "aditm1:4:aditm4:3", -- Shimmering Dawnbringer Shoulders
+     [227888] = "aditm1:4:aditm3:3", -- Argent Elite Shoulders
+     [227818] = "aditm1:4:aditm3:3", -- Glowing Mantle of the Dawn
+     [227817] = "aditm1:3:aditm4:2", -- Radiant Gloves of the Dawn
+     [227816] = "aditm1:3:aditm3:2", -- Argent Elite Boots
+     [227815] = "aditm1:3:aditm3:2", -- Fine Dawn Treaders
+     [227814] = "aditm1:2:aditm4:2", -- Radiant Girdle of the Dawn
+     [227813] = "aditm2:1", --Drinkable Stratholme Holy Water
      -- Timbermaw Upgrades
-     [227804] = "15065:1:15407:2:21383:30", --Dire Warbear Woolies
-     [227803] = "15064:1:15407:2:21383:30", --Dire Warbear Harnessing
-     [227807] = "19043:1:12360:1:21383:20", --Dense Timbermaw Belt
-     [227805] = "19044:1:15407:1:21383:20", --Ferocity of the Timbermaw
-     [228190] = "19047:1:14342:1:21383:20", --Knowledge of the Timbermaw
-     [227809] = "19049:1:15407:1:21383:20", --Studded Timbermaw Brawlers
-     [227810] = "19048:1:12360:1:21383:25", --Dense Timbermaw Boots
-     [227862] = "15802:1:14342:1:21383:25", --Incandescent Mooncloth Boots
-     [227808] = "19050:1:14342:1:21383:25", --Rugged Mantle of the Timbermaw
+     [227804] = "tmitem1:1:tmitem10:2:tmitem13:30", --Dire Warbear Woolies
+     [227803] = "tmitem2:1:tmitem10:2:tmitem13:30", --Dire Warbear Harnessing
+     [227807] = "tmitem3:1:tmitem11:1:tmitem13:20", --Dense Timbermaw Belt
+     [227805] = "tmitem4:1:tmitem10:1:tmitem13:20", --Ferocity of the Timbermaw
+     [228190] = "tmitem5:1:tmitem12:1:tmitem13:20", --Knowledge of the Timbermaw
+     [227809] = "tmitem6:1:tmitem10:1:tmitem13:20", --Studded Timbermaw Brawlers
+     [227810] = "tmitem7:1:tmitem11:1:tmitem13:25", --Dense Timbermaw Boots
+     [227862] = "tmitem8:1:tmitem12:1:tmitem13:25", --Incandescent Mooncloth Boots
+     [227808] = "tmitem9:1:tmitem12:1:tmitem13:25", --Rugged Mantle of the Timbermaw
      -- Lost Goods Vendor
-     [220589] = "224409:1", -- Serpent's Striker (Slow)
-     [224409] = "220589:1", -- Serpent's Striker (Fast)
+     [220589] = "stxitm1:1", -- Serpent's Striker (Slow)
+     [224409] = "stxitm2:1", -- Serpent's Striker (Fast)
      -- Fluorescent Green Mechanostrider
-     [228746] = "money:8000000:13325:1", --Fluorescent Green Mechanostrider (100% Riding Speed)
+     [228746] = "money:8000000:gnome1:1", --Fluorescent Green Mechanostrider (100% Riding Speed)
     }
 end
 
