@@ -211,7 +211,7 @@ data["ThoriumBrotherhood"] = {
 				{ 17, "INV_Box_02", nil, AL["Upgrades"], nil },
 				{ 18, 227842 }, -- Ebon Fist
 				{ 19, 227840 }, -- Implacable Blackguard
-				{ 20, 227843 }, -- Reaving Nightfall
+				{ 20, 227841 }, -- Tempered Dark Iron Boots
 				{ 21, 228929 }, -- Tempered Dark Iron Boots
 				{ 22, 228924 }, -- Tempered Dark Iron Boots
 				{ 23, 228927 }, -- Tempered Dark Iron Boots
