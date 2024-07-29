@@ -5366,6 +5366,7 @@ data["MoltenCore"] = {
 				{ 9, 228277 }, -- Core Hound Tooth
 				{ 10, 228278 }, -- Hyperthermically Insulated Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
+				{ 17, 228129 }, -- Shadowflame Skull
 				{ 18, 18646 }, -- The Eye of Divinity
 				{ 20, "INV_Box_02", nil, AL["Molten"], nil },
 				{ 21,  228701 }, -- Core Hound Tooth (Molten)
