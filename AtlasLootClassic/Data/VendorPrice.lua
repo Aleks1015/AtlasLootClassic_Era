@@ -12,61 +12,13 @@ local PRICE_INFO_LIST = {
 	["ancestrycoin"] 	= { itemID = 21100 }, -- Coin of Ancestry
     ["NecroticRune"] 	= { itemID = 22484 }, -- Necrotic Rune
 
-	-- others
-	["money"] 			= { func = GetCoinTextureString },
-
-	--- BC
-	["holydust"] = { itemID = 29735 }, -- Holy Dust (Aldor)
-	["arcanerune"] = { itemID = 29736 }, -- Holy Dust (Scryers)
-	["SpiritShard"] = { itemID = 28558 }, -- Spirit Shard
-	["HalaaRT"] = { itemID = 26044 }, -- Halaa Research Token
-	["HalaaBT"] = { itemID = 26045 }, -- Halaa Battle Token
-	["MarkOfThrallmar"] = { itemID = 24581 }, -- Mark of Thrallmar
-	["MarkOfHonorHold"] = { itemID = 24579 }, -- Mark of Honor Hold
-	["BoJ"] = { itemID = 29434 }, -- Badge of Justice
-	["glowcap"] = { itemID = 24245 }, -- Glowcap
-	["ApexisC"] = { itemID = 32572 }, -- Apexis Crystal
-	["ApexisS"] = { itemID = 32569 }, -- Apexis Shard
-	["Brewfest"] = { itemID = 37829 }, -- Brewfest Prize Token
-        ["sunmote"] = { itemID = 34664 }, -- Sunmote
-	-- pvp
-	["honor"] = { currencyID = 1901 }, -- Honor
-	["arena"] = { currencyID = 1900 },  -- Arena
-	--["honorH"] = { currencyID = 1901 }, -- Honor / Horde
-	--["honorA"] = { currencyID = 1901 }, -- Honor / Alli
-	["pvpAlterac"] = { itemID = 20560 }, -- Alterac Valley Mark of Honor
-	["pvpWarsong"] = { itemID = 20558 }, -- Warsong Gulch Mark of Honor
-	["pvpArathi"] = { itemID = 20559 }, -- Arathi Basin Mark of Honor
-	["pvpEye"] = { itemID = 29024 }, -- Eye of the Storm Mark of Honor
-
-    --- Wrath
-    ["epicurean"] = { currencyID = 81 }, -- Epicurean's Award
-
-    ["championsSeal"] = { currencyID = 241 }, -- Champion's Seal
-    ["EmblemOfHeroism"] = { currencyID = 101 }, -- Emblem of Heroism
-    ["EmblemOfValor"] = { currencyID = 102 }, -- Emblem of Valor
-    ["EmblemOfTriumph"] = { currencyID = 301 }, -- Emblem of Triumph
-    ["EmblemOfConquest"] = { currencyID = 221 }, -- Emblem of Conquest
-    ["EmblemOfFrost"] = { currencyID = 341 }, -- Emblem of Frost
-    ["SiderealEssence"] = { currencyID = 2589 }, -- Sidereal Essence
-    ["DefilersScourgestone"] = {currencyID = 2711}, -- Defiler's Scourgestone
-
-    --- PvP
-    ["cpvpAlterac"] = { currencyID = 121 }, -- Alterac Valley Mark of Honor
-	["cpvpWarsong"] = { currencyID = 125 }, -- Warsong Gulch Mark of Honor
-	["cpvpArathi"] = { currencyID = 122 }, -- Arathi Basin Mark of Honor
-	["cpvpEye"] = { currencyID = 123 }, -- Eye of the Storm Mark of Honor
-	["cpvpWintergrasp"] = { currencyID = 126 }, -- Wintergrasp Mark of Honor
-	["cpvpIsle"] = { currencyID = 321 }, -- Isle of Conquest Mark of Honor
-	["cpvpStrand"] = { currencyID = 124 }, -- Strand of the Ancients Mark of Honor
-
-    --- Season of Discovery
+    -- Season of Discovery
     ["wildoffering"] = { itemID = 221262 }, -- Wild Offering
 	["silvermassacre"] = { itemID = 221365 }, -- Silver Massacre Coin
 	["silverblood"] = { itemID = 213169 }, -- Silver Blood Coin
 	["goldblood"] = { itemID = 213170 }, -- Gold Blood Coin
 	["emeraldchip"] = { itemID = 219927 }, -- Emerald Chip
-    ["tarnishedunderminereal"] = { itemID = 226404 }, -- Tarnished Undermine Real
+    ["tarnishedreal"] = { itemID = 226404 }, -- Tarnished Undermine Real
     
     --Items for upgrading items requiring Firelands Ember
     ["firelandsember"] = { itemID = 227801 }, -- Firelands Ember
@@ -118,6 +70,54 @@ local PRICE_INFO_LIST = {
     ["gnome1"] = { itemID = 13325 },
     ["stxitm1"] = { itemID = 224409 },
     ["stxitm2"] = { itemID = 220589 },
+
+    -- others
+	["money"] 			= { func = GetCoinTextureString },
+
+	--- BC
+	["holydust"] = { itemID = 29735 }, -- Holy Dust (Aldor)
+	["arcanerune"] = { itemID = 29736 }, -- Holy Dust (Scryers)
+	["SpiritShard"] = { itemID = 28558 }, -- Spirit Shard
+	["HalaaRT"] = { itemID = 26044 }, -- Halaa Research Token
+	["HalaaBT"] = { itemID = 26045 }, -- Halaa Battle Token
+	["MarkOfThrallmar"] = { itemID = 24581 }, -- Mark of Thrallmar
+	["MarkOfHonorHold"] = { itemID = 24579 }, -- Mark of Honor Hold
+	["BoJ"] = { itemID = 29434 }, -- Badge of Justice
+	["glowcap"] = { itemID = 24245 }, -- Glowcap
+	["ApexisC"] = { itemID = 32572 }, -- Apexis Crystal
+	["ApexisS"] = { itemID = 32569 }, -- Apexis Shard
+	["Brewfest"] = { itemID = 37829 }, -- Brewfest Prize Token
+    ["sunmote"] = { itemID = 34664 }, -- Sunmote
+	-- pvp
+	["honor"] = { currencyID = 1901 }, -- Honor
+	["arena"] = { currencyID = 1900 },  -- Arena
+	--["honorH"] = { currencyID = 1901 }, -- Honor / Horde
+	--["honorA"] = { currencyID = 1901 }, -- Honor / Alli
+	["pvpAlterac"] = { itemID = 20560 }, -- Alterac Valley Mark of Honor
+	["pvpWarsong"] = { itemID = 20558 }, -- Warsong Gulch Mark of Honor
+	["pvpArathi"] = { itemID = 20559 }, -- Arathi Basin Mark of Honor
+	["pvpEye"] = { itemID = 29024 }, -- Eye of the Storm Mark of Honor
+
+    --- Wrath
+    ["epicurean"] = { currencyID = 81 }, -- Epicurean's Award
+
+    ["championsSeal"] = { currencyID = 241 }, -- Champion's Seal
+    ["EmblemOfHeroism"] = { currencyID = 101 }, -- Emblem of Heroism
+    ["EmblemOfValor"] = { currencyID = 102 }, -- Emblem of Valor
+    ["EmblemOfTriumph"] = { currencyID = 301 }, -- Emblem of Triumph
+    ["EmblemOfConquest"] = { currencyID = 221 }, -- Emblem of Conquest
+    ["EmblemOfFrost"] = { currencyID = 341 }, -- Emblem of Frost
+    ["SiderealEssence"] = { currencyID = 2589 }, -- Sidereal Essence
+    ["DefilersScourgestone"] = {currencyID = 2711}, -- Defiler's Scourgestone
+
+    -- PvP
+    ["cpvpAlterac"] = { currencyID = 121 }, -- Alterac Valley Mark of Honor
+	["cpvpWarsong"] = { currencyID = 125 }, -- Warsong Gulch Mark of Honor
+	["cpvpArathi"] = { currencyID = 122 }, -- Arathi Basin Mark of Honor
+	["cpvpEye"] = { currencyID = 123 }, -- Eye of the Storm Mark of Honor
+	["cpvpWintergrasp"] = { currencyID = 126 }, -- Wintergrasp Mark of Honor
+	["cpvpIsle"] = { currencyID = 321 }, -- Isle of Conquest Mark of Honor
+	["cpvpStrand"] = { currencyID = 124 }, -- Strand of the Ancients Mark of Honor
 }
 
 local VENDOR_PRICE_FORMAT = {}
@@ -219,117 +219,117 @@ else
 	 [220649] = "emeraldchip:50",
 	 [221439] = "emeraldchip:50",
     --Tarnished Undermine Real
-     [228184] = "tarnishedunderminereal:25",
-     [228170] = "tarnishedunderminereal:50",
-     [228173] = "tarnishedunderminereal:15",
-     [228174] = "tarnishedunderminereal:15",
-     [228175] = "tarnishedunderminereal:15",
-     [228176] = "tarnishedunderminereal:15",
-     [228177] = "tarnishedunderminereal:15",
-     [228178] = "tarnishedunderminereal:15",
-     [228179] = "tarnishedunderminereal:15",
-     [228183] = "tarnishedunderminereal:15",
-     [228180] = "tarnishedunderminereal:15",
-     [228181] = "tarnishedunderminereal:15",
-     [228182] = "tarnishedunderminereal:15",
-     [228187] = "tarnishedunderminereal:50",
-     [228169] = "tarnishedunderminereal:50",
-     [228168] = "tarnishedunderminereal:50",
-     [228185] = "tarnishedunderminereal:50",
-     [227280] = "tarnishedunderminereal:50",
-     [227279] = "tarnishedunderminereal:50",
-     [227282] = "tarnishedunderminereal:50",
-     [228186] = "tarnishedunderminereal:25",
-     [228171] = "tarnishedunderminereal:25",
-     [228121] = "tarnishedunderminereal:50",
-     [226405] = "tarnishedunderminereal:5",
-     [228189] = "tarnishedunderminereal:25",
-     [13522] = "tarnishedunderminereal:50",
-     [13518] = "tarnishedunderminereal:50",
-     [13519] = "tarnishedunderminereal:50",
-     [13520] = "tarnishedunderminereal:50",
-     [13521] = "tarnishedunderminereal:50",
-     [227284] = "tarnishedunderminereal:50",
-     [228432] = "tarnishedunderminereal:50",
-     [227990] = "tarnishedunderminereal:50",
-     [226708] = "tarnishedunderminereal:50",
-     [226709] = "tarnishedunderminereal:50",
-     [226710] = "tarnishedunderminereal:25",
-     [226711] = "tarnishedunderminereal:25",
-     [226712] = "tarnishedunderminereal:25",
-     [226713] = "tarnishedunderminereal:25",
-     [226714] = "tarnishedunderminereal:15",
-     [226715] = "tarnishedunderminereal:50",
-     [226716] = "tarnishedunderminereal:25",
-     [226717] = "tarnishedunderminereal:15",
-     [226718] = "tarnishedunderminereal:25",
-     [226719] = "tarnishedunderminereal:50",
-     [226720] = "tarnishedunderminereal:50",
-     [226721] = "tarnishedunderminereal:25",
-     [226722] = "tarnishedunderminereal:25",
-     [226723] = "tarnishedunderminereal:50",
-     [226724] = "tarnishedunderminereal:25",
-     [226725] = "tarnishedunderminereal:15",
-     [226726] = "tarnishedunderminereal:25",
-     [226727] = "tarnishedunderminereal:50",
-     [226728] = "tarnishedunderminereal:50",
-     [226729] = "tarnishedunderminereal:50",
-     [226730] = "tarnishedunderminereal:25",
-     [226731] = "tarnishedunderminereal:25",
-     [226732] = "tarnishedunderminereal:25",
-     [226733] = "tarnishedunderminereal:50",
-     [226734] = "tarnishedunderminereal:50",
-     [226735] = "tarnishedunderminereal:25",
-     [226736] = "tarnishedunderminereal:50",
-     [226737] = "tarnishedunderminereal:25",
-     [226738] = "tarnishedunderminereal:25",
-     [226739] = "tarnishedunderminereal:15",
-     [226740] = "tarnishedunderminereal:25",
-     [226741] = "tarnishedunderminereal:25",
-     [226742] = "tarnishedunderminereal:15",
-     [226743] = "tarnishedunderminereal:25",
-     [226744] = "tarnishedunderminereal:25",
-     [226745] = "tarnishedunderminereal:50",
-     [226746] = "tarnishedunderminereal:50",
-     [226747] = "tarnishedunderminereal:50",
-     [226700] = "tarnishedunderminereal:50",
-     [226701] = "tarnishedunderminereal:25",
-     [226702] = "tarnishedunderminereal:25",
-     [226703] = "tarnishedunderminereal:25",
-     [226704] = "tarnishedunderminereal:15",
-     [226705] = "tarnishedunderminereal:50",
-     [226706] = "tarnishedunderminereal:25",
-     [226707] = "tarnishedunderminereal:50",
-     [226748] = "tarnishedunderminereal:25",
-     [226749] = "tarnishedunderminereal:50",
-     [226750] = "tarnishedunderminereal:50",
-     [226751] = "tarnishedunderminereal:15",
-     [226752] = "tarnishedunderminereal:25",
-     [226753] = "tarnishedunderminereal:25",
-     [226754] = "tarnishedunderminereal:25",
-     [226755] = "tarnishedunderminereal:50",
-     [226756] = "tarnishedunderminereal:25",
-     [226757] = "tarnishedunderminereal:50",
-     [226758] = "tarnishedunderminereal:25",
-     [226759] = "tarnishedunderminereal:15",
-     [226760] = "tarnishedunderminereal:50",
-     [226761] = "tarnishedunderminereal:25",
-     [226762] = "tarnishedunderminereal:50",
-     [226763] = "tarnishedunderminereal:25",
-     [226764] = "tarnishedunderminereal:25",
-     [226765] = "tarnishedunderminereal:25",
-     [226766] = "tarnishedunderminereal:15",
-     [226767] = "tarnishedunderminereal:50",
-     [226768] = "tarnishedunderminereal:25",
-     [226769] = "tarnishedunderminereal:50",
-     [226770] = "tarnishedunderminereal:50",
-     [226771] = "tarnishedunderminereal:25",
-     [220599] = "tarnishedunderminereal:50",
-     [220597] = "tarnishedunderminereal:50",
-     [220598] = "tarnishedunderminereal:50",
-     [17012] = "tarnishedunderminereal:10",
-     [17011] = "tarnishedunderminereal:15",
-     [17010] = "tarnishedunderminereal:15",
+     [228184] = "tarnishedreal:25",
+     [228170] = "tarnishedreal:50",
+     [228173] = "tarnishedreal:15",
+     [228174] = "tarnishedreal:15",
+     [228175] = "tarnishedreal:15",
+     [228176] = "tarnishedreal:15",
+     [228177] = "tarnishedreal:15",
+     [228178] = "tarnishedreal:15",
+     [228179] = "tarnishedreal:15",
+     [228183] = "tarnishedreal:15",
+     [228180] = "tarnishedreal:15",
+     [228181] = "tarnishedreal:15",
+     [228182] = "tarnishedreal:15",
+     [228187] = "tarnishedreal:50",
+     [228169] = "tarnishedreal:50",
+     [228168] = "tarnishedreal:50",
+     [228185] = "tarnishedreal:50",
+     [227280] = "tarnishedreal:50",
+     [227279] = "tarnishedreal:50",
+     [227282] = "tarnishedreal:50",
+     [228186] = "tarnishedreal:25",
+     [228171] = "tarnishedreal:25",
+     [228121] = "tarnishedreal:50",
+     [226405] = "tarnishedreal:5",
+     [228189] = "tarnishedreal:25",
+     [13522] = "tarnishedreal:50",
+     [13518] = "tarnishedreal:50",
+     [13519] = "tarnishedreal:50",
+     [13520] = "tarnishedreal:50",
+     [13521] = "tarnishedreal:50",
+     [227284] = "tarnishedreal:50",
+     [228432] = "tarnishedreal:50",
+     [227990] = "tarnishedreal:50",
+     [226708] = "tarnishedreal:50",
+     [226709] = "tarnishedreal:50",
+     [226710] = "tarnishedreal:25",
+     [226711] = "tarnishedreal:25",
+     [226712] = "tarnishedreal:25",
+     [226713] = "tarnishedreal:25",
+     [226714] = "tarnishedreal:15",
+     [226715] = "tarnishedreal:50",
+     [226716] = "tarnishedreal:25",
+     [226717] = "tarnishedreal:15",
+     [226718] = "tarnishedreal:25",
+     [226719] = "tarnishedreal:50",
+     [226720] = "tarnishedreal:50",
+     [226721] = "tarnishedreal:25",
+     [226722] = "tarnishedreal:25",
+     [226723] = "tarnishedreal:50",
+     [226724] = "tarnishedreal:25",
+     [226725] = "tarnishedreal:15",
+     [226726] = "tarnishedreal:25",
+     [226727] = "tarnishedreal:50",
+     [226728] = "tarnishedreal:50",
+     [226729] = "tarnishedreal:50",
+     [226730] = "tarnishedreal:25",
+     [226731] = "tarnishedreal:25",
+     [226732] = "tarnishedreal:25",
+     [226733] = "tarnishedreal:50",
+     [226734] = "tarnishedreal:50",
+     [226735] = "tarnishedreal:25",
+     [226736] = "tarnishedreal:50",
+     [226737] = "tarnishedreal:25",
+     [226738] = "tarnishedreal:25",
+     [226739] = "tarnishedreal:15",
+     [226740] = "tarnishedreal:25",
+     [226741] = "tarnishedreal:25",
+     [226742] = "tarnishedreal:15",
+     [226743] = "tarnishedreal:25",
+     [226744] = "tarnishedreal:25",
+     [226745] = "tarnishedreal:50",
+     [226746] = "tarnishedreal:50",
+     [226747] = "tarnishedreal:50",
+     [226700] = "tarnishedreal:50",
+     [226701] = "tarnishedreal:25",
+     [226702] = "tarnishedreal:25",
+     [226703] = "tarnishedreal:25",
+     [226704] = "tarnishedreal:15",
+     [226705] = "tarnishedreal:50",
+     [226706] = "tarnishedreal:25",
+     [226707] = "tarnishedreal:50",
+     [226748] = "tarnishedreal:25",
+     [226749] = "tarnishedreal:50",
+     [226750] = "tarnishedreal:50",
+     [226751] = "tarnishedreal:15",
+     [226752] = "tarnishedreal:25",
+     [226753] = "tarnishedreal:25",
+     [226754] = "tarnishedreal:25",
+     [226755] = "tarnishedreal:50",
+     [226756] = "tarnishedreal:25",
+     [226757] = "tarnishedreal:50",
+     [226758] = "tarnishedreal:25",
+     [226759] = "tarnishedreal:15",
+     [226760] = "tarnishedreal:50",
+     [226761] = "tarnishedreal:25",
+     [226762] = "tarnishedreal:50",
+     [226763] = "tarnishedreal:25",
+     [226764] = "tarnishedreal:25",
+     [226765] = "tarnishedreal:25",
+     [226766] = "tarnishedreal:15",
+     [226767] = "tarnishedreal:50",
+     [226768] = "tarnishedreal:25",
+     [226769] = "tarnishedreal:50",
+     [226770] = "tarnishedreal:50",
+     [226771] = "tarnishedreal:25",
+     [220599] = "tarnishedreal:50",
+     [220597] = "tarnishedreal:50",
+     [220598] = "tarnishedreal:50",
+     [17012] = "tarnishedreal:10",
+     [17011] = "tarnishedreal:15",
+     [17010] = "tarnishedreal:15",
      --Blackrock Eruption / Firelands Ember
      [227831] = "feitm14:1:firelandsember:20:feitm25:1",
      [228927] = "feitm23:1:firelandsember:15:feitm24:1",
