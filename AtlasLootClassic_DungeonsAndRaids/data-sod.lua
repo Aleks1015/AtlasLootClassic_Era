@@ -5472,16 +5472,21 @@ data["Onyxia"] = {
 				{ 11, 17068 }, -- Deathbringer
 				{ 12, 17075 }, -- Vis'kag the Bloodletter
 				{ 13, 228166 }, -- Key to the City
-				{ 15, 11938 }, -- Sack of Gems
-				{ 16, 228992 }, -- Onyxia Hide Backpack
-				{ 18, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
-				{ 19, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
-				{ 20, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
-				{ 21, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
-				{ 22, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
-				{ 23, 227764 }, --Scorched Core  Helm (Warrior, Rogue, Druid)
-				{ 24, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
-				{ 25, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
+				{ 14, 228162 }, -- Deceit
+				{ 15, 228165 }, -- Dragonslayer's Javelin
+				{ 16, 228687 }, -- Dragonslayer's Signet
+				{ 17, 228163 }, -- Broodmother's Brooch
+				{ 18, 228686 }, -- Onyxia Blood Talisman
+				{ 20, 228992 }, -- Onyxia Hide Backpack
+				{ 21, 11938 }, -- Sack of Gems
+				{ 23, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
+				{ 24, 227760 }, --Scorched Core Bindings (Warrior, Rogue, Druid)
+				{ 25, 227761 }, --Scorched Core Belt (Warrior, Rogue, Druid)
+				{ 26, 227762 }, --Scorched Core Shoulderpads (Warrior, Rogue, Druid)
+				{ 27, 227763 }, --Scorched Core Leggings (Warrior, Rogue, Druid)
+				{ 28, 227764 }, --Scorched Core  Helm (Warrior, Rogue, Druid)
+				{ 29, 227765 }, --Scorched Core Boots (Warrior, Rogue, Druid)
+				{ 30, 227766 }, --Scorched Core Chest (Warrior, Rogue, Druid)
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems
 				{ 0, 17963 }, -- Green Sack of Gems
@@ -5505,7 +5510,6 @@ data["Onyxia"] = {
 				{ 122, 227757 }, --Molten Scaled Boots (Paladin, Hunter, Shaman)
 				{ 123, 227758 }, --Molten Scaled Chest (Paladin, Hunter, Shaman)
 			},
-			
 		},
 		T1_SET,
 		T1_SET_TOKENS
