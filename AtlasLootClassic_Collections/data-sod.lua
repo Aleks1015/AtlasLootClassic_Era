@@ -2892,10 +2892,10 @@ data["Firelands Ember"] = {
 				{  4, 228929 }, -- Tempered Dark Iron Boots
 				{  5, 227841 }, -- Tempered Dark Iron Boots
 				{  6, 228924 }, -- Tempered Dark Iron Boots
-				{  7, 227822 }, -- Thick Corehound Boots
-				{  8, 228925 }, -- Tempered Dark Iron Boots
-				{  9, 227829 }, -- Hardened Black Dragonscale Boots
-				{  10, 228926 }, -- Tempered Dark Iron Boots
+				{  7, 228925 }, -- Tempered Dark Iron Boots
+				{  8, 228926 }, -- Tempered Dark Iron Boots
+				{  9, 227822 }, -- Thick Corehound Boots
+				{  10, 227829 }, -- Hardened Black Dragonscale Boots
 				{  11, 227823 }, -- Fine Flarecore Gloves
 				{  12, 227835 }, -- Tempered Dark Iron Gauntlets
 				{  13, 227838 }, -- Shining Chromatic Gauntlets
