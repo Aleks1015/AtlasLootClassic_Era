@@ -100,6 +100,13 @@ local PRICE_INFO_LIST = {
     ["aditm2"] = { itemID = 13180 },
     ["aditm3"] = { itemID = 12753 },
     ["aditm4"] = { itemID = 12735 },
+	["aditm5"] = { itemID = 12625 },
+	["aditm6"] = { itemID = 19059 },
+	["aditm7"] = { itemID = 19058 },
+	["aditm8"] = { itemID = 19057 },
+	["aditm9"] = { itemID = 19056 },
+	["aditm10"] = { itemID = 19052 },
+	["aditm11"] = { itemID = 19051 },
     --Timbermaw
     ["tmitem1"] = { itemID = 15065 },
     ["tmitem2"] = { itemID = 15064 },
@@ -361,13 +368,13 @@ else
      [227837] = "feitm16:1:firelandsember:15:feitm24:1",
      [227820] = "feitm9:1:firelandsember:10:feitm24:1",
      -- Argent Dawn Upgrades / New Items
-     [227859] = "aditm1:4:aditm4:3", -- Shimmering Dawnbringer Shoulders
-     [227888] = "aditm1:4:aditm3:3", -- Argent Elite Shoulders
-     [227818] = "aditm1:4:aditm3:3", -- Glowing Mantle of the Dawn
-     [227817] = "aditm1:3:aditm4:2", -- Radiant Gloves of the Dawn
-     [227816] = "aditm1:3:aditm3:2", -- Argent Elite Boots
-     [227815] = "aditm1:3:aditm3:2", -- Fine Dawn Treaders
-     [227814] = "aditm1:2:aditm4:2", -- Radiant Girdle of the Dawn
+     [227859] = "aditm5:aditm1:4:aditm4:3", -- Shimmering Dawnbringer Shoulders
+     [227888] = "aditm6:aditm1:4:aditm3:3", -- Argent Elite Shoulders
+     [227818] = "aditm7:aditm1:4:aditm3:3", -- Glowing Mantle of the Dawn
+     [227817] = "aditm8:aditm1:3:aditm4:2", -- Radiant Gloves of the Dawn
+     [227816] = "aditm9:aditm1:3:aditm3:2", -- Argent Elite Boots
+     [227815] = "aditm10:aditm1:3:aditm3:2", -- Fine Dawn Treaders
+     [227814] = "aditm11:aditm1:2:aditm4:2", -- Radiant Girdle of the Dawn
      [227813] = "aditm2:1", --Drinkable Stratholme Holy Water
      -- Timbermaw Upgrades
      [227804] = "tmitem1:1:tmitem10:2:tmitem13:30", --Dire Warbear Woolies
