@@ -810,15 +810,6 @@ data["Emerald Wardens"] = {
 				{ 5, 223648 }, -- Dream Imbued Arrow
 				{ 6, 224005 }, -- Emerald Ring
 				{ 7, 224004 }, -- Emerald Ring
-				{ 16, 221480 }, -- Spell Notes: Molten Armor
-				{ 17, 221481 }, -- 	Nihilist Epiphany
-				{ 18, 221482 }, -- 	Rune of Affliction
-				{ 19, 221483 }, -- 	Rune of Burn
-				{ 20, 221511 }, -- 	Rune of the Protector
-				{ 21, 221512 }, -- 	Rune of Alacrity
-				{ 22, 221515 }, -- 	Rune of Detonation
-				{ 23, 221517 }, -- 	Rune of Bloodshed
-				{ 24, 223288 }, -- 	Rune of the Hammer
 			},
 		},
 		{ -- Friendly
@@ -830,6 +821,15 @@ data["Emerald Wardens"] = {
 				{ 5, 223912 }, -- Purification Potion
 				{ 6, 223913 }, -- Major Healing Potion
 				{ 7, 223914 }, -- Greater Healing Potion
+				{ 16, 221480 }, -- Spell Notes: Molten Armor
+				{ 17, 221481 }, -- 	Nihilist Epiphany
+				{ 18, 221482 }, -- 	Rune of Affliction
+				{ 19, 221483 }, -- 	Rune of Burn
+				{ 20, 221511 }, -- 	Rune of the Protector
+				{ 21, 221512 }, -- 	Rune of Alacrity
+				{ 22, 221515 }, -- 	Rune of Detonation
+				{ 23, 221517 }, -- 	Rune of Bloodshed
+				{ 24, 223288 }, -- 	Rune of the Hammer
 			},
 		},
 	},
