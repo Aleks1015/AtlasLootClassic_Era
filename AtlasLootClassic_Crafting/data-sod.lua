@@ -1548,7 +1548,7 @@ data["Leatherworking"] = {
 		{
 			name = AL["Seasonal"].." - "..AL["P4"],
 			[NORMAL_DIFF] = {
-				--{ 1, 227895 }, --Golden Mantle of the Dawn
+				{ 1, 462227 }, --Honed Blue Dragonscale Leggings
 				{ 2, 461673 }, --Honed Blue Dragonscale Breastplate
 				{ 3, 461645 }, --Honed Blue Dragonscale Shoulders
 				{ 5, 461649 }, --Living Green Dragonscale Leggings
