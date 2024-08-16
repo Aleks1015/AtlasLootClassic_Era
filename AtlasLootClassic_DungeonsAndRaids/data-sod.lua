@@ -3035,7 +3035,7 @@ data["UpperBlackrockSpire"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  228566 }, -- Starfire Tiara
 				{ 2,  12930 }, -- Briarwood Reed
-				{ 3,  227942 }, -- Serpentine Skuller
+				{ 3,  12605 }, -- Serpentine Skuller				
 			},
 		},
 		{ -- UBRSAnvilcrack
@@ -5476,6 +5476,7 @@ data["Onyxia"] = {
 				{ 14, 228162 }, -- Deceit
 				{ 15, 228165 }, -- Dragonslayer's Javelin
 				{ 16, 228163 }, -- Broodmother's Brooch
+				{ 17, 228188 }, -- Prestor's Hairpin
 				{ 20, 228992 }, -- Onyxia Hide Backpack
 				{ 21, 11938 }, -- Sack of Gems
 				{ 23, 227759 }, --Scorched Core Gloves (Warrior, Rogue, Druid)
