@@ -13,3 +13,4 @@ data.lua
 # from @Blackwidow-sudo
 make.sh
 DevBuild
+.vscode/settings.json
