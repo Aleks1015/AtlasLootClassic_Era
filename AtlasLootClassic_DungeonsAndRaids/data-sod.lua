@@ -5969,7 +5969,7 @@ data["BlackwingLair"] = {
 				{ 8,  16952 }, -- Judgement Belt
 				{ 9,  16960 }, -- Waistband of Wrath
 				{ 16, 19339 }, -- Mind Quickening Gem
-				{ 17, 210980 }, -- Rune of Metamorphosis
+				{ 17, 19340 }, -- Rune of Metamorphosis
 				{ 19, 19372 }, -- Helm of Endless Rage
 				{ 20, 19371 }, -- Pendant of the Fallen Dragon
 				{ 21, 19348 }, -- Red Dragonscale Protector
